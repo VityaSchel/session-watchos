@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A71202852BA0CDDC0059213C /* session-messenger Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A71202842BA0CDDC0059213C /* session-messenger Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A712028A2BA0CDDC0059213C /* SessionMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71202892BA0CDDC0059213C /* SessionMessengerApp.swift */; };
+		A712028C2BA0CDDC0059213C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A712028B2BA0CDDC0059213C /* ContentView.swift */; };
+		A712028E2BA0CDDD0059213C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A712028D2BA0CDDD0059213C /* Assets.xcassets */; };
+		A71202912BA0CDDD0059213C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71202902BA0CDDD0059213C /* Preview Assets.xcassets */; };
+		A712E8262BA0F4330037EFE2 /* EFQRCode in Frameworks */ = {isa = PBXBuildFile; productRef = A712E8252BA0F4330037EFE2 /* EFQRCode */; };
+		A712E8282BA0F5520037EFE2 /* AESSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A712E8272BA0F5520037EFE2 /* AESSecurity.swift */; };
+		A77B482F2BA0DD620059C1DC /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77B482E2BA0DD620059C1DC /* LoginScreen.swift */; };
+		A77B48312BA0DDB40059C1DC /* SignupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77B48302BA0DDB40059C1DC /* SignupScreen.swift */; };
+		A77B48342BA0E1270059C1DC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77B48332BA0E1270059C1DC /* Color.swift */; };
+		A77B48372BA0E4660059C1DC /* SessionLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77B48362BA0E4660059C1DC /* SessionLogo.swift */; };
+		A77B48392BA0F1760059C1DC /* QRCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77B48382BA0F1760059C1DC /* QRCodes.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A71202862BA0CDDC0059213C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A71202782BA0CDDC0059213C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A71202832BA0CDDC0059213C;
+			remoteInfo = "session-messenger Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A71202972BA0CDDD0059213C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A71202852BA0CDDC0059213C /* session-messenger Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A712027E2BA0CDDC0059213C /* session-messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "session-messenger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A71202842BA0CDDC0059213C /* session-messenger Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "session-messenger Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A71202892BA0CDDC0059213C /* SessionMessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionMessengerApp.swift; sourceTree = "<group>"; };
+		A712028B2BA0CDDC0059213C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A712028D2BA0CDDD0059213C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A71202902BA0CDDD0059213C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A712E8272BA0F5520037EFE2 /* AESSecurity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AESSecurity.swift; sourceTree = "<group>"; };
+		A77B482E2BA0DD620059C1DC /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		A77B48302BA0DDB40059C1DC /* SignupScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupScreen.swift; sourceTree = "<group>"; };
+		A77B48332BA0E1270059C1DC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A77B48362BA0E4660059C1DC /* SessionLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionLogo.swift; sourceTree = "<group>"; };
+		A77B48382BA0F1760059C1DC /* QRCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodes.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A71202812BA0CDDC0059213C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A712E8262BA0F4330037EFE2 /* EFQRCode in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A71202772BA0CDDC0059213C = {
+			isa = PBXGroup;
+			children = (
+				A71202882BA0CDDC0059213C /* session-messenger Watch App */,
+				A712027F2BA0CDDC0059213C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A712027F2BA0CDDC0059213C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A712027E2BA0CDDC0059213C /* session-messenger.app */,
+				A71202842BA0CDDC0059213C /* session-messenger Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A71202882BA0CDDC0059213C /* session-messenger Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				A77B48352BA0E45A0059C1DC /* Icons */,
+				A71202892BA0CDDC0059213C /* SessionMessengerApp.swift */,
+				A712028B2BA0CDDC0059213C /* ContentView.swift */,
+				A77B48322BA0E11D0059C1DC /* SwiftExtensions */,
+				A77B482D2BA0DD370059C1DC /* Views */,
+				A712028D2BA0CDDD0059213C /* Assets.xcassets */,
+				A712028F2BA0CDDD0059213C /* Preview Content */,
+			);
+			path = "session-messenger Watch App";
+			sourceTree = "<group>";
+		};
+		A712028F2BA0CDDD0059213C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A71202902BA0CDDD0059213C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A77B482D2BA0DD370059C1DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A77B482E2BA0DD620059C1DC /* LoginScreen.swift */,
+				A77B48302BA0DDB40059C1DC /* SignupScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A77B48322BA0E11D0059C1DC /* SwiftExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				A77B48332BA0E1270059C1DC /* Color.swift */,
+				A77B48382BA0F1760059C1DC /* QRCodes.swift */,
+				A712E8272BA0F5520037EFE2 /* AESSecurity.swift */,
+			);
+			path = SwiftExtensions;
+			sourceTree = "<group>";
+		};
+		A77B48352BA0E45A0059C1DC /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				A77B48362BA0E4660059C1DC /* SessionLogo.swift */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A712027D2BA0CDDC0059213C /* session-messenger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A71202982BA0CDDD0059213C /* Build configuration list for PBXNativeTarget "session-messenger" */;
+			buildPhases = (
+				A712027C2BA0CDDC0059213C /* Resources */,
+				A71202972BA0CDDD0059213C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A71202872BA0CDDC0059213C /* PBXTargetDependency */,
+			);
+			name = "session-messenger";
+			productName = "session-messenger";
+			productReference = A712027E2BA0CDDC0059213C /* session-messenger.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		A71202832BA0CDDC0059213C /* session-messenger Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A71202942BA0CDDD0059213C /* Build configuration list for PBXNativeTarget "session-messenger Watch App" */;
+			buildPhases = (
+				A71202802BA0CDDC0059213C /* Sources */,
+				A71202812BA0CDDC0059213C /* Frameworks */,
+				A71202822BA0CDDC0059213C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "session-messenger Watch App";
+			packageProductDependencies = (
+				A712E8252BA0F4330037EFE2 /* EFQRCode */,
+			);
+			productName = "session-messenger Watch App";
+			productReference = A71202842BA0CDDC0059213C /* session-messenger Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A71202782BA0CDDC0059213C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A712027D2BA0CDDC0059213C = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					A71202832BA0CDDC0059213C = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = A712027B2BA0CDDC0059213C /* Build configuration list for PBXProject "session-messenger" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A71202772BA0CDDC0059213C;
+			packageReferences = (
+				A712E8242BA0F4330037EFE2 /* XCRemoteSwiftPackageReference "EFQRCode" */,
+			);
+			productRefGroup = A712027F2BA0CDDC0059213C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A712027D2BA0CDDC0059213C /* session-messenger */,
+				A71202832BA0CDDC0059213C /* session-messenger Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A712027C2BA0CDDC0059213C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A71202822BA0CDDC0059213C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A71202912BA0CDDD0059213C /* Preview Assets.xcassets in Resources */,
+				A712028E2BA0CDDD0059213C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A71202802BA0CDDC0059213C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A712028C2BA0CDDC0059213C /* ContentView.swift in Sources */,
+				A712028A2BA0CDDC0059213C /* SessionMessengerApp.swift in Sources */,
+				A77B482F2BA0DD620059C1DC /* LoginScreen.swift in Sources */,
+				A77B48342BA0E1270059C1DC /* Color.swift in Sources */,
+				A77B48312BA0DDB40059C1DC /* SignupScreen.swift in Sources */,
+				A712E8282BA0F5520037EFE2 /* AESSecurity.swift in Sources */,
+				A77B48392BA0F1760059C1DC /* QRCodes.swift in Sources */,
+				A77B48372BA0E4660059C1DC /* SessionLogo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A71202872BA0CDDC0059213C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A71202832BA0CDDC0059213C /* session-messenger Watch App */;
+			targetProxy = A71202862BA0CDDC0059213C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A71202922BA0CDDD0059213C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A71202932BA0CDDD0059213C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A71202952BA0CDDD0059213C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"session-messenger Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "session-messenger";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.hloth.session-messenger.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		A71202962BA0CDDD0059213C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"session-messenger Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "session-messenger";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.hloth.session-messenger.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		A71202992BA0CDDD0059213C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = "session-messenger";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.hloth.session-messenger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A712029A2BA0CDDD0059213C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = "session-messenger";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.hloth.session-messenger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A712027B2BA0CDDC0059213C /* Build configuration list for PBXProject "session-messenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71202922BA0CDDD0059213C /* Debug */,
+				A71202932BA0CDDD0059213C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A71202942BA0CDDD0059213C /* Build configuration list for PBXNativeTarget "session-messenger Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71202952BA0CDDD0059213C /* Debug */,
+				A71202962BA0CDDD0059213C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A71202982BA0CDDD0059213C /* Build configuration list for PBXNativeTarget "session-messenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A71202992BA0CDDD0059213C /* Debug */,
+				A712029A2BA0CDDD0059213C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A712E8242BA0F4330037EFE2 /* XCRemoteSwiftPackageReference "EFQRCode" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/EFPrefix/EFQRCode.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A712E8252BA0F4330037EFE2 /* EFQRCode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A712E8242BA0F4330037EFE2 /* XCRemoteSwiftPackageReference "EFQRCode" */;
+			productName = EFQRCode;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A71202782BA0CDDC0059213C /* Project object */;
+}
