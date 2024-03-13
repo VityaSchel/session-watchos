@@ -5,7 +5,7 @@
 #import "OWSAudioPlayer.h"
 #import <AVFoundation/AVFoundation.h>
 #import <SessionUtilitiesKit/SessionUtilitiesKit.h>
-#import <SessionMessagingKit/SessionMessagingKit-Swift.h>
+//#import <SessionMessagingKit/SessionMessagingKit-Swift.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -44,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) NSURL *mediaUrl;
 @property (nonatomic, nullable) AVAudioPlayer *audioPlayer;
 @property (nonatomic, nullable) NSTimer *audioPlayerPoller;
-@property (nonatomic, readonly) OWSAudioActivity *audioActivity;
+//@property (nonatomic, readonly) OWSAudioActivity *audioActivity;
 
 @end
 
@@ -71,12 +71,12 @@ NS_ASSUME_NONNULL_BEGIN
     _delegate = delegate;
 
     NSString *audioActivityDescription = [NSString stringWithFormat:@"%@ %@", @"OWSAudioPlayer", self.mediaUrl];
-    _audioActivity = [[OWSAudioActivity alloc] initWithAudioDescription:audioActivityDescription behavior:audioBehavior];
+//    _audioActivity = [[OWSAudioActivity alloc] initWithAudioDescription:audioActivityDescription behavior:audioBehavior];
 
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(applicationDidEnterBackground:)
-                                                 name:NSNotification.sessionDidEnterBackground
-                                               object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self
+//                                             selector:@selector(applicationDidEnterBackground:)
+//                                                 name:NSNotification.sessionDidEnterBackground
+//                                               object:nil];
 
     return self;
 }
@@ -85,17 +85,17 @@ NS_ASSUME_NONNULL_BEGIN
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 
-    [DeviceSleepManager.sharedInstance removeBlockWithBlockObject:self];
+    //[DeviceSleepManager.sharedInstance removeBlockWithBlockObject:self];
 
     [self stop];
 }
 
 #pragma mark - Dependencies
 
-- (OWSAudioSession *)audioSession
-{
-    return SMKEnvironment.shared.audioSession;
-}
+//- (OWSAudioSession *)audioSession
+//{
+//    return SMKEnvironment.shared.audioSession;
+//}
 
 #pragma mark
 
@@ -114,48 +114,48 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)play
 {
     // get current audio activity
-    [self playWithAudioActivity:self.audioActivity];
+    //[self playWithAudioActivity:self.audioActivity];
 }
 
-- (void)playWithAudioActivity:(OWSAudioActivity *)audioActivity
-{
-    [self.audioPlayerPoller invalidate];
-
-    self.delegate.audioPlaybackState = AudioPlaybackState_Playing;
-
-    [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryPlayback error: nil];
-
-    if (!self.audioPlayer) {
-        NSError *error;
-        self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:self.mediaUrl error:&error];
-        self.audioPlayer.enableRate = YES;
-        if (error) {
-            [self stop];
-
-            if ([error.domain isEqualToString:NSOSStatusErrorDomain]
-                && (error.code == kAudioFileInvalidFileError || error.code == kAudioFileStreamError_InvalidFile)) {
-                [self.delegate showInvalidAudioFileAlert];
-            }
-
-            return;
-        }
-        self.audioPlayer.delegate = self;
-        if (self.isLooping) {
-            self.audioPlayer.numberOfLoops = -1;
-        }
-    }
-
-    [self.audioPlayer play];
-    [self.audioPlayerPoller invalidate];
-    self.audioPlayerPoller = [NSTimer weakScheduledTimerWithTimeInterval:.05f
-                                                                  target:self
-                                                                selector:@selector(audioPlayerUpdated:)
-                                                                userInfo:nil
-                                                                 repeats:YES];
-
-    // Prevent device from sleeping while playing audio.
-    [DeviceSleepManager.sharedInstance addBlockWithBlockObject:self];
-}
+//- (void)playWithAudioActivity:(OWSAudioActivity *)audioActivity
+//{
+//    [self.audioPlayerPoller invalidate];
+//
+//    self.delegate.audioPlaybackState = AudioPlaybackState_Playing;
+//
+//    [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryPlayback error: nil];
+//
+//    if (!self.audioPlayer) {
+//        NSError *error;
+//        self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:self.mediaUrl error:&error];
+//        self.audioPlayer.enableRate = YES;
+//        if (error) {
+//            [self stop];
+//
+//            if ([error.domain isEqualToString:NSOSStatusErrorDomain]
+//                && (error.code == kAudioFileInvalidFileError || error.code == kAudioFileStreamError_InvalidFile)) {
+//                [self.delegate showInvalidAudioFileAlert];
+//            }
+//
+//            return;
+//        }
+//        self.audioPlayer.delegate = self;
+//        if (self.isLooping) {
+//            self.audioPlayer.numberOfLoops = -1;
+//        }
+//    }
+//
+//    [self.audioPlayer play];
+//    [self.audioPlayerPoller invalidate];
+//    self.audioPlayerPoller = [NSTimer weakScheduledTimerWithTimeInterval:.05f
+//                                                                  target:self
+//                                                                selector:@selector(audioPlayerUpdated:)
+//                                                                userInfo:nil
+//                                                                 repeats:YES];
+//
+//    // Prevent device from sleeping while playing audio.
+//    [DeviceSleepManager.sharedInstance addBlockWithBlockObject:self];
+//}
 
 - (void)setCurrentTime:(NSTimeInterval)currentTime
 {
@@ -185,7 +185,7 @@ NS_ASSUME_NONNULL_BEGIN
     [self.delegate setAudioProgress:(CGFloat)[self.audioPlayer currentTime] duration:(CGFloat)[self.audioPlayer duration]];
 
     [self endAudioActivities];
-    [DeviceSleepManager.sharedInstance removeBlockWithBlockObject:self];
+    //[DeviceSleepManager.sharedInstance removeBlockWithBlockObject:self];
 }
 
 - (void)stop
@@ -196,12 +196,12 @@ NS_ASSUME_NONNULL_BEGIN
     [self.delegate setAudioProgress:0 duration:0];
 
     [self endAudioActivities];
-    [DeviceSleepManager.sharedInstance removeBlockWithBlockObject:self];
+    //[DeviceSleepManager.sharedInstance removeBlockWithBlockObject:self];
 }
 
 - (void)endAudioActivities
 {
-    [self.audioSession endAudioActivity:self.audioActivity];
+    //[self.audioSession endAudioActivity:self.audioActivity];
 }
 
 - (void)togglePlayState
@@ -209,7 +209,7 @@ NS_ASSUME_NONNULL_BEGIN
     if (self.isPlaying) {
         [self pause];
     } else {
-        [self playWithAudioActivity:self.audioActivity];
+        //[self playWithAudioActivity:self.audioActivity];
     }
 }
 

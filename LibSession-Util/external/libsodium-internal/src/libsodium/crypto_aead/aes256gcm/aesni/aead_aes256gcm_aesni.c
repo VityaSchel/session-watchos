@@ -13,7 +13,7 @@
 #include "core.h"
 #include "crypto_aead_aes256gcm.h"
 #include "export.h"
-#include "private/common.h"
+//#include "private/common.h"
 #include "randombytes.h"
 #include "runtime.h"
 #include "utils.h"

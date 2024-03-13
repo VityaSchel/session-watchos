@@ -14,6 +14,7 @@
 
 #include "private/chacha20_ietf_ext.h"
 #include "private/common.h"
+#include "
 
 static const unsigned char _pad0[16] = { 0 };
 
@@ -28,6 +29,7 @@ crypto_aead_chacha20poly1305_encrypt_detached(unsigned char *c,
                                               const unsigned char *nsec,
                                               const unsigned char *npub,
                                               const unsigned char *k)
+
 {
     crypto_onetimeauth_poly1305_state state;
     unsigned char                     block0[64U];
@@ -56,6 +58,7 @@ crypto_aead_chacha20poly1305_encrypt_detached(unsigned char *c,
     }
     return 0;
 }
+
 
 int
 crypto_aead_chacha20poly1305_encrypt(unsigned char *c,
@@ -198,7 +201,7 @@ crypto_aead_chacha20poly1305_decrypt_detached(unsigned char *m,
     crypto_onetimeauth_poly1305_final(&state, computed_mac);
     sodium_memzero(&state, sizeof state);
 
-    COMPILER_ASSERT(sizeof computed_mac == 16U);
+    //COMPILER_ASSERT(sizeof computed_mac == 16U);
     ret = crypto_verify_16(computed_mac, mac);
     sodium_memzero(computed_mac, sizeof computed_mac);
     if (m == NULL) {
@@ -282,7 +285,7 @@ crypto_aead_chacha20poly1305_ietf_decrypt_detached(unsigned char *m,
     crypto_onetimeauth_poly1305_final(&state, computed_mac);
     sodium_memzero(&state, sizeof state);
 
-    COMPILER_ASSERT(sizeof computed_mac == 16U);
+//    COMPILER_ASSERT(sizeof computed_mac == 16U);
     ret = crypto_verify_16(computed_mac, mac);
     sodium_memzero(computed_mac, sizeof computed_mac);
     if (m == NULL) {

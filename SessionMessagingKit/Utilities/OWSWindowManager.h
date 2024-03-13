@@ -10,15 +10,15 @@ extern NSString *const IsScreenBlockActiveDidChangeNotification;
 
 // This VC can become first responder
 // when presented to ensure that the input accessory is updated.
-@interface OWSWindowRootViewController : UIViewController
+//@interface OWSWindowRootViewController : UIViewController
 
-@end
+//@end
 
 #pragma mark -
 
 const CGFloat OWSWindowManagerCallBannerHeight(void);
 
-extern const UIWindowLevel UIWindowLevel_Background;
+//extern const UIWindowLevel UIWindowLevel_Background;
 
 @interface OWSWindowManager : NSObject
 
@@ -27,12 +27,12 @@ extern const UIWindowLevel UIWindowLevel_Background;
 
 + (instancetype)sharedManager;
 
-- (void)setupWithRootWindow:(UIWindow *)rootWindow screenBlockingWindow:(UIWindow *)screenBlockingWindow;
-
-@property (nonatomic, readonly) UIWindow *rootWindow;
+//- (void)setupWithRootWindow:(UIWindow *)rootWindow screenBlockingWindow:(UIWindow *)screenBlockingWindow;
+//
+//@property (nonatomic, readonly) UIWindow *rootWindow;
 @property (nonatomic) BOOL isScreenBlockActive;
 
-- (BOOL)isAppWindow:(UIWindow *)window;
+//- (BOOL)isAppWindow:(UIWindow *)window;
 
 @end
 

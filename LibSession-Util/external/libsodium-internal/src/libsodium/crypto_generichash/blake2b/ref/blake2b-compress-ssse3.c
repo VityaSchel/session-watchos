@@ -3,7 +3,7 @@
 #include <string.h>
 
 #include "blake2.h"
-#include "private/common.h"
+//#include "private/common.h"
 
 #if defined(HAVE_EMMINTRIN_H) && defined(HAVE_TMMINTRIN_H)
 
