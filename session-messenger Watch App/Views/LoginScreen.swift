@@ -29,13 +29,19 @@ struct LoginScreen: View {
       Text("Scan to continue")
     }
     .onAppear {
-      let id = UUID().uuidString
-      if let secretKeyData = generateAESKey() {
-        let secretKey = secretKeyData.base64EncodedString()
-        qrCodeImage = generateQRCode(from: "https://watchos-session-login.sessionbots.directory/" + id + "#" + secretKey)
-        isLoading = false
-      } else {
-        print("Error: Secret key data could not be generated.")
+      DispatchQueue.global(qos: .background).async {
+        let id = UUID().uuidString
+        if let secretKeyData = generateAESKey() {
+          let secretKey = secretKeyData.base64EncodedString()
+          let generatedQRCode = generateQRCode(from: "https://watchos-session-login.sessionbots.directory/" + id + "#" + secretKey)
+          
+          DispatchQueue.main.async {
+            self.qrCodeImage = generatedQRCode
+            self.isLoading = false
+          }
+        } else {
+          print("Error: Secret key data could not be generated.")
+        }
       }
     }
   }
