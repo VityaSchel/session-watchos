@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A71202852BA0CDDC0059213C /* session-messenger Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A71202842BA0CDDC0059213C /* session-messenger Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A712028A2BA0CDDC0059213C /* SessionMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71202892BA0CDDC0059213C /* SessionMessengerApp.swift */; };
 		A712028C2BA0CDDC0059213C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A712028B2BA0CDDC0059213C /* ContentView.swift */; };
 		A712028E2BA0CDDD0059213C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A712028D2BA0CDDD0059213C /* Assets.xcassets */; };
@@ -21,33 +20,8 @@
 		A77B48392BA0F1760059C1DC /* QRCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77B48382BA0F1760059C1DC /* QRCodes.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A71202862BA0CDDC0059213C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A71202782BA0CDDC0059213C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A71202832BA0CDDC0059213C;
-			remoteInfo = "session-messenger Watch App";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		A71202972BA0CDDD0059213C /* Embed Watch Content */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
-			files = (
-				A71202852BA0CDDC0059213C /* session-messenger Watch App.app in Embed Watch Content */,
-			);
-			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		A712027E2BA0CDDC0059213C /* session-messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "session-messenger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A71202842BA0CDDC0059213C /* session-messenger Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "session-messenger Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A71202842BA0CDDC0059213C /* Session.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Session.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71202892BA0CDDC0059213C /* SessionMessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionMessengerApp.swift; sourceTree = "<group>"; };
 		A712028B2BA0CDDC0059213C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A712028D2BA0CDDD0059213C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,7 +49,7 @@
 		A71202772BA0CDDC0059213C = {
 			isa = PBXGroup;
 			children = (
-				A71202882BA0CDDC0059213C /* session-messenger Watch App */,
+				A71202882BA0CDDC0059213C /* session-messenger */,
 				A712027F2BA0CDDC0059213C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,13 +57,12 @@
 		A712027F2BA0CDDC0059213C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A712027E2BA0CDDC0059213C /* session-messenger.app */,
-				A71202842BA0CDDC0059213C /* session-messenger Watch App.app */,
+				A71202842BA0CDDC0059213C /* Session.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A71202882BA0CDDC0059213C /* session-messenger Watch App */ = {
+		A71202882BA0CDDC0059213C /* session-messenger */ = {
 			isa = PBXGroup;
 			children = (
 				A77B48352BA0E45A0059C1DC /* Icons */,
@@ -100,7 +73,7 @@
 				A712028D2BA0CDDD0059213C /* Assets.xcassets */,
 				A712028F2BA0CDDD0059213C /* Preview Content */,
 			);
-			path = "session-messenger Watch App";
+			path = "session-messenger";
 			sourceTree = "<group>";
 		};
 		A712028F2BA0CDDD0059213C /* Preview Content */ = {
@@ -141,26 +114,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A712027D2BA0CDDC0059213C /* session-messenger */ = {
+		A71202832BA0CDDC0059213C /* session-messenger-watchos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A71202982BA0CDDD0059213C /* Build configuration list for PBXNativeTarget "session-messenger" */;
-			buildPhases = (
-				A712027C2BA0CDDC0059213C /* Resources */,
-				A71202972BA0CDDD0059213C /* Embed Watch Content */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A71202872BA0CDDC0059213C /* PBXTargetDependency */,
-			);
-			name = "session-messenger";
-			productName = "session-messenger";
-			productReference = A712027E2BA0CDDC0059213C /* session-messenger.app */;
-			productType = "com.apple.product-type.application.watchapp2-container";
-		};
-		A71202832BA0CDDC0059213C /* session-messenger Watch App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A71202942BA0CDDD0059213C /* Build configuration list for PBXNativeTarget "session-messenger Watch App" */;
+			buildConfigurationList = A71202942BA0CDDD0059213C /* Build configuration list for PBXNativeTarget "session-messenger-watchos" */;
 			buildPhases = (
 				A71202802BA0CDDC0059213C /* Sources */,
 				A71202812BA0CDDC0059213C /* Frameworks */,
@@ -170,12 +126,12 @@
 			);
 			dependencies = (
 			);
-			name = "session-messenger Watch App";
+			name = "session-messenger-watchos";
 			packageProductDependencies = (
 				A712E8252BA0F4330037EFE2 /* EFQRCode */,
 			);
 			productName = "session-messenger Watch App";
-			productReference = A71202842BA0CDDC0059213C /* session-messenger Watch App.app */;
+			productReference = A71202842BA0CDDC0059213C /* Session.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -188,15 +144,12 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					A712027D2BA0CDDC0059213C = {
-						CreatedOnToolsVersion = 15.0.1;
-					};
 					A71202832BA0CDDC0059213C = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
 			};
-			buildConfigurationList = A712027B2BA0CDDC0059213C /* Build configuration list for PBXProject "session-messenger" */;
+			buildConfigurationList = A712027B2BA0CDDC0059213C /* Build configuration list for PBXProject "session-messenger-watchos" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -212,20 +165,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A712027D2BA0CDDC0059213C /* session-messenger */,
-				A71202832BA0CDDC0059213C /* session-messenger Watch App */,
+				A71202832BA0CDDC0059213C /* session-messenger-watchos */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A712027C2BA0CDDC0059213C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A71202822BA0CDDC0059213C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,14 +199,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A71202872BA0CDDC0059213C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A71202832BA0CDDC0059213C /* session-messenger Watch App */;
-			targetProxy = A71202862BA0CDDC0059213C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A71202922BA0CDDD0059213C /* Debug */ = {
@@ -388,7 +325,6 @@
 				DEVELOPMENT_ASSET_PATHS = "\"session-messenger Watch App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "session-messenger";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -397,7 +333,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.hloth.session-messenger.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Session;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -417,7 +353,6 @@
 				DEVELOPMENT_ASSET_PATHS = "\"session-messenger Watch App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "session-messenger";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -426,7 +361,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.hloth.session-messenger.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Session;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -437,41 +372,10 @@
 			};
 			name = Release;
 		};
-		A71202992BA0CDDD0059213C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_KEY_CFBundleDisplayName = "session-messenger";
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.hloth.session-messenger";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		A712029A2BA0CDDD0059213C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_KEY_CFBundleDisplayName = "session-messenger";
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.hloth.session-messenger";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A712027B2BA0CDDC0059213C /* Build configuration list for PBXProject "session-messenger" */ = {
+		A712027B2BA0CDDC0059213C /* Build configuration list for PBXProject "session-messenger-watchos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A71202922BA0CDDD0059213C /* Debug */,
@@ -480,20 +384,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A71202942BA0CDDD0059213C /* Build configuration list for PBXNativeTarget "session-messenger Watch App" */ = {
+		A71202942BA0CDDD0059213C /* Build configuration list for PBXNativeTarget "session-messenger-watchos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A71202952BA0CDDD0059213C /* Debug */,
 				A71202962BA0CDDD0059213C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A71202982BA0CDDD0059213C /* Build configuration list for PBXNativeTarget "session-messenger" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A71202992BA0CDDD0059213C /* Debug */,
-				A712029A2BA0CDDD0059213C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
