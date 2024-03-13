@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import SessionUtilitiesKit
 
 struct SignupScreen: View {
   @State private var displayName = ""
@@ -16,7 +17,10 @@ struct SignupScreen: View {
         TextField("Your profile name", text: $displayName)
         
         Button(action: {
-            print("Button with icon was tapped")
+          let seed = Randomness.generateRandomBytes(numberBytes: 16)
+          (ed25519KeyPair, x25519KeyPair) = try! Identity.generate(from: seed)
+          print(ed25519KeyPair)
+          print(x25519KeyPair)
         }) {
             HStack {
               Text("Sign up")
