@@ -7,31 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A712028A2BA0CDDC0059213C /* SessionMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71202892BA0CDDC0059213C /* SessionMessengerApp.swift */; };
-		A712028C2BA0CDDC0059213C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A712028B2BA0CDDC0059213C /* ContentView.swift */; };
-		A712028E2BA0CDDD0059213C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A712028D2BA0CDDD0059213C /* Assets.xcassets */; };
-		A71202912BA0CDDD0059213C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71202902BA0CDDD0059213C /* Preview Assets.xcassets */; };
 		A712E8262BA0F4330037EFE2 /* EFQRCode in Frameworks */ = {isa = PBXBuildFile; productRef = A712E8252BA0F4330037EFE2 /* EFQRCode */; };
-		A712E8282BA0F5520037EFE2 /* AESSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A712E8272BA0F5520037EFE2 /* AESSecurity.swift */; };
-		A77B482F2BA0DD620059C1DC /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77B482E2BA0DD620059C1DC /* LoginScreen.swift */; };
-		A77B48312BA0DDB40059C1DC /* SignupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77B48302BA0DDB40059C1DC /* SignupScreen.swift */; };
-		A77B48342BA0E1270059C1DC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77B48332BA0E1270059C1DC /* Color.swift */; };
-		A77B48372BA0E4660059C1DC /* SessionLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77B48362BA0E4660059C1DC /* SessionLogo.swift */; };
-		A77B48392BA0F1760059C1DC /* QRCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77B48382BA0F1760059C1DC /* QRCodes.swift */; };
+		A71DAE932BA1BEE100BC763A /* SessionMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DAE852BA1BEE100BC763A /* SessionMessengerApp.swift */; };
+		A71DAE942BA1BEE100BC763A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71DAE862BA1BEE100BC763A /* Assets.xcassets */; };
+		A71DAE952BA1BEE100BC763A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71DAE882BA1BEE100BC763A /* Preview Assets.xcassets */; };
+		A71DAE962BA1BEE100BC763A /* AESSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DAE8A2BA1BEE100BC763A /* AESSecurity.swift */; };
+		A71DAE972BA1BEE100BC763A /* QRCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DAE8B2BA1BEE100BC763A /* QRCodes.swift */; };
+		A71DAE982BA1BEE100BC763A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DAE8C2BA1BEE100BC763A /* Color.swift */; };
+		A71DAE992BA1BEE100BC763A /* SessionLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DAE8E2BA1BEE100BC763A /* SessionLogo.swift */; };
+		A71DAE9A2BA1BEE100BC763A /* SignupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DAE902BA1BEE100BC763A /* SignupScreen.swift */; };
+		A71DAE9B2BA1BEE100BC763A /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DAE912BA1BEE100BC763A /* LoginScreen.swift */; };
+		A71DAE9C2BA1BEE100BC763A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DAE922BA1BEE100BC763A /* ContentView.swift */; };
+		A74B2F212BA1BAF70048F0E2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A74B2F202BA1BAF70048F0E2 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A71202842BA0CDDC0059213C /* Session.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Session.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A71202892BA0CDDC0059213C /* SessionMessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionMessengerApp.swift; sourceTree = "<group>"; };
-		A712028B2BA0CDDC0059213C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A712028D2BA0CDDD0059213C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A71202902BA0CDDD0059213C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A712E8272BA0F5520037EFE2 /* AESSecurity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AESSecurity.swift; sourceTree = "<group>"; };
-		A77B482E2BA0DD620059C1DC /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
-		A77B48302BA0DDB40059C1DC /* SignupScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupScreen.swift; sourceTree = "<group>"; };
-		A77B48332BA0E1270059C1DC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		A77B48362BA0E4660059C1DC /* SessionLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionLogo.swift; sourceTree = "<group>"; };
-		A77B48382BA0F1760059C1DC /* QRCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodes.swift; sourceTree = "<group>"; };
+		A71DAE852BA1BEE100BC763A /* SessionMessengerApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionMessengerApp.swift; sourceTree = "<group>"; };
+		A71DAE862BA1BEE100BC763A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A71DAE882BA1BEE100BC763A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A71DAE8A2BA1BEE100BC763A /* AESSecurity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AESSecurity.swift; sourceTree = "<group>"; };
+		A71DAE8B2BA1BEE100BC763A /* QRCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodes.swift; sourceTree = "<group>"; };
+		A71DAE8C2BA1BEE100BC763A /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A71DAE8E2BA1BEE100BC763A /* SessionLogo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionLogo.swift; sourceTree = "<group>"; };
+		A71DAE902BA1BEE100BC763A /* SignupScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupScreen.swift; sourceTree = "<group>"; };
+		A71DAE912BA1BEE100BC763A /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		A71DAE922BA1BEE100BC763A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A74B2F202BA1BAF70048F0E2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +51,8 @@
 		A71202772BA0CDDC0059213C = {
 			isa = PBXGroup;
 			children = (
-				A71202882BA0CDDC0059213C /* session-messenger */,
+				A71DAE842BA1BEE100BC763A /* session-ui */,
+				A74B2F202BA1BAF70048F0E2 /* Podfile */,
 				A712027F2BA0CDDC0059213C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,61 +65,61 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A71202882BA0CDDC0059213C /* session-messenger */ = {
+		A71DAE842BA1BEE100BC763A /* session-ui */ = {
 			isa = PBXGroup;
 			children = (
-				A77B48352BA0E45A0059C1DC /* Icons */,
-				A71202892BA0CDDC0059213C /* SessionMessengerApp.swift */,
-				A712028B2BA0CDDC0059213C /* ContentView.swift */,
-				A77B48322BA0E11D0059C1DC /* SwiftExtensions */,
-				A77B482D2BA0DD370059C1DC /* Views */,
-				A712028D2BA0CDDD0059213C /* Assets.xcassets */,
-				A712028F2BA0CDDD0059213C /* Preview Content */,
+				A71DAE852BA1BEE100BC763A /* SessionMessengerApp.swift */,
+				A71DAE862BA1BEE100BC763A /* Assets.xcassets */,
+				A71DAE872BA1BEE100BC763A /* Preview Content */,
+				A71DAE892BA1BEE100BC763A /* SwiftExtensions */,
+				A71DAE8D2BA1BEE100BC763A /* Icons */,
+				A71DAE8F2BA1BEE100BC763A /* Views */,
+				A71DAE922BA1BEE100BC763A /* ContentView.swift */,
 			);
-			path = "session-messenger";
+			path = "session-ui";
 			sourceTree = "<group>";
 		};
-		A712028F2BA0CDDD0059213C /* Preview Content */ = {
+		A71DAE872BA1BEE100BC763A /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				A71202902BA0CDDD0059213C /* Preview Assets.xcassets */,
+				A71DAE882BA1BEE100BC763A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A77B482D2BA0DD370059C1DC /* Views */ = {
+		A71DAE892BA1BEE100BC763A /* SwiftExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				A77B482E2BA0DD620059C1DC /* LoginScreen.swift */,
-				A77B48302BA0DDB40059C1DC /* SignupScreen.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		A77B48322BA0E11D0059C1DC /* SwiftExtensions */ = {
-			isa = PBXGroup;
-			children = (
-				A77B48332BA0E1270059C1DC /* Color.swift */,
-				A77B48382BA0F1760059C1DC /* QRCodes.swift */,
-				A712E8272BA0F5520037EFE2 /* AESSecurity.swift */,
+				A71DAE8A2BA1BEE100BC763A /* AESSecurity.swift */,
+				A71DAE8B2BA1BEE100BC763A /* QRCodes.swift */,
+				A71DAE8C2BA1BEE100BC763A /* Color.swift */,
 			);
 			path = SwiftExtensions;
 			sourceTree = "<group>";
 		};
-		A77B48352BA0E45A0059C1DC /* Icons */ = {
+		A71DAE8D2BA1BEE100BC763A /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				A77B48362BA0E4660059C1DC /* SessionLogo.swift */,
+				A71DAE8E2BA1BEE100BC763A /* SessionLogo.swift */,
 			);
 			path = Icons;
+			sourceTree = "<group>";
+		};
+		A71DAE8F2BA1BEE100BC763A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A71DAE902BA1BEE100BC763A /* SignupScreen.swift */,
+				A71DAE912BA1BEE100BC763A /* LoginScreen.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A71202832BA0CDDC0059213C /* session-messenger-watchos */ = {
+		A71202832BA0CDDC0059213C /* session-ui */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A71202942BA0CDDD0059213C /* Build configuration list for PBXNativeTarget "session-messenger-watchos" */;
+			buildConfigurationList = A71202942BA0CDDD0059213C /* Build configuration list for PBXNativeTarget "session-ui" */;
 			buildPhases = (
 				A71202802BA0CDDC0059213C /* Sources */,
 				A71202812BA0CDDC0059213C /* Frameworks */,
@@ -126,7 +129,7 @@
 			);
 			dependencies = (
 			);
-			name = "session-messenger-watchos";
+			name = "session-ui";
 			packageProductDependencies = (
 				A712E8252BA0F4330037EFE2 /* EFQRCode */,
 			);
@@ -165,7 +168,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A71202832BA0CDDC0059213C /* session-messenger-watchos */,
+				A71202832BA0CDDC0059213C /* session-ui */,
 			);
 		};
 /* End PBXProject section */
@@ -175,8 +178,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A71202912BA0CDDD0059213C /* Preview Assets.xcassets in Resources */,
-				A712028E2BA0CDDD0059213C /* Assets.xcassets in Resources */,
+				A74B2F212BA1BAF70048F0E2 /* Podfile in Resources */,
+				A71DAE952BA1BEE100BC763A /* Preview Assets.xcassets in Resources */,
+				A71DAE942BA1BEE100BC763A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,14 +191,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A712028C2BA0CDDC0059213C /* ContentView.swift in Sources */,
-				A712028A2BA0CDDC0059213C /* SessionMessengerApp.swift in Sources */,
-				A77B482F2BA0DD620059C1DC /* LoginScreen.swift in Sources */,
-				A77B48342BA0E1270059C1DC /* Color.swift in Sources */,
-				A77B48312BA0DDB40059C1DC /* SignupScreen.swift in Sources */,
-				A712E8282BA0F5520037EFE2 /* AESSecurity.swift in Sources */,
-				A77B48392BA0F1760059C1DC /* QRCodes.swift in Sources */,
-				A77B48372BA0E4660059C1DC /* SessionLogo.swift in Sources */,
+				A71DAE9C2BA1BEE100BC763A /* ContentView.swift in Sources */,
+				A71DAE992BA1BEE100BC763A /* SessionLogo.swift in Sources */,
+				A71DAE982BA1BEE100BC763A /* Color.swift in Sources */,
+				A71DAE962BA1BEE100BC763A /* AESSecurity.swift in Sources */,
+				A71DAE9A2BA1BEE100BC763A /* SignupScreen.swift in Sources */,
+				A71DAE972BA1BEE100BC763A /* QRCodes.swift in Sources */,
+				A71DAE932BA1BEE100BC763A /* SessionMessengerApp.swift in Sources */,
+				A71DAE9B2BA1BEE100BC763A /* LoginScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +326,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"session-messenger Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"session-ui/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -350,7 +354,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"session-messenger Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"session-ui/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -384,7 +388,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A71202942BA0CDDD0059213C /* Build configuration list for PBXNativeTarget "session-messenger-watchos" */ = {
+		A71202942BA0CDDD0059213C /* Build configuration list for PBXNativeTarget "session-ui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A71202952BA0CDDD0059213C /* Debug */,
