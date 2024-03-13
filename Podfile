@@ -16,7 +16,7 @@ abstract_target 'GlobalDependencies' do
 
   # FIXME: We want to remove this once it's been long enough since the migration to GRDB
   pod 'YapDatabase/SQLCipher', :git => 'https://github.com/oxen-io/session-ios-yap-database.git', branch: 'signal-release'
-  pod 'WebRTC-lib'
+#  pod 'WebRTC-lib'
   
 #  target 'Session' do
 #    pod 'Reachability'
@@ -32,18 +32,22 @@ abstract_target 'GlobalDependencies' do
 ##      pod 'Nimble'
 ##    end
 #  end
+
+  pod 'OpenSSL-Universal', :path => './OpenSSL/'
   
   # Dependencies to be included only in all extensions/frameworks
   abstract_target 'FrameworkAndExtensionDependencies' do
-    pod 'Curve25519Kit', git: 'https://github.com/oxen-io/session-ios-curve-25519-kit.git', branch: 'session-version'
-    pod 'SignalCoreKit', git: 'https://github.com/oxen-io/session-ios-core-kit', branch: 'session-version'
+#    pod 'Curve25519Kit', git: 'https://github.com/oxen-io/session-ios-curve-25519-kit.git', branch: 'session-version'
+    pod 'Curve25519Kit', :path => './session-ios-curve-25519-kit/'
+#    pod 'SignalCoreKit', git: 'https://github.com/oxen-io/session-ios-core-kit', branch: 'session-version'
+    pod 'SignalCoreKit', :path => './session-ios-core-kit/'
     
 #    target 'SessionNotificationServiceExtension'
     target 'SessionSnodeKit'
     
     # Dependencies that are shared across a number of extensions/frameworks but not all
     abstract_target 'ExtendedDependencies' do
-      pod 'PureLayout', '~> 3.1.8'
+#      pod 'PureLayout', '~> 3.1.8'
       
 #      target 'SessionShareExtension' do
 #        pod 'NVActivityIndicatorView'
@@ -51,16 +55,18 @@ abstract_target 'GlobalDependencies' do
 #      end
       
       target 'SignalUtilitiesKit' do
-        pod 'NVActivityIndicatorView'
-        pod 'Reachability'
+#        pod 'NVActivityIndicatorView'
+#        pod 'Reachability'
+        pod 'Reachability', :path => './Reachability'
         pod 'SAMKeychain'
         pod 'SwiftProtobuf', '~> 1.5.0'
-        pod 'YYImage/libwebp', git: 'https://github.com/signalapp/YYImage'
+#        pod 'YYImage/libwebp', git: 'https://github.com/signalapp/YYImage'
         pod 'DifferenceKit'
       end
       
       target 'SessionMessagingKit' do
-        pod 'Reachability'
+#        pod 'Reachability'
+        pod 'Reachability', :path => './Reachability'
         pod 'SAMKeychain'
         pod 'SwiftProtobuf', '~> 1.5.0'
         pod 'DifferenceKit'
@@ -78,7 +84,7 @@ abstract_target 'GlobalDependencies' do
       
       target 'SessionUtilitiesKit' do
         pod 'SAMKeychain'
-        pod 'YYImage/libwebp', git: 'https://github.com/signalapp/YYImage'
+#        pod 'YYImage/libwebp', git: 'https://github.com/signalapp/YYImage'
         pod 'DifferenceKit'
         
 #        target 'SessionUtilitiesKitTests' do
