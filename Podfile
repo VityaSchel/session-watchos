@@ -18,27 +18,27 @@ abstract_target 'GlobalDependencies' do
   pod 'YapDatabase/SQLCipher', :git => 'https://github.com/oxen-io/session-ios-yap-database.git', branch: 'signal-release'
   pod 'WebRTC-lib'
   
-  target 'session-messenger-watchos' do
-    pod 'Reachability'
-    pod 'PureLayout', '~> 3.1.8'
-    pod 'NVActivityIndicatorView'
-    pod 'YYImage/libwebp', git: 'https://github.com/signalapp/YYImage'
-    pod 'DifferenceKit'
-    
-#    target 'SessionTests' do
-#      inherit! :complete
-#      
-#      pod 'Quick'
-#      pod 'Nimble'
-#    end
-  end
+#  target 'Session' do
+#    pod 'Reachability'
+#    pod 'PureLayout', '~> 3.1.8'
+#    pod 'NVActivityIndicatorView'
+#    pod 'YYImage/libwebp', git: 'https://github.com/signalapp/YYImage'
+#    pod 'DifferenceKit'
+#    
+##    target 'SessionTests' do
+##      inherit! :complete
+##      
+##      pod 'Quick'
+##      pod 'Nimble'
+##    end
+#  end
   
   # Dependencies to be included only in all extensions/frameworks
   abstract_target 'FrameworkAndExtensionDependencies' do
     pod 'Curve25519Kit', git: 'https://github.com/oxen-io/session-ios-curve-25519-kit.git', branch: 'session-version'
     pod 'SignalCoreKit', git: 'https://github.com/oxen-io/session-ios-core-kit', branch: 'session-version'
     
-    target 'SessionNotificationServiceExtension'
+#    target 'SessionNotificationServiceExtension'
     target 'SessionSnodeKit'
     
     # Dependencies that are shared across a number of extensions/frameworks but not all
@@ -65,15 +65,15 @@ abstract_target 'GlobalDependencies' do
         pod 'SwiftProtobuf', '~> 1.5.0'
         pod 'DifferenceKit'
         
-        target 'SessionMessagingKitTests' do
-          inherit! :complete
-          
-          pod 'Quick'
-          pod 'Nimble'
-          
-          # Need to include this for the tests because otherwise it won't actually build
-          pod 'YYImage/libwebp', git: 'https://github.com/signalapp/YYImage'
-        end
+#        target 'SessionMessagingKitTests' do
+#          inherit! :complete
+#          
+#          pod 'Quick'
+#          pod 'Nimble'
+#          
+#          # Need to include this for the tests because otherwise it won't actually build
+#          pod 'YYImage/libwebp', git: 'https://github.com/signalapp/YYImage'
+#        end
       end
       
       target 'SessionUtilitiesKit' do
@@ -81,12 +81,12 @@ abstract_target 'GlobalDependencies' do
         pod 'YYImage/libwebp', git: 'https://github.com/signalapp/YYImage'
         pod 'DifferenceKit'
         
-        target 'SessionUtilitiesKitTests' do
-          inherit! :complete
-          
-          pod 'Quick'
-          pod 'Nimble'
-        end
+#        target 'SessionUtilitiesKitTests' do
+#          inherit! :complete
+#          
+#          pod 'Quick'
+#          pod 'Nimble'
+#        end
       end
     end
   end
