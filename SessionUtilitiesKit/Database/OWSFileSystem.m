@@ -1,7 +1,7 @@
 // stringlint:disable
 
 #import "OWSFileSystem.h"
-#import <SessionUtilitiesKit/SessionUtilitiesKit.h>
+#import <SessionUtilitiesKit/SessionUtilitiesKit-Swift.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -72,7 +72,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSString *)appSharedDataDirectoryPath
 {
-    return [OWSCurrentAppContext appSharedDataDirectoryPath];
+    return [OWSCurrentAppContext appDocumentDirectoryPath];//appSharedDataDirectoryPath];
 }
 
 + (NSString *)cachesDirectoryPath

@@ -471,7 +471,7 @@ open class Storage {
         updates: @escaping (Database) throws -> T
     ) -> (Database) throws -> T {
         return { db in
-            let start: CFTimeInterval = CACurrentMediaTime()
+            let start: CFTimeInterval = Date().timeIntervalSince1970
             let actionName: String = (info.actions.contains(.write) ? "write" : "read")
             let fileName: String = (info.file.components(separatedBy: "/").last.map { " \($0):\(info.line)" } ?? "")
             let timeout: Timer? = {
@@ -491,7 +491,7 @@ open class Storage {
             // prioritise performance issues
             defer {
                 if timeout != nil && timeout?.isValid == false {
-                    let end: CFTimeInterval = CACurrentMediaTime()
+                    let end: CFTimeInterval = Date().timeIntervalSince1970
                     
                     DispatchQueue.global(qos: .default).async {
                         SNLog("[Storage\(fileName)] Slow \(actionName) completed after \(end - start, format: ".2", omitZeroDecimal: true)s")

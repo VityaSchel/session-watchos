@@ -71,7 +71,6 @@
 		A71DC1D02BA2009800BC763A /* Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1062BA1E61600BC763A /* Features.swift */; };
 		A71DC1D12BA2009800BC763A /* String+Trimming.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1072BA1E61600BC763A /* String+Trimming.swift */; };
 		A71DC1D22BA2009800BC763A /* Collection+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1082BA1E61600BC763A /* Collection+Utilities.swift */; };
-		A71DC1D32BA2009800BC763A /* UIView+OWS.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1092BA1E61600BC763A /* UIView+OWS.m */; };
 		A71DC1D42BA2009800BC763A /* UICollectionView+ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC10B2BA1E61600BC763A /* UICollectionView+ReusableView.swift */; };
 		A71DC1D52BA2009800BC763A /* NSTimer+Proxying.h in Sources */ = {isa = PBXBuildFile; fileRef = A71DC10C2BA1E61600BC763A /* NSTimer+Proxying.h */; };
 		A71DC1D62BA2009800BC763A /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC10D2BA1E61600BC763A /* AppContext.swift */; };
@@ -81,7 +80,6 @@
 		A71DC1DA2BA2009800BC763A /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1132BA1E61600BC763A /* Weak.swift */; };
 		A71DC1DB2BA2009800BC763A /* JobRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0E32BA1E61600BC763A /* JobRunner.swift */; };
 		A71DC1DC2BA2009800BC763A /* JobRunnerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0E42BA1E61600BC763A /* JobRunnerError.swift */; };
-		A71DC1DD2BA2009800BC763A /* UIImage+OWS.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1182BA1E61600BC763A /* UIImage+OWS.m */; };
 		A71DC1DE2BA2009800BC763A /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1192BA1E61600BC763A /* DataSource.m */; };
 		A71DC1DF2BA2009800BC763A /* OWSMediaUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC11A2BA1E61600BC763A /* OWSMediaUtils.swift */; };
 		A71DC1E22BA2009800BC763A /* ImageFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC11D2BA1E61600BC763A /* ImageFormat.swift */; };
@@ -137,6 +135,15 @@
 		A7A9AB912BA360400067B9A3 /* NSUserDefaults+OWS.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC0F82BA1E61600BC763A /* NSUserDefaults+OWS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7A9AB922BA360680067B9A3 /* OWSFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DC09A2BA1E61500BC763A /* OWSFileSystem.m */; };
 		A7A9AB932BA366970067B9A3 /* SSKKeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0AB2BA1E61500BC763A /* SSKKeychainStorage.swift */; };
+		A7A9AB942BA367960067B9A3 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0AF2BA1E61500BC763A /* Setting.swift */; };
+		A7A9AB952BA3679B0067B9A3 /* Database+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0BA2BA1E61500BC763A /* Database+Utilities.swift */; };
+		A7A9AB962BA367C90067B9A3 /* TypedTableDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0A92BA1E61500BC763A /* TypedTableDefinition.swift */; };
+		A7A9AB972BA367D70067B9A3 /* TypedTableAlteration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0A32BA1E61500BC763A /* TypedTableAlteration.swift */; };
+		A7A9AB982BA367D70067B9A3 /* TypedTableAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0AA2BA1E61500BC763A /* TypedTableAlias.swift */; };
+		A7A9AB992BA368A00067B9A3 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1232BA1E61600BC763A /* Configuration.swift */; };
+		A7A9AB9A2BA36AED0067B9A3 /* DatabaseMigrator+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0B62BA1E61500BC763A /* DatabaseMigrator+Utilities.swift */; };
+		A7A9AB9B2BA36C760067B9A3 /* MIMETypeUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC11B2BA1E61600BC763A /* MIMETypeUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7A9AB9C2BA3714A0067B9A3 /* QueryInterfaceRequest+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0B82BA1E61500BC763A /* QueryInterfaceRequest+Utilities.swift */; };
 		B9491AD6CA9A15C54D009009 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70392ED048CAA41A72C0A735 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -2079,6 +2086,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A71DC20D2BA2125500BC763A /* OWSFileSystem.h in Headers */,
+				A7A9AB9B2BA36C760067B9A3 /* MIMETypeUtil.h in Headers */,
 				A71DC20A2BA2013100BC763A /* SessionUtilitiesKit.h in Headers */,
 				A7A9AB912BA360400067B9A3 /* NSUserDefaults+OWS.h in Headers */,
 				A7A9AB902BA360350067B9A3 /* OWSMath.h in Headers */,
@@ -2485,6 +2493,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A9AB9C2BA3714A0067B9A3 /* QueryInterfaceRequest+Utilities.swift in Sources */,
+				A7A9AB9A2BA36AED0067B9A3 /* DatabaseMigrator+Utilities.swift in Sources */,
+				A7A9AB992BA368A00067B9A3 /* Configuration.swift in Sources */,
+				A7A9AB972BA367D70067B9A3 /* TypedTableAlteration.swift in Sources */,
+				A7A9AB982BA367D70067B9A3 /* TypedTableAlias.swift in Sources */,
+				A7A9AB962BA367C90067B9A3 /* TypedTableDefinition.swift in Sources */,
+				A7A9AB952BA3679B0067B9A3 /* Database+Utilities.swift in Sources */,
+				A7A9AB942BA367960067B9A3 /* Setting.swift in Sources */,
 				A7A9AB932BA366970067B9A3 /* SSKKeychainStorage.swift in Sources */,
 				A7A9AB922BA360680067B9A3 /* OWSFileSystem.m in Sources */,
 				A7A9AB8F2BA35F650067B9A3 /* OWSBackgroundTask.m in Sources */,
@@ -2521,7 +2537,6 @@
 				A71DC1D02BA2009800BC763A /* Features.swift in Sources */,
 				A71DC1D12BA2009800BC763A /* String+Trimming.swift in Sources */,
 				A71DC1D22BA2009800BC763A /* Collection+Utilities.swift in Sources */,
-				A71DC1D32BA2009800BC763A /* UIView+OWS.m in Sources */,
 				A71DC1D42BA2009800BC763A /* UICollectionView+ReusableView.swift in Sources */,
 				A71DC1D52BA2009800BC763A /* NSTimer+Proxying.h in Sources */,
 				A71DC1D62BA2009800BC763A /* AppContext.swift in Sources */,
@@ -2531,7 +2546,6 @@
 				A71DC1DA2BA2009800BC763A /* Weak.swift in Sources */,
 				A71DC1DB2BA2009800BC763A /* JobRunner.swift in Sources */,
 				A71DC1DC2BA2009800BC763A /* JobRunnerError.swift in Sources */,
-				A71DC1DD2BA2009800BC763A /* UIImage+OWS.m in Sources */,
 				A71DC1DE2BA2009800BC763A /* DataSource.m in Sources */,
 				A71DC1DF2BA2009800BC763A /* OWSMediaUtils.swift in Sources */,
 				A71DC1E22BA2009800BC763A /* ImageFormat.swift in Sources */,

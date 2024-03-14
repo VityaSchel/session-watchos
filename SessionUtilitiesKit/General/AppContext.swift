@@ -107,12 +107,15 @@ public extension AppContext {
     
     // FIXME: This will be reworked to be part of dependencies in the Groups Rebuild branch
     @objc static var appSharedDataDirectoryPath: String {
-        let targetPath: String? = FileManager.default
-            .containerURL(forSecurityApplicationGroupIdentifier: UserDefaults.applicationGroup)?
-            .path
-        owsAssertDebug(targetPath != nil)
-        
-        return (targetPath ?? "")
+//        let targetPath: String? = FileManager.default
+//            .containerURL(forSecurityApplicationGroupIdentifier: UserDefaults.applicationGroup)?
+//            .path
+//        owsAssertDebug(targetPath != nil)
+//        
+//        return (targetPath ?? "")
+          let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+          let documentsDirectory = paths.first ?? ""
+          return documentsDirectory
     }
     
     @objc static func beginBackgroundTask(expirationHandler: @escaping () -> ()) -> /*UIBackgroundTaskIdentifier*/Any {
