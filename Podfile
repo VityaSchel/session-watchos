@@ -41,6 +41,7 @@ abstract_target 'GlobalDependencies' do
     pod 'Curve25519Kit', :path => './session-ios-curve-25519-kit/'
 #    pod 'SignalCoreKit', git: 'https://github.com/oxen-io/session-ios-core-kit', branch: 'session-version'
     pod 'SignalCoreKit', :path => './session-ios-core-kit/'
+    pod 'OpenSSL-Universal', :path => './OpenSSL/'
     
 #    target 'SessionNotificationServiceExtension'
     target 'SessionSnodeKit'

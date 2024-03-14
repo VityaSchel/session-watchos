@@ -118,7 +118,6 @@
 		A71DC2052BA2009800BC763A /* CExceptionHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0DD2BA1E61600BC763A /* CExceptionHelper.mm */; };
 		A71DC2062BA2009800BC763A /* JSONEncoder+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0DE2BA1E61600BC763A /* JSONEncoder+Utilities.swift */; };
 		A71DC2082BA2009800BC763A /* DispatchQueue+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0E02BA1E61600BC763A /* DispatchQueue+Utilities.swift */; };
-		A71DC2092BA2009800BC763A /* OWSBackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0E12BA1E61600BC763A /* OWSBackgroundTask.m */; };
 		A71DC20A2BA2013100BC763A /* SessionUtilitiesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC1152BA1E61600BC763A /* SessionUtilitiesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A71DC20B2BA2117400BC763A /* Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0A72BA1E61500BC763A /* Migration.swift */; };
 		A71DC20C2BA2118700BC763A /* TargetMigrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0A62BA1E61500BC763A /* TargetMigrations.swift */; };
@@ -131,6 +130,13 @@
 		A71DC2132BA220B300BC763A /* ColumnExpressible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0A52BA1E61500BC763A /* ColumnExpressible.swift */; };
 		A71DC2142BA221C200BC763A /* OWSBackgroundTask.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC0D62BA1E61600BC763A /* OWSBackgroundTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A74B2F212BA1BAF70048F0E2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A74B2F202BA1BAF70048F0E2 /* Podfile */; };
+		A7A9AB872BA35D300067B9A3 /* OpenSSL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A9AB862BA35D300067B9A3 /* OpenSSL.xcframework */; };
+		A7A9AB8A2BA35E6F0067B9A3 /* SessionUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC04F2BA1C28B00BC763A /* SessionUtilitiesKit.framework */; };
+		A7A9AB8F2BA35F650067B9A3 /* OWSBackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0E12BA1E61600BC763A /* OWSBackgroundTask.m */; };
+		A7A9AB902BA360350067B9A3 /* OWSMath.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC0EB2BA1E61600BC763A /* OWSMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7A9AB912BA360400067B9A3 /* NSUserDefaults+OWS.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC0F82BA1E61600BC763A /* NSUserDefaults+OWS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7A9AB922BA360680067B9A3 /* OWSFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DC09A2BA1E61500BC763A /* OWSFileSystem.m */; };
+		A7A9AB932BA366970067B9A3 /* SSKKeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0AB2BA1E61500BC763A /* SSKKeychainStorage.swift */; };
 		B9491AD6CA9A15C54D009009 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70392ED048CAA41A72C0A735 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -164,6 +170,13 @@
 			remoteInfo = SessionUtil;
 		};
 		A71DC08D2BA1E4AE00BC763A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A71202782BA0CDDC0059213C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A71DC04E2BA1C28B00BC763A;
+			remoteInfo = SessionUtilitiesKit;
+		};
+		A7A9AB8C2BA35E6F0067B9A3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A71202782BA0CDDC0059213C /* Project object */;
 			proxyType = 1;
@@ -699,6 +712,7 @@
 		A71DC1222BA1E61600BC763A /* NSData+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Image.m"; sourceTree = "<group>"; };
 		A71DC1232BA1E61600BC763A /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		A74B2F202BA1BAF70048F0E2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A7A9AB862BA35D300067B9A3 /* OpenSSL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OpenSSL.xcframework; path = OpenSSL/Frameworks/OpenSSL.xcframework; sourceTree = "<group>"; };
 		BDA034FECA92085758634377 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig"; sourceTree = "<group>"; };
 		CBAAAFDD249E8821FBBB47E6 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.release.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.release.xcconfig"; sourceTree = "<group>"; };
 		CF9B99CC49F368CAFDCCFFAF /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -711,6 +725,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A9AB8A2BA35E6F0067B9A3 /* SessionUtilitiesKit.framework in Frameworks */,
+				A7A9AB872BA35D300067B9A3 /* OpenSSL.xcframework in Frameworks */,
 				A712E8262BA0F4330037EFE2 /* EFQRCode in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2007,6 +2023,7 @@
 		D2F81947173E02B36E7BF099 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A7A9AB862BA35D300067B9A3 /* OpenSSL.xcframework */,
 				E99F27E34C831AD827D29588 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionMessagingKit.framework */,
 				CF9B99CC49F368CAFDCCFFAF /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit.framework */,
 				70392ED048CAA41A72C0A735 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework */,
@@ -2063,6 +2080,8 @@
 			files = (
 				A71DC20D2BA2125500BC763A /* OWSFileSystem.h in Headers */,
 				A71DC20A2BA2013100BC763A /* SessionUtilitiesKit.h in Headers */,
+				A7A9AB912BA360400067B9A3 /* NSUserDefaults+OWS.h in Headers */,
+				A7A9AB902BA360350067B9A3 /* OWSMath.h in Headers */,
 				A71DC2142BA221C200BC763A /* OWSBackgroundTask.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2082,6 +2101,7 @@
 			);
 			dependencies = (
 				A71DC08E2BA1E4AE00BC763A /* PBXTargetDependency */,
+				A7A9AB8D2BA35E6F0067B9A3 /* PBXTargetDependency */,
 			);
 			name = "session-ui";
 			packageProductDependencies = (
@@ -2465,7 +2485,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A71DC2092BA2009800BC763A /* OWSBackgroundTask.m in Sources */,
+				A7A9AB932BA366970067B9A3 /* SSKKeychainStorage.swift in Sources */,
+				A7A9AB922BA360680067B9A3 /* OWSFileSystem.m in Sources */,
+				A7A9AB8F2BA35F650067B9A3 /* OWSBackgroundTask.m in Sources */,
 				A71DC2132BA220B300BC763A /* ColumnExpressible.swift in Sources */,
 				A71DC2122BA2206900BC763A /* JobDependencies.swift in Sources */,
 				A71DC2112BA21FFE00BC763A /* Job.swift in Sources */,
@@ -2597,6 +2619,11 @@
 			isa = PBXTargetDependency;
 			target = A71DC04E2BA1C28B00BC763A /* SessionUtilitiesKit */;
 			targetProxy = A71DC08D2BA1E4AE00BC763A /* PBXContainerItemProxy */;
+		};
+		A7A9AB8D2BA35E6F0067B9A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A71DC04E2BA1C28B00BC763A /* SessionUtilitiesKit */;
+			targetProxy = A7A9AB8C2BA35E6F0067B9A3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
