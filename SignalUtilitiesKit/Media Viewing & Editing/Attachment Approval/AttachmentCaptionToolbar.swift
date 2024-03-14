@@ -1,8 +1,6 @@
 //  Copyright (c) 2019 Open Whisper Systems. All rights reserved.
 
 import Foundation
-import UIKit
-import SessionUIKit
 import SignalCoreKit
 import SessionUtilitiesKit
 
@@ -33,7 +31,7 @@ class AttachmentCaptionToolbar: UIView, UITextViewDelegate {
     var maxTextViewHeight: CGFloat {
         // About ~4 lines in portrait and ~3 lines in landscape.
         // Otherwise we risk obscuring too much of the content.
-        return UIDevice.current.orientation.isPortrait ? 160 : 100
+        return 160//UIDevice.current.orientation.isPortrait ? 160 : 100
     }
     var textViewHeightConstraint: NSLayoutConstraint!
     var textViewHeight: CGFloat
@@ -66,7 +64,7 @@ class AttachmentCaptionToolbar: UIView, UITextViewDelegate {
         // when resigning first responder (verified by auditing with `layoutMarginsDidChange`).
         // The effect of this is that if we were to assign these margins to self.layoutMargins, they'd be blown away if the
         // user dismisses the keyboard, giving the input accessory view a wonky layout.
-        contentView.layoutMargins = UIEdgeInsets(top: kToolbarMargin, left: kToolbarMargin, bottom: kToolbarMargin, right: kToolbarMargin)
+//        contentView.layoutMargins = UIEdgeInsets(top: kToolbarMargin, left: kToolbarMargin, bottom: kToolbarMargin, right: kToolbarMargin)
         contentView.axis = .vertical
         addSubview(contentView)
         contentView.autoPinEdgesToSuperviewEdges()
@@ -110,7 +108,7 @@ class AttachmentCaptionToolbar: UIView, UITextViewDelegate {
         let textView = buildTextView()
 
         textView.returnKeyType = .done
-        textView.scrollIndicatorInsets = UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 3)
+//        textView.scrollIndicatorInsets = UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 3)
 
         return textView
     }()
@@ -131,7 +129,7 @@ class AttachmentCaptionToolbar: UIView, UITextViewDelegate {
 
         textView.font = UIFont.preferredFont(forTextStyle: .body)
         textView.themeTextColor = .textPrimary
-        textView.textContainerInset = UIEdgeInsets(top: 7, left: 7, bottom: 7, right: 7)
+//        textView.textContainerInset = UIEdgeInsets(top: 7, left: 7, bottom: 7, right: 7)
         
         ThemeManager.onThemeChange(observer: textView) { [weak textView] theme, _ in
             textView?.keyboardAppearance = theme.keyboardAppearance

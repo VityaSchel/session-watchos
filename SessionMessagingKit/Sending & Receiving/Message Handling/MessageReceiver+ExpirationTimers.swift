@@ -2,7 +2,6 @@
 
 import Foundation
 import GRDB
-import SessionUIKit
 import SessionUtilitiesKit
 
 extension MessageReceiver {

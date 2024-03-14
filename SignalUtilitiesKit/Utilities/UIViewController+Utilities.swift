@@ -1,4 +1,3 @@
-import SessionUIKit
 
 @objc(LKViewControllerUtilities)
 public final class ViewControllerUtilities: NSObject {

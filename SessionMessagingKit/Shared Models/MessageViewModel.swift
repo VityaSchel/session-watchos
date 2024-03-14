@@ -5,7 +5,6 @@
 import Foundation
 import GRDB
 import DifferenceKit
-import SessionUIKit
 import SessionUtilitiesKit
 
 fileprivate typealias ViewModel = MessageViewModel

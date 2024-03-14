@@ -3,7 +3,6 @@
 import Foundation
 import GRDB
 import Sodium
-import SessionUIKit
 import SessionUtilitiesKit
 import SessionSnodeKit
 

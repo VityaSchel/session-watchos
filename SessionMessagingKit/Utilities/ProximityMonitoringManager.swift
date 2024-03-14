@@ -24,8 +24,8 @@ public class OWSProximityMonitoringManagerImpl: NSObject, OWSProximityMonitoring
 
     // MARK: 
 
-    var device: UIDevice {
-        return UIDevice.current
+    var device: Any {
+        return nil//UIDevice.current
     }
 
     // MARK: 
@@ -54,7 +54,7 @@ public class OWSProximityMonitoringManagerImpl: NSObject, OWSProximityMonitoring
 
     @objc
     public func setup() {
-        NotificationCenter.default.addObserver(self, selector: #selector(proximitySensorStateDidChange(notification:)), name: UIDevice.proximityStateDidChangeNotification, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(proximitySensorStateDidChange(notification:)), name: UIDevice.proximityStateDidChangeNotification, object: nil)
     }
 
     @objc

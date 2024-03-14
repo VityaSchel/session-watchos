@@ -1,7 +1,7 @@
 // stringlint:disable
 
 #import "OWSFileSystem.h"
-#import <SessionUtilitiesKit/SessionUtilitiesKit-Swift.h>
+#import <SessionUtilitiesKit/SessionUtilitiesKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

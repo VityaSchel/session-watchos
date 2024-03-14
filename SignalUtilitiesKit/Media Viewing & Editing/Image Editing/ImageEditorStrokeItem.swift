@@ -2,7 +2,6 @@
 //  Copyright (c) 2019 Open Whisper Systems. All rights reserved.
 //
 
-import UIKit
 import SessionUtilitiesKit
 
 @objc
@@ -10,7 +9,7 @@ public class ImageEditorStrokeItem: ImageEditorItem {
     // Until we need to serialize these items,
     // just use UIColor.
     @objc
-    public let color: UIColor
+    public let color: Any
 
     public typealias StrokeSample = ImageEditorSample
 
@@ -23,7 +22,7 @@ public class ImageEditorStrokeItem: ImageEditorItem {
     public let unitStrokeWidth: CGFloat
 
     @objc
-    public init(color: UIColor,
+    public init(color: Any,
                 unitSamples: [StrokeSample],
                 unitStrokeWidth: CGFloat) {
         self.color = color
@@ -35,7 +34,7 @@ public class ImageEditorStrokeItem: ImageEditorItem {
 
     @objc
     public init(itemId: String,
-                color: UIColor,
+                color: Any,
                 unitSamples: [StrokeSample],
                 unitStrokeWidth: CGFloat) {
         self.color = color

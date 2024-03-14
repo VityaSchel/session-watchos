@@ -37,6 +37,99 @@
 		A71DC1AB2BA1E99C00BC763A /* KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0E62BA1E61600BC763A /* KeyPair.swift */; };
 		A71DC1AC2BA1E9BA00BC763A /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0F62BA1E61600BC763A /* General.swift */; };
 		A71DC1AD2BA1EB0A00BC763A /* Sodium+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1002BA1E61600BC763A /* Sodium+Utilities.swift */; };
+		A71DC1AE2BA1FE9600BC763A /* Caches.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1112BA1E61600BC763A /* Caches.swift */; };
+		A71DC1AF2BA1FEB100BC763A /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0FB2BA1E61600BC763A /* Dependencies.swift */; };
+		A71DC1B02BA1FEC600BC763A /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC10A2BA1E61600BC763A /* Atomic.swift */; };
+		A71DC1B12BA1FF6000BC763A /* SessionId.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0FF2BA1E61600BC763A /* SessionId.swift */; };
+		A71DC1B22BA1FF8300BC763A /* Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0E82BA1E61600BC763A /* Hex.swift */; };
+		A71DC1B32BA2001700BC763A /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0992BA1E61500BC763A /* Storage.swift */; };
+		A71DC1B42BA2001B00BC763A /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0D72BA1E61600BC763A /* Crypto.swift */; };
+		A71DC1B52BA2002400BC763A /* SNUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1102BA1E61600BC763A /* SNUserDefaults.swift */; };
+		A71DC1B62BA2002800BC763A /* NetworkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0BE2BA1E61500BC763A /* NetworkType.swift */; };
+		A71DC1B72BA2009800BC763A /* CryptoKit+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0E72BA1E61600BC763A /* CryptoKit+Utilities.swift */; };
+		A71DC1B82BA2009800BC763A /* Mnemonic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0E92BA1E61600BC763A /* Mnemonic.swift */; };
+		A71DC1BA2BA2009800BC763A /* BuildConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0EC2BA1E61600BC763A /* BuildConfiguration.swift */; };
+		A71DC1BB2BA2009800BC763A /* String+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0ED2BA1E61600BC763A /* String+Utilities.swift */; };
+		A71DC1BC2BA2009800BC763A /* UnicodeScalar+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0EE2BA1E61600BC763A /* UnicodeScalar+Utilities.swift */; };
+		A71DC1BD2BA2009800BC763A /* TimeInterval+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0EF2BA1E61600BC763A /* TimeInterval+Utilities.swift */; };
+		A71DC1BE2BA2009800BC763A /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0F02BA1E61600BC763A /* Logging.swift */; };
+		A71DC1BF2BA2009800BC763A /* UIDevice+featureSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0F12BA1E61600BC763A /* UIDevice+featureSupport.swift */; };
+		A71DC1C02BA2009800BC763A /* String+SSK.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0F22BA1E61600BC763A /* String+SSK.swift */; };
+		A71DC1C12BA2009800BC763A /* Dictionary+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0F32BA1E61600BC763A /* Dictionary+Utilities.swift */; };
+		A71DC1C22BA2009800BC763A /* Data+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0F42BA1E61600BC763A /* Data+Utilities.swift */; };
+		A71DC1C42BA2009800BC763A /* Notifications+Lifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0F72BA1E61600BC763A /* Notifications+Lifecycle.swift */; };
+		A71DC1C62BA2009800BC763A /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0F92BA1E61600BC763A /* Singleton.swift */; };
+		A71DC1C72BA2009800BC763A /* NSRegularExpression+SSK.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0FA2BA1E61600BC763A /* NSRegularExpression+SSK.swift */; };
+		A71DC1C82BA2009800BC763A /* NSTimer+Proxying.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0FC2BA1E61600BC763A /* NSTimer+Proxying.m */; };
+		A71DC1C92BA2009800BC763A /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0FD2BA1E61600BC763A /* LRUCache.swift */; };
+		A71DC1CA2BA2009800BC763A /* Array+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0FE2BA1E61600BC763A /* Array+Utilities.swift */; };
+		A71DC1CB2BA2009800BC763A /* Timer+MainThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1012BA1E61600BC763A /* Timer+MainThread.swift */; };
+		A71DC1CC2BA2009800BC763A /* UITableView+ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1022BA1E61600BC763A /* UITableView+ReusableView.swift */; };
+		A71DC1CD2BA2009800BC763A /* CallRingTonePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1032BA1E61600BC763A /* CallRingTonePlayer.swift */; };
+		A71DC1CE2BA2009800BC763A /* Set+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1042BA1E61600BC763A /* Set+Utilities.swift */; };
+		A71DC1CF2BA2009800BC763A /* NSUserDefaults+OWS.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1052BA1E61600BC763A /* NSUserDefaults+OWS.m */; };
+		A71DC1D02BA2009800BC763A /* Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1062BA1E61600BC763A /* Features.swift */; };
+		A71DC1D12BA2009800BC763A /* String+Trimming.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1072BA1E61600BC763A /* String+Trimming.swift */; };
+		A71DC1D22BA2009800BC763A /* Collection+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1082BA1E61600BC763A /* Collection+Utilities.swift */; };
+		A71DC1D32BA2009800BC763A /* UIView+OWS.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1092BA1E61600BC763A /* UIView+OWS.m */; };
+		A71DC1D42BA2009800BC763A /* UICollectionView+ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC10B2BA1E61600BC763A /* UICollectionView+ReusableView.swift */; };
+		A71DC1D52BA2009800BC763A /* NSTimer+Proxying.h in Sources */ = {isa = PBXBuildFile; fileRef = A71DC10C2BA1E61600BC763A /* NSTimer+Proxying.h */; };
+		A71DC1D62BA2009800BC763A /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC10D2BA1E61600BC763A /* AppContext.swift */; };
+		A71DC1D72BA2009800BC763A /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC10E2BA1E61600BC763A /* ReusableView.swift */; };
+		A71DC1D82BA2009800BC763A /* TimestampUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC10F2BA1E61600BC763A /* TimestampUtils.swift */; };
+		A71DC1D92BA2009800BC763A /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1122BA1E61600BC763A /* UIEdgeInsets.swift */; };
+		A71DC1DA2BA2009800BC763A /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1132BA1E61600BC763A /* Weak.swift */; };
+		A71DC1DB2BA2009800BC763A /* JobRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0E32BA1E61600BC763A /* JobRunner.swift */; };
+		A71DC1DC2BA2009800BC763A /* JobRunnerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0E42BA1E61600BC763A /* JobRunnerError.swift */; };
+		A71DC1DD2BA2009800BC763A /* UIImage+OWS.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1182BA1E61600BC763A /* UIImage+OWS.m */; };
+		A71DC1DE2BA2009800BC763A /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1192BA1E61600BC763A /* DataSource.m */; };
+		A71DC1DF2BA2009800BC763A /* OWSMediaUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC11A2BA1E61600BC763A /* OWSMediaUtils.swift */; };
+		A71DC1E22BA2009800BC763A /* ImageFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC11D2BA1E61600BC763A /* ImageFormat.swift */; };
+		A71DC1E52BA2009800BC763A /* MIMETypeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1202BA1E61600BC763A /* MIMETypeUtil.m */; };
+		A71DC1E62BA2009800BC763A /* Data+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1212BA1E61600BC763A /* Data+Image.swift */; };
+		A71DC1E72BA2009800BC763A /* NSData+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DC1222BA1E61600BC763A /* NSData+Image.m */; };
+		A71DC1E92BA2009800BC763A /* HTTPQueryParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0BF2BA1E61500BC763A /* HTTPQueryParam.swift */; };
+		A71DC1EA2BA2009800BC763A /* ProxiedContentDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0C02BA1E61500BC763A /* ProxiedContentDownloader.swift */; };
+		A71DC1EB2BA2009800BC763A /* IPv4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0C12BA1E61500BC763A /* IPv4.swift */; };
+		A71DC1EC2BA2009800BC763A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0C22BA1E61500BC763A /* JSON.swift */; };
+		A71DC1ED2BA2009800BC763A /* ResponseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0C32BA1E61500BC763A /* ResponseInfo.swift */; };
+		A71DC1EE2BA2009800BC763A /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0C42BA1E61500BC763A /* HTTPMethod.swift */; };
+		A71DC1EF2BA2009800BC763A /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0C52BA1E61500BC763A /* HTTPHeader.swift */; };
+		A71DC1F02BA2009800BC763A /* BatchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0C62BA1E61500BC763A /* BatchResponse.swift */; };
+		A71DC1F12BA2009800BC763A /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0C72BA1E61500BC763A /* HTTP.swift */; };
+		A71DC1F22BA2009800BC763A /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0C82BA1E61500BC763A /* HTTPError.swift */; };
+		A71DC1F32BA2009800BC763A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0C92BA1E61600BC763A /* Request.swift */; };
+		A71DC1F42BA2009800BC763A /* URLResponse+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0CA2BA1E61600BC763A /* URLResponse+Utilities.swift */; };
+		A71DC1F52BA2009800BC763A /* RequestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0CB2BA1E61600BC763A /* RequestInfo.swift */; };
+		A71DC1F62BA2009800BC763A /* ContentProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0CC2BA1E61600BC763A /* ContentProxy.swift */; };
+		A71DC1F72BA2009800BC763A /* Codable+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0CE2BA1E61600BC763A /* Codable+Utilities.swift */; };
+		A71DC1F82BA2009800BC763A /* Result+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0CF2BA1E61600BC763A /* Result+Utilities.swift */; };
+		A71DC1F92BA2009800BC763A /* Bencode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0D02BA1E61600BC763A /* Bencode.swift */; };
+		A71DC1FA2BA2009800BC763A /* Notification+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0D12BA1E61600BC763A /* Notification+Utilities.swift */; };
+		A71DC1FB2BA2009800BC763A /* UIApplicationState+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0D22BA1E61600BC763A /* UIApplicationState+Utilities.swift */; };
+		A71DC1FC2BA2009800BC763A /* DifferenceKit+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0D32BA1E61600BC763A /* DifferenceKit+Utilities.swift */; };
+		A71DC1FD2BA2009800BC763A /* Threading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0D42BA1E61600BC763A /* Threading.swift */; };
+		A71DC1FE2BA2009800BC763A /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0D52BA1E61600BC763A /* Version.swift */; };
+		A71DC2002BA2009800BC763A /* Randomness.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0D82BA1E61600BC763A /* Randomness.swift */; };
+		A71DC2012BA2009800BC763A /* NSAttributedString+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0D92BA1E61600BC763A /* NSAttributedString+Utilities.swift */; };
+		A71DC2022BA2009800BC763A /* Failable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0DA2BA1E61600BC763A /* Failable.swift */; };
+		A71DC2032BA2009800BC763A /* ARC4RandomNumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0DB2BA1E61600BC763A /* ARC4RandomNumberGenerator.swift */; };
+		A71DC2042BA2009800BC763A /* Optional+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0DC2BA1E61600BC763A /* Optional+Utilities.swift */; };
+		A71DC2052BA2009800BC763A /* CExceptionHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0DD2BA1E61600BC763A /* CExceptionHelper.mm */; };
+		A71DC2062BA2009800BC763A /* JSONEncoder+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0DE2BA1E61600BC763A /* JSONEncoder+Utilities.swift */; };
+		A71DC2082BA2009800BC763A /* DispatchQueue+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0E02BA1E61600BC763A /* DispatchQueue+Utilities.swift */; };
+		A71DC2092BA2009800BC763A /* OWSBackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0E12BA1E61600BC763A /* OWSBackgroundTask.m */; };
+		A71DC20A2BA2013100BC763A /* SessionUtilitiesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC1152BA1E61600BC763A /* SessionUtilitiesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A71DC20B2BA2117400BC763A /* Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0A72BA1E61500BC763A /* Migration.swift */; };
+		A71DC20C2BA2118700BC763A /* TargetMigrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0A62BA1E61500BC763A /* TargetMigrations.swift */; };
+		A71DC20D2BA2125500BC763A /* OWSFileSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC0BB2BA1E61500BC763A /* OWSFileSystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A71DC20E2BA21A9100BC763A /* StorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0BC2BA1E61500BC763A /* StorageError.swift */; };
+		A71DC20F2BA21AB700BC763A /* SUKLegacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC09C2BA1E61500BC763A /* SUKLegacy.swift */; };
+		A71DC2102BA21AD900BC763A /* MigrationRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0A82BA1E61500BC763A /* MigrationRequirement.swift */; };
+		A71DC2112BA21FFE00BC763A /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0B02BA1E61500BC763A /* Job.swift */; };
+		A71DC2122BA2206900BC763A /* JobDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0AD2BA1E61500BC763A /* JobDependencies.swift */; };
+		A71DC2132BA220B300BC763A /* ColumnExpressible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0A52BA1E61500BC763A /* ColumnExpressible.swift */; };
+		A71DC2142BA221C200BC763A /* OWSBackgroundTask.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC0D62BA1E61600BC763A /* OWSBackgroundTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A74B2F212BA1BAF70048F0E2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A74B2F202BA1BAF70048F0E2 /* Podfile */; };
 		B9491AD6CA9A15C54D009009 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70392ED048CAA41A72C0A735 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework */; };
 /* End PBXBuildFile section */
@@ -1968,6 +2061,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A71DC20D2BA2125500BC763A /* OWSFileSystem.h in Headers */,
+				A71DC20A2BA2013100BC763A /* SessionUtilitiesKit.h in Headers */,
+				A71DC2142BA221C200BC763A /* OWSBackgroundTask.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2369,6 +2465,96 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A71DC2092BA2009800BC763A /* OWSBackgroundTask.m in Sources */,
+				A71DC2132BA220B300BC763A /* ColumnExpressible.swift in Sources */,
+				A71DC2122BA2206900BC763A /* JobDependencies.swift in Sources */,
+				A71DC2112BA21FFE00BC763A /* Job.swift in Sources */,
+				A71DC2102BA21AD900BC763A /* MigrationRequirement.swift in Sources */,
+				A71DC20F2BA21AB700BC763A /* SUKLegacy.swift in Sources */,
+				A71DC20E2BA21A9100BC763A /* StorageError.swift in Sources */,
+				A71DC20C2BA2118700BC763A /* TargetMigrations.swift in Sources */,
+				A71DC20B2BA2117400BC763A /* Migration.swift in Sources */,
+				A71DC1B72BA2009800BC763A /* CryptoKit+Utilities.swift in Sources */,
+				A71DC1B82BA2009800BC763A /* Mnemonic.swift in Sources */,
+				A71DC1BA2BA2009800BC763A /* BuildConfiguration.swift in Sources */,
+				A71DC1BB2BA2009800BC763A /* String+Utilities.swift in Sources */,
+				A71DC1BC2BA2009800BC763A /* UnicodeScalar+Utilities.swift in Sources */,
+				A71DC1BD2BA2009800BC763A /* TimeInterval+Utilities.swift in Sources */,
+				A71DC1BE2BA2009800BC763A /* Logging.swift in Sources */,
+				A71DC1BF2BA2009800BC763A /* UIDevice+featureSupport.swift in Sources */,
+				A71DC1C02BA2009800BC763A /* String+SSK.swift in Sources */,
+				A71DC1C12BA2009800BC763A /* Dictionary+Utilities.swift in Sources */,
+				A71DC1C22BA2009800BC763A /* Data+Utilities.swift in Sources */,
+				A71DC1C42BA2009800BC763A /* Notifications+Lifecycle.swift in Sources */,
+				A71DC1C62BA2009800BC763A /* Singleton.swift in Sources */,
+				A71DC1C72BA2009800BC763A /* NSRegularExpression+SSK.swift in Sources */,
+				A71DC1C82BA2009800BC763A /* NSTimer+Proxying.m in Sources */,
+				A71DC1C92BA2009800BC763A /* LRUCache.swift in Sources */,
+				A71DC1CA2BA2009800BC763A /* Array+Utilities.swift in Sources */,
+				A71DC1CB2BA2009800BC763A /* Timer+MainThread.swift in Sources */,
+				A71DC1CC2BA2009800BC763A /* UITableView+ReusableView.swift in Sources */,
+				A71DC1CD2BA2009800BC763A /* CallRingTonePlayer.swift in Sources */,
+				A71DC1CE2BA2009800BC763A /* Set+Utilities.swift in Sources */,
+				A71DC1CF2BA2009800BC763A /* NSUserDefaults+OWS.m in Sources */,
+				A71DC1D02BA2009800BC763A /* Features.swift in Sources */,
+				A71DC1D12BA2009800BC763A /* String+Trimming.swift in Sources */,
+				A71DC1D22BA2009800BC763A /* Collection+Utilities.swift in Sources */,
+				A71DC1D32BA2009800BC763A /* UIView+OWS.m in Sources */,
+				A71DC1D42BA2009800BC763A /* UICollectionView+ReusableView.swift in Sources */,
+				A71DC1D52BA2009800BC763A /* NSTimer+Proxying.h in Sources */,
+				A71DC1D62BA2009800BC763A /* AppContext.swift in Sources */,
+				A71DC1D72BA2009800BC763A /* ReusableView.swift in Sources */,
+				A71DC1D82BA2009800BC763A /* TimestampUtils.swift in Sources */,
+				A71DC1D92BA2009800BC763A /* UIEdgeInsets.swift in Sources */,
+				A71DC1DA2BA2009800BC763A /* Weak.swift in Sources */,
+				A71DC1DB2BA2009800BC763A /* JobRunner.swift in Sources */,
+				A71DC1DC2BA2009800BC763A /* JobRunnerError.swift in Sources */,
+				A71DC1DD2BA2009800BC763A /* UIImage+OWS.m in Sources */,
+				A71DC1DE2BA2009800BC763A /* DataSource.m in Sources */,
+				A71DC1DF2BA2009800BC763A /* OWSMediaUtils.swift in Sources */,
+				A71DC1E22BA2009800BC763A /* ImageFormat.swift in Sources */,
+				A71DC1E52BA2009800BC763A /* MIMETypeUtil.m in Sources */,
+				A71DC1E62BA2009800BC763A /* Data+Image.swift in Sources */,
+				A71DC1E72BA2009800BC763A /* NSData+Image.m in Sources */,
+				A71DC1E92BA2009800BC763A /* HTTPQueryParam.swift in Sources */,
+				A71DC1EA2BA2009800BC763A /* ProxiedContentDownloader.swift in Sources */,
+				A71DC1EB2BA2009800BC763A /* IPv4.swift in Sources */,
+				A71DC1EC2BA2009800BC763A /* JSON.swift in Sources */,
+				A71DC1ED2BA2009800BC763A /* ResponseInfo.swift in Sources */,
+				A71DC1EE2BA2009800BC763A /* HTTPMethod.swift in Sources */,
+				A71DC1EF2BA2009800BC763A /* HTTPHeader.swift in Sources */,
+				A71DC1F02BA2009800BC763A /* BatchResponse.swift in Sources */,
+				A71DC1F12BA2009800BC763A /* HTTP.swift in Sources */,
+				A71DC1F22BA2009800BC763A /* HTTPError.swift in Sources */,
+				A71DC1F32BA2009800BC763A /* Request.swift in Sources */,
+				A71DC1F42BA2009800BC763A /* URLResponse+Utilities.swift in Sources */,
+				A71DC1F52BA2009800BC763A /* RequestInfo.swift in Sources */,
+				A71DC1F62BA2009800BC763A /* ContentProxy.swift in Sources */,
+				A71DC1F72BA2009800BC763A /* Codable+Utilities.swift in Sources */,
+				A71DC1F82BA2009800BC763A /* Result+Utilities.swift in Sources */,
+				A71DC1F92BA2009800BC763A /* Bencode.swift in Sources */,
+				A71DC1FA2BA2009800BC763A /* Notification+Utilities.swift in Sources */,
+				A71DC1FB2BA2009800BC763A /* UIApplicationState+Utilities.swift in Sources */,
+				A71DC1FC2BA2009800BC763A /* DifferenceKit+Utilities.swift in Sources */,
+				A71DC1FD2BA2009800BC763A /* Threading.swift in Sources */,
+				A71DC1FE2BA2009800BC763A /* Version.swift in Sources */,
+				A71DC2002BA2009800BC763A /* Randomness.swift in Sources */,
+				A71DC2012BA2009800BC763A /* NSAttributedString+Utilities.swift in Sources */,
+				A71DC2022BA2009800BC763A /* Failable.swift in Sources */,
+				A71DC2032BA2009800BC763A /* ARC4RandomNumberGenerator.swift in Sources */,
+				A71DC2042BA2009800BC763A /* Optional+Utilities.swift in Sources */,
+				A71DC2052BA2009800BC763A /* CExceptionHelper.mm in Sources */,
+				A71DC2062BA2009800BC763A /* JSONEncoder+Utilities.swift in Sources */,
+				A71DC2082BA2009800BC763A /* DispatchQueue+Utilities.swift in Sources */,
+				A71DC1B62BA2002800BC763A /* NetworkType.swift in Sources */,
+				A71DC1B52BA2002400BC763A /* SNUserDefaults.swift in Sources */,
+				A71DC1B42BA2001B00BC763A /* Crypto.swift in Sources */,
+				A71DC1B32BA2001700BC763A /* Storage.swift in Sources */,
+				A71DC1B22BA1FF8300BC763A /* Hex.swift in Sources */,
+				A71DC1B12BA1FF6000BC763A /* SessionId.swift in Sources */,
+				A71DC1B02BA1FEC600BC763A /* Atomic.swift in Sources */,
+				A71DC1AF2BA1FEB100BC763A /* Dependencies.swift in Sources */,
+				A71DC1AE2BA1FE9600BC763A /* Caches.swift in Sources */,
 				A71DC1AD2BA1EB0A00BC763A /* Sodium+Utilities.swift in Sources */,
 				A71DC1AC2BA1E9BA00BC763A /* General.swift in Sources */,
 				A71DC1AB2BA1E99C00BC763A /* KeyPair.swift in Sources */,

@@ -1,10 +1,8 @@
 //  Copyright (c) 2019 Open Whisper Systems. All rights reserved.
 
 import Foundation
-import UIKit
 import PureLayout
 import SignalCoreKit
-import SessionUIKit
 import SessionUtilitiesKit
 
 // Coincides with Android's max text message length
@@ -39,7 +37,7 @@ class AttachmentTextToolbar: UIView, UITextViewDelegate {
     var maxTextViewHeight: CGFloat {
         // About ~4 lines in portrait and ~3 lines in landscape.
         // Otherwise we risk obscuring too much of the content.
-        return UIDevice.current.orientation.isPortrait ? 160 : 100
+        return 160//UIDevice.current.orientation.isPortrait ? 160 : 100
     }
     var textViewHeightConstraint: NSLayoutConstraint!
     var textViewHeight: CGFloat
@@ -73,7 +71,7 @@ class AttachmentTextToolbar: UIView, UITextViewDelegate {
         sendButton.isAccessibilityElement = true
 
         // Increase hit area of send button
-        sendButton.contentEdgeInsets = UIEdgeInsets(top: 6, left: 8, bottom: 6, right: 8)
+//        sendButton.contentEdgeInsets = UIEdgeInsets(top: 6, left: 8, bottom: 6, right: 8)
 
         let contentView = UIView()
         contentView.addSubview(sendButton)
@@ -88,12 +86,12 @@ class AttachmentTextToolbar: UIView, UITextViewDelegate {
         // when resigning first responder (verified by auditing with `layoutMarginsDidChange`).
         // The effect of this is that if we were to assign these margins to self.layoutMargins, they'd be blown away if the
         // user dismisses the keyboard, giving the input accessory view a wonky layout.
-        contentView.layoutMargins = UIEdgeInsets(
-            top: AttachmentTextToolbar.kToolbarMargin,
-            left: AttachmentTextToolbar.kToolbarMargin,
-            bottom: AttachmentTextToolbar.kToolbarMargin,
-            right: AttachmentTextToolbar.kToolbarMargin
-        )
+//        contentView.layoutMargins = UIEdgeInsets(
+//            top: AttachmentTextToolbar.kToolbarMargin,
+//            left: AttachmentTextToolbar.kToolbarMargin,
+//            bottom: AttachmentTextToolbar.kToolbarMargin,
+//            right: AttachmentTextToolbar.kToolbarMargin
+//        )
 
         self.textViewHeightConstraint = textView.autoSetDimension(.height, toSize: AttachmentTextToolbar.kMinTextViewHeight)
 
@@ -161,7 +159,7 @@ class AttachmentTextToolbar: UIView, UITextViewDelegate {
         let textView = buildTextView()
 
         textView.returnKeyType = .done
-        textView.scrollIndicatorInsets = UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 3)
+//        textView.scrollIndicatorInsets = UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 3)
 
         return textView
     }()
@@ -201,7 +199,7 @@ class AttachmentTextToolbar: UIView, UITextViewDelegate {
         textView.font = .systemFont(ofSize: Values.mediumFontSize)
         textView.themeTextColor = .textPrimary
         textView.showsVerticalScrollIndicator = false
-        textView.textContainerInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+//        textView.textContainerInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         
         ThemeManager.onThemeChange(observer: textView) { [weak textView] theme, _ in
             textView?.keyboardAppearance = theme.keyboardAppearance

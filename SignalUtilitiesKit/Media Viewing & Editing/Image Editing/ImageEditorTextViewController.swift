@@ -1,7 +1,5 @@
 //  Copyright (c) 2019 Open Whisper Systems. All rights reserved.
 
-import UIKit
-import SessionUIKit
 import SignalCoreKit
 
 @objc
@@ -64,7 +62,7 @@ private class VAlignTextView: UITextView {
         case .bottom:
             topOffset = max(0, self.height() - contentSize.height)
         }
-        contentInset = UIEdgeInsets(top: topOffset, leading: 0, bottom: 0, trailing: 0)
+//        contentInset = UIEdgeInsets(top: topOffset, leading: 0, bottom: 0, trailing: 0)
     }
 
     open override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
@@ -185,7 +183,7 @@ public class ImageEditorTextViewController: OWSViewController, VAlignTextViewDel
 
         configureTextView()
 
-        self.view.layoutMargins = UIEdgeInsets(top: 16, left: 20, bottom: 16, right: 20)
+//        self.view.layoutMargins = UIEdgeInsets(top: 16, left: 20, bottom: 16, right: 20)
 
         self.view.addSubview(textView)
         textView.autoPinTopToSuperviewMargin()

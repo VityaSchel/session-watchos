@@ -2,8 +2,8 @@
 #import "MIMETypeUtil.h"
 #import "OWSFileSystem.h"
 #import <AVFoundation/AVFoundation.h>
-#import <libwebp/decode.h>
-#import <libwebp/demux.h>
+//#import <libwebp/decode.h>
+//#import <libwebp/demux.h>
 #import <SessionUtilitiesKit/SessionUtilitiesKit-Swift.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -108,15 +108,16 @@ typedef struct {
 
 - (BOOL)ows_hasValidImageDimensionsWithIsAnimated:(BOOL)isAnimated
 {
-    CGImageSourceRef imageSource = CGImageSourceCreateWithData((__bridge CFDataRef)self, NULL);
-    if (imageSource == NULL) {
-        return NO;
-    }
-    
-    ImageDimensionInfo dimensionInfo = [NSData ows_imageDimensionWithImageSource:imageSource isAnimated:isAnimated];
-    CFRelease(imageSource);
-    
-    return [NSData ows_isValidImageDimension:dimensionInfo.pixelSize depthBytes:dimensionInfo.depthBytes isAnimated:isAnimated];
+//    CGImageSourceRef imageSource = CGImageSourceCreateWithData((__bridge CFDataRef)self, NULL);
+//    if (imageSource == NULL) {
+//        return NO;
+//    }
+//    
+//    ImageDimensionInfo dimensionInfo = [NSData ows_imageDimensionWithImageSource:imageSource isAnimated:isAnimated];
+//    CFRelease(imageSource);
+//    
+//    return [NSData ows_isValidImageDimension:dimensionInfo.pixelSize depthBytes:dimensionInfo.depthBytes isAnimated:isAnimated];
+    return false;
 }
 
 + (BOOL)ows_hasValidImageDimensionsAtPath:(NSString *)path withData:(NSData *)data mimeType:(nullable NSString *)mimeType isAnimated:(BOOL)isAnimated
@@ -160,72 +161,72 @@ typedef struct {
         return imageSize;
     }
 
-    CGImageSourceRef imageSource = CGImageSourceCreateWithURL((__bridge CFURLRef)url, NULL);
-    if (imageSource == NULL) {
+//    CGImageSourceRef imageSource = CGImageSourceCreateWithURL((__bridge CFURLRef)url, NULL);
+//    if (imageSource == NULL) {
         return CGSizeZero;
-    }
+//    }
     
-    ImageDimensionInfo dimensionInfo = [self ows_imageDimensionWithImageSource:imageSource isAnimated:isAnimated];
-    CFRelease(imageSource);
+//    ImageDimensionInfo dimensionInfo = [self ows_imageDimensionWithImageSource:imageSource isAnimated:isAnimated];
+//    CFRelease(imageSource);
     
-    if (dimensionInfo.pixelSize.width < 1 || dimensionInfo.pixelSize.height < 1 || dimensionInfo.depthBytes < 1) {
-        // Invalid metadata.
-        return CGSizeZero;
-    }
-    
-    return dimensionInfo.pixelSize;
+//    if (dimensionInfo.pixelSize.width < 1 || dimensionInfo.pixelSize.height < 1 || dimensionInfo.depthBytes < 1) {
+//        // Invalid metadata.
+//        return CGSizeZero;
+//    }
+//    
+//    return dimensionInfo.pixelSize;
 }
 
-+ (ImageDimensionInfo)ows_imageDimensionWithImageSource:(CGImageSourceRef)imageSource isAnimated:(BOOL)isAnimated
++ (ImageDimensionInfo)ows_imageDimensionWithImageSource:/*(CGImageSourceRef)*/imageSource isAnimated:(BOOL)isAnimated
 {
-    NSDictionary *imageProperties
-        = (__bridge_transfer NSDictionary *)CGImageSourceCopyPropertiesAtIndex(imageSource, 0, NULL);
+//    NSDictionary *imageProperties
+//        = (__bridge_transfer NSDictionary *)CGImageSourceCopyPropertiesAtIndex(imageSource, 0, NULL);
     ImageDimensionInfo info;
     info.pixelSize = CGSizeZero;
     info.depthBytes = 0;
 
-    if (!imageProperties) {
+//    if (!imageProperties) {
         return info;
-    }
+//    }
 
-    NSNumber *widthNumber = imageProperties[(__bridge NSString *)kCGImagePropertyPixelWidth];
-    if (!widthNumber) {
-        return info;
-    }
-    CGFloat width = widthNumber.floatValue;
-
-    NSNumber *heightNumber = imageProperties[(__bridge NSString *)kCGImagePropertyPixelHeight];
-    if (!heightNumber) {
-        return info;
-    }
-    CGFloat height = heightNumber.floatValue;
-
-    /* The number of bits in each color sample of each pixel. The value of this
-     * key is a CFNumberRef. */
-    NSNumber *depthNumber = imageProperties[(__bridge NSString *)kCGImagePropertyDepth];
-    if (!depthNumber) {
-        return info;
-    }
-    NSUInteger depthBits = depthNumber.unsignedIntegerValue;
-    // This should usually be 1.
-    CGFloat depthBytes = (CGFloat)ceil(depthBits / 8.f);
-
-    /* The color model of the image such as "RGB", "CMYK", "Gray", or "Lab".
-     * The value of this key is CFStringRef. */
-    NSString *colorModel = imageProperties[(__bridge NSString *)kCGImagePropertyColorModel];
-    if (!colorModel) {
-        return info;
-    }
-    if (![colorModel isEqualToString:(__bridge NSString *)kCGImagePropertyColorModelRGB]
-        && ![colorModel isEqualToString:(__bridge NSString *)kCGImagePropertyColorModelGray]) {
-        return info;
-    }
-    
-    // Update the struct to return
-    info.pixelSize = CGSizeMake(width, height);
-    info.depthBytes = depthBytes;
-    
-    return info;
+//    NSNumber *widthNumber = imageProperties[(__bridge NSString *)kCGImagePropertyPixelWidth];
+//    if (!widthNumber) {
+//        return info;
+//    }
+//    CGFloat width = widthNumber.floatValue;
+//
+//    NSNumber *heightNumber = imageProperties[(__bridge NSString *)kCGImagePropertyPixelHeight];
+//    if (!heightNumber) {
+//        return info;
+//    }
+//    CGFloat height = heightNumber.floatValue;
+//
+//    /* The number of bits in each color sample of each pixel. The value of this
+//     * key is a CFNumberRef. */
+//    NSNumber *depthNumber = imageProperties[(__bridge NSString *)kCGImagePropertyDepth];
+//    if (!depthNumber) {
+//        return info;
+//    }
+//    NSUInteger depthBits = depthNumber.unsignedIntegerValue;
+//    // This should usually be 1.
+//    CGFloat depthBytes = (CGFloat)ceil(depthBits / 8.f);
+//
+//    /* The color model of the image such as "RGB", "CMYK", "Gray", or "Lab".
+//     * The value of this key is CFStringRef. */
+//    NSString *colorModel = imageProperties[(__bridge NSString *)kCGImagePropertyColorModel];
+//    if (!colorModel) {
+//        return info;
+//    }
+//    if (![colorModel isEqualToString:(__bridge NSString *)kCGImagePropertyColorModelRGB]
+//        && ![colorModel isEqualToString:(__bridge NSString *)kCGImagePropertyColorModelGray]) {
+//        return info;
+//    }
+//    
+//    // Update the struct to return
+//    info.pixelSize = CGSizeMake(width, height);
+//    info.depthBytes = depthBytes;
+//    
+//    return info;
 }
 
 + (BOOL)ows_isValidImageDimension:(CGSize)imageSize depthBytes:(CGFloat)depthBytes isAnimated:(BOOL)isAnimated
@@ -447,32 +448,32 @@ typedef struct {
     NSURL *url = [NSURL fileURLWithPath:filePath];
 
     // With CGImageSource we avoid loading the whole image into memory.
-    CGImageSourceRef source = CGImageSourceCreateWithURL((CFURLRef)url, NULL);
-    if (!source) {
+//    CGImageSourceRef source = CGImageSourceCreateWithURL((CFURLRef)url, NULL);
+//    if (!source) {
         return CGSizeZero;
-    }
+//    }
 
-    NSDictionary *options = @{
-        (NSString *)kCGImageSourceShouldCache : @(NO),
-    };
-    NSDictionary *properties
-        = (__bridge_transfer NSDictionary *)CGImageSourceCopyPropertiesAtIndex(source, 0, (CFDictionaryRef)options);
-    CGSize imageSize = CGSizeZero;
-    if (properties) {
-        NSNumber *orientation = properties[(NSString *)kCGImagePropertyOrientation];
-        NSNumber *width = properties[(NSString *)kCGImagePropertyPixelWidth];
-        NSNumber *height = properties[(NSString *)kCGImagePropertyPixelHeight];
-
-        if (width && height) {
-            imageSize = CGSizeMake(width.floatValue, height.floatValue);
-
-            if (orientation) {
-                imageSize = [self applyImageOrientation:(UIImageOrientation)orientation.intValue toImageSize:imageSize];
-            }
-        }
-    }
-    CFRelease(source);
-    return imageSize;
+//    NSDictionary *options = @{
+//        (NSString *)kCGImageSourceShouldCache : @(NO),
+//    };
+//    NSDictionary *properties
+//        = (__bridge_transfer NSDictionary *)CGImageSourceCopyPropertiesAtIndex(source, 0, (CFDictionaryRef)options);
+//    CGSize imageSize = CGSizeZero;
+//    if (properties) {
+//        NSNumber *orientation = properties[(NSString *)kCGImagePropertyOrientation];
+//        NSNumber *width = properties[(NSString *)kCGImagePropertyPixelWidth];
+//        NSNumber *height = properties[(NSString *)kCGImagePropertyPixelHeight];
+//
+//        if (width && height) {
+//            imageSize = CGSizeMake(width.floatValue, height.floatValue);
+//
+//            if (orientation) {
+//                imageSize = [self applyImageOrientation:(UIImageOrientation)orientation.intValue toImageSize:imageSize];
+//            }
+//        }
+//    }
+//    CFRelease(source);
+//    return imageSize;
 }
 
 + (CGSize)applyImageOrientation:(UIImageOrientation)orientation toImageSize:(CGSize)imageSize
@@ -498,29 +499,29 @@ typedef struct {
     NSURL *url = [NSURL fileURLWithPath:filePath];
 
     // With CGImageSource we avoid loading the whole image into memory.
-    CGImageSourceRef source = CGImageSourceCreateWithURL((CFURLRef)url, NULL);
-    if (!source) {
+//    CGImageSourceRef source = CGImageSourceCreateWithURL((CFURLRef)url, NULL);
+//    if (!source) {
         return NO;
-    }
+//    }
 
-    NSDictionary *options = @{
-        (NSString *)kCGImageSourceShouldCache : @(NO),
-    };
-    NSDictionary *properties
-        = (__bridge_transfer NSDictionary *)CGImageSourceCopyPropertiesAtIndex(source, 0, (CFDictionaryRef)options);
-    BOOL result = NO;
-    if (properties) {
-        NSNumber *_Nullable hasAlpha = properties[(NSString *)kCGImagePropertyHasAlpha];
-        if (hasAlpha) {
-            result = hasAlpha.boolValue;
-        } else {
-            // This is not an error; kCGImagePropertyHasAlpha is an optional
-            // property.
-            result = NO;
-        }
-    }
-    CFRelease(source);
-    return result;
+//    NSDictionary *options = @{
+//        (NSString *)kCGImageSourceShouldCache : @(NO),
+//    };
+//    NSDictionary *properties
+//        = (__bridge_transfer NSDictionary *)CGImageSourceCopyPropertiesAtIndex(source, 0, (CFDictionaryRef)options);
+//    BOOL result = NO;
+//    if (properties) {
+//        NSNumber *_Nullable hasAlpha = properties[(NSString *)kCGImagePropertyHasAlpha];
+//        if (hasAlpha) {
+//            result = hasAlpha.boolValue;
+//        } else {
+//            // This is not an error; kCGImagePropertyHasAlpha is an optional
+//            // property.
+//            result = NO;
+//        }
+//    }
+//    CFRelease(source);
+//    return result;
 }
 
 // MARK: - Webp
@@ -537,26 +538,26 @@ typedef struct {
 
 - (CGSize)sizeForWebpData
 {
-    WebPData webPData = { 0 };
-    webPData.bytes = self.bytes;
-    webPData.size = self.length;
-    WebPDemuxer *demuxer = WebPDemux(&webPData);
-    
-    if (!demuxer) {
+//    WebPData webPData = { 0 };
+//    webPData.bytes = self.bytes;
+//    webPData.size = self.length;
+//    WebPDemuxer *demuxer = WebPDemux(&webPData);
+//    
+//    if (!demuxer) {
         return CGSizeZero;
-    }
+//    }
 
-    CGFloat canvasWidth = WebPDemuxGetI(demuxer, WEBP_FF_CANVAS_WIDTH);
-    CGFloat canvasHeight = WebPDemuxGetI(demuxer, WEBP_FF_CANVAS_HEIGHT);
-    CGFloat frameCount = WebPDemuxGetI(demuxer, WEBP_FF_FRAME_COUNT);
-    
-    WebPDemuxDelete(demuxer);
-    
-    if (canvasWidth > 0 && canvasHeight > 0 && frameCount > 0) {
-        return CGSizeMake(canvasWidth, canvasHeight);
-    }
-
-    return CGSizeZero;
+//    CGFloat canvasWidth = WebPDemuxGetI(demuxer, WEBP_FF_CANVAS_WIDTH);
+//    CGFloat canvasHeight = WebPDemuxGetI(demuxer, WEBP_FF_CANVAS_HEIGHT);
+//    CGFloat frameCount = WebPDemuxGetI(demuxer, WEBP_FF_FRAME_COUNT);
+//    
+//    WebPDemuxDelete(demuxer);
+//    
+//    if (canvasWidth > 0 && canvasHeight > 0 && frameCount > 0) {
+//        return CGSizeMake(canvasWidth, canvasHeight);
+//    }
+//
+//    return CGSizeZero;
 }
 
 @end

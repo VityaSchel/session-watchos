@@ -1,7 +1,5 @@
 // Copyright © 2022 Rangeproof Pty Ltd. All rights reserved.
 
-import UIKit
-import SessionUIKit
 
 // MARK: - GalleryRailItem
 
@@ -82,7 +80,7 @@ public class GalleryRailCellView: UIView {
         self.isSelected = isSelected
 
         // Reserve space for the selection border whether or not the cell is selected.
-        layoutMargins = UIEdgeInsets(top: 0, left: cellBorderWidth, bottom: 0, right: cellBorderWidth)
+//        layoutMargins = UIEdgeInsets(top: 0, left: cellBorderWidth, bottom: 0, right: cellBorderWidth)
 
         if isSelected {
             contentContainer.themeBorderColor = .primary
@@ -148,7 +146,7 @@ public class GalleryRailView: UIView, GalleryRailCellViewDelegate {
         result.clipsToBounds = false
         result.layoutMargins = .zero
         result.isScrollEnabled = true
-        result.scrollIndicatorInsets = UIEdgeInsets(top: 0, leading: 0, bottom: -10, trailing: 0)
+//        result.scrollIndicatorInsets = UIEdgeInsets(top: 0, leading: 0, bottom: -10, trailing: 0)
         
         return result
     }()
@@ -342,9 +340,9 @@ public class GalleryRailView: UIView, GalleryRailCellViewDelegate {
                 let cellViewCenter: CGPoint = selectedCellSuperview.convert(selectedCell.center, to: scrollView)
                 let additionalInset: CGFloat = ((scrollView.frame.width / 2) - cellViewCenter.x)
                 
-                var inset: UIEdgeInsets = scrollView.contentInset
-                inset.left = additionalInset
-                scrollView.contentInset = inset
+//                var inset: UIEdgeInsets = scrollView.contentInset
+//                inset.left = additionalInset
+//                scrollView.contentInset = inset
 
                 var offset: CGPoint = scrollView.contentOffset
                 offset.x = -additionalInset

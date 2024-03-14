@@ -1,7 +1,5 @@
 // Copyright © 2022 Rangeproof Pty Ltd. All rights reserved.
 
-import UIKit
-import SessionUIKit
 import SignalCoreKit
 
 public protocol ImageEditorPaletteViewDelegate: AnyObject {
@@ -15,7 +13,7 @@ public protocol ImageEditorPaletteViewDelegate: AnyObject {
 // state.
 @objc
 public class ImageEditorColor: NSObject {
-    public let color: UIColor
+    public let color: Any
 
     // Colors are chosen from a spectrum of colors.
     // This unit value represents the location of the
@@ -26,7 +24,7 @@ public class ImageEditorColor: NSObject {
         return color.cgColor
     }
 
-    public required init(color: UIColor, palettePhase: CGFloat) {
+    public required init(color: Any, palettePhase: CGFloat) {
         self.color = color
         self.palettePhase = palettePhase
     }
@@ -35,7 +33,7 @@ public class ImageEditorColor: NSObject {
         return ImageEditorColor(color: .white, palettePhase: 0)
     }
 
-    public static var gradientUIColors: [UIColor] {
+    public static var gradientUIColors: [Any] {
         return [
             #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1),       // #FFFFFF
             #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1),       // #FF0000
@@ -71,12 +69,12 @@ private class PalettePreviewView: OWSLayerView {
     private static let teardropTipRadius: CGFloat = 4
     private static let teardropPointiness: CGFloat = 12
 
-    private let teardropColor = UIColor.white
-    public var selectedColor = UIColor.white {
+    private let teardropColor = nil//UIColor.white
+    public var selectedColor = nil/*UIColor.white {
         didSet {
             circleLayer.themeFillColorForced = .color(selectedColor)
         }
-    }
+    }*/
 
     private let circleLayer: CAShapeLayer
     private let teardropLayer: CAShapeLayer
@@ -229,7 +227,7 @@ public class ImageEditorPaletteView: UIView {
         addSubview(imageView)
         // We use an invisible margin to expand the hot area of this control.
         let margin: CGFloat = 20
-        imageView.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin))
+//        imageView.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin))
         imageView.themeBorderColor = .white
         imageView.layer.borderWidth = 1
 
@@ -291,14 +289,14 @@ public class ImageEditorPaletteView: UIView {
         // 0 = top of gradient, first color.
         // 1 = bottom of gradient, last color.
         struct GradientSegment {
-            let color0: UIColor
-            let color1: UIColor
+            let color0: Any
+            let color1: Any
             let palettePhase0: CGFloat
             let palettePhase1: CGFloat
         }
         var segments = [GradientSegment]()
         let segmentCount = ImageEditorColor.gradientUIColors.count - 1
-        var prevColor: UIColor?
+        var prevColor: Any?
         for color in ImageEditorColor.gradientUIColors {
             if let color0 = prevColor {
                 let index = CGFloat(segments.count)

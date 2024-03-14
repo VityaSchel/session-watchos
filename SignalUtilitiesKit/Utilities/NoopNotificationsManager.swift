@@ -8,15 +8,15 @@ import SignalCoreKit
 public class NoopNotificationsManager: NotificationsProtocol {
     public init() {}
     
-    public func notifyUser(_ db: Database, for interaction: Interaction, in thread: SessionThread, applicationState: UIApplication.State) {
+    public func notifyUser(_ db: Database, for interaction: Interaction, in thread: SessionThread, applicationState: Any) {
         owsFailDebug("")
     }
     
-    public func notifyUser(_ db: Database, forIncomingCall interaction: Interaction, in thread: SessionThread, applicationState: UIApplication.State) {
+    public func notifyUser(_ db: Database, forIncomingCall interaction: Interaction, in thread: SessionThread, applicationState: Any) {
         owsFailDebug("")
     }
     
-    public func notifyUser(_ db: Database, forReaction reaction: Reaction, in thread: SessionThread, applicationState: UIApplication.State) {
+    public func notifyUser(_ db: Database, forReaction reaction: Reaction, in thread: SessionThread, applicationState: Any) {
         owsFailDebug("")
     }
     

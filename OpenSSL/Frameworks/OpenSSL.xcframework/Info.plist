@@ -6,66 +6,37 @@
 	<array>
 		<dict>
 			<key>BinaryPath</key>
-			<string>OpenSSL.framework/OpenSSL</string>
+			<string>OpenSSL-watchOS-Sim.a</string>
+			<key>HeadersPath</key>
+			<string>Headers</string>
 			<key>LibraryIdentifier</key>
-			<string>ios-arm64</string>
+			<string>watchos-arm64-simulator</string>
 			<key>LibraryPath</key>
-			<string>OpenSSL.framework</string>
+			<string>OpenSSL-watchOS-Sim.a</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>arm64</string>
 			</array>
 			<key>SupportedPlatform</key>
-			<string>ios</string>
-		</dict>
-		<dict>
-			<key>BinaryPath</key>
-			<string>OpenSSL.framework/Versions/A/OpenSSL</string>
-			<key>LibraryIdentifier</key>
-			<string>ios-arm64_x86_64-maccatalyst</string>
-			<key>LibraryPath</key>
-			<string>OpenSSL.framework</string>
-			<key>SupportedArchitectures</key>
-			<array>
-				<string>arm64</string>
-				<string>x86_64</string>
-			</array>
-			<key>SupportedPlatform</key>
-			<string>ios</string>
-			<key>SupportedPlatformVariant</key>
-			<string>maccatalyst</string>
-		</dict>
-		<dict>
-			<key>BinaryPath</key>
-			<string>OpenSSL.framework/OpenSSL</string>
-			<key>LibraryIdentifier</key>
-			<string>ios-arm64_x86_64-simulator</string>
-			<key>LibraryPath</key>
-			<string>OpenSSL.framework</string>
-			<key>SupportedArchitectures</key>
-			<array>
-				<string>arm64</string>
-				<string>x86_64</string>
-			</array>
-			<key>SupportedPlatform</key>
-			<string>ios</string>
+			<string>watchos</string>
 			<key>SupportedPlatformVariant</key>
 			<string>simulator</string>
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
-			<string>OpenSSL.framework/Versions/A/OpenSSL</string>
+			<string>OpenSSL-watchOS.a</string>
+			<key>HeadersPath</key>
+			<string>Headers</string>
 			<key>LibraryIdentifier</key>
-			<string>macos-arm64_x86_64</string>
+			<string>watchos-arm64_32</string>
 			<key>LibraryPath</key>
-			<string>OpenSSL.framework</string>
+			<string>OpenSSL-watchOS.a</string>
 			<key>SupportedArchitectures</key>
 			<array>
-				<string>arm64</string>
-				<string>x86_64</string>
+				<string>arm64_32</string>
 			</array>
 			<key>SupportedPlatform</key>
-			<string>macos</string>
+			<string>watchos</string>
 		</dict>
 	</array>
 	<key>CFBundlePackageType</key>

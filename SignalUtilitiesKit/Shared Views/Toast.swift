@@ -1,7 +1,5 @@
 // Copyright © 2022 Rangeproof Pty Ltd. All rights reserved.
 
-import UIKit
-import SessionUIKit
 import SignalCoreKit
 
 public class ToastController: ToastViewDelegate {

@@ -395,10 +395,10 @@ CGFloat ScaleFromIPhone5(CGFloat iPhone5Value)
 
 - (void)setHLayoutMargins:(CGFloat)value
 {
-    UIEdgeInsets layoutMargins = self.layoutMargins;
-    layoutMargins.left = value;
-    layoutMargins.right = value;
-    self.layoutMargins = layoutMargins;
+//    UIEdgeInsets layoutMargins = self.layoutMargins;
+//    layoutMargins.left = value;
+//    layoutMargins.right = value;
+//    self.layoutMargins = layoutMargins;
 }
 
 - (NSArray<NSLayoutConstraint *> *)autoPinToEdgesOfView:(UIView *)view
@@ -413,13 +413,13 @@ CGFloat ScaleFromIPhone5(CGFloat iPhone5Value)
 
 #pragma mark - Containers
 
-+ (UIView *)containerView
++ containerView
 {
-    UIView *view = [UIView new];
+//    UIView *view = [UIView new];
     // Leading and trailing anchors honor layout margins.
     // When using a UIView as a "div" to structure layout, we don't want it to have margins.
-    view.layoutMargins = UIEdgeInsetsZero;
-    return view;
+//    view.layoutMargins = UIEdgeInsetsZero;
+//    return view;
 }
 
 + (UIView *)verticalStackWithSubviews:(NSArray<UIView *> *)subviews spacing:(int)spacing

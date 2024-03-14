@@ -1,89 +1,88 @@
 //  Copyright (c) 2019 Open Whisper Systems. All rights reserved.
 
 import Foundation
-import SessionUIKit
 import SignalCoreKit
 import SessionUtilitiesKit
 
-public extension UIEdgeInsets {
-    init(top: CGFloat, leading: CGFloat, bottom: CGFloat, trailing: CGFloat) {
-        self.init(
-            top: top,
-            left: (Singleton.hasAppContext && Singleton.appContext.isRTL ? trailing : leading),
-            bottom: bottom,
-            right: (Singleton.hasAppContext && Singleton.appContext.isRTL ? leading : trailing)
-        )
-    }
-}
+//public extension UIEdgeInsets {
+//    init(top: CGFloat, leading: CGFloat, bottom: CGFloat, trailing: CGFloat) {
+//        self.init(
+//            top: top,
+//            left: (Singleton.hasAppContext && Singleton.appContext.isRTL ? trailing : leading),
+//            bottom: bottom,
+//            right: (Singleton.hasAppContext && Singleton.appContext.isRTL ? leading : trailing)
+//        )
+//    }
+//}
 
 // MARK: -
 
-@objc
-public extension UINavigationController {
-    func pushViewController(_ viewController: UIViewController,
-                                   animated: Bool,
-                                   completion: (() -> Void)?) {
-        CATransaction.begin()
-        CATransaction.setCompletionBlock(completion)
-        pushViewController(viewController, animated: animated)
-        CATransaction.commit()
-    }
-
-    func popViewController(animated: Bool,
-                                  completion: (() -> Void)?) {
-        CATransaction.begin()
-        CATransaction.setCompletionBlock(completion)
-        popViewController(animated: animated)
-        CATransaction.commit()
-    }
-
-    func popToViewController(_ viewController: UIViewController,
-                                    animated: Bool,
-                                    completion: (() -> Void)?) {
-        CATransaction.begin()
-        CATransaction.setCompletionBlock(completion)
-        self.popToViewController(viewController, animated: animated)
-        CATransaction.commit()
-    }
-}
-
-// MARK: -
-
-@objc
-public extension UIView {
-    func applyScaleAspectFitLayout(subview: UIView, aspectRatio: CGFloat) -> [NSLayoutConstraint] {
-        guard subviews.contains(subview) else {
-            owsFailDebug("Not a subview.")
-            return []
-        }
-
-        // This emulates the behavior of contentMode = .scaleAspectFit using
-        // iOS auto layout constraints.
-        //
-        // This allows ConversationInputToolbar to place the "cancel" button
-        // in the upper-right hand corner of the preview content.
-        var constraints = [NSLayoutConstraint]()
-        constraints.append(contentsOf: subview.autoCenterInSuperview())
-        constraints.append(subview.autoPin(toAspectRatio: aspectRatio))
-        constraints.append(subview.autoMatch(.width, to: .width, of: self, withMultiplier: 1.0, relation: .lessThanOrEqual))
-        constraints.append(subview.autoMatch(.height, to: .height, of: self, withMultiplier: 1.0, relation: .lessThanOrEqual))
-        return constraints
-    }
-}
-
-public extension UIView {
-    func setShadow(
-        radius: CGFloat = 2.0,
-        opacity: Float = 0.66,
-        offset: CGSize = .zero,
-        color: ThemeValue = .black
-    ) {
-        layer.themeShadowColor = color
-        layer.shadowRadius = radius
-        layer.shadowOpacity = opacity
-        layer.shadowOffset = offset
-    }
-}
+//@objc
+//public extension UINavigationController {
+//    func pushViewController(_ viewController: UIViewController,
+//                                   animated: Bool,
+//                                   completion: (() -> Void)?) {
+//        CATransaction.begin()
+//        CATransaction.setCompletionBlock(completion)
+//        pushViewController(viewController, animated: animated)
+//        CATransaction.commit()
+//    }
+//
+//    func popViewController(animated: Bool,
+//                                  completion: (() -> Void)?) {
+//        CATransaction.begin()
+//        CATransaction.setCompletionBlock(completion)
+//        popViewController(animated: animated)
+//        CATransaction.commit()
+//    }
+//
+//    func popToViewController(_ viewController: UIViewController,
+//                                    animated: Bool,
+//                                    completion: (() -> Void)?) {
+//        CATransaction.begin()
+//        CATransaction.setCompletionBlock(completion)
+//        self.popToViewController(viewController, animated: animated)
+//        CATransaction.commit()
+//    }
+//}
+//
+//// MARK: -
+//
+//@objc
+//public extension UIView {
+//    func applyScaleAspectFitLayout(subview: UIView, aspectRatio: CGFloat) -> [NSLayoutConstraint] {
+//        guard subviews.contains(subview) else {
+//            owsFailDebug("Not a subview.")
+//            return []
+//        }
+//
+//        // This emulates the behavior of contentMode = .scaleAspectFit using
+//        // iOS auto layout constraints.
+//        //
+//        // This allows ConversationInputToolbar to place the "cancel" button
+//        // in the upper-right hand corner of the preview content.
+//        var constraints = [NSLayoutConstraint]()
+//        constraints.append(contentsOf: subview.autoCenterInSuperview())
+//        constraints.append(subview.autoPin(toAspectRatio: aspectRatio))
+//        constraints.append(subview.autoMatch(.width, to: .width, of: self, withMultiplier: 1.0, relation: .lessThanOrEqual))
+//        constraints.append(subview.autoMatch(.height, to: .height, of: self, withMultiplier: 1.0, relation: .lessThanOrEqual))
+//        return constraints
+//    }
+//}
+//
+//public extension UIView {
+//    func setShadow(
+//        radius: CGFloat = 2.0,
+//        opacity: Float = 0.66,
+//        offset: CGSize = .zero,
+//        color: ThemeValue = .black
+//    ) {
+//        layer.themeShadowColor = color
+//        layer.shadowRadius = radius
+//        layer.shadowOpacity = opacity
+//        layer.shadowOffset = offset
+//    }
+//}
 
 // MARK: -
 
@@ -275,61 +274,61 @@ public extension CGAffineTransform {
 
 // MARK: -
 
-public extension UIBezierPath {
-    func addRegion(withPoints points: [CGPoint]) {
-        guard let first = points.first else {
-            owsFailDebug("No points.")
-            return
-        }
-        move(to: first)
-        for point in points.dropFirst() {
-            addLine(to: point)
-        }
-        addLine(to: first)
-    }
-}
-
-// MARK: -
-
-@objc
-public extension UIBarButtonItem {
-    convenience init(image: UIImage?, style: UIBarButtonItem.Style, target: Any?, action: Selector?, accessibilityIdentifier: String, accessibilityLabel: String? = nil) {
-        self.init(image: image, style: style, target: target, action: action)
-
-        self.accessibilityIdentifier = accessibilityIdentifier
-        self.accessibilityLabel = accessibilityLabel == nil ? accessibilityIdentifier : accessibilityLabel
-        self.isAccessibilityElement = true
-    }
-
-    convenience init(image: UIImage?, landscapeImagePhone: UIImage?, style: UIBarButtonItem.Style, target: Any?, action: Selector?, accessibilityIdentifier: String, accessibilityLabel: String? = nil) {
-        self.init(image: image, landscapeImagePhone: landscapeImagePhone, style: style, target: target, action: action)
-
-        self.accessibilityIdentifier = accessibilityIdentifier
-        self.accessibilityLabel = accessibilityLabel == nil ? accessibilityIdentifier : accessibilityLabel
-        self.isAccessibilityElement = true
-    }
-
-    convenience init(title: String?, style: UIBarButtonItem.Style, target: Any?, action: Selector?, accessibilityIdentifier: String, accessibilityLabel: String? = nil) {
-        self.init(title: title, style: style, target: target, action: action)
-
-        self.accessibilityIdentifier = accessibilityIdentifier
-        self.accessibilityLabel = accessibilityLabel == nil ? accessibilityIdentifier : accessibilityLabel
-        self.isAccessibilityElement = true
-    }
-
-    convenience init(barButtonSystemItem systemItem: UIBarButtonItem.SystemItem, target: Any?, action: Selector?, accessibilityIdentifier: String, accessibilityLabel: String? = nil) {
-        self.init(barButtonSystemItem: systemItem, target: target, action: action)
-
-        self.accessibilityIdentifier = accessibilityIdentifier
-        self.accessibilityLabel = accessibilityLabel == nil ? accessibilityIdentifier : accessibilityLabel
-        self.isAccessibilityElement = true
-    }
-
-    convenience init(customView: UIView, accessibilityIdentifier: String, accessibilityLabel: String? = nil) {
-        self.init(customView: customView)
-
-        self.accessibilityIdentifier = accessibilityIdentifier
-        self.accessibilityLabel = accessibilityLabel == nil ? accessibilityIdentifier : accessibilityLabel
-        self.isAccessibilityElement = true
-    }
-}
+//public extension UIBezierPath {
+//    func addRegion(withPoints points: [CGPoint]) {
+//        guard let first = points.first else {
+//            owsFailDebug("No points.")
+//            return
+//        }
+//        move(to: first)
+//        for point in points.dropFirst() {
+//            addLine(to: point)
+//        }
+//        addLine(to: first)
+//    }
+//}
+//
+//// MARK: -
+//
+//@objc
+//public extension UIBarButtonItem {
+//    convenience init(image: UIImage?, style: UIBarButtonItem.Style, target: Any?, action: Selector?, accessibilityIdentifier: String, accessibilityLabel: String? = nil) {
+//        self.init(image: image, style: style, target: target, action: action)
+//
+//        self.accessibilityIdentifier = accessibilityIdentifier
+//        self.accessibilityLabel = accessibilityLabel == nil ? accessibilityIdentifier : accessibilityLabel
+//        self.isAccessibilityElement = true
+//    }
+//
+//    convenience init(image: UIImage?, landscapeImagePhone: UIImage?, style: UIBarButtonItem.Style, target: Any?, action: Selector?, accessibilityIdentifier: String, accessibilityLabel: String? = nil) {
+//        self.init(image: image, landscapeImagePhone: landscapeImagePhone, style: style, target: target, action: action)
+//
+//        self.accessibilityIdentifier = accessibilityIdentifier
+//        self.accessibilityLabel = accessibilityLabel == nil ? accessibilityIdentifier : accessibilityLabel
+//        self.isAccessibilityElement = true
+//    }
+//
+//    convenience init(title: String?, style: UIBarButtonItem.Style, target: Any?, action: Selector?, accessibilityIdentifier: String, accessibilityLabel: String? = nil) {
+//        self.init(title: title, style: style, target: target, action: action)
+//
+//        self.accessibilityIdentifier = accessibilityIdentifier
+//        self.accessibilityLabel = accessibilityLabel == nil ? accessibilityIdentifier : accessibilityLabel
+//        self.isAccessibilityElement = true
+//    }
+//
+//    convenience init(barButtonSystemItem systemItem: UIBarButtonItem.SystemItem, target: Any?, action: Selector?, accessibilityIdentifier: String, accessibilityLabel: String? = nil) {
+//        self.init(barButtonSystemItem: systemItem, target: target, action: action)
+//
+//        self.accessibilityIdentifier = accessibilityIdentifier
+//        self.accessibilityLabel = accessibilityLabel == nil ? accessibilityIdentifier : accessibilityLabel
+//        self.isAccessibilityElement = true
+//    }
+//
+//    convenience init(customView: UIView, accessibilityIdentifier: String, accessibilityLabel: String? = nil) {
+//        self.init(customView: customView)
+//
+//        self.accessibilityIdentifier = accessibilityIdentifier
+//        self.accessibilityLabel = accessibilityLabel == nil ? accessibilityIdentifier : accessibilityLabel
+//        self.isAccessibilityElement = true
+//    }
+//}

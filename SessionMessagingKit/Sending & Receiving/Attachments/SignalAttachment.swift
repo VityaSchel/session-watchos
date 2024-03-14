@@ -267,9 +267,10 @@ public class SignalAttachment: Equatable, Hashable {
     public func duration() -> TimeInterval? {
         switch (isAudio, isVideo) {
             case (true, _):
-                let audioPlayer: AVAudioPlayer? = try? AVAudioPlayer(data: dataSource.data())
+//                let audioPlayer: AVAudioPlayer? = try? AVAudioPlayer(data: dataSource.data())
                 
-                return (audioPlayer?.duration).map { $0 > 0 ? $0 : nil }
+//                return (audioPlayer?.duration).map { $0 > 0 ? $0 : nil }
+                  return nil
                 
             case (_, true):
                 return dataUrl.map { url in

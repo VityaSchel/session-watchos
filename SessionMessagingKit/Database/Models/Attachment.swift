@@ -8,7 +8,6 @@ import GRDB
 import SignalCoreKit
 import SessionUtilitiesKit
 import SessionSnodeKit
-import SessionUIKit
 
 public struct Attachment: Codable, Identifiable, Equatable, Hashable, FetchableRecord, PersistableRecord, TableRecord, ColumnExpressible {
     public static var databaseTableName: String { "attachment" }
@@ -674,20 +673,21 @@ extension Attachment {
         
         // Process audio attachments
         if MIMETypeUtil.isAudio(contentType) {
-            do {
-                let audioPlayer: AVAudioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: targetPath))
-                
-                return ((audioPlayer.duration > 0), audioPlayer.duration)
-            }
-            catch {
-                switch (error as NSError).code {
-                    case Int(kAudioFileInvalidFileError), Int(kAudioFileStreamError_InvalidFile):
-                        // Ignore "invalid audio file" errors
-                        return (false, nil)
-                        
-                    default: return (false, nil)
-                }
-            }
+//            do {
+//                let audioPlayer: AVAudioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: targetPath))
+//                
+//                return ((audioPlayer.duration > 0), audioPlayer.duration)
+//            }
+          return (false, 0)
+//            catch {
+//                switch (error as NSError).code {
+//                    case Int(kAudioFileInvalidFileError), Int(kAudioFileStreamError_InvalidFile):
+//                        // Ignore "invalid audio file" errors
+//                        return (false, nil)
+//                        
+//                    default: return (false, nil)
+//                }
+//            }
         }
         
         // Process image attachments

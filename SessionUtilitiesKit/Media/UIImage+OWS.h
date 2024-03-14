@@ -4,15 +4,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImage (normalizeImage)
 
-- (UIImage *)normalizedImage;
-- (UIImage *)resizedWithQuality:(CGInterpolationQuality)quality rate:(CGFloat)rate;
+- normalizedImage;
+- resizedWithQuality:(CGInterpolationQuality)quality rate:(CGFloat)rate;
 
 - (nullable UIImage *)resizedWithMaxDimensionPoints:(CGFloat)maxDimensionPoints;
 - (nullable UIImage *)resizedImageToSize:(CGSize)dstSize;
-- (UIImage *)resizedImageToFillPixelSize:(CGSize)boundingSize;
+- resizedImageToFillPixelSize:(CGSize)boundingSize;
 
-+ (UIImage *)imageWithColor:(UIColor *)color;
-+ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
++ imageWithColor:color;
++ imageWithColor:color size:(CGSize)size;
 
 @end
 

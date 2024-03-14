@@ -4,7 +4,6 @@ import Foundation
 import GRDB
 import SignalCoreKit
 import SessionUtilitiesKit
-import SessionUIKit
 
 public struct RecipientState: Codable, Equatable, FetchableRecord, PersistableRecord, TableRecord, ColumnExpressible {
     public static var databaseTableName: String { "recipientState" }

@@ -3,7 +3,6 @@
 //
 
 import Foundation
-import UIKit
 
 class AttachmentTextView: UITextView {
     // When creating new lines, contentOffset is animated, but because

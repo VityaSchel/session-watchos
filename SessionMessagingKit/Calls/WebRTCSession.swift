@@ -445,29 +445,29 @@ public final class WebRTCSession : NSObject, RTCPeerConnectionDelegate {
 }
 
 extension WebRTCSession {
-    public func configureAudioSession(outputAudioPort: AVAudioSession.PortOverride = .none) {
-        let audioSession = RTCAudioSession.sharedInstance()
-        audioSession.lockForConfiguration()
-        do {
-            try audioSession.setCategory(AVAudioSession.Category.playAndRecord.rawValue)
-            try audioSession.setMode(AVAudioSession.Mode.voiceChat.rawValue)
-            try audioSession.overrideOutputAudioPort(outputAudioPort)
-            try audioSession.setActive(true)
-        } catch let error {
-            SNLog("Couldn't set up WebRTC audio session due to error: \(error)")
-        }
-        audioSession.unlockForConfiguration()
+    public func configureAudioSession(outputAudioPort: Any = .none) {
+//        let audioSession = RTCAudioSession.sharedInstance()
+//        audioSession.lockForConfiguration()
+//        do {
+//            try audioSession.setCategory(AVAudioSession.Category.playAndRecord.rawValue)
+//            try audioSession.setMode(AVAudioSession.Mode.voiceChat.rawValue)
+//            try audioSession.overrideOutputAudioPort(outputAudioPort)
+//            try audioSession.setActive(true)
+//        } catch let error {
+//            SNLog("Couldn't set up WebRTC audio session due to error: \(error)")
+//        }
+//        audioSession.unlockForConfiguration()
     }
     
-    public func audioSessionDidActivate(_ audioSession: AVAudioSession) {
-        RTCAudioSession.sharedInstance().audioSessionDidActivate(audioSession)
-        RTCAudioSession.sharedInstance().isAudioEnabled = true
-        configureAudioSession()
+    public func audioSessionDidActivate(_ audioSession: Any) {
+//        RTCAudioSession.sharedInstance().audioSessionDidActivate(audioSession)
+//        RTCAudioSession.sharedInstance().isAudioEnabled = true
+//        configureAudioSession()
     }
     
-    public func audioSessionDidDeactivate(_ audioSession: AVAudioSession) {
-        RTCAudioSession.sharedInstance().audioSessionDidDeactivate(audioSession)
-        RTCAudioSession.sharedInstance().isAudioEnabled = false
+    public func audioSessionDidDeactivate(_ audioSession: Any) {
+//        RTCAudioSession.sharedInstance().audioSessionDidDeactivate(audioSession)
+//        RTCAudioSession.sharedInstance().isAudioEnabled = false
     }
     
     public func mute() {

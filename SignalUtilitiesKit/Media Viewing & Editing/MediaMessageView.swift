@@ -1,11 +1,9 @@
 //  Copyright (c) 2019 Open Whisper Systems. All rights reserved.
 
-import UIKit
 import Combine
 import MediaPlayer
 import YYImage
 import NVActivityIndicatorView
-import SessionUIKit
 import SessionMessagingKit
 import SignalCoreKit
 import SessionUtilitiesKit
@@ -127,7 +125,7 @@ public class MediaMessageView: UIView {
         result.isHidden = true
         
         ThemeManager.onThemeChange(observer: result) { [weak result] theme, _ in
-            guard let textPrimary: UIColor = theme.color(for: .textPrimary) else { return }
+            guard let textPrimary: Any = theme.color(for: .textPrimary) else { return }
             
             result?.color = textPrimary
         }

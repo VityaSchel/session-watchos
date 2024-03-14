@@ -1,7 +1,6 @@
 // Copyright © 2023 Rangeproof Pty Ltd. All rights reserved.
 
 import Foundation
-import SessionUIKit
 
 public extension ProfilePictureView {
     func update(
@@ -27,68 +26,68 @@ public extension ProfilePictureView {
                     }
                 }()
                 
-                update(
-                    Info(
-                        imageData: placeholderImage.pngData(),
-                        inset: UIEdgeInsets(
-                            top: 12,
-                            left: 12,
-                            bottom: 12,
-                            right: 12
-                        ),
-                        icon: profileIcon,
-                        forcedBackgroundColor: .theme(.classicDark, color: .borderSeparator)
-                    )
-                )
+//                update(
+//                    Info(
+//                        imageData: placeholderImage.pngData(),
+//                        inset: UIEdgeInsets(
+//                            top: 12,
+//                            left: 12,
+//                            bottom: 12,
+//                            right: 12
+//                        ),
+//                        icon: profileIcon,
+//                        forcedBackgroundColor: .theme(.classicDark, color: .borderSeparator)
+//                    )
+//                )
                 
             case .legacyGroup, .group:
                 guard !publicKey.isEmpty else { return }
                 
-                update(
-                    Info(
-                        imageData: (
-                            profile.map { ProfileManager.profileAvatar(profile: $0) } ??
-                            PlaceholderIcon.generate(
-                                seed: publicKey,
-                                text: (profile?.displayName(for: threadVariant))
-                                    .defaulting(to: publicKey),
-                                size: (additionalProfile != nil ?
-                                    self.size.multiImageSize :
-                                    self.size.viewSize
-                                )
-                            ).pngData()
-                        ),
-                        icon: profileIcon
-                    ),
-                    additionalInfo: additionalProfile
-                        .map { otherProfile in
-                            Info(
-                                imageData: (
-                                    ProfileManager.profileAvatar(profile: otherProfile) ??
-                                    PlaceholderIcon.generate(
-                                        seed: otherProfile.id,
-                                        text: otherProfile.displayName(for: threadVariant),
-                                        size: self.size.multiImageSize
-                                    ).pngData()
-                                ),
-                                icon: additionalProfileIcon
-                            )
-                        }
-                        .defaulting(
-                            to: Info(
-                                imageData: UIImage(systemName: "person.fill")?.pngData(),
-                                renderingMode: .alwaysTemplate,
-                                themeTintColor: .white,
-                                inset: UIEdgeInsets(
-                                    top: 3,
-                                    left: 0,
-                                    bottom: -5,
-                                    right: 0
-                                ),
-                                icon: additionalProfileIcon
-                            )
-                        )
-                )
+//                update(
+//                    Info(
+//                        imageData: (
+//                            profile.map { ProfileManager.profileAvatar(profile: $0) } ??
+//                            PlaceholderIcon.generate(
+//                                seed: publicKey,
+//                                text: (profile?.displayName(for: threadVariant))
+//                                    .defaulting(to: publicKey),
+//                                size: (additionalProfile != nil ?
+//                                    self.size.multiImageSize :
+//                                    self.size.viewSize
+//                                )
+//                            ).pngData()
+//                        ),
+//                        icon: profileIcon
+//                    ),
+//                    additionalInfo: additionalProfile
+//                        .map { otherProfile in
+//                            Info(
+//                                imageData: (
+//                                    ProfileManager.profileAvatar(profile: otherProfile) ??
+//                                    PlaceholderIcon.generate(
+//                                        seed: otherProfile.id,
+//                                        text: otherProfile.displayName(for: threadVariant),
+//                                        size: self.size.multiImageSize
+//                                    ).pngData()
+//                                ),
+//                                icon: additionalProfileIcon
+//                            )
+//                        }
+//                        .defaulting(
+//                            to: Info(
+//                                imageData: UIImage(systemName: "person.fill")?.pngData(),
+//                                renderingMode: .alwaysTemplate,
+//                                themeTintColor: .white,
+//                                inset: UIEdgeInsets(
+//                                    top: 3,
+//                                    left: 0,
+//                                    bottom: -5,
+//                                    right: 0
+//                                ),
+//                                icon: additionalProfileIcon
+//                            )
+//                        )
+//                )
                 
             case .contact:
                 guard !publicKey.isEmpty else { return }

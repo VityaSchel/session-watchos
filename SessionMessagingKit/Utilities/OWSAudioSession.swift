@@ -33,14 +33,14 @@ public class OWSAudioSession: NSObject {
 
     @objc
     public func setup() {
-        NotificationCenter.default.addObserver(self, selector: #selector(proximitySensorStateDidChange(notification:)), name: UIDevice.proximityStateDidChangeNotification, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(proximitySensorStateDidChange(notification:)), name: UIDevice.proximityStateDidChangeNotification, object: nil)
     }
 
     // MARK: Dependencies
 
-    private let avAudioSession = AVAudioSession.sharedInstance()
+    private let avAudioSession = nil// = AVAudioSession.sharedInstance()
 
-    private let device = UIDevice.current
+    private let device = nil//UIDevice.current
 
     // MARK: 
 

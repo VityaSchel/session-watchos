@@ -3,7 +3,6 @@
 import Foundation
 import GRDB
 import SessionSnodeKit
-import SessionUIKit
 import SessionUtilitiesKit
 
 extension Message {

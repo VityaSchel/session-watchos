@@ -3,7 +3,6 @@
 //
 
 import Foundation
-import UIKit
 
 class ImageCacheRecord: NSObject {
     var variations: [CGFloat: UIImage]

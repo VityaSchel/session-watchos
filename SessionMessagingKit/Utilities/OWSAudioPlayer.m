@@ -39,11 +39,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark -
 
-@interface OWSAudioPlayer () <AVAudioPlayerDelegate>
+//@interface OWSAudioPlayer () <AVAudioPlayerDelegate>
 
-@property (nonatomic, readonly) NSURL *mediaUrl;
-@property (nonatomic, nullable) AVAudioPlayer *audioPlayer;
-@property (nonatomic, nullable) NSTimer *audioPlayerPoller;
+//@property (nonatomic, readonly) NSURL *mediaUrl;
+//@property (nonatomic, nullable) AVAudioPlayer *audioPlayer;
+//@property (nonatomic, nullable) NSTimer *audioPlayerPoller;
 //@property (nonatomic, readonly) OWSAudioActivity *audioActivity;
 
 @end

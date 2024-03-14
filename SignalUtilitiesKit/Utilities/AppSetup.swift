@@ -4,7 +4,6 @@ import Foundation
 import GRDB
 import SessionMessagingKit
 import SessionUtilitiesKit
-import SessionUIKit
 import SessionSnodeKit
 
 public enum AppSetup {

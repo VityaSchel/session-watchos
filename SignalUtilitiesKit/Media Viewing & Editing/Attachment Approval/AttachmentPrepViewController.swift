@@ -1,10 +1,8 @@
 // Copyright © 2022 Rangeproof Pty Ltd. All rights reserved.
 
 import Foundation
-import UIKit
 import AVKit
 import AVFoundation
-import SessionUIKit
 import SignalCoreKit
 import SessionMessagingKit
 import SessionUtilitiesKit
@@ -359,24 +357,24 @@ extension AttachmentPrepViewController: UIScrollViewDelegate {
     fileprivate func resetContentInset() {
         // If the content isn't zoomable then inset the content so it appears centered
         guard isZoomable else {
-            scrollView.contentInset = UIEdgeInsets(
-                top: -AttachmentPrepViewController.verticalCenterOffset,
-                leading: 0,
-                bottom: 0,
-                trailing: 0
-            )
+//            scrollView.contentInset = UIEdgeInsets(
+//                top: -AttachmentPrepViewController.verticalCenterOffset,
+//                leading: 0,
+//                bottom: 0,
+//                trailing: 0
+//            )
             return
         }
         
         let offsetX: CGFloat = max((scrollView.bounds.width - scrollView.contentSize.width) * 0.5, 0)
         let offsetY: CGFloat = max((scrollView.bounds.height - scrollView.contentSize.height) * 0.5, 0)
         
-        scrollView.contentInset = UIEdgeInsets(
-            top: offsetY - AttachmentPrepViewController.verticalCenterOffset,
-            left: offsetX,
-            bottom: 0,
-            right: 0
-        )
+//        scrollView.contentInset = UIEdgeInsets(
+//            top: offsetY - AttachmentPrepViewController.verticalCenterOffset,
+//            left: offsetX,
+//            bottom: 0,
+//            right: 0
+//        )
     }
 }
 

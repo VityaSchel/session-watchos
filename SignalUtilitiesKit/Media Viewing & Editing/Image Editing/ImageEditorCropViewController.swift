@@ -1,7 +1,5 @@
 //  Copyright (c) 2019 Open Whisper Systems. All rights reserved.
 
-import UIKit
-import SessionUIKit
 import SignalCoreKit
 import SessionUtilitiesKit
 
@@ -180,7 +178,7 @@ class ImageEditorCropViewController: OWSViewController {
         stackView.axis = .vertical
         stackView.alignment = .fill
         stackView.spacing = imageMargin
-        stackView.layoutMargins = UIEdgeInsets(top: 8, left: imageMargin, bottom: 8, right: imageMargin)
+//        stackView.layoutMargins = UIEdgeInsets(top: 8, left: imageMargin, bottom: 8, right: imageMargin)
         stackView.isLayoutMarginsRelativeArrangement = true
         self.view.addSubview(stackView)
         stackView.autoPinEdgesToSuperviewEdges()

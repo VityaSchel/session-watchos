@@ -2,7 +2,6 @@
 //  Copyright (c) 2019 Open Whisper Systems. All rights reserved.
 //
 
-import UIKit
 
 // The image editor uses multiple coordinate systems.
 //

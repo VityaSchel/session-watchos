@@ -2,8 +2,6 @@
 //  Copyright (c) 2019 Open Whisper Systems. All rights reserved.
 //
 
-import UIKit.UIGestureRecognizerSubclass
-
 public struct PanDirection: OptionSet {
     public let rawValue: Int
     public init(rawValue: Int) {

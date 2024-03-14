@@ -190,11 +190,12 @@ public final class JobRunner: JobRunnerType {
             .asSet()
         
         self.allowToExecuteJobs = (
-            isTestingJobRunner || (
-                Singleton.hasAppContext &&
-                Singleton.appContext.isMainApp &&
-                !SNUtilitiesKit.isRunningTests
-            )
+//            isTestingJobRunner || (
+//                Singleton.hasAppContext &&
+//                Singleton.appContext.isMainApp &&
+//                !SNUtilitiesKit.isRunningTests
+//            )
+          true
         )
         self.blockingQueue = Atomic(
             JobQueue(
