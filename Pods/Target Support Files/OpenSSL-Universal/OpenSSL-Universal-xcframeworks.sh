@@ -17,10 +17,10 @@ RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
 variant_for_slice()
 {
   case "$1" in
-  "OpenSSL.xcframework/watchos-arm64-simulator")
+  "OpenSSL.xcframework/watchos-arm64-simulator/watchos-arm64-simulator")
     echo "simulator"
     ;;
-  "OpenSSL.xcframework/watchos-arm64_32")
+  "OpenSSL.xcframework/watchos-arm64_32/watchos-arm64_32")
     echo ""
     ;;
   esac
@@ -29,10 +29,10 @@ variant_for_slice()
 archs_for_slice()
 {
   case "$1" in
-  "OpenSSL.xcframework/watchos-arm64-simulator")
+  "OpenSSL.xcframework/watchos-arm64-simulator/watchos-arm64-simulator")
     echo "arm64"
     ;;
-  "OpenSSL.xcframework/watchos-arm64_32")
+  "OpenSSL.xcframework/watchos-arm64_32/watchos-arm64_32")
     echo "arm64_32"
     ;;
   esac
@@ -117,5 +117,5 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/../OpenSSL/Frameworks/OpenSSL.xcframework" "OpenSSL-Universal" "library" "watchos-arm64-simulator" "watchos-arm64_32"
+install_xcframework "${PODS_ROOT}/../OpenSSL/Frameworks/OpenSSL.xcframework" "OpenSSL-Universal" "library" "watchos-arm64-simulator/watchos-arm64-simulator" "watchos-arm64_32/watchos-arm64_32"
 
