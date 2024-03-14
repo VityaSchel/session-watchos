@@ -6,16 +6,14 @@
 	<array>
 		<dict>
 			<key>BinaryPath</key>
-			<string>OpenSSL.framework/OpenSSL-watchOS.a</string>
-			<key>HeadersPath</key>
-			<string>Headers</string>
+			<string>openssl.framework/openssl</string>
 			<key>LibraryIdentifier</key>
-			<string>watchos-arm64-simulator</string>
+			<string>watchos-x86_64-simulator</string>
 			<key>LibraryPath</key>
-			<string>OpenSSL.framework</string>
+			<string>openssl.framework</string>
 			<key>SupportedArchitectures</key>
 			<array>
-				<string>arm64</string>
+				<string>x86_64</string>
 			</array>
 			<key>SupportedPlatform</key>
 			<string>watchos</string>
@@ -24,16 +22,15 @@
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
-			<string>OpenSSL.framework/OpenSSL-watchOS-Sim.a</string>
-			<key>HeadersPath</key>
-			<string>Headers</string>
+			<string>openssl.framework/openssl</string>
 			<key>LibraryIdentifier</key>
-			<string>watchos-arm64_32</string>
+			<string>watchos-arm64_32_armv7k</string>
 			<key>LibraryPath</key>
-			<string>OpenSSL.framework</string>
+			<string>openssl.framework</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>arm64_32</string>
+				<string>armv7k</string>
 			</array>
 			<key>SupportedPlatform</key>
 			<string>watchos</string>
