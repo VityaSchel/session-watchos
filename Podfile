@@ -32,8 +32,6 @@ abstract_target 'GlobalDependencies' do
 ##      pod 'Nimble'
 ##    end
 #  end
-
-  pod 'OpenSSL-Universal', :path => './OpenSSL/'
   
   # Dependencies to be included only in all extensions/frameworks
   abstract_target 'FrameworkAndExtensionDependencies' do
@@ -61,6 +59,7 @@ abstract_target 'GlobalDependencies' do
         pod 'Reachability', :path => './Reachability'
         pod 'SAMKeychain'
         pod 'SwiftProtobuf', '~> 1.5.0'
+        pod 'Curve25519Kit', :path => './session-ios-curve-25519-kit/'
 #        pod 'YYImage/libwebp', git: 'https://github.com/signalapp/YYImage'
         pod 'DifferenceKit'
       end
@@ -85,6 +84,7 @@ abstract_target 'GlobalDependencies' do
       
       target 'SessionUtilitiesKit' do
         pod 'SAMKeychain'
+        pod 'Curve25519Kit', :path => './session-ios-curve-25519-kit/'
 #        pod 'YYImage/libwebp', git: 'https://github.com/signalapp/YYImage'
         pod 'DifferenceKit'
         

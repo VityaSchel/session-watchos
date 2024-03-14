@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C872C56C4438E391C103FBE /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionMessagingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99F27E34C831AD827D29588 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionMessagingKit.framework */; };
-		65A8D3A08785EED1DFC4417E /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_SessionSnodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFFD602CDA7D09090AD72AF /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_SessionSnodeKit.framework */; };
-		67D57395E9062A8C401D55F1 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9B99CC49F368CAFDCCFFAF /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit.framework */; };
+		01C92DCC49243DD3327C8591 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1622C1DA1DC03ED860E340B1 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit.framework */; };
+		64A6EE5E4B3C889351B106A9 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionMessagingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC2F813CE6153D92F70DA65 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionMessagingKit.framework */; };
 		A712E8262BA0F4330037EFE2 /* EFQRCode in Frameworks */ = {isa = PBXBuildFile; productRef = A712E8252BA0F4330037EFE2 /* EFQRCode */; };
 		A71DAE942BA1BEE100BC763A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71DAE862BA1BEE100BC763A /* Assets.xcassets */; };
 		A71DAE952BA1BEE100BC763A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71DAE882BA1BEE100BC763A /* Preview Assets.xcassets */; };
@@ -128,7 +127,6 @@
 		A71DC2132BA220B300BC763A /* ColumnExpressible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0A52BA1E61500BC763A /* ColumnExpressible.swift */; };
 		A71DC2142BA221C200BC763A /* OWSBackgroundTask.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC0D62BA1E61600BC763A /* OWSBackgroundTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A74B2F212BA1BAF70048F0E2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A74B2F202BA1BAF70048F0E2 /* Podfile */; };
-		A7A9AB872BA35D300067B9A3 /* OpenSSL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A9AB862BA35D300067B9A3 /* OpenSSL.xcframework */; };
 		A7A9AB8A2BA35E6F0067B9A3 /* SessionUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC04F2BA1C28B00BC763A /* SessionUtilitiesKit.framework */; };
 		A7A9AB8F2BA35F650067B9A3 /* OWSBackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0E12BA1E61600BC763A /* OWSBackgroundTask.m */; };
 		A7A9AB902BA360350067B9A3 /* OWSMath.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC0EB2BA1E61600BC763A /* OWSMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -144,7 +142,8 @@
 		A7A9AB9A2BA36AED0067B9A3 /* DatabaseMigrator+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0B62BA1E61500BC763A /* DatabaseMigrator+Utilities.swift */; };
 		A7A9AB9B2BA36C760067B9A3 /* MIMETypeUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC11B2BA1E61600BC763A /* MIMETypeUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7A9AB9C2BA3714A0067B9A3 /* QueryInterfaceRequest+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0B82BA1E61500BC763A /* QueryInterfaceRequest+Utilities.swift */; };
-		B9491AD6CA9A15C54D009009 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70392ED048CAA41A72C0A735 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework */; };
+		EE12E1EFEF9682EAC791CF0B /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0DE6117C8DE20D926931BF /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework */; };
+		FDD5201D934DC26A93B6CA38 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_SessionSnodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F2A11EA951B40479838C192 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_SessionSnodeKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -205,13 +204,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		09E20ED8304FCADC0B224741 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.release.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.release.xcconfig"; sourceTree = "<group>"; };
-		13D2C0E8837A3612379F4B80 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.debug.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.debug.xcconfig"; sourceTree = "<group>"; };
-		3220BB937F1B493C07A5FC35 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.debug.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.debug.xcconfig"; sourceTree = "<group>"; };
-		3547DA32DA40884A1D3FA65F /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.debug.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.debug.xcconfig"; sourceTree = "<group>"; };
-		3EFFD602CDA7D09090AD72AF /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_SessionSnodeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobalDependencies_FrameworkAndExtensionDependencies_SessionSnodeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		70392ED048CAA41A72C0A735 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5D0C18996F23AB932A58D06 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.release.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.release.xcconfig"; sourceTree = "<group>"; };
+		1622C1DA1DC03ED860E340B1 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2936C5C557AA07023133557A /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.release.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.release.xcconfig"; sourceTree = "<group>"; };
+		3D126C9B4D3F2EE2776ADC6E /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.release.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.release.xcconfig"; sourceTree = "<group>"; };
+		4566F48620A6D990C868FA71 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.release.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.release.xcconfig"; sourceTree = "<group>"; };
+		6B0DE6117C8DE20D926931BF /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F2A11EA951B40479838C192 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_SessionSnodeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobalDependencies_FrameworkAndExtensionDependencies_SessionSnodeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85F46BDAEF433C7819BF0F62 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig"; sourceTree = "<group>"; };
+		87FF8264897E6090C101E1FD /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.release.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.release.xcconfig"; sourceTree = "<group>"; };
+		8AC2F813CE6153D92F70DA65 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionMessagingKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionMessagingKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71202842BA0CDDC0059213C /* Session.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Session.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71DAE852BA1BEE100BC763A /* SessionMessengerApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionMessengerApp.swift; sourceTree = "<group>"; };
 		A71DAE862BA1BEE100BC763A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -720,11 +721,11 @@
 		A71DC1232BA1E61600BC763A /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		A74B2F202BA1BAF70048F0E2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A7A9AB862BA35D300067B9A3 /* OpenSSL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OpenSSL.xcframework; path = OpenSSL/Frameworks/OpenSSL.xcframework; sourceTree = "<group>"; };
-		BDA034FECA92085758634377 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig"; sourceTree = "<group>"; };
-		CBAAAFDD249E8821FBBB47E6 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.release.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.release.xcconfig"; sourceTree = "<group>"; };
-		CF9B99CC49F368CAFDCCFFAF /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF99F3BB1FC288782C3360CF /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.release.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.release.xcconfig"; sourceTree = "<group>"; };
-		E99F27E34C831AD827D29588 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionMessagingKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionMessagingKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A9AB9D2BA388CB0067B9A3 /* SignalCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SignalCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A9ABA12BA388D30067B9A3 /* Curve25519Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Curve25519Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B14696807726C3BA64F82CE2 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.debug.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.debug.xcconfig"; sourceTree = "<group>"; };
+		B7CB2B50AFC802092FEB81D0 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.debug.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.debug.xcconfig"; sourceTree = "<group>"; };
+		D53729DDBC54375A13BB7410 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.debug.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -733,7 +734,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7A9AB8A2BA35E6F0067B9A3 /* SessionUtilitiesKit.framework in Frameworks */,
-				A7A9AB872BA35D300067B9A3 /* OpenSSL.xcframework in Frameworks */,
 				A712E8262BA0F4330037EFE2 /* EFQRCode in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -743,7 +743,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A71DC0452BA1C1EE00BC763A /* SignalUtilitiesKit.framework in Frameworks */,
-				65A8D3A08785EED1DFC4417E /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_SessionSnodeKit.framework in Frameworks */,
+				FDD5201D934DC26A93B6CA38 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_SessionSnodeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,7 +751,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9491AD6CA9A15C54D009009 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework in Frameworks */,
+				EE12E1EFEF9682EAC791CF0B /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -762,7 +762,7 @@
 				A71DC0562BA1C2B800BC763A /* SessionSnodeKit.framework in Frameworks */,
 				A71DC06A2BA1C30800BC763A /* libSessionUtil.a in Frameworks */,
 				A71DC05B2BA1C2C000BC763A /* SessionUtilitiesKit.framework in Frameworks */,
-				0C872C56C4438E391C103FBE /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionMessagingKit.framework in Frameworks */,
+				64A6EE5E4B3C889351B106A9 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionMessagingKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,7 +770,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67D57395E9062A8C401D55F1 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit.framework in Frameworks */,
+				01C92DCC49243DD3327C8591 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2030,11 +2030,13 @@
 		D2F81947173E02B36E7BF099 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A7A9ABA12BA388D30067B9A3 /* Curve25519Kit.framework */,
+				A7A9AB9D2BA388CB0067B9A3 /* SignalCoreKit.framework */,
 				A7A9AB862BA35D300067B9A3 /* OpenSSL.xcframework */,
-				E99F27E34C831AD827D29588 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionMessagingKit.framework */,
-				CF9B99CC49F368CAFDCCFFAF /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit.framework */,
-				70392ED048CAA41A72C0A735 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework */,
-				3EFFD602CDA7D09090AD72AF /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_SessionSnodeKit.framework */,
+				8AC2F813CE6153D92F70DA65 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionMessagingKit.framework */,
+				1622C1DA1DC03ED860E340B1 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit.framework */,
+				6B0DE6117C8DE20D926931BF /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework */,
+				6F2A11EA951B40479838C192 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_SessionSnodeKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2042,14 +2044,14 @@
 		DC7A66542122082031727462 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3220BB937F1B493C07A5FC35 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.debug.xcconfig */,
-				DF99F3BB1FC288782C3360CF /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.release.xcconfig */,
-				13D2C0E8837A3612379F4B80 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.debug.xcconfig */,
-				09E20ED8304FCADC0B224741 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.release.xcconfig */,
-				3547DA32DA40884A1D3FA65F /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.debug.xcconfig */,
-				A5D0C18996F23AB932A58D06 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.release.xcconfig */,
-				BDA034FECA92085758634377 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig */,
-				CBAAAFDD249E8821FBBB47E6 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.release.xcconfig */,
+				B7CB2B50AFC802092FEB81D0 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.debug.xcconfig */,
+				87FF8264897E6090C101E1FD /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.release.xcconfig */,
+				D53729DDBC54375A13BB7410 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.debug.xcconfig */,
+				3D126C9B4D3F2EE2776ADC6E /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.release.xcconfig */,
+				B14696807726C3BA64F82CE2 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.debug.xcconfig */,
+				4566F48620A6D990C868FA71 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.release.xcconfig */,
+				85F46BDAEF433C7819BF0F62 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig */,
+				2936C5C557AA07023133557A /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -2123,7 +2125,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A71DC0292BA1C15B00BC763A /* Build configuration list for PBXNativeTarget "SessionSnodeKit" */;
 			buildPhases = (
-				EB92DE7D8F62EDCD19AB1A0D /* [CP] Check Pods Manifest.lock */,
+				8DED9CB557507A4D6DBCA83E /* [CP] Check Pods Manifest.lock */,
 				A71DC0202BA1C15B00BC763A /* Headers */,
 				A71DC0212BA1C15B00BC763A /* Sources */,
 				A71DC0222BA1C15B00BC763A /* Frameworks */,
@@ -2143,7 +2145,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A71DC0352BA1C17200BC763A /* Build configuration list for PBXNativeTarget "SignalUtilitiesKit" */;
 			buildPhases = (
-				572791434F173C3DB18812F7 /* [CP] Check Pods Manifest.lock */,
+				BB6882AC7A01A6FA44D21968 /* [CP] Check Pods Manifest.lock */,
 				A71DC02C2BA1C17100BC763A /* Headers */,
 				A71DC02D2BA1C17100BC763A /* Sources */,
 				A71DC02E2BA1C17100BC763A /* Frameworks */,
@@ -2162,7 +2164,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A71DC0412BA1C17B00BC763A /* Build configuration list for PBXNativeTarget "SessionMessagingKit" */;
 			buildPhases = (
-				C8855F50EEEE3C538CDADF8E /* [CP] Check Pods Manifest.lock */,
+				BD6C79B8CDCE65BC1976539D /* [CP] Check Pods Manifest.lock */,
 				A71DC0382BA1C17B00BC763A /* Headers */,
 				A71DC0392BA1C17B00BC763A /* Sources */,
 				A71DC03A2BA1C17B00BC763A /* Frameworks */,
@@ -2184,7 +2186,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A71DC0532BA1C28B00BC763A /* Build configuration list for PBXNativeTarget "SessionUtilitiesKit" */;
 			buildPhases = (
-				7E95B7DF3097C387ABBDD5FF /* [CP] Check Pods Manifest.lock */,
+				3F2C74757E66E07795D98AFB /* [CP] Check Pods Manifest.lock */,
 				A71DC04A2BA1C28B00BC763A /* Headers */,
 				A71DC04B2BA1C28B00BC763A /* Sources */,
 				A71DC04C2BA1C28B00BC763A /* Frameworks */,
@@ -2362,29 +2364,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		572791434F173C3DB18812F7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7E95B7DF3097C387ABBDD5FF /* [CP] Check Pods Manifest.lock */ = {
+		3F2C74757E66E07795D98AFB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2406,29 +2386,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C8855F50EEEE3C538CDADF8E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EB92DE7D8F62EDCD19AB1A0D /* [CP] Check Pods Manifest.lock */ = {
+		8DED9CB557507A4D6DBCA83E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2444,6 +2402,50 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB6882AC7A01A6FA44D21968 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD6C79B8CDCE65BC1976539D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2823,7 +2825,7 @@
 		};
 		A71DC02A2BA1C15B00BC763A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDA034FECA92085758634377 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig */;
+			baseConfigurationReference = 85F46BDAEF433C7819BF0F62 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2858,7 +2860,7 @@
 		};
 		A71DC02B2BA1C15B00BC763A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBAAAFDD249E8821FBBB47E6 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.release.xcconfig */;
+			baseConfigurationReference = 2936C5C557AA07023133557A /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2894,7 +2896,7 @@
 		};
 		A71DC0362BA1C17200BC763A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3547DA32DA40884A1D3FA65F /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.debug.xcconfig */;
+			baseConfigurationReference = B14696807726C3BA64F82CE2 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2929,7 +2931,7 @@
 		};
 		A71DC0372BA1C17200BC763A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5D0C18996F23AB932A58D06 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.release.xcconfig */;
+			baseConfigurationReference = 4566F48620A6D990C868FA71 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2965,7 +2967,7 @@
 		};
 		A71DC0422BA1C17B00BC763A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3220BB937F1B493C07A5FC35 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.debug.xcconfig */;
+			baseConfigurationReference = B7CB2B50AFC802092FEB81D0 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -3000,7 +3002,7 @@
 		};
 		A71DC0432BA1C17B00BC763A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF99F3BB1FC288782C3360CF /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.release.xcconfig */;
+			baseConfigurationReference = 87FF8264897E6090C101E1FD /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -3036,7 +3038,7 @@
 		};
 		A71DC0542BA1C28B00BC763A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13D2C0E8837A3612379F4B80 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.debug.xcconfig */;
+			baseConfigurationReference = D53729DDBC54375A13BB7410 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -3073,7 +3075,7 @@
 		};
 		A71DC0552BA1C28B00BC763A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09E20ED8304FCADC0B224741 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.release.xcconfig */;
+			baseConfigurationReference = 3D126C9B4D3F2EE2776ADC6E /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
