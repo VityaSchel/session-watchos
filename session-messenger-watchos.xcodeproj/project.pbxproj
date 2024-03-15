@@ -19,7 +19,6 @@
 		A71DC0282BA1C15B00BC763A /* SessionSnodeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC0272BA1C15B00BC763A /* SessionSnodeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A71DC0342BA1C17200BC763A /* SignalUtilitiesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC0332BA1C17200BC763A /* SignalUtilitiesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A71DC0402BA1C17B00BC763A /* SessionMessagingKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC03F2BA1C17B00BC763A /* SessionMessagingKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A71DC0452BA1C1EE00BC763A /* SignalUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC0312BA1C17200BC763A /* SignalUtilitiesKit.framework */; };
 		A71DC0562BA1C2B800BC763A /* SessionSnodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC0252BA1C15B00BC763A /* SessionSnodeKit.framework */; };
 		A71DC05B2BA1C2C000BC763A /* SessionUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC04F2BA1C28B00BC763A /* SessionUtilitiesKit.framework */; };
 		A71DC0662BA1C2F700BC763A /* SessionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0652BA1C2F700BC763A /* SessionUtil.swift */; };
@@ -127,7 +126,6 @@
 		A71DC2132BA220B300BC763A /* ColumnExpressible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0A52BA1E61500BC763A /* ColumnExpressible.swift */; };
 		A71DC2142BA221C200BC763A /* OWSBackgroundTask.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC0D62BA1E61600BC763A /* OWSBackgroundTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A74B2F212BA1BAF70048F0E2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A74B2F202BA1BAF70048F0E2 /* Podfile */; };
-		A7A9AB8A2BA35E6F0067B9A3 /* SessionUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC04F2BA1C28B00BC763A /* SessionUtilitiesKit.framework */; };
 		A7A9AB8F2BA35F650067B9A3 /* OWSBackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0E12BA1E61600BC763A /* OWSBackgroundTask.m */; };
 		A7A9AB902BA360350067B9A3 /* OWSMath.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC0EB2BA1E61600BC763A /* OWSMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7A9AB912BA360400067B9A3 /* NSUserDefaults+OWS.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC0F82BA1E61600BC763A /* NSUserDefaults+OWS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -142,20 +140,25 @@
 		A7A9AB9A2BA36AED0067B9A3 /* DatabaseMigrator+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0B62BA1E61500BC763A /* DatabaseMigrator+Utilities.swift */; };
 		A7A9AB9B2BA36C760067B9A3 /* MIMETypeUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC11B2BA1E61600BC763A /* MIMETypeUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7A9AB9C2BA3714A0067B9A3 /* QueryInterfaceRequest+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0B82BA1E61500BC763A /* QueryInterfaceRequest+Utilities.swift */; };
-		A7A9ABA52BA45D030067B9A3 /* SessionMessagingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC03D2BA1C17B00BC763A /* SessionMessagingKit.framework */; };
-		A7A9ABA62BA45D030067B9A3 /* SessionMessagingKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC03D2BA1C17B00BC763A /* SessionMessagingKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A7BCF3932BA4719300CB5766 /* SessionUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC04F2BA1C28B00BC763A /* SessionUtilitiesKit.framework */; };
+		A7BCF3942BA4719300CB5766 /* SessionUtilitiesKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC04F2BA1C28B00BC763A /* SessionUtilitiesKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A7BCF3982BA471AB00CB5766 /* SessionMessagingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC03D2BA1C17B00BC763A /* SessionMessagingKit.framework */; };
+		A7BCF39D2BA471B200CB5766 /* SessionSnodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC0252BA1C15B00BC763A /* SessionSnodeKit.framework */; };
+		A7BCF3A12BA471BB00CB5766 /* SessionUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC04F2BA1C28B00BC763A /* SessionUtilitiesKit.framework */; };
+		A7BCF3A92BA4720700CB5766 /* SessionMessagingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC03D2BA1C17B00BC763A /* SessionMessagingKit.framework */; };
+		A7BCF3AA2BA4720700CB5766 /* SessionMessagingKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC03D2BA1C17B00BC763A /* SessionMessagingKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A7BCF3AC2BA4720E00CB5766 /* SessionUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC04F2BA1C28B00BC763A /* SessionUtilitiesKit.framework */; };
+		A7BCF3AD2BA4720E00CB5766 /* SessionUtilitiesKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC04F2BA1C28B00BC763A /* SessionUtilitiesKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A7BCF3AE2BA4722500CB5766 /* SessionSnodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC0252BA1C15B00BC763A /* SessionSnodeKit.framework */; };
+		A7BCF3AF2BA4722500CB5766 /* SessionSnodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC0252BA1C15B00BC763A /* SessionSnodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A7BCF3B02BA4727200CB5766 /* SignalUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC0312BA1C17200BC763A /* SignalUtilitiesKit.framework */; };
+		A7BCF3B12BA4727200CB5766 /* SignalUtilitiesKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC0312BA1C17200BC763A /* SignalUtilitiesKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B43EC962695FF8585F50264B /* Pods_GlobalDependencies_session_ui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1609C8B3D24FD3070D2A731 /* Pods_GlobalDependencies_session_ui.framework */; };
 		EE12E1EFEF9682EAC791CF0B /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0DE6117C8DE20D926931BF /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework */; };
 		FDD5201D934DC26A93B6CA38 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_SessionSnodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F2A11EA951B40479838C192 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_SessionSnodeKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A71DC0472BA1C1EE00BC763A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A71202782BA0CDDC0059213C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A71DC0302BA1C17100BC763A;
-			remoteInfo = SignalUtilitiesKit;
-		};
 		A71DC0582BA1C2B800BC763A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A71202782BA0CDDC0059213C /* Project object */;
@@ -198,6 +201,48 @@
 			remoteGlobalIDString = A71DC03C2BA1C17B00BC763A;
 			remoteInfo = SessionMessagingKit;
 		};
+		A7BCF3952BA4719300CB5766 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A71202782BA0CDDC0059213C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A71DC04E2BA1C28B00BC763A;
+			remoteInfo = SessionUtilitiesKit;
+		};
+		A7BCF39A2BA471AB00CB5766 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A71202782BA0CDDC0059213C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A71DC03C2BA1C17B00BC763A;
+			remoteInfo = SessionMessagingKit;
+		};
+		A7BCF39F2BA471B300CB5766 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A71202782BA0CDDC0059213C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A71DC0242BA1C15B00BC763A;
+			remoteInfo = SessionSnodeKit;
+		};
+		A7BCF3A32BA471BB00CB5766 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A71202782BA0CDDC0059213C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A71DC04E2BA1C28B00BC763A;
+			remoteInfo = SessionUtilitiesKit;
+		};
+		A7BCF3A72BA471FC00CB5766 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A71202782BA0CDDC0059213C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A71DC0242BA1C15B00BC763A;
+			remoteInfo = SessionSnodeKit;
+		};
+		A7BCF3B22BA4727200CB5766 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A71202782BA0CDDC0059213C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A71DC0302BA1C17100BC763A;
+			remoteInfo = SignalUtilitiesKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -210,13 +255,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A7A9ABA92BA45D030067B9A3 /* Embed Frameworks */ = {
+		A7BCF3972BA4719300CB5766 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A7A9ABA62BA45D030067B9A3 /* SessionMessagingKit.framework in Embed Frameworks */,
+				A7BCF3942BA4719300CB5766 /* SessionUtilitiesKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7BCF3AB2BA4720700CB5766 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A7BCF3AA2BA4720700CB5766 /* SessionMessagingKit.framework in Embed Frameworks */,
+				A7BCF3AD2BA4720E00CB5766 /* SessionUtilitiesKit.framework in Embed Frameworks */,
+				A7BCF3B12BA4727200CB5766 /* SignalUtilitiesKit.framework in Embed Frameworks */,
+				A7BCF3AF2BA4722500CB5766 /* SessionSnodeKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +292,7 @@
 		85F46BDAEF433C7819BF0F62 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig"; sourceTree = "<group>"; };
 		87FF8264897E6090C101E1FD /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.release.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.release.xcconfig"; sourceTree = "<group>"; };
 		8AC2F813CE6153D92F70DA65 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionMessagingKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionMessagingKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A58A9164C4BE760575CBD26F /* Pods-GlobalDependencies-session-ui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-session-ui.debug.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-session-ui/Pods-GlobalDependencies-session-ui.debug.xcconfig"; sourceTree = "<group>"; };
 		A71202842BA0CDDC0059213C /* Session.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Session.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71DAE852BA1BEE100BC763A /* SessionMessengerApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionMessengerApp.swift; sourceTree = "<group>"; };
 		A71DAE862BA1BEE100BC763A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -743,9 +803,15 @@
 		A7A9AB862BA35D300067B9A3 /* OpenSSL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OpenSSL.xcframework; path = OpenSSL/Frameworks/OpenSSL.xcframework; sourceTree = "<group>"; };
 		A7A9AB9D2BA388CB0067B9A3 /* SignalCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SignalCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A9ABA12BA388D30067B9A3 /* Curve25519Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Curve25519Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7BCF37F2BA46D9900CB5766 /* Curve25519Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Curve25519Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7BCF3832BA46DC000CB5766 /* Curve25519Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Curve25519Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7BCF3872BA46E9500CB5766 /* Curve25519Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Curve25519Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7BCF3902BA46F6300CB5766 /* Clibsodium.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Clibsodium.xcframework; path = Pods/Sodium/Clibsodium.xcframework; sourceTree = "<group>"; };
 		B14696807726C3BA64F82CE2 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.debug.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.debug.xcconfig"; sourceTree = "<group>"; };
 		B7CB2B50AFC802092FEB81D0 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.debug.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.debug.xcconfig"; sourceTree = "<group>"; };
 		D53729DDBC54375A13BB7410 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.debug.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.debug.xcconfig"; sourceTree = "<group>"; };
+		E1609C8B3D24FD3070D2A731 /* Pods_GlobalDependencies_session_ui.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobalDependencies_session_ui.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAD6AB07F9F7FF889AA9150E /* Pods-GlobalDependencies-session-ui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-session-ui.release.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-session-ui/Pods-GlobalDependencies-session-ui.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -753,9 +819,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7A9AB8A2BA35E6F0067B9A3 /* SessionUtilitiesKit.framework in Frameworks */,
+				A7BCF3B02BA4727200CB5766 /* SignalUtilitiesKit.framework in Frameworks */,
+				A7BCF3AE2BA4722500CB5766 /* SessionSnodeKit.framework in Frameworks */,
+				A7BCF3AC2BA4720E00CB5766 /* SessionUtilitiesKit.framework in Frameworks */,
+				A7BCF3A92BA4720700CB5766 /* SessionMessagingKit.framework in Frameworks */,
 				A712E8262BA0F4330037EFE2 /* EFQRCode in Frameworks */,
-				A7A9ABA52BA45D030067B9A3 /* SessionMessagingKit.framework in Frameworks */,
+				B43EC962695FF8585F50264B /* Pods_GlobalDependencies_session_ui.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,8 +832,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A71DC0452BA1C1EE00BC763A /* SignalUtilitiesKit.framework in Frameworks */,
 				FDD5201D934DC26A93B6CA38 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_SessionSnodeKit.framework in Frameworks */,
+				A7BCF3932BA4719300CB5766 /* SessionUtilitiesKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -773,6 +842,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE12E1EFEF9682EAC791CF0B /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework in Frameworks */,
+				A7BCF3A12BA471BB00CB5766 /* SessionUtilitiesKit.framework in Frameworks */,
+				A7BCF3982BA471AB00CB5766 /* SessionMessagingKit.framework in Frameworks */,
+				A7BCF39D2BA471B200CB5766 /* SessionSnodeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2051,6 +2123,10 @@
 		D2F81947173E02B36E7BF099 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A7BCF3902BA46F6300CB5766 /* Clibsodium.xcframework */,
+				A7BCF3872BA46E9500CB5766 /* Curve25519Kit.framework */,
+				A7BCF3832BA46DC000CB5766 /* Curve25519Kit.framework */,
+				A7BCF37F2BA46D9900CB5766 /* Curve25519Kit.framework */,
 				A7A9ABA12BA388D30067B9A3 /* Curve25519Kit.framework */,
 				A7A9AB9D2BA388CB0067B9A3 /* SignalCoreKit.framework */,
 				A7A9AB862BA35D300067B9A3 /* OpenSSL.xcframework */,
@@ -2058,6 +2134,7 @@
 				1622C1DA1DC03ED860E340B1 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit.framework */,
 				6B0DE6117C8DE20D926931BF /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework */,
 				6F2A11EA951B40479838C192 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_SessionSnodeKit.framework */,
+				E1609C8B3D24FD3070D2A731 /* Pods_GlobalDependencies_session_ui.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2073,6 +2150,8 @@
 				4566F48620A6D990C868FA71 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.release.xcconfig */,
 				85F46BDAEF433C7819BF0F62 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig */,
 				2936C5C557AA07023133557A /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.release.xcconfig */,
+				A58A9164C4BE760575CBD26F /* Pods-GlobalDependencies-session-ui.debug.xcconfig */,
+				EAD6AB07F9F7FF889AA9150E /* Pods-GlobalDependencies-session-ui.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -2124,10 +2203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A71202942BA0CDDD0059213C /* Build configuration list for PBXNativeTarget "session-ui" */;
 			buildPhases = (
+				CF64EA53CD71745D742EDDC2 /* [CP] Check Pods Manifest.lock */,
 				A71202802BA0CDDC0059213C /* Sources */,
 				A71202812BA0CDDC0059213C /* Frameworks */,
 				A71202822BA0CDDC0059213C /* Resources */,
-				A7A9ABA92BA45D030067B9A3 /* Embed Frameworks */,
+				CD0E3DA9FA6BD9C22AEC72F3 /* [CP] Embed Pods Frameworks */,
+				A7BCF3AB2BA4720700CB5766 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2135,6 +2216,8 @@
 				A71DC08E2BA1E4AE00BC763A /* PBXTargetDependency */,
 				A7A9AB8D2BA35E6F0067B9A3 /* PBXTargetDependency */,
 				A7A9ABA82BA45D030067B9A3 /* PBXTargetDependency */,
+				A7BCF3A82BA471FC00CB5766 /* PBXTargetDependency */,
+				A7BCF3B32BA4727200CB5766 /* PBXTargetDependency */,
 			);
 			name = "session-ui";
 			packageProductDependencies = (
@@ -2153,11 +2236,12 @@
 				A71DC0212BA1C15B00BC763A /* Sources */,
 				A71DC0222BA1C15B00BC763A /* Frameworks */,
 				A71DC0232BA1C15B00BC763A /* Resources */,
+				A7BCF3972BA4719300CB5766 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A71DC0482BA1C1EE00BC763A /* PBXTargetDependency */,
+				A7BCF3962BA4719300CB5766 /* PBXTargetDependency */,
 			);
 			name = SessionSnodeKit;
 			productName = SessionSnodeKit;
@@ -2177,6 +2261,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				A7BCF39B2BA471AB00CB5766 /* PBXTargetDependency */,
+				A7BCF3A02BA471B300CB5766 /* PBXTargetDependency */,
+				A7BCF3A42BA471BB00CB5766 /* PBXTargetDependency */,
 			);
 			name = SignalUtilitiesKit;
 			productName = SignalUtilitiesKit;
@@ -2475,6 +2562,45 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CD0E3DA9FA6BD9C22AEC72F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GlobalDependencies-session-ui/Pods-GlobalDependencies-session-ui-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GlobalDependencies-session-ui/Pods-GlobalDependencies-session-ui-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GlobalDependencies-session-ui/Pods-GlobalDependencies-session-ui-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF64EA53CD71745D742EDDC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GlobalDependencies-session-ui-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -2634,11 +2760,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A71DC0482BA1C1EE00BC763A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A71DC0302BA1C17100BC763A /* SignalUtilitiesKit */;
-			targetProxy = A71DC0472BA1C1EE00BC763A /* PBXContainerItemProxy */;
-		};
 		A71DC0592BA1C2B800BC763A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A71DC0242BA1C15B00BC763A /* SessionSnodeKit */;
@@ -2668,6 +2789,36 @@
 			isa = PBXTargetDependency;
 			target = A71DC03C2BA1C17B00BC763A /* SessionMessagingKit */;
 			targetProxy = A7A9ABA72BA45D030067B9A3 /* PBXContainerItemProxy */;
+		};
+		A7BCF3962BA4719300CB5766 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A71DC04E2BA1C28B00BC763A /* SessionUtilitiesKit */;
+			targetProxy = A7BCF3952BA4719300CB5766 /* PBXContainerItemProxy */;
+		};
+		A7BCF39B2BA471AB00CB5766 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A71DC03C2BA1C17B00BC763A /* SessionMessagingKit */;
+			targetProxy = A7BCF39A2BA471AB00CB5766 /* PBXContainerItemProxy */;
+		};
+		A7BCF3A02BA471B300CB5766 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A71DC0242BA1C15B00BC763A /* SessionSnodeKit */;
+			targetProxy = A7BCF39F2BA471B300CB5766 /* PBXContainerItemProxy */;
+		};
+		A7BCF3A42BA471BB00CB5766 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A71DC04E2BA1C28B00BC763A /* SessionUtilitiesKit */;
+			targetProxy = A7BCF3A32BA471BB00CB5766 /* PBXContainerItemProxy */;
+		};
+		A7BCF3A82BA471FC00CB5766 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A71DC0242BA1C15B00BC763A /* SessionSnodeKit */;
+			targetProxy = A7BCF3A72BA471FC00CB5766 /* PBXContainerItemProxy */;
+		};
+		A7BCF3B32BA4727200CB5766 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A71DC0302BA1C17100BC763A /* SignalUtilitiesKit */;
+			targetProxy = A7BCF3B22BA4727200CB5766 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2788,6 +2939,7 @@
 		};
 		A71202952BA0CDDD0059213C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A58A9164C4BE760575CBD26F /* Pods-GlobalDependencies-session-ui.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2820,6 +2972,7 @@
 		};
 		A71202962BA0CDDD0059213C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAD6AB07F9F7FF889AA9150E /* Pods-GlobalDependencies-session-ui.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

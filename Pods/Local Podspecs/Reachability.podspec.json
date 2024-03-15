@@ -16,7 +16,6 @@
     "tag": "v3.3"
   },
   "source_files": "Reachability.{h,m}",
-  "frameworks": "SystemConfiguration",
   "requires_arc": true,
   "swift_versions": "4.1",
   "platforms": {

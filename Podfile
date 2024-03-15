@@ -5,10 +5,6 @@ inhibit_all_warnings!
 
 install! 'cocoapods', :warn_for_unused_master_specs_repo => false
 
-pod 'Curve25519Kit', :path => './session-ios-curve-25519-kit/'
-pod 'SignalCoreKit', :path => './session-ios-core-kit/'
-pod 'OpenSSL-Universal', :path => './OpenSSL/'
-
 # Dependencies to be included in the app and all extensions/frameworks
 abstract_target 'GlobalDependencies' do
   # FIXME: If https://github.com/jedisct1/swift-sodium/pull/249 gets resolved then revert this back to the standard pod
@@ -36,14 +32,18 @@ abstract_target 'GlobalDependencies' do
 ##      pod 'Nimble'
 ##    end
 #  end
+
+  target 'session-ui' do
+    pod 'Reachability', :path => './Reachability'
+  end
   
   # Dependencies to be included only in all extensions/frameworks
   abstract_target 'FrameworkAndExtensionDependencies' do
 #    pod 'Curve25519Kit', git: 'https://github.com/oxen-io/session-ios-curve-25519-kit.git', branch: 'session-version'
-#    pod 'Curve25519Kit', :path => './session-ios-curve-25519-kit/'
+    pod 'Curve25519Kit', :path => './session-ios-curve-25519-kit/'
 #    pod 'SignalCoreKit', git: 'https://github.com/oxen-io/session-ios-core-kit', branch: 'session-version'
-#    pod 'SignalCoreKit', :path => './session-ios-core-kit/'
-#    pod 'OpenSSL-Universal', :path => './OpenSSL/'
+    pod 'SignalCoreKit', :path => './session-ios-core-kit/'
+    pod 'OpenSSL-Universal', :path => './OpenSSL/'
     
 #    target 'SessionNotificationServiceExtension'
     target 'SessionSnodeKit'
@@ -63,7 +63,7 @@ abstract_target 'GlobalDependencies' do
         pod 'Reachability', :path => './Reachability'
         pod 'SAMKeychain'
         pod 'SwiftProtobuf', '~> 1.5.0'
-        pod 'Curve25519Kit', :path => './session-ios-curve-25519-kit/'
+#        pod 'Curve25519Kit', :path => './session-ios-curve-25519-kit/'
 #        pod 'YYImage/libwebp', git: 'https://github.com/signalapp/YYImage'
         pod 'DifferenceKit'
       end
@@ -88,7 +88,7 @@ abstract_target 'GlobalDependencies' do
       
       target 'SessionUtilitiesKit' do
         pod 'SAMKeychain'
-        pod 'Curve25519Kit', :path => './session-ios-curve-25519-kit/'
+#        pod 'Curve25519Kit', :path => './session-ios-curve-25519-kit/'
 #        pod 'YYImage/libwebp', git: 'https://github.com/signalapp/YYImage'
         pod 'DifferenceKit'
         
@@ -115,7 +115,7 @@ post_install do |installer|
   installer.generated_projects.each do |project|
       project.targets.each do |target|
         if target.name == 'SignalCoreKit'
-          openssl_framework_path = '${PODS_ROOT}/OpenSSL/Frameworks/OpenSSL.xcframework'
+          openssl_framework_path = '${PODS_ROOT}/OpenSSL/Frameworks'
           target.frameworks_build_phase.add_file_reference(project.new_file(openssl_framework_path), true)
         end
       end
