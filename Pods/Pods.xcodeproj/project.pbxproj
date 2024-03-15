@@ -16,6 +16,7 @@
 			dependencies = (
 			);
 			name = "OpenSSL-Universal";
+			productName = "OpenSSL-Universal";
 		};
 /* End PBXAggregateTarget section */
 
@@ -576,6 +577,7 @@
 		A7519B898E7EC0E6C347169E7FCAE436 /* FTS5+QueryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598BC5E506C1D2BC21F1B5B8EB7652F1 /* FTS5+QueryInterface.swift */; };
 		A76AD85B3A3472D7FD4D5F35939320C0 /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B0C405AFE3FA2E73CD9A00F27BC115F /* sqlite3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7A96A91DA95260EC0081EBA70D2A975 /* MutablePersistableRecord+DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3087C77A68CCAC0C09540E3A53DEF44B /* MutablePersistableRecord+DAO.swift */; };
+		A7BCF3B92BA474F400CB5766 /* OpenSSL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA511AEDEE0F9211D282D1EF145EB0CE /* OpenSSL.xcframework */; };
 		A8200A7323472D04C1E306DBFE897A5F /* crypto_verify_32.h in Headers */ = {isa = PBXBuildFile; fileRef = AF44C17CCC905EE73C5D6FDF86496046 /* crypto_verify_32.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A91835BEA20AC006BD5245E170192947 /* BinaryEncodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9BCA2E42643A617E97103B84DE04B6 /* BinaryEncodingError.swift */; };
 		A940749E43BDCB4682B14DEA7A8C4071 /* crypto_core_hchacha20.h in Headers */ = {isa = PBXBuildFile; fileRef = 40DB3B0B365BDBE977F003DA789CADB3 /* crypto_core_hchacha20.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -1269,12 +1271,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00168AE853D777D4E9575C8D6D2C80FA /* fe_cmov.c */ = {isa = PBXFileReference; includeInIndex = 1; path = fe_cmov.c; sourceTree = "<group>"; };
+		00168AE853D777D4E9575C8D6D2C80FA /* fe_cmov.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = fe_cmov.c; sourceTree = "<group>"; };
 		003E4DE2F3BFAF1518B7F8B0CED41B80 /* SimpleExtensionMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleExtensionMap.swift; path = Sources/SwiftProtobuf/SimpleExtensionMap.swift; sourceTree = "<group>"; };
 		005FA143B86E79F3B52A07B45FB158E5 /* Pods-GlobalDependencies-session-ui.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GlobalDependencies-session-ui.modulemap"; sourceTree = "<group>"; };
-		00EEB3D25C5899D249BA4E39D98C761D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		0144C088FA0EE9B4F22702F25A96C6D5 /* YapDatabaseViewPage.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = YapDatabaseViewPage.mm; path = YapDatabase/Extensions/View/Internal/YapDatabaseViewPage.mm; sourceTree = "<group>"; };
-		01A072D6BAB7390778AA67783BD461F8 /* ge_p3_tobytes.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ge_p3_tobytes.c; sourceTree = "<group>"; };
+		00EEB3D25C5899D249BA4E39D98C761D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0144C088FA0EE9B4F22702F25A96C6D5 /* YapDatabaseViewPage.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = YapDatabaseViewPage.mm; path = YapDatabase/Extensions/View/Internal/YapDatabaseViewPage.mm; sourceTree = "<group>"; };
+		01A072D6BAB7390778AA67783BD461F8 /* ge_p3_tobytes.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ge_p3_tobytes.c; sourceTree = "<group>"; };
 		01D97B9165498F2A71A8DD6E4B259BF8 /* YapDatabaseConnectionConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseConnectionConfig.m; path = YapDatabase/Utilities/YapDatabaseConnectionConfig.m; sourceTree = "<group>"; };
 		020720F7D94D61677064225C55F18B51 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = SignalCoreKit/src/Logger.swift; sourceTree = "<group>"; };
 		027F85A7F945B5F1A5EEFB457F614887 /* YapDatabaseManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseManager.m; path = YapDatabase/Internal/YapDatabaseManager.m; sourceTree = "<group>"; };
@@ -1308,11 +1310,11 @@
 		0C5074D11A22C3C20A9824B384296871 /* YapDatabase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YapDatabase-dummy.m"; sourceTree = "<group>"; };
 		0CB334E5B66D610E3650380842247036 /* DDLogMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLogMacros.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDLogMacros.h; sourceTree = "<group>"; };
 		0CD6E5FCDCB4128AD6156C978F6D76B9 /* YapDatabaseViewPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseViewPrivate.h; path = YapDatabase/Extensions/View/Internal/YapDatabaseViewPrivate.h; sourceTree = "<group>"; };
-		0CDEF66E75AE722948FD563378390AA9 /* YapRowidSet.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = YapRowidSet.mm; path = YapDatabase/Internal/YapRowidSet.mm; sourceTree = "<group>"; };
+		0CDEF66E75AE722948FD563378390AA9 /* YapRowidSet.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = YapRowidSet.mm; path = YapDatabase/Internal/YapRowidSet.mm; sourceTree = "<group>"; };
 		0D108DDC54564D8BF294C9BC7FD78CA9 /* SQLiteDateParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLiteDateParser.swift; path = GRDB/Core/Support/Foundation/SQLiteDateParser.swift; sourceTree = "<group>"; };
 		0D3766A000052330332DEAB5C6E21157 /* StagedChangeset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StagedChangeset.swift; path = Sources/StagedChangeset.swift; sourceTree = "<group>"; };
 		0DA680F94DFF3B2290413F75521B39A8 /* QuoteDumpFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuoteDumpFormat.swift; path = GRDB/Dump/DumpFormats/QuoteDumpFormat.swift; sourceTree = "<group>"; };
-		0E2F80E4997D5E4C42D2638341D38F40 /* ge_frombytes.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ge_frombytes.c; sourceTree = "<group>"; };
+		0E2F80E4997D5E4C42D2638341D38F40 /* ge_frombytes.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ge_frombytes.c; sourceTree = "<group>"; };
 		0E36D0C66B1FE1D40E159D13724F712A /* zeroize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = zeroize.h; sourceTree = "<group>"; };
 		0E65786F16E19E13F1FB7DF997293C26 /* DatabasePromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabasePromise.swift; path = GRDB/QueryInterface/SQL/DatabasePromise.swift; sourceTree = "<group>"; };
 		0E80C3E25AB9C40EBC2160DA284153C9 /* Reachability.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Reachability.release.xcconfig; sourceTree = "<group>"; };
@@ -1331,12 +1333,12 @@
 		115262CF922B379847442FDE66C4A816 /* YapDatabaseSearchQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseSearchQueue.h; path = YapDatabase/Extensions/SearchResultsView/YapDatabaseSearchQueue.h; sourceTree = "<group>"; };
 		115DB12384CEDB0FDCCD1E444E018D29 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = GRDB/Utils/Utils.swift; sourceTree = "<group>"; };
 		117BD8DA090E24DA95E6E951DC8E2F4F /* TableAlteration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableAlteration.swift; path = GRDB/QueryInterface/Schema/TableAlteration.swift; sourceTree = "<group>"; };
-		117E84F875B30E424E3161837245D582 /* sign.c */ = {isa = PBXFileReference; includeInIndex = 1; path = sign.c; sourceTree = "<group>"; };
+		117E84F875B30E424E3161837245D582 /* sign.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = sign.c; sourceTree = "<group>"; };
 		11BEC190481E0F39E99DDD5D4670451C /* YapManyToManyCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapManyToManyCache.m; path = YapDatabase/Extensions/CloudCore/Utilities/YapManyToManyCache.m; sourceTree = "<group>"; };
-		125151305E99C2E6F609326F9161D9A7 /* ge_add.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ge_add.c; sourceTree = "<group>"; };
-		1251AE6513AAD28A3518D3709CBD3238 /* ge_p3_dbl.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ge_p3_dbl.c; sourceTree = "<group>"; };
+		125151305E99C2E6F609326F9161D9A7 /* ge_add.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ge_add.c; sourceTree = "<group>"; };
+		1251AE6513AAD28A3518D3709CBD3238 /* ge_p3_dbl.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ge_p3_dbl.c; sourceTree = "<group>"; };
 		132022C6F98B7646D26EB5993BE52791 /* ECPublicKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ECPublicKey.swift; sourceTree = "<group>"; };
-		134F577751F784042260B8FB7A17B399 /* ge_sub.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ge_sub.c; sourceTree = "<group>"; };
+		134F577751F784042260B8FB7A17B399 /* ge_sub.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ge_sub.c; sourceTree = "<group>"; };
 		1358CD3CC30F2CC529F4C5D335F810BD /* crypto_onetimeauth_poly1305.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_onetimeauth_poly1305.h; path = Sodium/libsodium/crypto_onetimeauth_poly1305.h; sourceTree = "<group>"; };
 		139BC5B9E56288E6A7DCEF90AA1200B8 /* Sodium.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Sodium.modulemap; sourceTree = "<group>"; };
 		139E98E1CBDE596A195EFE947721465C /* AssociationAggregate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssociationAggregate.swift; path = GRDB/QueryInterface/Request/Association/AssociationAggregate.swift; sourceTree = "<group>"; };
@@ -1354,11 +1356,11 @@
 		17C149552D6BF2834ABE7B2AFFB9A236 /* Row.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Row.swift; path = GRDB/Core/Row.swift; sourceTree = "<group>"; };
 		180E609FEF122529A23EBB17F40B4637 /* Reachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Reachability-dummy.m"; sourceTree = "<group>"; };
 		184BEEF3E0556F398E216CAEB4FB1C0B /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-acknowledgements.markdown"; sourceTree = "<group>"; };
-		184F07899CDD95D4F462DF96B7300286 /* fe_1.c */ = {isa = PBXFileReference; includeInIndex = 1; path = fe_1.c; sourceTree = "<group>"; };
+		184F07899CDD95D4F462DF96B7300286 /* fe_1.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = fe_1.c; sourceTree = "<group>"; };
 		18E2E453D85ECA4E21FD5A8FB83A243E /* Curve25519.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Curve25519.m; sourceTree = "<group>"; };
 		191B7EA9675B0EE1A3B8700D17AEAB21 /* YapActionItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapActionItem.h; path = YapDatabase/Extensions/ActionManager/YapActionItem.h; sourceTree = "<group>"; };
 		19A45B11574C97ECEFA49CA649CC3967 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.release.xcconfig"; sourceTree = "<group>"; };
-		1A1CBB8DB4CF36ADE78D8C7567A53F8B /* ge_p2_dbl.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ge_p2_dbl.c; sourceTree = "<group>"; };
+		1A1CBB8DB4CF36ADE78D8C7567A53F8B /* ge_p2_dbl.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ge_p2_dbl.c; sourceTree = "<group>"; };
 		1AADE7D56D9FEE4D3F71C8D7D47D4774 /* DDLoggerNames.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLoggerNames.m; path = Sources/CocoaLumberjack/DDLoggerNames.m; sourceTree = "<group>"; };
 		1B995DD8CF67B680A3D14803CE8AD79F /* YapDatabaseFullTextSearchHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseFullTextSearchHandler.m; path = YapDatabase/Extensions/FullTextSearch/YapDatabaseFullTextSearchHandler.m; sourceTree = "<group>"; };
 		1BA7DE29B2D4151CD3FFE5848A6CEB43 /* DifferenceKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DifferenceKit-umbrella.h"; sourceTree = "<group>"; };
@@ -1389,7 +1391,7 @@
 		225A0B332EAF6709C4AE04F186A5509E /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit-dummy.m"; sourceTree = "<group>"; };
 		226B238A8F1D6041D3F57751E51A7315 /* SignalCoreKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SignalCoreKit.release.xcconfig; sourceTree = "<group>"; };
 		229A1B84A43E69AD26D3018E2C3C19AA /* MutablePersistableRecord+Insert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MutablePersistableRecord+Insert.swift"; path = "GRDB/Record/MutablePersistableRecord+Insert.swift"; sourceTree = "<group>"; };
-		22DA944994032347248B19CEF12DC55C /* ge_msub.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ge_msub.c; sourceTree = "<group>"; };
+		22DA944994032347248B19CEF12DC55C /* ge_msub.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ge_msub.c; sourceTree = "<group>"; };
 		22E6922403F8BB95DA5A51DCD610494F /* RowAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowAdapter.swift; path = GRDB/Core/RowAdapter.swift; sourceTree = "<group>"; };
 		232CA1C107C78B93974C4B7155B9D0D6 /* KeyPairProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyPairProtocol.swift; path = Sodium/Generators/KeyPairProtocol.swift; sourceTree = "<group>"; };
 		233191256914E3EDF7F238BF949DD184 /* String+OWS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+OWS.swift"; path = "SignalCoreKit/src/String+OWS.swift"; sourceTree = "<group>"; };
@@ -1402,7 +1404,7 @@
 		24FCCB2FACBA64FA6A6044A01670207D /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-acknowledgements.plist"; sourceTree = "<group>"; };
 		25085FEF07852E5F16462618EA9393FE /* DatabasePublishers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabasePublishers.swift; path = GRDB/Core/DatabasePublishers.swift; sourceTree = "<group>"; };
 		252625AA24F5C26567D5BC27275E6D4D /* YapDatabaseRelationshipOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseRelationshipOptions.h; path = YapDatabase/Extensions/Relationships/YapDatabaseRelationshipOptions.h; sourceTree = "<group>"; };
-		252C11244075609CA748E2D14FAC17B4 /* fe_copy.c */ = {isa = PBXFileReference; includeInIndex = 1; path = fe_copy.c; sourceTree = "<group>"; };
+		252C11244075609CA748E2D14FAC17B4 /* fe_copy.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = fe_copy.c; sourceTree = "<group>"; };
 		252CDB54916B3D428A9D5E056857E6DA /* SQLCipher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQLCipher.modulemap; sourceTree = "<group>"; };
 		254423AC3F2050DFA7A351DDDC342590 /* YapMemoryTable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapMemoryTable.m; path = YapDatabase/Internal/YapMemoryTable.m; sourceTree = "<group>"; };
 		256DAE3780EC221EC26688B962E73C69 /* crypto_shorthash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_shorthash.h; path = Sodium/libsodium/crypto_shorthash.h; sourceTree = "<group>"; };
@@ -1422,13 +1424,13 @@
 		293AA2C8EE18BE559001F9C7BFF6E681 /* UnknownStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnknownStorage.swift; path = Sources/SwiftProtobuf/UnknownStorage.swift; sourceTree = "<group>"; };
 		297FABF4D51A8A1B621B953C8EE367B6 /* YapDatabaseRelationshipTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseRelationshipTransaction.m; path = YapDatabase/Extensions/Relationships/YapDatabaseRelationshipTransaction.m; sourceTree = "<group>"; };
 		29954BC089F2F2C259EF54F69EEB781E /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit-acknowledgements.plist"; sourceTree = "<group>"; };
-		29C716430C6A49EFBEADAF03A2F4ED37 /* fe_frombytes.c */ = {isa = PBXFileReference; includeInIndex = 1; path = fe_frombytes.c; sourceTree = "<group>"; };
+		29C716430C6A49EFBEADAF03A2F4ED37 /* fe_frombytes.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = fe_frombytes.c; sourceTree = "<group>"; };
 		29D099B6339C3A0C423E3ECF387A038B /* FTS5CustomTokenizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5CustomTokenizer.swift; path = GRDB/FTS/FTS5CustomTokenizer.swift; sourceTree = "<group>"; };
 		2A3CEA9D49C22DEB9FABCF7BB869ACE8 /* StatementAuthorizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatementAuthorizer.swift; path = GRDB/Core/StatementAuthorizer.swift; sourceTree = "<group>"; };
 		2A528C5EDCC608918874F3725DD09932 /* TextFormatEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFormatEncoder.swift; path = Sources/SwiftProtobuf/TextFormatEncoder.swift; sourceTree = "<group>"; };
 		2AAEAE4282863F41ED1CE23A6B3EB0DD /* YapDatabase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YapDatabase.modulemap; sourceTree = "<group>"; };
 		2BB3FFF78BA1FCD03A9AFC5BB9B22993 /* YapDatabaseConnectionState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseConnectionState.m; path = YapDatabase/Internal/YapDatabaseConnectionState.m; sourceTree = "<group>"; };
-		2C3FF7BA931ECB8EB1B758AF77E20E3D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		2C3FF7BA931ECB8EB1B758AF77E20E3D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2C43E2E6CFB4D5CC03DB8A0A36419147 /* YapDatabaseCrossProcessNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseCrossProcessNotification.m; path = YapDatabase/Extensions/CrossProcessNotification/YapDatabaseCrossProcessNotification.m; sourceTree = "<group>"; };
 		2C6E356F437BB2F7D020E7ED574DE300 /* YapReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapReachability.m; path = YapDatabase/Extensions/ActionManager/Utilities/YapReachability.m; sourceTree = "<group>"; };
 		2CBF503F033C23947B132983836F9B70 /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = GRDB/FTS/FTS4.swift; sourceTree = "<group>"; };
@@ -1472,7 +1474,7 @@
 		39D6397ECC398AB9FB1D3FEA5F908D51 /* crypto_stream_xsalsa20.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_stream_xsalsa20.h; path = Sodium/libsodium/crypto_stream_xsalsa20.h; sourceTree = "<group>"; };
 		3A3CA2655B1755E0071B43A948489E0D /* crypto_hash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_hash.h; path = Sodium/libsodium/crypto_hash.h; sourceTree = "<group>"; };
 		3B2C7FBC6E9C59D97EF3666C930F0BF5 /* Sodium-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Sodium-prefix.pch"; sourceTree = "<group>"; };
-		3B3DCB8AAAB404DE6E25373B40C7DE67 /* fe_isnonzero.c */ = {isa = PBXFileReference; includeInIndex = 1; path = fe_isnonzero.c; sourceTree = "<group>"; };
+		3B3DCB8AAAB404DE6E25373B40C7DE67 /* fe_isnonzero.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = fe_isnonzero.c; sourceTree = "<group>"; };
 		3B88613E39FEB522AFB5762233E14C36 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDContextFilterLogFormatter.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
 		3BE290A14F499458AFF3DDF24FDD2649 /* crypto_auth_hmacsha512256.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_auth_hmacsha512256.h; path = Sodium/libsodium/crypto_auth_hmacsha512256.h; sourceTree = "<group>"; };
 		3C2147D57B9D04439DEEA45C995FCD16 /* DatabaseRegionObservation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseRegionObservation.swift; path = GRDB/Core/DatabaseRegionObservation.swift; sourceTree = "<group>"; };
@@ -1513,7 +1515,7 @@
 		4677AB6AED3A9CF178E2DD9E0004F27D /* FTS3TokenizerDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS3TokenizerDescriptor.swift; path = GRDB/FTS/FTS3TokenizerDescriptor.swift; sourceTree = "<group>"; };
 		4690103CCBCF9CECDD425188235F6841 /* YapWhitelistBlacklist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapWhitelistBlacklist.h; path = YapDatabase/Utilities/YapWhitelistBlacklist.h; sourceTree = "<group>"; };
 		46CD914C1256BFF86953F132EE974EAC /* crypto_core_salsa2012.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_core_salsa2012.h; path = Sodium/libsodium/crypto_core_salsa2012.h; sourceTree = "<group>"; };
-		46EB2E00008120 /* Frameworks */ = {isa = PBXFileReference; includeInIndex = 1; name = Frameworks; path = "${PODS_ROOT}/OpenSSL/Frameworks"; sourceTree = "<group>"; };
+		46EB2E00008120 /* Frameworks */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Frameworks; path = "${PODS_ROOT}/OpenSSL/Frameworks"; sourceTree = "<group>"; };
 		46EFFD2E8362721D5B7E3951C4CE8F7B /* YapDatabaseViewMappings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseViewMappings.h; path = YapDatabase/Extensions/View/Utilities/YapDatabaseViewMappings.h; sourceTree = "<group>"; };
 		46F4BCA74C34010E6EBFCBF86FFDDE8F /* ColumnDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColumnDefinition.swift; path = GRDB/QueryInterface/Schema/ColumnDefinition.swift; sourceTree = "<group>"; };
 		46F8B5A5F9C8D81305C2F6DD983FBBB2 /* YapDatabaseRTreeIndex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseRTreeIndex.m; path = YapDatabase/Extensions/RTreeIndex/YapDatabaseRTreeIndex.m; sourceTree = "<group>"; };
@@ -1526,7 +1528,7 @@
 		495B0ECA191A4FC65D87ED135A80B86E /* YDBCKMergeInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YDBCKMergeInfo.h; path = YapDatabase/Extensions/CloudKit/Utilities/YDBCKMergeInfo.h; sourceTree = "<group>"; };
 		49AC57B9AF6825712177B6A933FFBD95 /* YapCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapCache.m; path = YapDatabase/Utilities/YapCache.m; sourceTree = "<group>"; };
 		4A5B0996028F73D567FF097B7538470B /* sc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sc.h; sourceTree = "<group>"; };
-		4A78A7CDD23BE9A0DC34E41911B7DC2F /* fe_mul.c */ = {isa = PBXFileReference; includeInIndex = 1; path = fe_mul.c; sourceTree = "<group>"; };
+		4A78A7CDD23BE9A0DC34E41911B7DC2F /* fe_mul.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = fe_mul.c; sourceTree = "<group>"; };
 		4A916E32DA17EED78A55BE2C51530209 /* version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version.h; path = Sodium/libsodium/version.h; sourceTree = "<group>"; };
 		4AB5F3E6914365C5FB9A4DFE4A79F2DC /* JSONEncodingOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONEncodingOptions.swift; path = Sources/SwiftProtobuf/JSONEncodingOptions.swift; sourceTree = "<group>"; };
 		4B077F40EB6BB48E4E33D311CD363262 /* Pool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pool.swift; path = GRDB/Utils/Pool.swift; sourceTree = "<group>"; };
@@ -1559,10 +1561,10 @@
 		5237A2B5C24E45B0FC850722D87B95B7 /* YapDatabaseCloudKitConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseCloudKitConnection.m; path = YapDatabase/Extensions/CloudKit/YapDatabaseCloudKitConnection.m; sourceTree = "<group>"; };
 		5252BBE9DB004F754D9011E99B0DFF5B /* DDFileLogger+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDFileLogger+Internal.h"; path = "Sources/CocoaLumberjack/DDFileLogger+Internal.h"; sourceTree = "<group>"; };
 		527A6616E55D069B0B5247C15C69A94C /* YapDatabaseRTreeIndex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseRTreeIndex.h; path = YapDatabase/Extensions/RTreeIndex/YapDatabaseRTreeIndex.h; sourceTree = "<group>"; };
-		530BAA678C592B326EE73CF3B4DBD7BC /* ge_scalarmult_base.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ge_scalarmult_base.c; sourceTree = "<group>"; };
+		530BAA678C592B326EE73CF3B4DBD7BC /* ge_scalarmult_base.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ge_scalarmult_base.c; sourceTree = "<group>"; };
 		5386CC77EF74B5C9D6586181FAA6C232 /* YapNull.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapNull.m; path = YapDatabase/Internal/YapNull.m; sourceTree = "<group>"; };
 		5395D7EEC83E6E3D905C85EB05EF2727 /* KeyExchange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyExchange.swift; path = Sodium/KeyExchange.swift; sourceTree = "<group>"; };
-		53C299FBB02A32AB95E2E80BAEB16B13 /* ge_precomp_0.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ge_precomp_0.c; sourceTree = "<group>"; };
+		53C299FBB02A32AB95E2E80BAEB16B13 /* ge_precomp_0.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ge_precomp_0.c; sourceTree = "<group>"; };
 		53FC33CC0989AC4FF3BD3FFB04251898 /* Reachability-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Reachability-Info.plist"; sourceTree = "<group>"; };
 		5535423316624FCDAADD7EE6BE858BCF /* field_mask.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = field_mask.pb.swift; path = Sources/SwiftProtobuf/field_mask.pb.swift; sourceTree = "<group>"; };
 		55380C6ACC253D9202619292E7322B5B /* Sodium.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sodium.swift; path = Sodium/Sodium.swift; sourceTree = "<group>"; };
@@ -1579,7 +1581,7 @@
 		5725B36FAF1180A8ADD6295238F720BA /* YapDatabaseViewMappingsPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseViewMappingsPrivate.h; path = YapDatabase/Extensions/View/Internal/YapDatabaseViewMappingsPrivate.h; sourceTree = "<group>"; };
 		5770ADB0C5B28EE5B049D55928153BE2 /* NSNumber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSNumber.swift; path = GRDB/Core/Support/Foundation/NSNumber.swift; sourceTree = "<group>"; };
 		57B0D15C0E80B7C476ED8FE771695BC8 /* DatabaseRegion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseRegion.swift; path = GRDB/Core/DatabaseRegion.swift; sourceTree = "<group>"; };
-		57B25613D3A7E38AC5787A4317843F18 /* ge_tobytes.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ge_tobytes.c; sourceTree = "<group>"; };
+		57B25613D3A7E38AC5787A4317843F18 /* ge_tobytes.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ge_tobytes.c; sourceTree = "<group>"; };
 		589560ED5076E848771D3369A685420B /* YapMurmurHash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapMurmurHash.m; path = YapDatabase/Utilities/YapMurmurHash.m; sourceTree = "<group>"; };
 		58D143893C95D53FAADE9687AC63BFF7 /* DifferentiableSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DifferentiableSection.swift; path = Sources/DifferentiableSection.swift; sourceTree = "<group>"; };
 		58E14F174D493DEB87441392EADBAD4B /* SQLInterpolation+QueryInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SQLInterpolation+QueryInterface.swift"; path = "GRDB/QueryInterface/SQLInterpolation+QueryInterface.swift"; sourceTree = "<group>"; };
@@ -1588,14 +1590,14 @@
 		5982EC8FC90AF276DD4E147FFD1BB2F2 /* Optional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = GRDB/Core/Support/StandardLibrary/Optional.swift; sourceTree = "<group>"; };
 		5983888D5E0412EB45782F2C08185B96 /* YapDatabaseExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseExtension.m; path = YapDatabase/Extensions/Protocol/YapDatabaseExtension.m; sourceTree = "<group>"; };
 		598BC5E506C1D2BC21F1B5B8EB7652F1 /* FTS5+QueryInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FTS5+QueryInterface.swift"; path = "GRDB/QueryInterface/FTS5+QueryInterface.swift"; sourceTree = "<group>"; };
-		59B7408CD95CBE62D12B1A049544FFE9 /* NSDate+OWS.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "NSDate+OWS.mm"; path = "SignalCoreKit/src/NSDate+OWS.mm"; sourceTree = "<group>"; };
+		59B7408CD95CBE62D12B1A049544FFE9 /* NSDate+OWS.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = "NSDate+OWS.mm"; path = "SignalCoreKit/src/NSDate+OWS.mm"; sourceTree = "<group>"; };
 		59DD6EFBC9C84D582F77BF3A152D239C /* YapDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabase.h; path = YapDatabase/YapDatabase.h; sourceTree = "<group>"; };
 		59FFAAF0E7268A94A48D38C61214F4EF /* yap_vfs_shim.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = yap_vfs_shim.m; path = YapDatabase/Internal/yap_vfs_shim.m; sourceTree = "<group>"; };
 		5A0C931DA7ADFFDE3A5C94951DF51BF4 /* HasOneAssociation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HasOneAssociation.swift; path = GRDB/QueryInterface/Request/Association/HasOneAssociation.swift; sourceTree = "<group>"; };
 		5AAD7650D139FD57021482DD10131740 /* YDBCKRecordTableInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YDBCKRecordTableInfo.h; path = YapDatabase/Extensions/CloudKit/Internal/YDBCKRecordTableInfo.h; sourceTree = "<group>"; };
 		5B291EA04E4BFA53FE2D5C2CE5B4B66B /* CocoaLumberjack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaLumberjack.debug.xcconfig; sourceTree = "<group>"; };
 		5B86304E220B6F13AF09BA0081AF2EBC /* YapDatabaseConnectionPool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseConnectionPool.h; path = YapDatabase/Extensions/ConnectionPool/YapDatabaseConnectionPool.h; sourceTree = "<group>"; };
-		5B8C13FEEDEDD8E253955C960A5F31D2 /* Clibsodium.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = Clibsodium.xcframework; sourceTree = "<group>"; };
+		5B8C13FEEDEDD8E253955C960A5F31D2 /* Clibsodium.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = Clibsodium.xcframework; sourceTree = "<group>"; };
 		5BD37CAAB4D4BD0982B04F19B1593DB6 /* YapNull.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapNull.h; path = YapDatabase/Internal/YapNull.h; sourceTree = "<group>"; };
 		5BF814F5AE45F49850509799FFFADB0B /* Message.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Message.swift; path = Sources/SwiftProtobuf/Message.swift; sourceTree = "<group>"; };
 		5C285E9757BFD25C0C222C88574CDFD3 /* YapDatabaseCloudCoreGraph.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseCloudCoreGraph.m; path = YapDatabase/Extensions/CloudCore/Utilities/Execution/YapDatabaseCloudCoreGraph.m; sourceTree = "<group>"; };
@@ -1621,18 +1623,18 @@
 		60B0AF834F2B0537F1E7C05D9E08AD5B /* YapDatabaseHooksTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseHooksTransaction.m; path = YapDatabase/Extensions/Hooks/YapDatabaseHooksTransaction.m; sourceTree = "<group>"; };
 		60F63D918D90E18A2765B6ECEADDD187 /* YapDatabaseCloudCorePipelineDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseCloudCorePipelineDelegate.h; path = YapDatabase/Extensions/CloudCore/Utilities/Execution/YapDatabaseCloudCorePipelineDelegate.h; sourceTree = "<group>"; };
 		612028EAFF1C2054A0EB821A9C9F2440 /* SAMKeychain */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SAMKeychain; path = SAMKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6154A9D45DA7F1BD0B9D15817EF32207 /* sign_modified.c */ = {isa = PBXFileReference; includeInIndex = 1; path = sign_modified.c; sourceTree = "<group>"; };
+		6154A9D45DA7F1BD0B9D15817EF32207 /* sign_modified.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = sign_modified.c; sourceTree = "<group>"; };
 		6162905A2142BFE7AC25B5934E7C1E03 /* DDContextFilterLogFormatter+Deprecated.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DDContextFilterLogFormatter+Deprecated.m"; path = "Sources/CocoaLumberjack/Extensions/DDContextFilterLogFormatter+Deprecated.m"; sourceTree = "<group>"; };
 		619D856B01D7E5B74C5BB92BA1CC8B71 /* Curve25519Kit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Curve25519Kit-prefix.pch"; sourceTree = "<group>"; };
 		61C09051EF099057FB7AF5C62DA3C25F /* Pods-GlobalDependencies-session-ui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GlobalDependencies-session-ui.release.xcconfig"; sourceTree = "<group>"; };
 		61C8B178E7586CD4E5418AE4D3F7A6F0 /* ValueObservationScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueObservationScheduler.swift; path = GRDB/ValueObservation/ValueObservationScheduler.swift; sourceTree = "<group>"; };
-		6206BA2ABB512842F9D2E781C938676A /* fe_sub.c */ = {isa = PBXFileReference; includeInIndex = 1; path = fe_sub.c; sourceTree = "<group>"; };
+		6206BA2ABB512842F9D2E781C938676A /* fe_sub.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = fe_sub.c; sourceTree = "<group>"; };
 		6207BE4401C12C348A10F6D0197A9294 /* Randomness.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Randomness.m; path = SignalCoreKit/src/Randomness.m; sourceTree = "<group>"; };
 		627E114D7BAD87BF1E95CEDC81B37F37 /* YapDatabase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YapDatabase-umbrella.h"; sourceTree = "<group>"; };
 		637BA84616581976D3F64CB87D81CD87 /* SAMKeychain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SAMKeychain.debug.xcconfig; sourceTree = "<group>"; };
 		63916D4BA3FF5C0C1D2A3B0236FD178E /* RandomBytes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RandomBytes.swift; path = Sodium/RandomBytes.swift; sourceTree = "<group>"; };
 		64141A70CB8780AA393C4D8BAF6EF04B /* ge_sub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ge_sub.h; sourceTree = "<group>"; };
-		6440F558AE218EE05E3B8FF28C6B0F0E /* fe_sq2.c */ = {isa = PBXFileReference; includeInIndex = 1; path = fe_sq2.c; sourceTree = "<group>"; };
+		6440F558AE218EE05E3B8FF28C6B0F0E /* fe_sq2.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = fe_sq2.c; sourceTree = "<group>"; };
 		647FFE3545E858933D42041694BBAFE7 /* Google_Protobuf_Struct+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Struct+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Struct+Extensions.swift"; sourceTree = "<group>"; };
 		65D022CB806CED7367E85F0A2250B3EA /* YapDatabaseRTreeIndexHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseRTreeIndexHandler.h; path = YapDatabase/Extensions/RTreeIndex/YapDatabaseRTreeIndexHandler.h; sourceTree = "<group>"; };
 		65D52DFF91CE301435F27B8250EB86A9 /* YapDatabaseFilteredViewPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseFilteredViewPrivate.h; path = YapDatabase/Extensions/FilteredView/Internal/YapDatabaseFilteredViewPrivate.h; sourceTree = "<group>"; };
@@ -1661,7 +1663,7 @@
 		6B5F443DC3DA1D59420C7200FEEBFC22 /* FieldTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldTypes.swift; path = Sources/SwiftProtobuf/FieldTypes.swift; sourceTree = "<group>"; };
 		6B8B5683883C112A223157C659701A7E /* d.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = d.h; sourceTree = "<group>"; };
 		6BBBA1A994C5611115D03D24832C9348 /* NSData+OWS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+OWS.h"; path = "SignalCoreKit/src/NSData+OWS.h"; sourceTree = "<group>"; };
-		6BE31734781FB287358E140340D6F30A /* curve25519-donna.c */ = {isa = PBXFileReference; includeInIndex = 1; path = "curve25519-donna.c"; sourceTree = "<group>"; };
+		6BE31734781FB287358E140340D6F30A /* curve25519-donna.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = "curve25519-donna.c"; sourceTree = "<group>"; };
 		6C2BCE2DCD01A091AE50AC1952D37A8B /* YapDatabaseSecondaryIndex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseSecondaryIndex.m; path = YapDatabase/Extensions/SecondaryIndex/YapDatabaseSecondaryIndex.m; sourceTree = "<group>"; };
 		6C54C4C28C2B3A43BE7C345DDBF7B43E /* YapDatabaseViewTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseViewTransaction.m; path = YapDatabase/Extensions/View/YapDatabaseViewTransaction.m; sourceTree = "<group>"; };
 		6CFC3EEE63B65F198106D70D2F3E4E6E /* YapDatabaseRelationshipConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseRelationshipConnection.m; path = YapDatabase/Extensions/Relationships/YapDatabaseRelationshipConnection.m; sourceTree = "<group>"; };
@@ -1675,8 +1677,8 @@
 		6EDAE0D34094549F01EA0E4C2163B121 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-Info.plist"; sourceTree = "<group>"; };
 		6EEF8F198E24C6E9E292E7670097B63C /* TableRecord+QueryInterfaceRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableRecord+QueryInterfaceRequest.swift"; path = "GRDB/QueryInterface/TableRecord+QueryInterfaceRequest.swift"; sourceTree = "<group>"; };
 		6F51413DD6D50789AF0C519EC9A4A03E /* ReceiveValuesOn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReceiveValuesOn.swift; path = GRDB/Utils/ReceiveValuesOn.swift; sourceTree = "<group>"; };
-		6F6AE7C5C2C81E7428C46D5BC40C353B /* OpenSSL-Universal.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "OpenSSL-Universal.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6F945160DB95B914CA49A060F02A22C7 /* ge_p1p1_to_p2.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ge_p1p1_to_p2.c; sourceTree = "<group>"; };
+		6F6AE7C5C2C81E7428C46D5BC40C353B /* OpenSSL-Universal.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = "OpenSSL-Universal.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6F945160DB95B914CA49A060F02A22C7 /* ge_p1p1_to_p2.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ge_p1p1_to_p2.c; sourceTree = "<group>"; };
 		6FC0D5E047888E3C5B42D8095A2930F9 /* crypto_core_curve25519.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_core_curve25519.h; path = Sodium/libsodium/crypto_core_curve25519.h; sourceTree = "<group>"; };
 		7004291B202E082854E149A281E182CC /* pow22523.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pow22523.h; sourceTree = "<group>"; };
 		7024DF412E8A0D3C4D7C74AFAD2DDA43 /* Google_Protobuf_ListValue+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_ListValue+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_ListValue+Extensions.swift"; sourceTree = "<group>"; };
@@ -1695,11 +1697,11 @@
 		73ACA671BBA81A7952D15057A4733426 /* Pods-GlobalDependencies-session-ui-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GlobalDependencies-session-ui-frameworks.sh"; sourceTree = "<group>"; };
 		73E98D15DD078B38B50649627E83AA8F /* Sodium.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Sodium.h; path = Sodium/Sodium.h; sourceTree = "<group>"; };
 		741C743155D0FD01AF862F5E0A77FF6E /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit-umbrella.h"; sourceTree = "<group>"; };
-		74ECC4A40D05382E262E2CCBB7859C52 /* SignalCoreKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SignalCoreKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		74ECC4A40D05382E262E2CCBB7859C52 /* SignalCoreKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SignalCoreKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		74F85D3C3192F52FA50FA197C5F2CDE6 /* source_context.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = source_context.pb.swift; path = Sources/SwiftProtobuf/source_context.pb.swift; sourceTree = "<group>"; };
 		757440AC7CDE266C6CB5C0C66A3DC637 /* crypto_verify_32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_verify_32.h; path = Sodium/libsodium/crypto_verify_32.h; sourceTree = "<group>"; };
-		75EA603D9244758E160274554D0A04DB /* fe_0.c */ = {isa = PBXFileReference; includeInIndex = 1; path = fe_0.c; sourceTree = "<group>"; };
-		762B8D22FA02EB548515BA350E807101 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		75EA603D9244758E160274554D0A04DB /* fe_0.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = fe_0.c; sourceTree = "<group>"; };
+		762B8D22FA02EB548515BA350E807101 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		76494FB2C21CE0600EB4D3444A99CF59 /* FetchRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FetchRequest.swift; path = GRDB/Core/FetchRequest.swift; sourceTree = "<group>"; };
 		76F2E04738087AE256E85B5C818DB7BD /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit"; path = Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FCCA34BF87A4B9F1DE415E67C8AE7A /* DatabaseWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseWriter.swift; path = GRDB/Core/DatabaseWriter.swift; sourceTree = "<group>"; };
@@ -1711,15 +1713,15 @@
 		797B1BBC3E03CD39B8CB79D79BCFF843 /* DifferenceKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DifferenceKit; path = DifferenceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		797E6C9A3FA9FD78B3C61EE5551D8A63 /* crypto_core_ed25519.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_core_ed25519.h; path = Sodium/libsodium/crypto_core_ed25519.h; sourceTree = "<group>"; };
 		799BED254D26DDFA16F11FD522CCD02F /* Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Data.swift; path = GRDB/Core/Support/Foundation/Data.swift; sourceTree = "<group>"; };
-		79AE556B34AFFBB73AC5577A2DE0A46C /* ge_p2_0.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ge_p2_0.c; sourceTree = "<group>"; };
+		79AE556B34AFFBB73AC5577A2DE0A46C /* ge_p2_0.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ge_p2_0.c; sourceTree = "<group>"; };
 		79D4CD87EB628884FDBC1F7ED435F23D /* curve_sigs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = curve_sigs.h; sourceTree = "<group>"; };
 		79F536896714EC19A152D69A47F7603A /* duration.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = duration.pb.swift; path = Sources/SwiftProtobuf/duration.pb.swift; sourceTree = "<group>"; };
-		7A20BCF8B495025C606A05D9B1C2E03E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7A20BCF8B495025C606A05D9B1C2E03E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7A6B9E5EDBE100ACD1EA5AF8E1DB5B8B /* WireFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WireFormat.swift; path = Sources/SwiftProtobuf/WireFormat.swift; sourceTree = "<group>"; };
 		7AA8FE5317F772D5F18215309A84A421 /* QueryInterfaceRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueryInterfaceRequest.swift; path = GRDB/QueryInterface/Request/QueryInterfaceRequest.swift; sourceTree = "<group>"; };
 		7ACCAB8B5E0BAC9F3B6ACC287947C701 /* crypto_kdf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_kdf.h; path = Sodium/libsodium/crypto_kdf.h; sourceTree = "<group>"; };
 		7AF6DB4E4DE7C017D3201707A7243B15 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit-dummy.m"; sourceTree = "<group>"; };
-		7B0A0D406DF75BC54ACF4F33C7EF3162 /* sc_muladd.c */ = {isa = PBXFileReference; includeInIndex = 1; path = sc_muladd.c; sourceTree = "<group>"; };
+		7B0A0D406DF75BC54ACF4F33C7EF3162 /* sc_muladd.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = sc_muladd.c; sourceTree = "<group>"; };
 		7B68A1C9F704AA315058386E2AD610C0 /* crypto_verify_16.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_verify_16.h; path = Sodium/libsodium/crypto_verify_16.h; sourceTree = "<group>"; };
 		7C1A8DB4F84A62F0A2C3E612B69B76C0 /* CocoaLumberjack-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaLumberjack-Info.plist"; sourceTree = "<group>"; };
 		7C4AC9E6D5BE6F4E4EBEC89A4544ACB9 /* YapDatabaseFullTextSearchSnippetOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseFullTextSearchSnippetOptions.h; path = YapDatabase/Extensions/FullTextSearch/YapDatabaseFullTextSearchSnippetOptions.h; sourceTree = "<group>"; };
@@ -1772,9 +1774,9 @@
 		8D1BA9075749F48F878C1A1BF16002FD /* DatabaseQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseQueue.swift; path = GRDB/Core/DatabaseQueue.swift; sourceTree = "<group>"; };
 		8D48B09C023F285E2A0000C8803B0C0E /* Curve25519Kit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Curve25519Kit.modulemap; sourceTree = "<group>"; };
 		8D99FFC97B2DF4D51FD3D55C31A30599 /* YapDatabaseViewChange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseViewChange.h; path = YapDatabase/Extensions/View/Utilities/YapDatabaseViewChange.h; sourceTree = "<group>"; };
-		8DB1EAABD137940718ADA965A25115E3 /* fe_add.c */ = {isa = PBXFileReference; includeInIndex = 1; path = fe_add.c; sourceTree = "<group>"; };
+		8DB1EAABD137940718ADA965A25115E3 /* fe_add.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = fe_add.c; sourceTree = "<group>"; };
 		8DC25B5CE110AF28D09A7B552BEB9946 /* YapDatabaseViewTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseViewTypes.m; path = YapDatabase/Extensions/AutoView/YapDatabaseViewTypes.m; sourceTree = "<group>"; };
-		8E33EDAFB9A0A4523A6451BFCF1D857F /* fe_tobytes.c */ = {isa = PBXFileReference; includeInIndex = 1; path = fe_tobytes.c; sourceTree = "<group>"; };
+		8E33EDAFB9A0A4523A6451BFCF1D857F /* fe_tobytes.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = fe_tobytes.c; sourceTree = "<group>"; };
 		8E5A17B0CAEA122B413FD76EDA0AF4DA /* YDBCKMappingTableInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YDBCKMappingTableInfo.m; path = YapDatabase/Extensions/CloudKit/Internal/YDBCKMappingTableInfo.m; sourceTree = "<group>"; };
 		8EBFFDDA54994523F87F5E008143123A /* YapDirtyDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDirtyDictionary.h; path = YapDatabase/Utilities/YapDirtyDictionary.h; sourceTree = "<group>"; };
 		8ED5DFF511A1FF30498C5185FFAF4B19 /* YapDatabaseCloudCorePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseCloudCorePrivate.h; path = YapDatabase/Extensions/CloudCore/Internal/YapDatabaseCloudCorePrivate.h; sourceTree = "<group>"; };
@@ -1787,7 +1789,7 @@
 		90CEA183D1338541BEDBAA59A1543838 /* SwiftProtobuf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftProtobuf.release.xcconfig; sourceTree = "<group>"; };
 		911B8BFD28A49AD7E724834CFD028507 /* YapDatabaseSecondaryIndexHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseSecondaryIndexHandler.h; path = YapDatabase/Extensions/SecondaryIndex/YapDatabaseSecondaryIndexHandler.h; sourceTree = "<group>"; };
 		923B180C4D28B9E811368A88B04209E9 /* ExitCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExitCode.swift; path = Sodium/ExitCode.swift; sourceTree = "<group>"; };
-		92B63B6AACED06BF25B2D7356AD90179 /* ge_madd.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ge_madd.c; sourceTree = "<group>"; };
+		92B63B6AACED06BF25B2D7356AD90179 /* ge_madd.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ge_madd.c; sourceTree = "<group>"; };
 		92BDE787D4A8A23D9B8D65DACBA716C1 /* Varint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Varint.swift; path = Sources/SwiftProtobuf/Varint.swift; sourceTree = "<group>"; };
 		9326FD51CE61BCFB665B830893E19F52 /* SQLOrdering.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLOrdering.swift; path = GRDB/QueryInterface/SQL/SQLOrdering.swift; sourceTree = "<group>"; };
 		93B80D7948B19CF305A9232986CB22EF /* YapDatabaseRelationship.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseRelationship.m; path = YapDatabase/Extensions/Relationships/YapDatabaseRelationship.m; sourceTree = "<group>"; };
@@ -1808,7 +1810,7 @@
 		975659582DD9A4007518D363225C9E1D /* PersistableRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PersistableRecord.swift; path = GRDB/Record/PersistableRecord.swift; sourceTree = "<group>"; };
 		97FE729DA4817A878D2F6AE9C07A3FBC /* SAMKeychain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SAMKeychain-dummy.m"; sourceTree = "<group>"; };
 		9805423273E0838F916551AB5B976C2E /* crypto_kx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_kx.h; path = Sodium/libsodium/crypto_kx.h; sourceTree = "<group>"; };
-		982979CCB741E118DEF6AE9F4940BFB4 /* compare.c */ = {isa = PBXFileReference; includeInIndex = 1; path = compare.c; sourceTree = "<group>"; };
+		982979CCB741E118DEF6AE9F4940BFB4 /* compare.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = compare.c; sourceTree = "<group>"; };
 		98B4B7ECFBEB6E722460743BAC141FDC /* WALSnapshotTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WALSnapshotTransaction.swift; path = GRDB/Core/WALSnapshotTransaction.swift; sourceTree = "<group>"; };
 		98E4AB34ACC86FC55F67B9CC27460560 /* FetchableRecord+TableRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FetchableRecord+TableRecord.swift"; path = "GRDB/Record/FetchableRecord+TableRecord.swift"; sourceTree = "<group>"; };
 		99D0B2DF3422852D3072D9D98D4BA2A1 /* Threading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Threading.h; path = SignalCoreKit/src/Threading.h; sourceTree = "<group>"; };
@@ -1825,7 +1827,7 @@
 		9C5C7FB9E48E96DEEA646816B6D9C25C /* YapDatabaseViewLocator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseViewLocator.m; path = YapDatabase/Extensions/View/Internal/YapDatabaseViewLocator.m; sourceTree = "<group>"; };
 		9D422CA0AF2C8EE0E337A585A7CE184C /* NSDictionary+YapDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+YapDatabase.h"; path = "YapDatabase/Internal/NSDictionary+YapDatabase.h"; sourceTree = "<group>"; };
 		9D7B3DD53733461BD245A6F470C731C6 /* DatabaseFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseFunction.swift; path = GRDB/Core/DatabaseFunction.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DDDD5FDBE4B5570F27441E12E8CF9E1 /* JSONRequiredEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONRequiredEncoder.swift; path = GRDB/Core/Support/StandardLibrary/JSONRequiredEncoder.swift; sourceTree = "<group>"; };
 		9EB5867F7C6E713C89CA4CCAFD272649 /* crypto_box_curve25519xchacha20poly1305.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_box_curve25519xchacha20poly1305.h; path = Sodium/libsodium/crypto_box_curve25519xchacha20poly1305.h; sourceTree = "<group>"; };
 		9EBC411FDAAC8BF582FDC42B7D164F6F /* SchedulingWatchdog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SchedulingWatchdog.swift; path = GRDB/Core/SchedulingWatchdog.swift; sourceTree = "<group>"; };
@@ -1852,7 +1854,7 @@
 		A3D9E1CC97B2029BE7700266C73E68FC /* DatabaseValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseValue.swift; path = GRDB/Core/DatabaseValue.swift; sourceTree = "<group>"; };
 		A3E45BB2E76F53A5CBCC9C8E613F677D /* YapDatabaseCloudKitTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseCloudKitTypes.h; path = YapDatabase/Extensions/CloudKit/YapDatabaseCloudKitTypes.h; sourceTree = "<group>"; };
 		A46BFC8D5403E7BC6CB5544E0730F1D4 /* MessageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageExtension.swift; path = Sources/SwiftProtobuf/MessageExtension.swift; sourceTree = "<group>"; };
-		A4FD8D3AAAD7170C9E08E5FA08002CDA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A4FD8D3AAAD7170C9E08E5FA08002CDA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A5378FDC335ED3AD4F4A29C0C377CE73 /* crypto_int32.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_int32.h; sourceTree = "<group>"; };
 		A546AC503CBCF9445B772EA0558496CC /* YapDatabaseExtensionConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseExtensionConnection.h; path = YapDatabase/Extensions/Protocol/YapDatabaseExtensionConnection.h; sourceTree = "<group>"; };
 		A57288FCA915EB6305EED7767557B880 /* YapDatabaseFullTextSearchSnippetOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseFullTextSearchSnippetOptions.m; path = YapDatabase/Extensions/FullTextSearch/YapDatabaseFullTextSearchSnippetOptions.m; sourceTree = "<group>"; };
@@ -1862,26 +1864,26 @@
 		A63F0C7A775D8F6870663F60B710D1B3 /* YapDatabaseViewTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseViewTransaction.h; path = YapDatabase/Extensions/View/YapDatabaseViewTransaction.h; sourceTree = "<group>"; };
 		A6490770021C148A38F10BE4DEDD7EF6 /* Curve25519Kit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Curve25519Kit-umbrella.h"; sourceTree = "<group>"; };
 		A64BD74582A63705B7621BD41DF2FBE0 /* LineDumpFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineDumpFormat.swift; path = GRDB/Dump/DumpFormats/LineDumpFormat.swift; sourceTree = "<group>"; };
-		A68D033B42DA7979709338F2AAEDCD14 /* blocks.c */ = {isa = PBXFileReference; includeInIndex = 1; path = blocks.c; sourceTree = "<group>"; };
+		A68D033B42DA7979709338F2AAEDCD14 /* blocks.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = blocks.c; sourceTree = "<group>"; };
 		A6DF668B6A7AA899EE685BB442D3127C /* yap_vfs_shim.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = yap_vfs_shim.h; path = YapDatabase/Internal/yap_vfs_shim.h; sourceTree = "<group>"; };
 		A7BF586AD5EBE6182CE00A00A7818D27 /* YapDatabaseExtensionConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseExtensionConnection.m; path = YapDatabase/Extensions/Protocol/YapDatabaseExtensionConnection.m; sourceTree = "<group>"; };
 		A8E309329D85E0111DCA9DD41DA9D523 /* YapDatabasePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabasePrivate.h; path = YapDatabase/Internal/YapDatabasePrivate.h; sourceTree = "<group>"; };
-		A90271F233483D3AA1CA2FC3D64111D1 /* fe_neg.c */ = {isa = PBXFileReference; includeInIndex = 1; path = fe_neg.c; sourceTree = "<group>"; };
-		A933A9A19298AA25E2FC7491EFBA724E /* ge_double_scalarmult.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ge_double_scalarmult.c; sourceTree = "<group>"; };
+		A90271F233483D3AA1CA2FC3D64111D1 /* fe_neg.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = fe_neg.c; sourceTree = "<group>"; };
+		A933A9A19298AA25E2FC7491EFBA724E /* ge_double_scalarmult.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ge_double_scalarmult.c; sourceTree = "<group>"; };
 		A9378AABDD75575A4F8AB9288FABA3A7 /* YDBCKAttachRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YDBCKAttachRequest.m; path = YapDatabase/Extensions/CloudKit/Internal/YDBCKAttachRequest.m; sourceTree = "<group>"; };
-		A9470ED4202B8AB0E5338B05B51D7089 /* zeroize.c */ = {isa = PBXFileReference; includeInIndex = 1; path = zeroize.c; sourceTree = "<group>"; };
+		A9470ED4202B8AB0E5338B05B51D7089 /* zeroize.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = zeroize.c; sourceTree = "<group>"; };
 		AA43D67CAD1A07966C9D00FC20FEA68F /* KeyDerivation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyDerivation.swift; path = Sodium/KeyDerivation.swift; sourceTree = "<group>"; };
 		AA5D6B7C6231CA264906BF80B1611D06 /* Reachability.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Reachability.debug.xcconfig; sourceTree = "<group>"; };
-		AA92692C9C06844EA1E600CCCA71AA79 /* hash.c */ = {isa = PBXFileReference; includeInIndex = 1; path = hash.c; sourceTree = "<group>"; };
+		AA92692C9C06844EA1E600CCCA71AA79 /* hash.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = hash.c; sourceTree = "<group>"; };
 		AB1DF8AE62BC0F196B72D2EA9683B5A0 /* SQLOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLOperators.swift; path = GRDB/QueryInterface/SQL/SQLOperators.swift; sourceTree = "<group>"; };
-		AB4369C355F36B0FE8F3A6097CCCC87F /* Curve25519Kit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Curve25519Kit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AB4369C355F36B0FE8F3A6097CCCC87F /* Curve25519Kit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Curve25519Kit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ABBAC788E49F616AC1134C9EF621D099 /* Cryptography.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Cryptography.h; path = SignalCoreKit/src/Cryptography.h; sourceTree = "<group>"; };
 		ABDB88F760A18708B0E25A8D5D2E1915 /* Version.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Version.swift; path = Sources/SwiftProtobuf/Version.swift; sourceTree = "<group>"; };
 		AC2CC972D9F067DE517B27306C0762EE /* ProtobufAPIVersionCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProtobufAPIVersionCheck.swift; path = Sources/SwiftProtobuf/ProtobufAPIVersionCheck.swift; sourceTree = "<group>"; };
 		AC5D7E6C5087B13B50B7DA57DC3CE7AE /* crypto_int64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = crypto_int64.h; sourceTree = "<group>"; };
 		AC777B26312B5FB5AC61120A2DA5FD71 /* YapDatabaseCloudCoreOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseCloudCoreOperation.h; path = YapDatabase/Extensions/CloudCore/Utilities/Operations/YapDatabaseCloudCoreOperation.h; sourceTree = "<group>"; };
 		ACC5D266774529D71104D9673E804CE0 /* YapDatabaseFilteredView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseFilteredView.h; path = YapDatabase/Extensions/FilteredView/YapDatabaseFilteredView.h; sourceTree = "<group>"; };
-		ACEEFAD7E1CB3008F12F3AFFAEC90795 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Sources/CocoaLumberjack/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		ACEEFAD7E1CB3008F12F3AFFAEC90795 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = Sources/CocoaLumberjack/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		AD66387025351B719EEDC63CFFB7F914 /* YapDatabaseSearchResultsViewConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseSearchResultsViewConnection.m; path = YapDatabase/Extensions/SearchResultsView/YapDatabaseSearchResultsViewConnection.m; sourceTree = "<group>"; };
 		AD6C630D2EE6988D02BB7D65CD0F3D2F /* OWSAsserts.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OWSAsserts.m; path = SignalCoreKit/src/OWSAsserts.m; sourceTree = "<group>"; };
 		ADA1FF5F250D40660BF17070E7785D0C /* DDContextFilterLogFormatter+Deprecated.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDContextFilterLogFormatter+Deprecated.h"; path = "Sources/CocoaLumberjack/include/CocoaLumberjack/DDContextFilterLogFormatter+Deprecated.h"; sourceTree = "<group>"; };
@@ -1907,15 +1909,15 @@
 		B0566AD9FF572BF1295468E605AC68F0 /* SelectiveVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectiveVisitor.swift; path = Sources/SwiftProtobuf/SelectiveVisitor.swift; sourceTree = "<group>"; };
 		B05BDCEEEA36E00552A99E6837E056F0 /* BelongsToAssociation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BelongsToAssociation.swift; path = GRDB/QueryInterface/Request/Association/BelongsToAssociation.swift; sourceTree = "<group>"; };
 		B0A54845CD701A0F03082EBC56704C89 /* SQLQueryGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLQueryGenerator.swift; path = GRDB/QueryInterface/SQLGeneration/SQLQueryGenerator.swift; sourceTree = "<group>"; };
-		B0B351FA2DF56E2A47B9523F7430378F /* fe_isnegative.c */ = {isa = PBXFileReference; includeInIndex = 1; path = fe_isnegative.c; sourceTree = "<group>"; };
+		B0B351FA2DF56E2A47B9523F7430378F /* fe_isnegative.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = fe_isnegative.c; sourceTree = "<group>"; };
 		B0C2E5E3263E7F9B45E785527E6196EA /* YapActionable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapActionable.h; path = YapDatabase/Extensions/ActionManager/YapActionable.h; sourceTree = "<group>"; };
 		B12907EE1A829648C5143E146EE406A1 /* YapDatabaseFilteredViewTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseFilteredViewTypes.m; path = YapDatabase/Extensions/FilteredView/YapDatabaseFilteredViewTypes.m; sourceTree = "<group>"; };
 		B16427A3D35821B348B0D4037FD18B3A /* YDBCKChangeSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YDBCKChangeSet.h; path = YapDatabase/Extensions/CloudKit/Utilities/YDBCKChangeSet.h; sourceTree = "<group>"; };
 		B17A1F83AD73BFFC1C0699E134B9F74A /* randombytes_internal_random.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = randombytes_internal_random.h; path = Sodium/libsodium/randombytes_internal_random.h; sourceTree = "<group>"; };
 		B191A055E49E7504534CB7BE17F8F084 /* OpenSSL-Universal-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "OpenSSL-Universal-xcframeworks.sh"; sourceTree = "<group>"; };
-		B1AB867D81772D2F0FA4BCF0A45173FE /* fe_pow22523.c */ = {isa = PBXFileReference; includeInIndex = 1; path = fe_pow22523.c; sourceTree = "<group>"; };
+		B1AB867D81772D2F0FA4BCF0A45173FE /* fe_pow22523.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = fe_pow22523.c; sourceTree = "<group>"; };
 		B1E496B7BC018E8D3EC4E0D47564F3B9 /* YapDatabaseViewOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseViewOptions.h; path = YapDatabase/Extensions/View/YapDatabaseViewOptions.h; sourceTree = "<group>"; };
-		B21F4EF2CAA237E6FF573DB6C913CA47 /* SignalCoreKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SignalCoreKit; path = SignalCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B21F4EF2CAA237E6FF573DB6C913CA47 /* SignalCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SignalCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B25762D14B8A10B5599334F018408567 /* SwiftProtobuf-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftProtobuf-Info.plist"; sourceTree = "<group>"; };
 		B25BFBCF47D29C85A72A14AC8F30D438 /* SQLCipher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLCipher-umbrella.h"; sourceTree = "<group>"; };
 		B2C44689BDBF765AFFB843A5C5912BB3 /* crypto_core_ristretto255.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_core_ristretto255.h; path = Sodium/libsodium/crypto_core_ristretto255.h; sourceTree = "<group>"; };
@@ -1928,7 +1930,7 @@
 		B525B1F289A713AD8788935D3ACBF48D /* DatabasePool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabasePool.swift; path = GRDB/Core/DatabasePool.swift; sourceTree = "<group>"; };
 		B56F56EDAE6872DD2F794D70F2956251 /* api.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = api.pb.swift; path = Sources/SwiftProtobuf/api.pb.swift; sourceTree = "<group>"; };
 		B6C0CEE3DEAAE43A21EFD4424035F084 /* DatabaseMigrator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseMigrator.swift; path = GRDB/Migration/DatabaseMigrator.swift; sourceTree = "<group>"; };
-		B6CBC9553CF324F1789AB229240A0B7E /* fe_invert.c */ = {isa = PBXFileReference; includeInIndex = 1; path = fe_invert.c; sourceTree = "<group>"; };
+		B6CBC9553CF324F1789AB229240A0B7E /* fe_invert.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = fe_invert.c; sourceTree = "<group>"; };
 		B74F6929EE208BA3C6828A5D6263DBFA /* YapDatabaseOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseOptions.m; path = YapDatabase/YapDatabaseOptions.m; sourceTree = "<group>"; };
 		B86AD9455983BE7146AB2ACD37269DCC /* NSDate+OWS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+OWS.h"; path = "SignalCoreKit/src/NSDate+OWS.h"; sourceTree = "<group>"; };
 		B8DD1D7403AF080A329552CCBA4E0FF1 /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDContextFilterLogFormatter.m; path = Sources/CocoaLumberjack/Extensions/DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
@@ -1960,8 +1962,8 @@
 		C0960B0044D219902B9BF574A5B7EFD9 /* YapDatabase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YapDatabase-Info.plist"; sourceTree = "<group>"; };
 		C0FDDB7DA1EBE71305C9305FAC0509C0 /* BinaryDelimited.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryDelimited.swift; path = Sources/SwiftProtobuf/BinaryDelimited.swift; sourceTree = "<group>"; };
 		C12B93D34E5205BB7C5FD23B80B71F4D /* HasManyAssociation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HasManyAssociation.swift; path = GRDB/QueryInterface/Request/Association/HasManyAssociation.swift; sourceTree = "<group>"; };
-		C16C77B0A3B660514FB43DE8985DCBAD /* fe_sq.c */ = {isa = PBXFileReference; includeInIndex = 1; path = fe_sq.c; sourceTree = "<group>"; };
-		C19DF96EA1F90CB8B3B403D8E327202B /* ge_p1p1_to_p3.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ge_p1p1_to_p3.c; sourceTree = "<group>"; };
+		C16C77B0A3B660514FB43DE8985DCBAD /* fe_sq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = fe_sq.c; sourceTree = "<group>"; };
+		C19DF96EA1F90CB8B3B403D8E327202B /* ge_p1p1_to_p3.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ge_p1p1_to_p3.c; sourceTree = "<group>"; };
 		C1BF1BA53338AADE5B0F17010434BC3C /* YapDatabaseExtensionTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseExtensionTypes.h; path = YapDatabase/Extensions/Protocol/YapDatabaseExtensionTypes.h; sourceTree = "<group>"; };
 		C1C1B5EB9C167FE0A7A43A3CFF762C58 /* DatabaseReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseReader.swift; path = GRDB/Core/DatabaseReader.swift; sourceTree = "<group>"; };
 		C1D8B4C725419D93EA6FB76A84389272 /* YapDatabaseSecondaryIndexOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseSecondaryIndexOptions.h; path = YapDatabase/Extensions/SecondaryIndex/YapDatabaseSecondaryIndexOptions.h; sourceTree = "<group>"; };
@@ -1972,7 +1974,7 @@
 		C296BF2DF9FD0EFD95CF85C9AE9B1B4D /* YapDatabaseCloudCoreOperationPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseCloudCoreOperationPrivate.h; path = YapDatabase/Extensions/CloudCore/Internal/YapDatabaseCloudCoreOperationPrivate.h; sourceTree = "<group>"; };
 		C309408E83D8E31029112B1DA5CAC252 /* ExtensionMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionMap.swift; path = Sources/SwiftProtobuf/ExtensionMap.swift; sourceTree = "<group>"; };
 		C3198EA2961FACBD60BA1CE04AB4767A /* Curve25519Kit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Curve25519Kit.debug.xcconfig; sourceTree = "<group>"; };
-		C4243358FA7BC85C92919FB668507F8C /* Reachability.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Reachability.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C4243358FA7BC85C92919FB668507F8C /* Reachability.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Reachability.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C428443C494DA24DA5297B1572B4B499 /* SQLCipher_config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLCipher_config.h; path = Support/SQLCipher_config.h; sourceTree = "<group>"; };
 		C467C7C92D7615F901D9ED807FB7CD66 /* YapDatabaseRelationshipEdge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseRelationshipEdge.m; path = YapDatabase/Extensions/Relationships/YapDatabaseRelationshipEdge.m; sourceTree = "<group>"; };
 		C4812ED1A85EF6B19AB305FDEB2EAFF9 /* YapDatabaseCloudCoreConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseCloudCoreConnection.h; path = YapDatabase/Extensions/CloudCore/YapDatabaseCloudCoreConnection.h; sourceTree = "<group>"; };
@@ -1995,14 +1997,14 @@
 		C952342EF6EDEE5D0F030E2745DEC697 /* NSObject+OWS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+OWS.h"; path = "SignalCoreKit/src/NSObject+OWS.h"; sourceTree = "<group>"; };
 		C9564ECEF2AB3B809622AE4BC28C9FF1 /* DifferenceKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DifferenceKit-Info.plist"; sourceTree = "<group>"; };
 		C9A42C5E48D384C883EDB0B93E454B10 /* DatabaseCollation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseCollation.swift; path = GRDB/Core/DatabaseCollation.swift; sourceTree = "<group>"; };
-		CA511AEDEE0F9211D282D1EF145EB0CE /* OpenSSL.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = OpenSSL.xcframework; path = Frameworks/OpenSSL.xcframework; sourceTree = "<group>"; };
+		CA511AEDEE0F9211D282D1EF145EB0CE /* OpenSSL.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = OpenSSL.xcframework; path = Frameworks/OpenSSL.xcframework; sourceTree = "<group>"; };
 		CA5B981C89D770B89C22CEA494F26F52 /* YapDatabaseAtomic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseAtomic.h; path = YapDatabase/Internal/YapDatabaseAtomic.h; sourceTree = "<group>"; };
 		CA8D6C807F843A99E9C82DD916B68AB7 /* YapDatabaseSearchResultsViewPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseSearchResultsViewPrivate.h; path = YapDatabase/Extensions/SearchResultsView/Internal/YapDatabaseSearchResultsViewPrivate.h; sourceTree = "<group>"; };
-		CAA27DB4BFD67C18B7AD8B3F1CDCA497 /* ge_p3_to_cached.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ge_p3_to_cached.c; sourceTree = "<group>"; };
+		CAA27DB4BFD67C18B7AD8B3F1CDCA497 /* ge_p3_to_cached.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ge_p3_to_cached.c; sourceTree = "<group>"; };
 		CBABA80318593EB9C85010109392D8F8 /* SQLTableGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLTableGenerator.swift; path = GRDB/QueryInterface/SQLGeneration/SQLTableGenerator.swift; sourceTree = "<group>"; };
 		CBC38B532B6B316654518284E84310E9 /* Aead.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Aead.swift; path = Sodium/Aead.swift; sourceTree = "<group>"; };
 		CBC937ECB0527D1B4CE5FF27974474C2 /* Table.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Table.swift; path = GRDB/QueryInterface/SQL/Table.swift; sourceTree = "<group>"; };
-		CBEE575A05CC52D0016B12C264FD3AA6 /* ge_p3_0.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ge_p3_0.c; sourceTree = "<group>"; };
+		CBEE575A05CC52D0016B12C264FD3AA6 /* ge_p3_0.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ge_p3_0.c; sourceTree = "<group>"; };
 		CCA37BE25020D4ABDA2B42D14D967BED /* YapMutationStack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapMutationStack.m; path = YapDatabase/Utilities/YapMutationStack.m; sourceTree = "<group>"; };
 		CCD748545E0E8D2D0E2DE3D66D9338F3 /* crypto_hash_sha256.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_hash_sha256.h; path = Sodium/libsodium/crypto_hash_sha256.h; sourceTree = "<group>"; };
 		CCE6F2224831450AD90204A600BC92C4 /* YapDatabaseManualViewTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseManualViewTransaction.m; path = YapDatabase/Extensions/ManualView/YapDatabaseManualViewTransaction.m; sourceTree = "<group>"; };
@@ -2082,7 +2084,7 @@
 		DE5ACEAEF9BD3D4EC270229E6C076031 /* YapDatabaseSearchQueuePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseSearchQueuePrivate.h; path = YapDatabase/Extensions/SearchResultsView/Internal/YapDatabaseSearchQueuePrivate.h; sourceTree = "<group>"; };
 		DE7A1AC0AF100CB05600D5797E703D64 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.modulemap"; sourceTree = "<group>"; };
 		DE914C9D41E47D332ADBE27377548C10 /* Curve25519Kit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Curve25519Kit-Info.plist"; sourceTree = "<group>"; };
-		DF9542D25D962A798AD2C4B48899F772 /* ge_p3_to_p2.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ge_p3_to_p2.c; sourceTree = "<group>"; };
+		DF9542D25D962A798AD2C4B48899F772 /* ge_p3_to_p2.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = ge_p3_to_p2.c; sourceTree = "<group>"; };
 		E026967910E35A61A182C07C61AE7845 /* crypto_sign.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_sign.h; path = Sodium/libsodium/crypto_sign.h; sourceTree = "<group>"; };
 		E0569ABCB53991E909E59DEC05E71F04 /* Google_Protobuf_Duration+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Duration+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Duration+Extensions.swift"; sourceTree = "<group>"; };
 		E0ADAB4671010E5A765EF1502E5E5236 /* Pods-GlobalDependencies-session-ui-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GlobalDependencies-session-ui-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -2100,8 +2102,8 @@
 		E49C72FE5113B113476DD79F5D632E7B /* YapDatabaseViewLocator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseViewLocator.h; path = YapDatabase/Extensions/View/Internal/YapDatabaseViewLocator.h; sourceTree = "<group>"; };
 		E4B887B413FC9910C85D241A0E3DA528 /* UUID.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UUID.swift; path = GRDB/Core/Support/Foundation/UUID.swift; sourceTree = "<group>"; };
 		E5275D45B20DD04F7DE3277021E6E374 /* Database+Dump.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Database+Dump.swift"; path = "GRDB/Dump/Database+Dump.swift"; sourceTree = "<group>"; };
-		E5EA885772B6A26B7A844F45C1B5766A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		E600DEB5CC4ADE3084262DCE3EC693F2 /* LICENCE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENCE.txt; sourceTree = "<group>"; };
+		E5EA885772B6A26B7A844F45C1B5766A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E600DEB5CC4ADE3084262DCE3EC693F2 /* LICENCE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
 		E64FE8367269DA7BDD0F4570CE120608 /* YapDatabaseOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseOptions.h; path = YapDatabase/YapDatabaseOptions.h; sourceTree = "<group>"; };
 		E6B5A9046460F9B96B9A24FDC704C51A /* SignalCoreKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SignalCoreKit.modulemap; sourceTree = "<group>"; };
 		E76820B8ABE4D66DAF498E4E0BD1A36E /* YapDatabaseRelationshipEdge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseRelationshipEdge.h; path = YapDatabase/Extensions/Relationships/YapDatabaseRelationshipEdge.h; sourceTree = "<group>"; };
@@ -2112,7 +2114,7 @@
 		E8B72B05DC07E8824682D6E15F35700A /* YapDatabaseCloudCoreTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseCloudCoreTransaction.h; path = YapDatabase/Extensions/CloudCore/YapDatabaseCloudCoreTransaction.h; sourceTree = "<group>"; };
 		E8B9F6433072FA9E0A3D7B755391982C /* YapDatabaseViewPageMetadata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseViewPageMetadata.h; path = YapDatabase/Extensions/View/Internal/YapDatabaseViewPageMetadata.h; sourceTree = "<group>"; };
 		E905E54494C5BE3EA65B134349EDB29F /* YapDatabaseHooksTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseHooksTransaction.h; path = YapDatabase/Extensions/Hooks/YapDatabaseHooksTransaction.h; sourceTree = "<group>"; };
-		E9757DB696CF54D099F5B55E4717A9D0 /* curve_sigs.c */ = {isa = PBXFileReference; includeInIndex = 1; path = curve_sigs.c; sourceTree = "<group>"; };
+		E9757DB696CF54D099F5B55E4717A9D0 /* curve_sigs.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = curve_sigs.c; sourceTree = "<group>"; };
 		E97638F718365A26FB0CDBAFBA9B61FB /* any.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = any.pb.swift; path = Sources/SwiftProtobuf/any.pb.swift; sourceTree = "<group>"; };
 		E9BC3BC46BFC4F428C3C8C1BDC9FC273 /* YapDatabaseConnectionState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseConnectionState.h; path = YapDatabase/Internal/YapDatabaseConnectionState.h; sourceTree = "<group>"; };
 		E9D077600F80B4C4AF064F8DFBF6BF6C /* SQLCipher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLCipher-dummy.m"; sourceTree = "<group>"; };
@@ -2149,7 +2151,7 @@
 		F39B28A790007D255A1342698DA201F3 /* Google_Protobuf_Any+Registry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Any+Registry.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Any+Registry.swift"; sourceTree = "<group>"; };
 		F3D3FF5613201D1117BC2F4C964CF3CF /* DifferenceKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DifferenceKit-dummy.m"; sourceTree = "<group>"; };
 		F3E3FB95E216F9A3722AA29B1AF5DCAE /* YapDatabaseManualViewConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseManualViewConnection.m; path = YapDatabase/Extensions/ManualView/YapDatabaseManualViewConnection.m; sourceTree = "<group>"; };
-		F3F6B9CDA278F0B55663145027D4E18B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F3F6B9CDA278F0B55663145027D4E18B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F3FC4825F72613D1531506B44E9691DA /* Sodium-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Sodium-xcframeworks.sh"; sourceTree = "<group>"; };
 		F4262574B020BA3AB88083F57C88FE9B /* base2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = base2.h; sourceTree = "<group>"; };
 		F4CC8F2ACDC534133819DBA78087E3BB /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit-umbrella.h"; sourceTree = "<group>"; };
@@ -2160,7 +2162,7 @@
 		F6B67BAE768F47EBF4783717C0EE5580 /* YapDatabaseCloudCoreConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseCloudCoreConnection.m; path = YapDatabase/Extensions/CloudCore/YapDatabaseCloudCoreConnection.m; sourceTree = "<group>"; };
 		F710D3E5DDCD7324F89642927D2FF70A /* YDBCKRecordInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YDBCKRecordInfo.m; path = YapDatabase/Extensions/CloudKit/Utilities/YDBCKRecordInfo.m; sourceTree = "<group>"; };
 		F92B064BAF3DA6627EA0644EF3F98C3E /* OpenSSL-Universal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OpenSSL-Universal.debug.xcconfig"; sourceTree = "<group>"; };
-		F9B58B55C45CD123AF5DDFD40DE16981 /* sc_reduce.c */ = {isa = PBXFileReference; includeInIndex = 1; path = sc_reduce.c; sourceTree = "<group>"; };
+		F9B58B55C45CD123AF5DDFD40DE16981 /* sc_reduce.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = sc_reduce.c; sourceTree = "<group>"; };
 		FA046F06D5685F63E78E9AD4969C2129 /* YapProxyObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapProxyObject.m; path = YapDatabase/Utilities/YapProxyObject.m; sourceTree = "<group>"; };
 		FA062879C22253E60B12513341187D19 /* DDOSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDOSLogger.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDOSLogger.h; sourceTree = "<group>"; };
 		FA5381A153F81BD165E86642BFE15BF0 /* YapDatabaseViewPageMetadata.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseViewPageMetadata.m; path = YapDatabase/Extensions/View/Internal/YapDatabaseViewPageMetadata.m; sourceTree = "<group>"; };
@@ -2168,7 +2170,7 @@
 		FAFC8D09238C1E9F7BAEB3C274670A90 /* SQLTableAlterationGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLTableAlterationGenerator.swift; path = GRDB/QueryInterface/SQLGeneration/SQLTableAlterationGenerator.swift; sourceTree = "<group>"; };
 		FB04B1C25028F315E6574D245588A677 /* crypto_auth_hmacsha256.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_auth_hmacsha256.h; path = Sodium/libsodium/crypto_auth_hmacsha256.h; sourceTree = "<group>"; };
 		FB5F746E301E16E8164BF9B5155CC185 /* crypto_core_salsa20.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_core_salsa20.h; path = Sodium/libsodium/crypto_core_salsa20.h; sourceTree = "<group>"; };
-		FB659CF500A7D8D65D432136161FF3C1 /* sqlite3.c */ = {isa = PBXFileReference; includeInIndex = 1; path = sqlite3.c; sourceTree = "<group>"; };
+		FB659CF500A7D8D65D432136161FF3C1 /* sqlite3.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
 		FBACCBFB30742D90CFA69243B1805817 /* crypto_box_curve25519xsalsa20poly1305.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_box_curve25519xsalsa20poly1305.h; path = Sodium/libsodium/crypto_box_curve25519xsalsa20poly1305.h; sourceTree = "<group>"; };
 		FBB1C4B1EBF6F7C59E8185F8DDBCB116 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.debug.xcconfig"; sourceTree = "<group>"; };
 		FC448174FBE6279AF5B38B609802DBDB /* Message+TextFormatAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Message+TextFormatAdditions.swift"; path = "Sources/SwiftProtobuf/Message+TextFormatAdditions.swift"; sourceTree = "<group>"; };
@@ -2179,7 +2181,7 @@
 		FDA864D3C8147367AB6998635B2C9C47 /* YapDatabaseHooksPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseHooksPrivate.h; path = YapDatabase/Extensions/Hooks/Internal/YapDatabaseHooksPrivate.h; sourceTree = "<group>"; };
 		FDE594471EB4E3E8F37DB44C610E548F /* Sodium-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Sodium-dummy.m"; sourceTree = "<group>"; };
 		FE167E3381EC8A655715223989819C73 /* YDBCKMergeInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YDBCKMergeInfo.m; path = YapDatabase/Extensions/CloudKit/Utilities/YDBCKMergeInfo.m; sourceTree = "<group>"; };
-		FE495B1F70C4B07A66F094A2FC347D17 /* open.c */ = {isa = PBXFileReference; includeInIndex = 1; path = open.c; sourceTree = "<group>"; };
+		FE495B1F70C4B07A66F094A2FC347D17 /* open.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = open.c; sourceTree = "<group>"; };
 		FF5C86743E3719384337BD018BCF7D19 /* HasOneThroughAssociation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HasOneThroughAssociation.swift; path = GRDB/QueryInterface/Request/Association/HasOneThroughAssociation.swift; sourceTree = "<group>"; };
 		FF679E53936AF09E976419B44F386C06 /* Sodium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Sodium.debug.xcconfig; sourceTree = "<group>"; };
 		FF70165354717FBB93C0EB80484162CE /* crypto_auth_hmacsha512.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_auth_hmacsha512.h; path = Sodium/libsodium/crypto_auth_hmacsha512.h; sourceTree = "<group>"; };
@@ -2216,6 +2218,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7BCF3B92BA474F400CB5766 /* OpenSSL.xcframework in Frameworks */,
 				BC889305B1B292D973D12C70D306DC9F /* Foundation.framework in Frameworks */,
 				46EB2E00008130 /* Frameworks in Frameworks */,
 			);
@@ -2674,7 +2677,6 @@
 				3DA1C266FD2751157E9AED19D781A783 /* Core */,
 				BE428BA67219282593F2B4738D926C8B /* Support Files */,
 			);
-			name = DifferenceKit;
 			path = DifferenceKit;
 			sourceTree = "<group>";
 		};
@@ -2885,7 +2887,6 @@
 				3E37B54F96396EF2A8F4B9FC25DA9718 /* Resources */,
 				81687C20129E5CD4B887C4EA21A6FA97 /* Support Files */,
 			);
-			name = SAMKeychain;
 			path = SAMKeychain;
 			sourceTree = "<group>";
 		};
@@ -2968,7 +2969,6 @@
 				B5607C22D57987E4AF10F85A079C42E0 /* nacl_includes */,
 				8220C3B8F3BD7246870D33CABAEE3848 /* nacl_sha512 */,
 			);
-			name = ed25519;
 			path = ed25519;
 			sourceTree = "<group>";
 		};
@@ -3057,7 +3057,6 @@
 				A9470ED4202B8AB0E5338B05B51D7089 /* zeroize.c */,
 				0E36D0C66B1FE1D40E159D13724F712A /* zeroize.h */,
 			);
-			name = additions;
 			path = additions;
 			sourceTree = "<group>";
 		};
@@ -3066,7 +3065,6 @@
 			children = (
 				6BE31734781FB287358E140340D6F30A /* curve25519-donna.c */,
 			);
-			name = Curve25519;
 			path = Curve25519;
 			sourceTree = "<group>";
 		};
@@ -3129,7 +3127,7 @@
 				674249B696509F578560872951A51D3B /* Pods-GlobalDependencies-session-ui */,
 				400FF55D0451E7A8F33A3D0D3E11C1B9 /* Reachability */,
 				612028EAFF1C2054A0EB821A9C9F2440 /* SAMKeychain */,
-				B21F4EF2CAA237E6FF573DB6C913CA47 /* SignalCoreKit */,
+				B21F4EF2CAA237E6FF573DB6C913CA47 /* SignalCoreKit.framework */,
 				32497A3ACEA14D32D7F8C65D5357128A /* Sodium */,
 				1FD5F5B0E4809A3AE2ECDE142F44A6BB /* SQLCipher */,
 				943D347E61A2E181A4FA2CA894307B6E /* SwiftProtobuf */,
@@ -3201,7 +3199,6 @@
 				A68D033B42DA7979709338F2AAEDCD14 /* blocks.c */,
 				AA92692C9C06844EA1E600CCCA71AA79 /* hash.c */,
 			);
-			name = nacl_sha512;
 			path = nacl_sha512;
 			sourceTree = "<group>";
 		};
@@ -3269,7 +3266,6 @@
 				DD6C87967789392A830D47DFF0AAC451 /* Ed25519.m */,
 				D6465BA956C199A0FFDB4F9C7ECC570B /* Ed25519.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -3350,7 +3346,6 @@
 				28C583E1483387774373A4BE35964F99 /* SQLCipher */,
 				1EEBD518CE878C33A9AFDAC92FA03B16 /* Support Files */,
 			);
-			name = GRDB.swift;
 			path = GRDB.swift;
 			sourceTree = "<group>";
 		};
@@ -3423,7 +3418,6 @@
 				D4BD1CAE29FCA161282941B315E9945E /* crypto_uint64.h */,
 				AF44C17CCC905EE73C5D6FDF86496046 /* crypto_verify_32.h */,
 			);
-			name = nacl_includes;
 			path = nacl_includes;
 			sourceTree = "<group>";
 		};
@@ -3570,7 +3564,6 @@
 				2E42FF61FC31CFD94C4B9A216529130D /* ZigZag.swift */,
 				845268E24C7C13DFE2FBBFDC488FD6B0 /* Support Files */,
 			);
-			name = SwiftProtobuf;
 			path = SwiftProtobuf;
 			sourceTree = "<group>";
 		};
@@ -3677,7 +3670,6 @@
 				7152A3C7A73E8FADA5F4EAC40FD4C7FA /* Curve25519 */,
 				5763DD75AB7981A589A1BDA8F6729971 /* ed25519 */,
 			);
-			name = Sources;
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -3687,7 +3679,6 @@
 				43D8B2ADEA3BD60E77A4556DED9C7960 /* Core */,
 				7306B3525B3F64FA7B8C049BCDC32553 /* Support Files */,
 			);
-			name = CocoaLumberjack;
 			path = CocoaLumberjack;
 			sourceTree = "<group>";
 		};
@@ -3742,7 +3733,6 @@
 				61D8A922E34A89CED44E51099A74D8A5 /* SQLCipher */,
 				B93564A3F5933BD87158F379460AB03E /* Support Files */,
 			);
-			name = YapDatabase;
 			path = YapDatabase;
 			sourceTree = "<group>";
 		};
@@ -3839,7 +3829,6 @@
 				AFE864B1B574CCFDBC05B15CC4FB9C91 /* Frameworks */,
 				7A223003956B1604F44C2C9CC6C8B3D2 /* Support Files */,
 			);
-			name = Sodium;
 			path = Sodium;
 			sourceTree = "<group>";
 		};
@@ -3849,7 +3838,6 @@
 				D087702AFCA7991C8C4F62DE4DD70CA0 /* common */,
 				501144007A51C7A34CAB013E938B3623 /* Support Files */,
 			);
-			name = SQLCipher;
 			path = SQLCipher;
 			sourceTree = "<group>";
 		};
@@ -4431,7 +4419,7 @@
 			);
 			name = SignalCoreKit;
 			productName = SignalCoreKit;
-			productReference = B21F4EF2CAA237E6FF573DB6C913CA47 /* SignalCoreKit */;
+			productReference = B21F4EF2CAA237E6FF573DB6C913CA47 /* SignalCoreKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8ADB7DB4840DBDFF7BE89EFCA70FFA45 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit */ = {
@@ -4674,6 +4662,7 @@
 			targets = (
 				E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */,
 				276021C4482165D46E0CBBEFB822FE95 /* CocoaLumberjack-CocoaLumberjackPrivacy */,
+				565B5AF44894619B799AA0D7B08B8331 /* SignalCoreKit */,
 				22A8674975BD28B12B4EE99358F3D68F /* Curve25519Kit */,
 				8FC6E51285E4FD828A61BEFD2100CD64 /* DifferenceKit */,
 				0A86C228CFCBC35A1FD284274ED0930F /* GRDB.swift */,
@@ -4685,7 +4674,6 @@
 				DAC1158CF5932E77704FC835A1123D37 /* Pods-GlobalDependencies-session-ui */,
 				CAA047C0F5E4106F3904E8497FA17F97 /* Reachability */,
 				5572D14DECB5A676C1B31B30A3BA7F10 /* SAMKeychain */,
-				565B5AF44894619B799AA0D7B08B8331 /* SignalCoreKit */,
 				9AC54079097E3E3B70EBE9D712693CE4 /* Sodium */,
 				D21962D0DE148A440FADB55935BD4264 /* SQLCipher */,
 				A5F702E0DA383BC1479572581615A916 /* SwiftProtobuf */,

@@ -12,8 +12,8 @@ import SwiftUI
 func generateQRCode(from string: String) -> UIImage? {
   if let image = EFQRCode.generate(
       for: string,
-      backgroundColor: nil,//UIColor(Color.background).cgColor,
-      foregroundColor: nil//UIColor(Color.brand).cgColor
+      backgroundColor: UIColor(Color.background).cgColor,
+      foregroundColor: UIColor(Color.brand).cgColor
   ) {
       return UIImage(cgImage: image)
   } else {

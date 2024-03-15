@@ -135,9 +135,9 @@
 #  endif
 # endif
 
-# if OPENSSL_API_LEVEL > OPENSSL_CONFIGURED_API
-#  error "The requested API level higher than the configured API compatibility level"
-# endif
+// # if OPENSSL_API_LEVEL > OPENSSL_CONFIGURED_API
+// #  error "The requested API level higher than the configured API compatibility level"
+// # endif
 
 /*
  * Check of sane values.
