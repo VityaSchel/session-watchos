@@ -38,5 +38,6 @@
     "osx": "10.15",
     "watchos": "10.0"
   },
-  "vendored_frameworks": "Frameworks/OpenSSL.xcframework"
+  "vendored_frameworks": "Frameworks/OpenSSL.xcframework",
+  "preserve_paths": "Frameworks/OpenSSL.xcframework/**/*"
 }

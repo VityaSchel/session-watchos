@@ -17,6 +17,7 @@
     "{:ios=>\"10.0\", :watchos=>\"10.0\"}": null,
     "watchos": "10.0"
   },
+  "vendored_frameworks": "../OpenSSL/Frameworks",
   "requires_arc": true,
   "source_files": [
     "SignalCoreKit/src/**/*.{h,m,mm,swift}",

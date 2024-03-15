@@ -112,6 +112,14 @@ end
 # Actions to perform post-install
 post_install do |installer|
   set_minimum_deployment_target(installer)
+  installer.generated_projects.each do |project|
+      project.targets.each do |target|
+        if target.name == 'SignalCoreKit'
+          openssl_framework_path = '${PODS_ROOT}/OpenSSL/Frameworks/OpenSSL.xcframework'
+          target.frameworks_build_phase.add_file_reference(project.new_file(openssl_framework_path), true)
+        end
+      end
+    end
 end
 
 def set_minimum_deployment_target(installer)

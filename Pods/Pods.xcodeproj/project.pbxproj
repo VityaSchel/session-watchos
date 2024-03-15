@@ -88,6 +88,7 @@
 		131634294262F5DC5D976224284C6F52 /* YDBCKMergeInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 495B0ECA191A4FC65D87ED135A80B86E /* YDBCKMergeInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		132E0F539A9AB4B6D9BB7CA04ACB5254 /* YapDatabaseCloudCoreOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F890EC422C9EE71E3BC45FE46C94B5 /* YapDatabaseCloudCoreOptions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		13661659BF9B5FC2368C82421A6539FA /* crypto_core_ed25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 797E6C9A3FA9FD78B3C61EE5551D8A63 /* crypto_core_ed25519.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		149D4715402233C8DA5B68A694A93F43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50C47125291C718A572221D1765A266 /* Foundation.framework */; };
 		14DB56FECB13131B29448D1CE5CD401B /* DatabaseCancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0597ED05B8B1FCE01109B9DCB84C41A7 /* DatabaseCancellable.swift */; };
 		150FCF4B6D5CAE47C5434566AAE5DFAA /* YapDatabaseExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5983888D5E0412EB45782F2C08185B96 /* YapDatabaseExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		15450141A4C32907304B3A3FEC0EB8CF /* TextFormatEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A528C5EDCC608918874F3725DD09932 /* TextFormatEncoder.swift */; };
@@ -96,13 +97,13 @@
 		168489686691B65EC02787DF609B39D8 /* YapDatabaseSecondaryIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2BCE2DCD01A091AE50AC1952D37A8B /* YapDatabaseSecondaryIndex.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		16F5D3E41765DDFDA729CB2EAF74A64B /* fe_pow22523.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CCAD9C415462B276B4531444099F5B3 /* fe_pow22523.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		171F722C239B76DC208C03EBEE2FC96E /* YapTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 41168EF5D49FD5A5F7D04EFAB41AB4E1 /* YapTouch.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		17758BC9CCE19EDBF3ED9852854024E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50C47125291C718A572221D1765A266 /* Foundation.framework */; };
 		17A155AFBC8DA9A8843D273A07684198 /* Curve25519.h in Headers */ = {isa = PBXBuildFile; fileRef = C20AE763885D9A0F8C4CC305A599F4DB /* Curve25519.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		17C3B505AF6D0A5966C70D4C5A0C1BB3 /* crypto_int32.h in Headers */ = {isa = PBXBuildFile; fileRef = FCF59E548311E989D53B5C23FC95895E /* crypto_int32.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		17C474BBFF5933BD3D90031881ADF896 /* crypto_core_salsa2012.h in Headers */ = {isa = PBXBuildFile; fileRef = 46CD914C1256BFF86953F132EE974EAC /* crypto_core_salsa2012.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		17E7F00AC0C17798895D5C7556CBF5BB /* YapDatabaseCloudKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A649FD29E07F502FCB17F199B3C7363 /* YapDatabaseCloudKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		182585CA5B7B53C6067DC05833407B79 /* ge_msub.c in Sources */ = {isa = PBXBuildFile; fileRef = 90F8391DC7AEA40BBB2026F2B4467F52 /* ge_msub.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		189C20937C02E3E7BD3975D9825F3A6D /* ge_p3_to_cached.c in Sources */ = {isa = PBXBuildFile; fileRef = 52B434AEC420F0A9F1DD138C371001A4 /* ge_p3_to_cached.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		18FD18DE5BC3C31DF0AA50888BA29084 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA094942996B5139B7F7DC880297336D /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit-dummy.m */; };
 		19FC999DFFC0AF36EA0AE78B3E1BAB48 /* LockedBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3C34ACE1A37A3F54FFF7494FD5AE8 /* LockedBox.swift */; };
 		1A116B9D887ECCE78BDCF7C5B905AA76 /* YapDatabaseViewRangeOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 50413F1AC861847A9E173F8E6F7ACC81 /* YapDatabaseViewRangeOptions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1A3372260A242E26C5ADD87BAC48875F /* YapDatabaseViewRangeOptionsPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 677BFA9CF6230ABB65DE0A54A65678CA /* YapDatabaseViewRangeOptionsPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -143,7 +144,6 @@
 		2422C5A6193A526259435469D92FB11D /* YapCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AC57B9AF6825712177B6A933FFBD95 /* YapCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		248B6032D76F8A707B40E46C58730CF5 /* Refinable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41FCE1CEF6BF144850E330C17EB503E /* Refinable.swift */; };
 		24D53B6D8A9784EADAF350C13F673CFF /* TextFormatScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E35826A6F16E22AF951CFA347183CDF /* TextFormatScanner.swift */; };
-		24F8680E26784FAE8BC91784C7A2A2CC /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93524D35CA2767555AAFFBC96567123C /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-dummy.m */; };
 		25CD918A2348291EBFEDF5E41B15EC54 /* crypto_scalarmult_ed25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BF46659B206532BDF0147878FBC82FA /* crypto_scalarmult_ed25519.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		25F8A259B475A32E06FCA9CA568728D2 /* YapDatabaseCloudCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C72FA9FCFFEBDAE94548E60FA8B085 /* YapDatabaseCloudCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26323E80E0BCD4F9857F1044EBBEF023 /* YapDatabaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = EA37F6963732D8C3E63D30ED189FAAC7 /* YapDatabaseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -160,6 +160,7 @@
 		285AFDDD3E4D28984FE72F8354D9512A /* YapDatabaseExtensionTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = CE33DD065BF04DA74284A76B68EDF60E /* YapDatabaseExtensionTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28D6FBE250F4360BFB0DE45A4864CB3A /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFF49BC9273D6CA03CD42723B7692B5 /* Database.swift */; };
 		2928E066859755B67DC65263597C034A /* MutablePersistableRecord+Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF6E3DC26708FDCA1281AC77300E240 /* MutablePersistableRecord+Update.swift */; };
+		29CB8DDEBE355D38B6115B2CC46788C9 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57F78E4327B5E2A5B28164190493A9A6 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A0A3D0F906C1B15402244D8357582C2 /* DumpFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1049CEF4259A17ADD91BEA3614F6C3F4 /* DumpFormat.swift */; };
 		2A1D62FE7214D7AE613DD2B2FCF663B2 /* PersistableRecord+Insert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6790582D174448BCB853807AEA0E8E28 /* PersistableRecord+Insert.swift */; };
 		2A5D3AAD71EC4FE185231408F91B8D4E /* ge_sub.h in Headers */ = {isa = PBXBuildFile; fileRef = C3FDD9399DB3002CE47EA54B09D98947 /* ge_sub.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -169,7 +170,6 @@
 		2BAED7C3D166A2DE557FCF6304808003 /* field_mask.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5535423316624FCDAADD7EE6BE858BCF /* field_mask.pb.swift */; };
 		2BC3BF341BBEC1C17860B7FF43DB8513 /* FTS3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0113D22DA58ABAB3D9F0D918378BD0E /* FTS3.swift */; };
 		2C3F60B268C7B663EF380BE57FA256B8 /* YapDatabaseManualViewTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE6F2224831450AD90204A600BC92C4 /* YapDatabaseManualViewTransaction.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		2C4FF85F8132766AC130DDA7ACE8805E /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C0225C5F84F8CD92B984E13CCD65D6 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit-dummy.m */; };
 		2D05504ED37FE99FAA4D511271B8A3D6 /* DatabasePublishers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25085FEF07852E5F16462618EA9393FE /* DatabasePublishers.swift */; };
 		2D28299549CABED10FB482C5D09AA9B8 /* YapDatabaseViewChange.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D99FFC97B2DF4D51FD3D55C31A30599 /* YapDatabaseViewChange.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D84BDF549896AE3A58E3172266010B5 /* YapDatabaseRelationshipConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFC3EEE63B65F198106D70D2F3E4E6E /* YapDatabaseRelationshipConnection.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -177,8 +177,8 @@
 		2DB025CD1B9DFCA1BEC0196D0A8FB7F5 /* YapDirtyDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E818DF61F8E99A41FC4DC9C7F76F00 /* YapDirtyDictionary.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2E0ED803A5F35F3E9278E58A2344A8D1 /* DatabaseValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D9E1CC97B2029BE7700266C73E68FC /* DatabaseValue.swift */; };
 		2E283DA76F7A6845AD2FD99447D027C4 /* ge_p2_dbl.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C64788AB72AB28015E85322AFCF67AA /* ge_p2_dbl.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		2E2ECB627F773B43C803118829753CAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50C47125291C718A572221D1765A266 /* Foundation.framework */; };
 		2EB6D0453D2AE0E411548718A5F065EA /* compare.h in Headers */ = {isa = PBXBuildFile; fileRef = D0EC79D63449E57EE6FBA3137469962F /* compare.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2EF70FBC115889E34449B4C1E59809A8 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C6B170A561A1C9608B16602DA362405 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FC76D1BF2AA49ABACC1880CB318DDA1 /* JSONEncodingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB5F3E6914365C5FB9A4DFE4A79F2DC /* JSONEncodingOptions.swift */; };
 		30087D7728726046E93DE15AF656344A /* SQLCipher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B25BFBCF47D29C85A72A14AC8F30D438 /* SQLCipher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30EC7FB3A32BA5CE9DDB19702ED8F72D /* YapDatabaseCloudCoreConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = C4812ED1A85EF6B19AB305FDEB2EAFF9 /* YapDatabaseCloudCoreConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -256,16 +256,19 @@
 		449DD3FC5127907680E2A27AF391EEB0 /* Threading.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B88286334F8193F1D64AA5DE6C0DDB /* Threading.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		44F4F19AD4287696C5F58310CA90D384 /* Reachability-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F6C6529DDDB70B6A023F55E653E6436 /* Reachability-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45270624CB93061F9D48B1052CFC657D /* YapDatabaseViewTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = A63F0C7A775D8F6870663F60B710D1B3 /* YapDatabaseViewTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45314857824FC84E1DA40373E295D8C9 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F33D46C53A8D64D05549FD72B0682EA /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit-dummy.m */; };
 		4533E7621D40B98AD1F70DD451946F57 /* YapDatabaseLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 51912E84F30A47CE6E9692BD12D4BDE1 /* YapDatabaseLogging.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		457578F8D4FE6C6BBBD30F58EA153D75 /* Sodium-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE594471EB4E3E8F37DB44C610E548F /* Sodium-dummy.m */; };
 		463D4DF8DFF190BE8A5213D4B992B57A /* YapDatabaseViewMappings.m in Sources */ = {isa = PBXBuildFile; fileRef = 38927CBDBD1ACFF3147F1AF45DF5F01D /* YapDatabaseViewMappings.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		46B8119E966057A742580440EF4C0CF9 /* YapDatabaseExtensionTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = C1BF1BA53338AADE5B0F17010434BC3C /* YapDatabaseExtensionTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46EB2E00007E70 /* OpenSSL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00007E60 /* OpenSSL.xcframework */; };
 		4707AFB02178E9E612576A3F9206F95D /* ge_p3_to_p2.c in Sources */ = {isa = PBXBuildFile; fileRef = 5BCA429DA85A5175B10CC294E1444B6C /* ge_p3_to_p2.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		470F2C059D59785A7D1024727D709071 /* crypto_sign.h in Headers */ = {isa = PBXBuildFile; fileRef = E026967910E35A61A182C07C61AE7845 /* crypto_sign.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		4729D036D8F39C1A704C9954BD2F2E8B /* sign_modified.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E737DC0B90F37CC2091D77AC940EC0A /* sign_modified.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4799F85755570A7561B58F424977458F /* YapBidirectionalCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BE08EBE8A547E7AAFFAA4D50C015D545 /* YapBidirectionalCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		47AC91832C788D17C9ADD7C72A6367CE /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568EF9125D6D45D0EAF1D2B4E036AE16 /* Box.swift */; };
 		4846CB49B324B752FB079F25A1ABDD8C /* GRDB.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 102679DB8A9513073AF2199819F1FA44 /* GRDB.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		484A8BE153AA33AD542E7B23F1508D5B /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93524D35CA2767555AAFFBC96567123C /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-dummy.m */; };
 		48C4187862DFB4672F5E79692633744D /* crypto_stream_salsa20.h in Headers */ = {isa = PBXBuildFile; fileRef = EA39FF6603A1FBD28629F048A5FC3441 /* crypto_stream_salsa20.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		48F9CD36671B8F7F71F509F7BEB458BF /* YapDatabaseSearchResultsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 28D6D16676122FB3F326C3148BA88E51 /* YapDatabaseSearchResultsView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		48FBBE87802C49FF59A31F157496F454 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115DB12384CEDB0FDCCD1E444E018D29 /* Utils.swift */; };
@@ -318,7 +321,6 @@
 		58B6DB15324362A66CB2BDC1C080E6FC /* YapDatabaseViewState.m in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEB1EB1364D05F8045BFC3E900DA /* YapDatabaseViewState.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		58BD8E31BB5C40859A94E3B90CA31101 /* crypto_aead_aes256gcm.h in Headers */ = {isa = PBXBuildFile; fileRef = CFED9307E673B316ED2DCC253A306629 /* crypto_aead_aes256gcm.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		59AD32ABC0E8C7E8FED173597FD6DF44 /* SQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE530BD5B76C2EDD1D80DECA3D9051E5 /* SQL.swift */; };
-		59FC81C10F578FB59C83119C58E149F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50C47125291C718A572221D1765A266 /* Foundation.framework */; };
 		5AF0EE2CFA85598F38C7E40DA0BFDAC8 /* YDBCKChangeSet.h in Headers */ = {isa = PBXBuildFile; fileRef = B16427A3D35821B348B0D4037FD18B3A /* YDBCKChangeSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B04C376853895089FC976DF6230FBBB /* MutablePersistableRecord+Save.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A5271886232A9E9685BCB0FA985F96 /* MutablePersistableRecord+Save.swift */; };
 		5B48C0F4199A39466B2824AA72BF4F59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50C47125291C718A572221D1765A266 /* Foundation.framework */; };
@@ -530,12 +532,10 @@
 		98E9969AFFA850AA320ECA1EFFC2A21C /* SQLSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB7C8CF0C270D0956EC594B617E663B /* SQLSelection.swift */; };
 		9919D9A8E7965F63D4FF443903649E35 /* YapDatabaseStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = 80DA17575263EE69F2ED8D95DDB3683B /* YapDatabaseStatement.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		99C37CC23EBF20AAD3A042D6585F7DEA /* empty.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102623DCFE0B681AC2F4D675B8B5ED5E /* empty.pb.swift */; };
-		9A55621EBA68B2D1D73B16FCAB178B4B /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F33D46C53A8D64D05549FD72B0682EA /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit-dummy.m */; };
 		9B43A683F5D62CB4A42FD4C282FCCF44 /* Varint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BDE787D4A8A23D9B8D65DACBA716C1 /* Varint.swift */; };
 		9B58F155A3F2D0E333E490106DB8789C /* crypto_core_curve25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FC0D5E047888E3C5B42D8095A2930F9 /* crypto_core_curve25519.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9BE8A96B2710CA26539152EC489BE4ED /* YapDatabaseHooksTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = E905E54494C5BE3EA65B134349EDB29F /* YapDatabaseHooksTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C1743534E0BB301353047EB98EC5894 /* YapDatabaseExtensionConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = A546AC503CBCF9445B772EA0558496CC /* YapDatabaseExtensionConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C655D29CBA896916E6131F095EE625C /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C6B170A561A1C9608B16602DA362405 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C88C84000F9623B57C281BE8EEF2765 /* YapDatabaseFilteredView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB83CE3982CE77238AE2A43A47F9863D /* YapDatabaseFilteredView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9C89CF2A944FB3C51910CBC615514E1A /* YapDatabaseRelationship.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B80D7948B19CF305A9232986CB22EF /* YapDatabaseRelationship.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9CE8EA48FAA46496EE330D5EEE9CC53A /* YapDirtyDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EBFFDDA54994523F87F5E008143123A /* YapDirtyDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -549,6 +549,7 @@
 		9EFE113AADBF811196E7613ECDFD5B91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50C47125291C718A572221D1765A266 /* Foundation.framework */; };
 		A01C062EC86319A63341FF136B4CFAC4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0993ADF53D9D8DEFD0278B019E164B5C /* Security.framework */; };
 		A0AA68E99182C534A12FEF437D4DD088 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE37D5EFCAB64024F2B9BEB0C2BF4C /* Auth.swift */; };
+		A0D9C0DA28CAACC426A82C1F6AD0932D /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB16F1D9FAEC6DB95988422A5AF179A9 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A15A5AD41CA1A5B6B451947911E87E56 /* crypto_shorthash.h in Headers */ = {isa = PBXBuildFile; fileRef = 256DAE3780EC221EC26688B962E73C69 /* crypto_shorthash.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A17B688EACB1815CD9F94651C4180E39 /* FTS5Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2A7BA238C661C697528DB59E0DECA /* FTS5Tokenizer.swift */; };
 		A2075FE7CED1336BDF06E0CF9E2640E2 /* YapWhitelistBlacklist.h in Headers */ = {isa = PBXBuildFile; fileRef = 4690103CCBCF9CECDD425188235F6841 /* YapWhitelistBlacklist.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -579,7 +580,6 @@
 		AAAFDCB01AE0DC0833C9D8688DA959C7 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = ACEEFAD7E1CB3008F12F3AFFAEC90795 /* PrivacyInfo.xcprivacy */; };
 		AB1E2D0A7B80750DFAE12234E6968AC3 /* NSDictionary+YapDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D422CA0AF2C8EE0E337A585A7CE184C /* NSDictionary+YapDatabase.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		AB4822E3856B47CB41D8B8C03361BD82 /* SecretBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A36C5FAB4C840689A58E7114EC6C0 /* SecretBox.swift */; };
-		AB9771C34339565754757C4F9E938C3F /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57F78E4327B5E2A5B28164190493A9A6 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABA85F66C32EF00C2BB0927365B5E478 /* RowAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E6922403F8BB95DA5A51DCD610494F /* RowAdapter.swift */; };
 		AC0C8CBD49BB583A8CCE916537DD064F /* blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = C73A4C7443DCA9D2BD27B864B1F4C771 /* blocks.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		AC754B12F12763BD361A3EDD86545166 /* YapDatabaseStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE4EA4A813336D51314AFC720C1B05E /* YapDatabaseStatement.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -587,12 +587,10 @@
 		AD2E879B05A70E9751BC4992C4A5C94D /* Algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF4AFBB6F44CFDADF4BC6BA72EDF84C /* Algorithm.swift */; };
 		AD550C05CDC1B979B82C2B31DA3E6228 /* DatabaseQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1BA9075749F48F878C1A1BF16002FD /* DatabaseQueue.swift */; };
 		AD55D09CFA0BB1B05DFD5D587D020C36 /* crypto_sign_edwards25519sha512batch.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A4DCECD6F84DC2B1C0DFDB09D6B2B9 /* crypto_sign_edwards25519sha512batch.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AD6877932574ACD2EFD867A04574EA37 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB16F1D9FAEC6DB95988422A5AF179A9 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD82ADBA112C0DEB8CE806097C6192C4 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D588AAD0AC657F01138757E692F0DEA /* Date.swift */; };
 		ADC43F6FF0A31475FCBE59AD8CAE82F8 /* ValueObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349995B0CF59F5C237887EA2995EA571 /* ValueObservation.swift */; };
 		AE40726C3B16A8A3644DB6BA2E0E286D /* YapDatabaseActionManagerTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4BA1C04740C3C16D6F11C79D6F2454 /* YapDatabaseActionManagerTransaction.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		AE80FDD6FC603B20BE0A23E7B0DCF912 /* YapDatabaseRTreeIndex.h in Headers */ = {isa = PBXBuildFile; fileRef = 527A6616E55D069B0B5247C15C69A94C /* YapDatabaseRTreeIndex.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AEBD8976633F02691C905A0538FF2483 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A4595EEEE9D4E99978EA686AEC2AEB3 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AFE46505BA75EFFE061C4B5D3B0FB02F /* YapDatabaseCryptoUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 86DFB2A5FE6BCE123BFF7C5BC6B41CC0 /* YapDatabaseCryptoUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B03FF0FE5AEC61B572F7978A04C19F80 /* StandardLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E9C90C98A48C403990291892318D9B /* StandardLibrary.swift */; };
 		B070CC985E4F5B59F2F0BB3716E9F44F /* Randomness.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B658B41C2C6BC596E70870B8E6DADF /* Randomness.m */; settings = {COMPILER_FLAGS = "-fcxx-modules -w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -604,16 +602,19 @@
 		B1BAC7F5FCBEE8C178294C2F7192EEEC /* TableRecord+QueryInterfaceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEF8F198E24C6E9E292E7670097B63C /* TableRecord+QueryInterfaceRequest.swift */; };
 		B215D113733A03A24B5B328D94C11094 /* NSDate+OWS.h in Headers */ = {isa = PBXBuildFile; fileRef = AB932A2E77AC18630BFAA4AFAF0CED94 /* NSDate+OWS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B22970157222C87DEEC6E1847F3A5934 /* LineDumpFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64BD74582A63705B7621BD41DF2FBE0 /* LineDumpFormat.swift */; };
+		B31C70F6E8BC54056EBF264C287631DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50C47125291C718A572221D1765A266 /* Foundation.framework */; };
 		B3595EF396936B26C7A4A7D3CC0377DB /* YapDatabaseFullTextSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B2C95683DC1024D944730804A8D0AD /* YapDatabaseFullTextSearch.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B42EA206CFF8F734F14C3A1DA8A3A896 /* YapDatabasePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = A8E309329D85E0111DCA9DD41DA9D523 /* YapDatabasePrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B43103588E2A344860B87818DC4245E2 /* SQLOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1DF8AE62BC0F196B72D2EA9683B5A0 /* SQLOperators.swift */; };
 		B43839D4875EF7A88C7C1D4E5004FB4E /* ZigZag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E42FF61FC31CFD94C4B9A216529130D /* ZigZag.swift */; };
 		B4C7F97204BC43DBD6AFBFF58C361FBF /* fe_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = BE4EBEF33266FF9E468BD5C0B2584FC9 /* fe_mul.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B56CEBCF378329B08E92E789D6B4BCF7 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA094942996B5139B7F7DC880297336D /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit-dummy.m */; };
 		B6360B40FCBB63CB1F5E0A3A9E413294 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0993ADF53D9D8DEFD0278B019E164B5C /* Security.framework */; };
 		B656CF57A123D0BC808085D4F466E045 /* FTS5TokenizerDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD584653CF8C2DC3610071BEB01D6B5E /* FTS5TokenizerDescriptor.swift */; };
 		B6CFF08C781470D9E0135EECD5731EA4 /* d.h in Headers */ = {isa = PBXBuildFile; fileRef = D45A37A1CBF6341320843CC8EDA5F8AB /* d.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B6D194F236B50B44A92A85F2F807707A /* YapDatabaseLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 86769703A8A876F86707FB685D7E937E /* YapDatabaseLogging.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B73E3B4BA5F69AD1A40EA6E52BDABAB2 /* Ed25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D78C61C40D495BB39AC26375BDBA10C /* Ed25519.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B76CFE5F45656AB761056D4CB0BB5A14 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C0225C5F84F8CD92B984E13CCD65D6 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit-dummy.m */; };
 		B7CA1C65937340D46FE92F3FFBB12680 /* Changeset.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA0483591E45BBAC005053B1DBBFFA5 /* Changeset.swift */; };
 		B7F49F767E893E245C9927DCFB9A757F /* YapDatabaseAtomic.h in Headers */ = {isa = PBXBuildFile; fileRef = CA5B981C89D770B89C22CEA494F26F52 /* YapDatabaseAtomic.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B884E3F7A7F35007BBD5F801E415458C /* ge_madd.h in Headers */ = {isa = PBXBuildFile; fileRef = AB697F707CC307B6C67742F274431640 /* ge_madd.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -628,6 +629,7 @@
 		BB0A8B327729450BD5081255790DC481 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C525B289FC088285B4A7DF3012A73F24 /* FTS5.swift */; };
 		BB28985B46F7B70050E43548F533F845 /* YapDatabaseRTreeIndexSetup.h in Headers */ = {isa = PBXBuildFile; fileRef = B053183B60E69F64EFEEA32C265E7DED /* YapDatabaseRTreeIndexSetup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB9D623367A66183D45C5BB69CD2365D /* YapDatabaseCloudCorePipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CFD14F6A57B21D90C040BC2F8DAB37 /* YapDatabaseCloudCorePipeline.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BBE8AA413CD32576F1EBB3DB859A2C28 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A4595EEEE9D4E99978EA686AEC2AEB3 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC03D192DE21DB91C62EFE90E0055C50 /* YapDatabaseViewPageMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5381A153F81BD165E86642BFE15BF0 /* YapDatabaseViewPageMetadata.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BC2351CB80A2D743D79BD27089DCA103 /* CommonTableExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7972A8329574216A335BB8162E33FF /* CommonTableExpression.swift */; };
 		BC7C7AA62D2CD24419FBECE127474F28 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AEE36C48F70C9254DB24FB8D35C2EE /* Record.swift */; };
@@ -735,6 +737,7 @@
 		E183E74B1E48421EFDB8A62D54EA26CE /* Column.swift in Sources */ = {isa = PBXBuildFile; fileRef = F350508DD8EA31DFBDDAB29A2EC2B5D2 /* Column.swift */; };
 		E1E83E6D91D9DC7DB68CDE2E5615CDD5 /* YapNull.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BD37CAAB4D4BD0982B04F19B1593DB6 /* YapNull.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E2097C78770D5785AA4E551F0E67CBAD /* YapDatabase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5074D11A22C3C20A9824B384296871 /* YapDatabase-dummy.m */; };
+		E22567020843DA7F8E840E23D5DD1337 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50C47125291C718A572221D1765A266 /* Foundation.framework */; };
 		E2FC9FF9A602AA64AAF12D140A6A49CE /* ProtoNameProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9697E5742EA31ACCD81231867A8AA5E7 /* ProtoNameProviding.swift */; };
 		E30ACAA7FEAA2AAC67F0179279A1EEB1 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAD171860455ECC349D3ECFC15A2946 /* Data+Extensions.swift */; };
 		E35840F1C4D62CE4BCA2CF7429D1FFEA /* YDBCKChangeRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D0B4A4DE2EA9D2D092A7F3D76A8725 /* YDBCKChangeRecord.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -759,8 +762,6 @@
 		E8F863C14DDFBBD0A89334CF0ACD2B88 /* YapDatabaseSecondaryIndexHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 911B8BFD28A49AD7E724834CFD028507 /* YapDatabaseSecondaryIndexHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E96C6EC34990BDCF4F33CBC5F3504C1B /* DatabaseRegionObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2147D57B9D04439DEEA45C995FCD16 /* DatabaseRegionObservation.swift */; };
 		E97517BED5C4B40C605069729B0278CC /* YapReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 816F4B2ED21D8BB0F0D7EB7BA5BFB7A1 /* YapReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9D0B9C2524EE58D48CBA73407BF8F01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50C47125291C718A572221D1765A266 /* Foundation.framework */; };
-		E9FA7679250FEEC1B2EB2E79E3CD4F3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50C47125291C718A572221D1765A266 /* Foundation.framework */; };
 		E9FF365966465B7A84DF36FFBBE0BA78 /* YapDatabaseRelationshipOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A20145AE9A51375F8488DE2B3E5194 /* YapDatabaseRelationshipOptions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		EA00708E5EA1408D698F0CE45DC24573 /* Aead.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC38B532B6B316654518284E84310E9 /* Aead.swift */; };
 		EA7D0C3DE500D93288DA761E12E9D1A9 /* YapDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 027F85A7F945B5F1A5EEFB457F614887 /* YapDatabaseManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -829,33 +830,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		00707E3512A062E6AC42907A58567584 /* PBXContainerItemProxy */ = {
+		0309A36B23A6FD0A5DFCFE657EBA5C88 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 93855F3A5D1C4AF19C4A49AA90D4AD14;
-			remoteInfo = YapDatabase;
+			remoteGlobalIDString = A5F702E0DA383BC1479572581615A916;
+			remoteInfo = SwiftProtobuf;
 		};
-		0547E0D9B11152EA848E1CA50B1CBC66 /* PBXContainerItemProxy */ = {
+		04505AE954A50B2B6D48D58D9DA786C3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 93855F3A5D1C4AF19C4A49AA90D4AD14;
-			remoteInfo = YapDatabase;
+			remoteGlobalIDString = 565B5AF44894619B799AA0D7B08B8331;
+			remoteInfo = SignalCoreKit;
 		};
-		0AE88B8497139AD576B72BA73F548493 /* PBXContainerItemProxy */ = {
+		07E32E600984D49AC1BB9A8A1A501A7A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B9ED5194E665042005069EF06C82A050;
-			remoteInfo = "OpenSSL-Universal";
+			remoteGlobalIDString = 8FC6E51285E4FD828A61BEFD2100CD64;
+			remoteInfo = DifferenceKit;
 		};
-		11AD0671A745CE831CA654603B4305D2 /* PBXContainerItemProxy */ = {
+		1193C493E0867C8E28EE0818B9A84227 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CAA047C0F5E4106F3904E8497FA17F97;
-			remoteInfo = Reachability;
+			remoteGlobalIDString = 5572D14DECB5A676C1B31B30A3BA7F10;
+			remoteInfo = SAMKeychain;
 		};
 		14290242093BFA00DB6FA5D6CC1C1A45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -864,12 +865,19 @@
 			remoteGlobalIDString = E95654B155D25890BE8E26081FCA8265;
 			remoteInfo = CocoaLumberjack;
 		};
-		1F8D4B01350B068FA642A8B00129ACEC /* PBXContainerItemProxy */ = {
+		15FF43BE4CB9BC30A36BB18175204A10 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 93855F3A5D1C4AF19C4A49AA90D4AD14;
-			remoteInfo = YapDatabase;
+			remoteGlobalIDString = 8FC6E51285E4FD828A61BEFD2100CD64;
+			remoteInfo = DifferenceKit;
+		};
+		1BBEA0EBA85C6DBFA119260B2CF31C50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9ED5194E665042005069EF06C82A050;
+			remoteInfo = "OpenSSL-Universal";
 		};
 		217CD02347BB5D24D316427E0804DB9B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -878,110 +886,103 @@
 			remoteGlobalIDString = E95654B155D25890BE8E26081FCA8265;
 			remoteInfo = CocoaLumberjack;
 		};
-		23702762E28E0C2D085D8A2F2229CB4E /* PBXContainerItemProxy */ = {
+		219C31E2A0F6193F6BA9398670CE6385 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5572D14DECB5A676C1B31B30A3BA7F10;
+			remoteInfo = SAMKeychain;
+		};
+		21AE9FF45D2719B1A551DF0DAD9A3EA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 565B5AF44894619B799AA0D7B08B8331;
+			remoteInfo = SignalCoreKit;
+		};
+		2B047F2F1050D8CAC5906478B8875BE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D21962D0DE148A440FADB55935BD4264;
 			remoteInfo = SQLCipher;
 		};
-		23E2CFB428EB41EF01F09FA91617CE73 /* PBXContainerItemProxy */ = {
+		312AD5F1E6880F40ECA387CE91404D6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5572D14DECB5A676C1B31B30A3BA7F10;
+			remoteInfo = SAMKeychain;
+		};
+		31E56F523E8BBFB88F49FFB70F2D545B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0A86C228CFCBC35A1FD284274ED0930F;
 			remoteInfo = GRDB.swift;
 		};
-		23F6DB0528E58383D0005CFB0BFA0FF5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B9ED5194E665042005069EF06C82A050;
-			remoteInfo = "OpenSSL-Universal";
-		};
-		280CDD34BF29B6BF326B48519E52A320 /* PBXContainerItemProxy */ = {
+		360119887BE34DC69B0B6CD8EF3A5550 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E95654B155D25890BE8E26081FCA8265;
 			remoteInfo = CocoaLumberjack;
 		};
-		30615B8DC9C4A06F53F3452574967205 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9AC54079097E3E3B70EBE9D712693CE4;
-			remoteInfo = Sodium;
-		};
-		32388DC5B8592A6B4418999BEFCF8B66 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D21962D0DE148A440FADB55935BD4264;
-			remoteInfo = SQLCipher;
-		};
-		3550E8AE3ECF9CF27C04E02909ADEE40 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0A86C228CFCBC35A1FD284274ED0930F;
-			remoteInfo = GRDB.swift;
-		};
-		3C2B0DD171FB9CEFC8DD2DAF94BB7BC8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22A8674975BD28B12B4EE99358F3D68F;
-			remoteInfo = Curve25519Kit;
-		};
-		3E5CD4877B9B097BC4875E94EA47B668 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9AC54079097E3E3B70EBE9D712693CE4;
-			remoteInfo = Sodium;
-		};
-		3E603CDF63BED9AB90BA1A0933156B26 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E95654B155D25890BE8E26081FCA8265;
-			remoteInfo = CocoaLumberjack;
-		};
-		409EB5570DCFD581481EF5213FE0AC81 /* PBXContainerItemProxy */ = {
+		3749667ECC76EB69E83B38CFFB887867 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8FC6E51285E4FD828A61BEFD2100CD64;
 			remoteInfo = DifferenceKit;
 		};
-		42BBA36FA4D17F9EC2EC83E2D16B5E1D /* PBXContainerItemProxy */ = {
+		392DE99C6652E61C9B651B9192B4F4E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D21962D0DE148A440FADB55935BD4264;
+			remoteInfo = SQLCipher;
+		};
+		3BB39C840CFE6FB319046C4FCBD76C82 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0A86C228CFCBC35A1FD284274ED0930F;
 			remoteInfo = GRDB.swift;
 		};
-		49A80DDDB809F00C859C6C3F463B7BB7 /* PBXContainerItemProxy */ = {
+		3EA18CA790D9464CBBE9EDE71D23566E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93855F3A5D1C4AF19C4A49AA90D4AD14;
+			remoteInfo = YapDatabase;
+		};
+		4408F4B7D996D529D66E044755C78A21 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 22A8674975BD28B12B4EE99358F3D68F;
 			remoteInfo = Curve25519Kit;
 		};
-		4C55275C6BBE3D6E7FD647548B6DEFE2 /* PBXContainerItemProxy */ = {
+		477CEFB84B0F7880C5D82E4751A06529 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 22A8674975BD28B12B4EE99358F3D68F;
-			remoteInfo = Curve25519Kit;
+			remoteGlobalIDString = CAA047C0F5E4106F3904E8497FA17F97;
+			remoteInfo = Reachability;
 		};
-		59890E1077FF54E61F62D4F6CF453F0D /* PBXContainerItemProxy */ = {
+		47A938664DA492DD3F0C5B9FDB342CA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9AC54079097E3E3B70EBE9D712693CE4;
-			remoteInfo = Sodium;
+			remoteGlobalIDString = B9ED5194E665042005069EF06C82A050;
+			remoteInfo = "OpenSSL-Universal";
+		};
+		5D8E6EBF771B9FCF4BEF0C688D22E9AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5F702E0DA383BC1479572581615A916;
+			remoteInfo = SwiftProtobuf;
 		};
 		5FF0C22A6B65C89AB41AD1F32FEB189D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1004,42 +1005,42 @@
 			remoteGlobalIDString = B9ED5194E665042005069EF06C82A050;
 			remoteInfo = "OpenSSL-Universal";
 		};
-		6DA798BE25F2B48C833C7A8EE60EBD02 /* PBXContainerItemProxy */ = {
+		67FF62BB6FB236CFA4353D6E9F43B674 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A5F702E0DA383BC1479572581615A916;
-			remoteInfo = SwiftProtobuf;
+			remoteGlobalIDString = 22A8674975BD28B12B4EE99358F3D68F;
+			remoteInfo = Curve25519Kit;
 		};
-		6F73AD935CA09850CCB552792F83B68A /* PBXContainerItemProxy */ = {
+		693BD0AC9903919FB351850C5643ED53 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B9ED5194E665042005069EF06C82A050;
-			remoteInfo = "OpenSSL-Universal";
+			remoteGlobalIDString = E95654B155D25890BE8E26081FCA8265;
+			remoteInfo = CocoaLumberjack;
 		};
-		7E62E10D301330988851D54F87740970 /* PBXContainerItemProxy */ = {
+		6FCD2D2406CFC3A08DDF7AE636A70F60 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5572D14DECB5A676C1B31B30A3BA7F10;
-			remoteInfo = SAMKeychain;
+			remoteGlobalIDString = 9AC54079097E3E3B70EBE9D712693CE4;
+			remoteInfo = Sodium;
 		};
-		859862168C54757B60C171BDB89741D8 /* PBXContainerItemProxy */ = {
+		733E8DB9046DF8554C7222A173087F14 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5572D14DECB5A676C1B31B30A3BA7F10;
-			remoteInfo = SAMKeychain;
+			remoteGlobalIDString = 93855F3A5D1C4AF19C4A49AA90D4AD14;
+			remoteInfo = YapDatabase;
 		};
-		8AD3E6266F79DAA3919A595BE82527EC /* PBXContainerItemProxy */ = {
+		7E214D652271D0F3CB7DBC3BDC06E4B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0A86C228CFCBC35A1FD284274ED0930F;
-			remoteInfo = GRDB.swift;
+			remoteGlobalIDString = 93855F3A5D1C4AF19C4A49AA90D4AD14;
+			remoteInfo = YapDatabase;
 		};
-		8B3896C8A5EA2C5A20ABDDEE6464DB08 /* PBXContainerItemProxy */ = {
+		86F7FBC7D9D89A98200653D05B8F8282 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -1053,110 +1054,96 @@
 			remoteGlobalIDString = D21962D0DE148A440FADB55935BD4264;
 			remoteInfo = SQLCipher;
 		};
-		9A9976697DC77382E374A83E03236E08 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B9ED5194E665042005069EF06C82A050;
-			remoteInfo = "OpenSSL-Universal";
-		};
-		9D60CBEDDAC421D5CED28A6E42B3291B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8FC6E51285E4FD828A61BEFD2100CD64;
-			remoteInfo = DifferenceKit;
-		};
-		AAD9216529AE7097CB2F7D7AB90D589C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E95654B155D25890BE8E26081FCA8265;
-			remoteInfo = CocoaLumberjack;
-		};
-		AE2DC6AF5E88282E6A6790F5B47C40C5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D21962D0DE148A440FADB55935BD4264;
-			remoteInfo = SQLCipher;
-		};
-		B17C4EB2C48020C1A4131614CEDCD380 /* PBXContainerItemProxy */ = {
+		B33CB241DBD5EC0FB83EC9560BE71FEE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 565B5AF44894619B799AA0D7B08B8331;
 			remoteInfo = SignalCoreKit;
 		};
-		B29F0F7F2977DC628E3D47327D2498EB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 565B5AF44894619B799AA0D7B08B8331;
-			remoteInfo = SignalCoreKit;
-		};
-		B46C791CC042B67317E7235908A12AB4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 93855F3A5D1C4AF19C4A49AA90D4AD14;
-			remoteInfo = YapDatabase;
-		};
-		BA1EE91C64982B12B43435CDDDD80328 /* PBXContainerItemProxy */ = {
+		C45CF72FADCF68369A86091A91D415AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 22A8674975BD28B12B4EE99358F3D68F;
 			remoteInfo = Curve25519Kit;
 		};
-		C956709F84942BFB723E0518136A205D /* PBXContainerItemProxy */ = {
+		C81D4248DC8E1C008D921BBFFCBD4FA6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A5F702E0DA383BC1479572581615A916;
-			remoteInfo = SwiftProtobuf;
+			remoteGlobalIDString = 0A86C228CFCBC35A1FD284274ED0930F;
+			remoteInfo = GRDB.swift;
 		};
-		CA4420ED5EA764228556C59E05C0D9EE /* PBXContainerItemProxy */ = {
+		D064804280730967CAD6B4C9D5B644CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9ED5194E665042005069EF06C82A050;
+			remoteInfo = "OpenSSL-Universal";
+		};
+		D0D0A7195F346542196110B7DBF08176 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A86C228CFCBC35A1FD284274ED0930F;
+			remoteInfo = GRDB.swift;
+		};
+		D14877397CE52D42CE3AE6F6973DBCA1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D21962D0DE148A440FADB55935BD4264;
 			remoteInfo = SQLCipher;
 		};
-		D4B930D04CAB69DEDF68EEB9B92200F5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 565B5AF44894619B799AA0D7B08B8331;
-			remoteInfo = SignalCoreKit;
-		};
-		DAA1CC01131BB3857F73C3FEAB6B1988 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E95654B155D25890BE8E26081FCA8265;
-			remoteInfo = CocoaLumberjack;
-		};
-		DD0B9A73AB9F4769E72944B54E3AEAA3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 565B5AF44894619B799AA0D7B08B8331;
-			remoteInfo = SignalCoreKit;
-		};
-		E403ACE5F843F85D59551ED804EBD81A /* PBXContainerItemProxy */ = {
+		D2339D0DFC6E4CD120C84CF04D986B18 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CAA047C0F5E4106F3904E8497FA17F97;
 			remoteInfo = Reachability;
 		};
-		EAA116A8D18161B908A77A7D35329E3E /* PBXContainerItemProxy */ = {
+		D35AABBB6B37F0B386E7AE70CF1B6956 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8FC6E51285E4FD828A61BEFD2100CD64;
-			remoteInfo = DifferenceKit;
+			remoteGlobalIDString = 9AC54079097E3E3B70EBE9D712693CE4;
+			remoteInfo = Sodium;
+		};
+		E122DFA0BB5A51EF0C0A17627EF094C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AC54079097E3E3B70EBE9D712693CE4;
+			remoteInfo = Sodium;
+		};
+		E492D39930497B7C26C1ABFD19AADF77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E95654B155D25890BE8E26081FCA8265;
+			remoteInfo = CocoaLumberjack;
+		};
+		E7AF08A143B2CB6E9AF1983AF2301F06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9ED5194E665042005069EF06C82A050;
+			remoteInfo = "OpenSSL-Universal";
+		};
+		EE0E7B7A8821100EDF56BEE2FB465E4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A8674975BD28B12B4EE99358F3D68F;
+			remoteInfo = Curve25519Kit;
+		};
+		F20626CA9C02D2B98E58A8CDB4C98F5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E95654B155D25890BE8E26081FCA8265;
+			remoteInfo = CocoaLumberjack;
 		};
 		F34B1DCE78E443DBC9FC7AE16D4321DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1172,12 +1159,26 @@
 			remoteGlobalIDString = 276021C4482165D46E0CBBEFB822FE95;
 			remoteInfo = "CocoaLumberjack-CocoaLumberjackPrivacy";
 		};
-		F6C96DA9FE204021C5252855742AB23D /* PBXContainerItemProxy */ = {
+		F77CC27879ADA56734A863DD08877DFA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5572D14DECB5A676C1B31B30A3BA7F10;
-			remoteInfo = SAMKeychain;
+			remoteGlobalIDString = D21962D0DE148A440FADB55935BD4264;
+			remoteInfo = SQLCipher;
+		};
+		F8A9C74C26402A5B88F0076AFFB610E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 565B5AF44894619B799AA0D7B08B8331;
+			remoteInfo = SignalCoreKit;
+		};
+		FE6E5BF9721E74F9FCC6551B798AADD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93855F3A5D1C4AF19C4A49AA90D4AD14;
+			remoteInfo = YapDatabase;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -1423,6 +1424,7 @@
 		4690103CCBCF9CECDD425188235F6841 /* YapWhitelistBlacklist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapWhitelistBlacklist.h; path = YapDatabase/Utilities/YapWhitelistBlacklist.h; sourceTree = "<group>"; };
 		46A5A3D6423CB41AF121D549B9CF9EE0 /* NSData+OWS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+OWS.m"; path = "SignalCoreKit/src/NSData+OWS.m"; sourceTree = "<group>"; };
 		46CD914C1256BFF86953F132EE974EAC /* crypto_core_salsa2012.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_core_salsa2012.h; path = Sodium/libsodium/crypto_core_salsa2012.h; sourceTree = "<group>"; };
+		46EB2E00007E60 /* OpenSSL.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = OpenSSL.xcframework; path = "${PODS_ROOT}/OpenSSL/Frameworks/OpenSSL.xcframework"; sourceTree = "<group>"; };
 		46EFFD2E8362721D5B7E3951C4CE8F7B /* YapDatabaseViewMappings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YapDatabaseViewMappings.h; path = YapDatabase/Extensions/View/Utilities/YapDatabaseViewMappings.h; sourceTree = "<group>"; };
 		46F4BCA74C34010E6EBFCBF86FFDDE8F /* ColumnDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColumnDefinition.swift; path = GRDB/QueryInterface/Schema/ColumnDefinition.swift; sourceTree = "<group>"; };
 		46F8B5A5F9C8D81305C2F6DD983FBBB2 /* YapDatabaseRTreeIndex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YapDatabaseRTreeIndex.m; path = YapDatabase/Extensions/RTreeIndex/YapDatabaseRTreeIndex.m; sourceTree = "<group>"; };
@@ -2104,6 +2106,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC889305B1B292D973D12C70D306DC9F /* Foundation.framework in Frameworks */,
+				46EB2E00007E70 /* OpenSSL.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2111,14 +2114,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		28D5AA336A44A1E607ECD706C8E4A18D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2E2ECB627F773B43C803118829753CAF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2156,6 +2151,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		530A9D7E65C7B9B041C0A35990A55159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22567020843DA7F8E840E23D5DD1337 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		72E6B55BBC9E538829DE93C53E6291F6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2172,11 +2175,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A40E9C6325A93285962EA63001B6B389 /* Frameworks */ = {
+		AE81A0F0EC98A6348DF2EC47C105B0AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59FC81C10F578FB59C83119C58E149F2 /* Foundation.framework in Frameworks */,
+				149D4715402233C8DA5B68A694A93F43 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2185,6 +2188,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B692D96AC107A2ECF2F8CD9E67276FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCA6EF57FB74EB516E904A796AD75958 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17758BC9CCE19EDBF3ED9852854024E4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2197,11 +2208,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E01B5CD07F0F086B3A88FFD1CD4E9AF5 /* Frameworks */ = {
+		E4339B26B2B8A3ADF10B3B03CA20B1D2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9FA7679250FEEC1B2EB2E79E3CD4F3A /* Foundation.framework in Frameworks */,
+				B31C70F6E8BC54056EBF264C287631DE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2210,14 +2221,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E60FF112B4FEDB7A97C18D3382617557 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FE0FBBB1D1E503D1DE021AA85EA4DA1E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E9D0B9C2524EE58D48CBA73407BF8F01 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3414,6 +3417,7 @@
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
+				46EB2E00007E60 /* OpenSSL.xcframework */,
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				E37F67709DF028CE946E8DC889BD113A /* Development Pods */,
 				E38EE6F2BF375A483C6DCBA40DDCD8CA /* Frameworks */,
@@ -3787,6 +3791,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3082A4D9F0F1B288EDB1D5EA486CBBB7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0D9C0DA28CAACC426A82C1F6AD0932D /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3F44603758E2F1AD4EF3CD47FFC23238 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -3814,6 +3826,14 @@
 				D5C8B21D2E42E1F433BC858825E41DCE /* SignalCoreKit.h in Headers */,
 				D02F2DFB5B0FA5A07651A818FB94ED8D /* SignalCoreKit-umbrella.h in Headers */,
 				8429B72C88C3AC7416DD0B7C4F8461DA /* Threading.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56EFC0235C07B0C5DA4B146190A4D1BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE8AA413CD32576F1EBB3DB859A2C28 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3855,22 +3875,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E8759F1F8F447BEB164746F8AD130F0 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD6877932574ACD2EFD867A04574EA37 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6FC55ABFF0A66021BC1DAA8450472B09 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9C655D29CBA896916E6131F095EE625C /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		78283D76782864F8DC8965A4BBDA7656 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -3888,20 +3892,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C06E9DE2A12B9E454C291770DBD6670F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AEBD8976633F02691C905A0538FF2483 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C4F0FA06D4D76572E133115433F3D6E3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				30087D7728726046E93DE15AF656344A /* SQLCipher-umbrella.h in Headers */,
 				A76AD85B3A3472D7FD4D5F35939320C0 /* sqlite3.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAF5472D5FE0A144856E4E15BFEE3F31 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EF70FBC115889E34449B4C1E59809A8 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4131,11 +4135,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F67AA10EEAF18BE6D9BFE3F6D4FC2C01 /* Headers */ = {
+		E13A71D1BA9C0A65503374A6FDA26BE6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB9771C34339565754757C4F9E938C3F /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit-umbrella.h in Headers */,
+				29CB8DDEBE355D38B6115B2CC46788C9 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4152,26 +4156,26 @@
 /* Begin PBXNativeTarget section */
 		0397D19F917F63596A163DEE4E132F30 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 33A170E57FC1AD350BC0DBFD5F64135A /* Build configuration list for PBXNativeTarget "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit" */;
+			buildConfigurationList = 860594611E12E40BF891A185E3C8D18B /* Build configuration list for PBXNativeTarget "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit" */;
 			buildPhases = (
-				6E8759F1F8F447BEB164746F8AD130F0 /* Headers */,
-				5B99F0707F2407168ED2357E9013E510 /* Sources */,
-				FE0FBBB1D1E503D1DE021AA85EA4DA1E /* Frameworks */,
-				5BD5539723BD5447CFFCCCAFCADB21C4 /* Resources */,
+				3082A4D9F0F1B288EDB1D5EA486CBBB7 /* Headers */,
+				B3BAC6B158D213F52E7FBD6635784B50 /* Sources */,
+				E4339B26B2B8A3ADF10B3B03CA20B1D2 /* Frameworks */,
+				68BF72ABEA04B53C5DBA2D1B8752C09C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				24BE8B32B76BE26BC4C38DF017F5606A /* PBXTargetDependency */,
-				96166A418DC653C217079E40D94F45A8 /* PBXTargetDependency */,
-				C4F9CDD6C53A88A81CA8736DEBB1B697 /* PBXTargetDependency */,
-				44ED702EBB88BAD108B2E54E568E5724 /* PBXTargetDependency */,
-				96A047CFB25E8F10980ED618E2A08EEB /* PBXTargetDependency */,
-				D63BFA8E576935E94D44BDEC95A26AFE /* PBXTargetDependency */,
-				E9D885E432A01C2B0C706ADB78BB51CB /* PBXTargetDependency */,
-				48385174241545E9E523F9800D400FF1 /* PBXTargetDependency */,
-				148F2F7DE61A2BACC44DC94731934671 /* PBXTargetDependency */,
-				5927E5540D7683ADFA16B01A63159203 /* PBXTargetDependency */,
+				45C4888B9B7B272E772F902B52444186 /* PBXTargetDependency */,
+				F6EB170099729BFC276ADAC8E94F003D /* PBXTargetDependency */,
+				D9CC1044EBF8799D576F5F72935632E8 /* PBXTargetDependency */,
+				4EDEE9D59B3D5285BC1C91A111234D3A /* PBXTargetDependency */,
+				EF0020FAD1D1CA63D8A53E7FC5E112CE /* PBXTargetDependency */,
+				5578E5662D77600F2A996D8B05E10889 /* PBXTargetDependency */,
+				F456D74BC9FC6A9A21FCDDBBCF51A4EB /* PBXTargetDependency */,
+				B2CE2960AB7B4A2419F15EB66E66476C /* PBXTargetDependency */,
+				774F7BE0DD3A29FA8E926667B4D6E12A /* PBXTargetDependency */,
+				39EB8CBD6F4F4DC4C291EBFA4C3E66F0 /* PBXTargetDependency */,
 			);
 			name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit";
 			productName = Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit;
@@ -4236,28 +4240,28 @@
 		};
 		2B0412E9FC47F093BC43BF3D20978DC9 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42D8C54F5EE32A190AC26372D6FAA304 /* Build configuration list for PBXNativeTarget "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit" */;
+			buildConfigurationList = 01DEA33B471223BBA3996F9915C7C8D2 /* Build configuration list for PBXNativeTarget "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit" */;
 			buildPhases = (
-				C06E9DE2A12B9E454C291770DBD6670F /* Headers */,
-				93E06704F89E162D35A75470148DA9C0 /* Sources */,
-				E01B5CD07F0F086B3A88FFD1CD4E9AF5 /* Frameworks */,
-				626DE8388A0DB6A6EDA1D5BF59740C61 /* Resources */,
+				56EFC0235C07B0C5DA4B146190A4D1BB /* Headers */,
+				7F04BB649C5EE53E803AB8A025171172 /* Sources */,
+				AE81A0F0EC98A6348DF2EC47C105B0AB /* Frameworks */,
+				253C16DCCF081470724FAEE433C47948 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				26EC5EBC333C08845871AA1102B94870 /* PBXTargetDependency */,
-				6EE2C31EBF077F0CDB2754569D965FD1 /* PBXTargetDependency */,
-				E30EE6E83231AEB30394239DB46006BA /* PBXTargetDependency */,
-				DA3884DDC3C29AB93320FDC9F7DDCC58 /* PBXTargetDependency */,
-				0FAB86F81503BF9510CFBFF89B0E593F /* PBXTargetDependency */,
-				94850F2A77AD4C664B5A361EC2C7A6BE /* PBXTargetDependency */,
-				1F108706A1082BD1DDAFECFB70C5EE01 /* PBXTargetDependency */,
-				3ECAE7085A2BE7F7F219D70655BA0D26 /* PBXTargetDependency */,
-				2AA81333D9703867F6C036CA012572CA /* PBXTargetDependency */,
-				CC2AF1ADE2CE20BA278156988307B22B /* PBXTargetDependency */,
-				08B7CFF725F4D58B9117CD491FB7BBC6 /* PBXTargetDependency */,
-				ABF286556C1D10E1A3C4F7F09D68772A /* PBXTargetDependency */,
+				BC09AA4B5142527FFF0EB589E2B538D6 /* PBXTargetDependency */,
+				53579DFECC680751A71AA5654BAA5C63 /* PBXTargetDependency */,
+				9B115E198ED88AA02E65ED726155D2B2 /* PBXTargetDependency */,
+				B716ABE2DA3F25CDD3DD502CA7C8BFA6 /* PBXTargetDependency */,
+				5557D078C542406C75D0EED2D3D7D820 /* PBXTargetDependency */,
+				E0B5FE2B2310EA9261D96B72C4DF32BF /* PBXTargetDependency */,
+				A21926DF5AE76910AF05930EC93A9482 /* PBXTargetDependency */,
+				7A9B3F8D3F32ED8850BCBF03D607FCB7 /* PBXTargetDependency */,
+				2AB6CBBD18B4BFED09F25F5ED0D6461F /* PBXTargetDependency */,
+				980CA5959572FBA41D54E92A1E9CA37B /* PBXTargetDependency */,
+				6BFF2A5C92EDAFC1D5BD3B8903061857 /* PBXTargetDependency */,
+				016E05B43102D64424404B62BE66C32F /* PBXTargetDependency */,
 			);
 			name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit";
 			productName = Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionMessagingKit;
@@ -4304,24 +4308,24 @@
 		};
 		8ADB7DB4840DBDFF7BE89EFCA70FFA45 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0BA3B9EDB1E4E89C50D75FE7D86473E0 /* Build configuration list for PBXNativeTarget "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit" */;
+			buildConfigurationList = 08A017658A5F1E12000E8DABEFF9B18A /* Build configuration list for PBXNativeTarget "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit" */;
 			buildPhases = (
-				F67AA10EEAF18BE6D9BFE3F6D4FC2C01 /* Headers */,
-				ED6D2B629D94CB3FE58C74F680591920 /* Sources */,
-				A40E9C6325A93285962EA63001B6B389 /* Frameworks */,
-				DACA02979C84517EB9296D8F7981918C /* Resources */,
+				E13A71D1BA9C0A65503374A6FDA26BE6 /* Headers */,
+				01F664A239445AAC99EF82977B6186AE /* Sources */,
+				CCA6EF57FB74EB516E904A796AD75958 /* Frameworks */,
+				FE45C4ABF36F96AA35D95814CEA16CF5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1C48C9B8C9EFF44F6ED879FDBC7213FC /* PBXTargetDependency */,
-				24B9B310B93AE07775CF4DBCC8A69FC0 /* PBXTargetDependency */,
-				D3F48B62F1B732529EA700BCADD8EF67 /* PBXTargetDependency */,
-				ED616369DDA6CC033AFE1399F1C19B38 /* PBXTargetDependency */,
-				0A48D10F08E446D4F71D78817E73B562 /* PBXTargetDependency */,
-				698A44B512B1DEDD494A0F2678199766 /* PBXTargetDependency */,
-				9090F0CEE760159F597A5E0759050AC3 /* PBXTargetDependency */,
-				999EB45C018227B611BF708B7B6539C3 /* PBXTargetDependency */,
+				7CFA5AC46AFBAAFBB4B6F359AEEE263B /* PBXTargetDependency */,
+				B993BAE8C3BD3BC45DA9F1F57398C320 /* PBXTargetDependency */,
+				FF61618C81607DAF84A3DEF54A1E4D51 /* PBXTargetDependency */,
+				E8E1635AFB39849F197C2671CDF4D2ED /* PBXTargetDependency */,
+				89D9777AB5EC1D92FDF2917038552422 /* PBXTargetDependency */,
+				317D1EB5683636DF620ECFDBCCE5CDD8 /* PBXTargetDependency */,
+				F8E76F667294C05BE69E336E6978D389 /* PBXTargetDependency */,
+				AD8DF194E8D739A8F8570EB599C04E25 /* PBXTargetDependency */,
 			);
 			name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit";
 			productName = Pods_GlobalDependencies_FrameworkAndExtensionDependencies_SessionSnodeKit;
@@ -4330,28 +4334,28 @@
 		};
 		8BDF981DE05E04290DACD3FA2955EFB1 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A861FA470BD1218909DC8B9D3409D720 /* Build configuration list for PBXNativeTarget "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit" */;
+			buildConfigurationList = 7506680E94DF3D06CD7F71DBD26DF8AC /* Build configuration list for PBXNativeTarget "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit" */;
 			buildPhases = (
-				6FC55ABFF0A66021BC1DAA8450472B09 /* Headers */,
-				F0D1BF96FFFAF3A8C49DAD3ECB75A9B1 /* Sources */,
-				28D5AA336A44A1E607ECD706C8E4A18D /* Frameworks */,
-				599D67DAF3343E503F4A1189161FBD7B /* Resources */,
+				CAF5472D5FE0A144856E4E15BFEE3F31 /* Headers */,
+				0A3DFD85CAB9AD2C527E8D636E94F501 /* Sources */,
+				530A9D7E65C7B9B041C0A35990A55159 /* Frameworks */,
+				05C93CE64E3CA47DCE8239598B3AEC25 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8E1F96D3ADC35EADE0B27263F471BFEE /* PBXTargetDependency */,
-				19F8993AABE713B3FC4F20A50CD7F698 /* PBXTargetDependency */,
-				42807CC042D1CBBBCEEEC90E07B2DD77 /* PBXTargetDependency */,
-				FDDFAABEF02F46DCD0D5092A7B87DFE0 /* PBXTargetDependency */,
-				A72F2533B76E79A1514BA0A9BD483732 /* PBXTargetDependency */,
-				9BF11B2A1733CB9AE3A194F75C66974B /* PBXTargetDependency */,
-				635FA475E77E1C46E5D7877C2D5B77BD /* PBXTargetDependency */,
-				E7BC15A103BB6085376C704B74EB6223 /* PBXTargetDependency */,
-				A363A7F9750783580B4A34A03481867D /* PBXTargetDependency */,
-				8B070BF740011D265D5F271179F8E4A7 /* PBXTargetDependency */,
-				98D4642145E0770256BABB609CD769AA /* PBXTargetDependency */,
-				5FA695A784069D23DD112F91F6D4B27C /* PBXTargetDependency */,
+				4E77569B60463CBBFD274B3F289B3EF5 /* PBXTargetDependency */,
+				509B52189454517D617D89BC6B0650DD /* PBXTargetDependency */,
+				713B30F088949FA8319E4C69EACA6F30 /* PBXTargetDependency */,
+				5DB0FBB472C6972CCBAB3E1881A6B6B7 /* PBXTargetDependency */,
+				2B73B04563972D1DEC7E29CF81D71679 /* PBXTargetDependency */,
+				89B32C874A5F50918E4A065B2812C0BC /* PBXTargetDependency */,
+				E3DD339D11708D6486EFC24AE4569FD1 /* PBXTargetDependency */,
+				97561311C595391212E28F2B3B8215AF /* PBXTargetDependency */,
+				96D3B80BD3F32C3D676A08E74453F272 /* PBXTargetDependency */,
+				520C7CE2EBA9ED2896836CA3937E3FB6 /* PBXTargetDependency */,
+				A432D30A9C6860796FF75F7DB114E56E /* PBXTargetDependency */,
+				6D7787840968194B5A0F557512E5EAEE /* PBXTargetDependency */,
 			);
 			name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit";
 			productName = Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit;
@@ -4532,6 +4536,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		05C93CE64E3CA47DCE8239598B3AEC25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11B58FA45787608E8A20CC6DF0D505EE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4553,6 +4564,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		253C16DCCF081470724FAEE433C47948 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50F49E03B1F81CFB3D33D2CD7CD58490 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4567,28 +4585,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		599D67DAF3343E503F4A1189161FBD7B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5BD5539723BD5447CFFCCCAFCADB21C4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		626DE8388A0DB6A6EDA1D5BF59740C61 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		663C6CA0FB17F6E6E200364EB24628BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68BF72ABEA04B53C5DBA2D1B8752C09C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -4640,7 +4644,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DACA02979C84517EB9296D8F7981918C /* Resources */ = {
+		FE45C4ABF36F96AA35D95814CEA16CF5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -4687,6 +4691,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		01F664A239445AAC99EF82977B6186AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B76CFE5F45656AB761056D4CB0BB5A14 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A3DFD85CAB9AD2C527E8D636E94F501 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45314857824FC84E1DA40373E295D8C9 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0F1B625467F423E54B4A031AD1C3C5CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4998,14 +5018,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B99F0707F2407168ED2357E9013E510 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				24F8680E26784FAE8BC91784C7A2A2CC /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6D4F385010EF8DC06925362B1C3ED67C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5039,11 +5051,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93E06704F89E162D35A75470148DA9C0 /* Sources */ = {
+		7F04BB649C5EE53E803AB8A025171172 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18FD18DE5BC3C31DF0AA50888BA29084 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit-dummy.m in Sources */,
+				B56CEBCF378329B08E92E789D6B4BCF7 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5053,6 +5065,14 @@
 			files = (
 				2A8DA6A49F6D49977BD2B16026E4A172 /* Reachability.m in Sources */,
 				C0319607AB3220D3659509BA43F18B41 /* Reachability-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3BAC6B158D213F52E7FBD6635784B50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				484A8BE153AA33AD542E7B23F1508D5B /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5256,22 +5276,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ED6D2B629D94CB3FE58C74F680591920 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2C4FF85F8132766AC130DDA7ACE8805E /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F0D1BF96FFFAF3A8C49DAD3ECB75A9B1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9A55621EBA68B2D1D73B16FCAB178B4B /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F766E0219DC0B1D48A08738382FC283A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5293,17 +5297,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		08B7CFF725F4D58B9117CD491FB7BBC6 /* PBXTargetDependency */ = {
+		016E05B43102D64424404B62BE66C32F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SwiftProtobuf;
-			target = A5F702E0DA383BC1479572581615A916 /* SwiftProtobuf */;
-			targetProxy = C956709F84942BFB723E0518136A205D /* PBXContainerItemProxy */;
-		};
-		0A48D10F08E446D4F71D78817E73B562 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SQLCipher;
-			target = D21962D0DE148A440FADB55935BD4264 /* SQLCipher */;
-			targetProxy = 32388DC5B8592A6B4418999BEFCF8B66 /* PBXContainerItemProxy */;
+			name = YapDatabase;
+			target = 93855F3A5D1C4AF19C4A49AA90D4AD14 /* YapDatabase */;
+			targetProxy = 733E8DB9046DF8554C7222A173087F14 /* PBXContainerItemProxy */;
 		};
 		0CEBDE634508559B3706EB9181643DA1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5311,83 +5309,53 @@
 			target = D21962D0DE148A440FADB55935BD4264 /* SQLCipher */;
 			targetProxy = 8F5244EA7F25367D395C09E8FB441A91 /* PBXContainerItemProxy */;
 		};
-		0FAB86F81503BF9510CFBFF89B0E593F /* PBXTargetDependency */ = {
+		2AB6CBBD18B4BFED09F25F5ED0D6461F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SignalCoreKit;
+			target = 565B5AF44894619B799AA0D7B08B8331 /* SignalCoreKit */;
+			targetProxy = 04505AE954A50B2B6D48D58D9DA786C3 /* PBXContainerItemProxy */;
+		};
+		2B73B04563972D1DEC7E29CF81D71679 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "OpenSSL-Universal";
 			target = B9ED5194E665042005069EF06C82A050 /* OpenSSL-Universal */;
-			targetProxy = 6F73AD935CA09850CCB552792F83B68A /* PBXContainerItemProxy */;
+			targetProxy = E7AF08A143B2CB6E9AF1983AF2301F06 /* PBXContainerItemProxy */;
 		};
-		148F2F7DE61A2BACC44DC94731934671 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Sodium;
-			target = 9AC54079097E3E3B70EBE9D712693CE4 /* Sodium */;
-			targetProxy = 30615B8DC9C4A06F53F3452574967205 /* PBXContainerItemProxy */;
-		};
-		19F8993AABE713B3FC4F20A50CD7F698 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Curve25519Kit;
-			target = 22A8674975BD28B12B4EE99358F3D68F /* Curve25519Kit */;
-			targetProxy = 4C55275C6BBE3D6E7FD647548B6DEFE2 /* PBXContainerItemProxy */;
-		};
-		1C48C9B8C9EFF44F6ED879FDBC7213FC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CocoaLumberjack;
-			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
-			targetProxy = 280CDD34BF29B6BF326B48519E52A320 /* PBXContainerItemProxy */;
-		};
-		1F108706A1082BD1DDAFECFB70C5EE01 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SAMKeychain;
-			target = 5572D14DECB5A676C1B31B30A3BA7F10 /* SAMKeychain */;
-			targetProxy = 859862168C54757B60C171BDB89741D8 /* PBXContainerItemProxy */;
-		};
-		24B9B310B93AE07775CF4DBCC8A69FC0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Curve25519Kit;
-			target = 22A8674975BD28B12B4EE99358F3D68F /* Curve25519Kit */;
-			targetProxy = BA1EE91C64982B12B43435CDDDD80328 /* PBXContainerItemProxy */;
-		};
-		24BE8B32B76BE26BC4C38DF017F5606A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CocoaLumberjack;
-			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
-			targetProxy = 3E603CDF63BED9AB90BA1A0933156B26 /* PBXContainerItemProxy */;
-		};
-		26EC5EBC333C08845871AA1102B94870 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CocoaLumberjack;
-			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
-			targetProxy = DAA1CC01131BB3857F73C3FEAB6B1988 /* PBXContainerItemProxy */;
-		};
-		2AA81333D9703867F6C036CA012572CA /* PBXTargetDependency */ = {
+		317D1EB5683636DF620ECFDBCCE5CDD8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SignalCoreKit;
 			target = 565B5AF44894619B799AA0D7B08B8331 /* SignalCoreKit */;
-			targetProxy = B29F0F7F2977DC628E3D47327D2498EB /* PBXContainerItemProxy */;
+			targetProxy = B33CB241DBD5EC0FB83EC9560BE71FEE /* PBXContainerItemProxy */;
 		};
-		3ECAE7085A2BE7F7F219D70655BA0D26 /* PBXTargetDependency */ = {
+		39EB8CBD6F4F4DC4C291EBFA4C3E66F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SQLCipher;
-			target = D21962D0DE148A440FADB55935BD4264 /* SQLCipher */;
-			targetProxy = 23702762E28E0C2D085D8A2F2229CB4E /* PBXContainerItemProxy */;
+			name = YapDatabase;
+			target = 93855F3A5D1C4AF19C4A49AA90D4AD14 /* YapDatabase */;
+			targetProxy = 7E214D652271D0F3CB7DBC3BDC06E4B4 /* PBXContainerItemProxy */;
 		};
-		42807CC042D1CBBBCEEEC90E07B2DD77 /* PBXTargetDependency */ = {
+		45C4888B9B7B272E772F902B52444186 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = DifferenceKit;
-			target = 8FC6E51285E4FD828A61BEFD2100CD64 /* DifferenceKit */;
-			targetProxy = 409EB5570DCFD581481EF5213FE0AC81 /* PBXContainerItemProxy */;
+			name = CocoaLumberjack;
+			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
+			targetProxy = F20626CA9C02D2B98E58A8CDB4C98F5E /* PBXContainerItemProxy */;
 		};
-		44ED702EBB88BAD108B2E54E568E5724 /* PBXTargetDependency */ = {
+		4E77569B60463CBBFD274B3F289B3EF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
+			targetProxy = E492D39930497B7C26C1ABFD19AADF77 /* PBXContainerItemProxy */;
+		};
+		4EDEE9D59B3D5285BC1C91A111234D3A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GRDB.swift;
 			target = 0A86C228CFCBC35A1FD284274ED0930F /* GRDB.swift */;
-			targetProxy = 8AD3E6266F79DAA3919A595BE82527EC /* PBXContainerItemProxy */;
+			targetProxy = 31E56F523E8BBFB88F49FFB70F2D545B /* PBXContainerItemProxy */;
 		};
-		48385174241545E9E523F9800D400FF1 /* PBXTargetDependency */ = {
+		509B52189454517D617D89BC6B0650DD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SignalCoreKit;
-			target = 565B5AF44894619B799AA0D7B08B8331 /* SignalCoreKit */;
-			targetProxy = DD0B9A73AB9F4769E72944B54E3AEAA3 /* PBXContainerItemProxy */;
+			name = Curve25519Kit;
+			target = 22A8674975BD28B12B4EE99358F3D68F /* Curve25519Kit */;
+			targetProxy = 67FF62BB6FB236CFA4353D6E9F43B674 /* PBXContainerItemProxy */;
 		};
 		51DC5F752BA79DB5A5245819D2E6C197 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5395,35 +5363,71 @@
 			target = D21962D0DE148A440FADB55935BD4264 /* SQLCipher */;
 			targetProxy = 5FF0C22A6B65C89AB41AD1F32FEB189D /* PBXContainerItemProxy */;
 		};
-		5927E5540D7683ADFA16B01A63159203 /* PBXTargetDependency */ = {
+		520C7CE2EBA9ED2896836CA3937E3FB6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = YapDatabase;
-			target = 93855F3A5D1C4AF19C4A49AA90D4AD14 /* YapDatabase */;
-			targetProxy = 0547E0D9B11152EA848E1CA50B1CBC66 /* PBXContainerItemProxy */;
+			name = Sodium;
+			target = 9AC54079097E3E3B70EBE9D712693CE4 /* Sodium */;
+			targetProxy = D35AABBB6B37F0B386E7AE70CF1B6956 /* PBXContainerItemProxy */;
 		};
-		5FA695A784069D23DD112F91F6D4B27C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = YapDatabase;
-			target = 93855F3A5D1C4AF19C4A49AA90D4AD14 /* YapDatabase */;
-			targetProxy = 1F8D4B01350B068FA642A8B00129ACEC /* PBXContainerItemProxy */;
-		};
-		635FA475E77E1C46E5D7877C2D5B77BD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SAMKeychain;
-			target = 5572D14DECB5A676C1B31B30A3BA7F10 /* SAMKeychain */;
-			targetProxy = F6C96DA9FE204021C5252855742AB23D /* PBXContainerItemProxy */;
-		};
-		698A44B512B1DEDD494A0F2678199766 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SignalCoreKit;
-			target = 565B5AF44894619B799AA0D7B08B8331 /* SignalCoreKit */;
-			targetProxy = B17C4EB2C48020C1A4131614CEDCD380 /* PBXContainerItemProxy */;
-		};
-		6EE2C31EBF077F0CDB2754569D965FD1 /* PBXTargetDependency */ = {
+		53579DFECC680751A71AA5654BAA5C63 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Curve25519Kit;
 			target = 22A8674975BD28B12B4EE99358F3D68F /* Curve25519Kit */;
-			targetProxy = 3C2B0DD171FB9CEFC8DD2DAF94BB7BC8 /* PBXContainerItemProxy */;
+			targetProxy = EE0E7B7A8821100EDF56BEE2FB465E4B /* PBXContainerItemProxy */;
+		};
+		5557D078C542406C75D0EED2D3D7D820 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "OpenSSL-Universal";
+			target = B9ED5194E665042005069EF06C82A050 /* OpenSSL-Universal */;
+			targetProxy = 47A938664DA492DD3F0C5B9FDB342CA4 /* PBXContainerItemProxy */;
+		};
+		5578E5662D77600F2A996D8B05E10889 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SAMKeychain;
+			target = 5572D14DECB5A676C1B31B30A3BA7F10 /* SAMKeychain */;
+			targetProxy = 1193C493E0867C8E28EE0818B9A84227 /* PBXContainerItemProxy */;
+		};
+		5DB0FBB472C6972CCBAB3E1881A6B6B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GRDB.swift;
+			target = 0A86C228CFCBC35A1FD284274ED0930F /* GRDB.swift */;
+			targetProxy = D0D0A7195F346542196110B7DBF08176 /* PBXContainerItemProxy */;
+		};
+		6BFF2A5C92EDAFC1D5BD3B8903061857 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftProtobuf;
+			target = A5F702E0DA383BC1479572581615A916 /* SwiftProtobuf */;
+			targetProxy = 0309A36B23A6FD0A5DFCFE657EBA5C88 /* PBXContainerItemProxy */;
+		};
+		6D7787840968194B5A0F557512E5EAEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YapDatabase;
+			target = 93855F3A5D1C4AF19C4A49AA90D4AD14 /* YapDatabase */;
+			targetProxy = FE6E5BF9721E74F9FCC6551B798AADD1 /* PBXContainerItemProxy */;
+		};
+		713B30F088949FA8319E4C69EACA6F30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DifferenceKit;
+			target = 8FC6E51285E4FD828A61BEFD2100CD64 /* DifferenceKit */;
+			targetProxy = 07E32E600984D49AC1BB9A8A1A501A7A /* PBXContainerItemProxy */;
+		};
+		774F7BE0DD3A29FA8E926667B4D6E12A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Sodium;
+			target = 9AC54079097E3E3B70EBE9D712693CE4 /* Sodium */;
+			targetProxy = E122DFA0BB5A51EF0C0A17627EF094C3 /* PBXContainerItemProxy */;
+		};
+		7A9B3F8D3F32ED8850BCBF03D607FCB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLCipher;
+			target = D21962D0DE148A440FADB55935BD4264 /* SQLCipher */;
+			targetProxy = 392DE99C6652E61C9B651B9192B4F4E3 /* PBXContainerItemProxy */;
+		};
+		7CFA5AC46AFBAAFBB4B6F359AEEE263B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
+			targetProxy = 693BD0AC9903919FB351850C5643ED53 /* PBXContainerItemProxy */;
 		};
 		857C986FDE7953FFB4813643D397D068 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5431,77 +5435,59 @@
 			target = B9ED5194E665042005069EF06C82A050 /* OpenSSL-Universal */;
 			targetProxy = 664A8A1E72CF3A82CFAC7A23418E2FC0 /* PBXContainerItemProxy */;
 		};
-		8B070BF740011D265D5F271179F8E4A7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Sodium;
-			target = 9AC54079097E3E3B70EBE9D712693CE4 /* Sodium */;
-			targetProxy = 8B3896C8A5EA2C5A20ABDDEE6464DB08 /* PBXContainerItemProxy */;
-		};
-		8E1F96D3ADC35EADE0B27263F471BFEE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CocoaLumberjack;
-			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
-			targetProxy = AAD9216529AE7097CB2F7D7AB90D589C /* PBXContainerItemProxy */;
-		};
-		9090F0CEE760159F597A5E0759050AC3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Sodium;
-			target = 9AC54079097E3E3B70EBE9D712693CE4 /* Sodium */;
-			targetProxy = 3E5CD4877B9B097BC4875E94EA47B668 /* PBXContainerItemProxy */;
-		};
-		94850F2A77AD4C664B5A361EC2C7A6BE /* PBXTargetDependency */ = {
+		89B32C874A5F50918E4A065B2812C0BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Reachability;
 			target = CAA047C0F5E4106F3904E8497FA17F97 /* Reachability */;
-			targetProxy = E403ACE5F843F85D59551ED804EBD81A /* PBXContainerItemProxy */;
+			targetProxy = 477CEFB84B0F7880C5D82E4751A06529 /* PBXContainerItemProxy */;
 		};
-		96166A418DC653C217079E40D94F45A8 /* PBXTargetDependency */ = {
+		89D9777AB5EC1D92FDF2917038552422 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Curve25519Kit;
-			target = 22A8674975BD28B12B4EE99358F3D68F /* Curve25519Kit */;
-			targetProxy = 49A80DDDB809F00C859C6C3F463B7BB7 /* PBXContainerItemProxy */;
+			name = SQLCipher;
+			target = D21962D0DE148A440FADB55935BD4264 /* SQLCipher */;
+			targetProxy = 2B047F2F1050D8CAC5906478B8875BE9 /* PBXContainerItemProxy */;
 		};
-		96A047CFB25E8F10980ED618E2A08EEB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "OpenSSL-Universal";
-			target = B9ED5194E665042005069EF06C82A050 /* OpenSSL-Universal */;
-			targetProxy = 0AE88B8497139AD576B72BA73F548493 /* PBXContainerItemProxy */;
-		};
-		98D4642145E0770256BABB609CD769AA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftProtobuf;
-			target = A5F702E0DA383BC1479572581615A916 /* SwiftProtobuf */;
-			targetProxy = 6DA798BE25F2B48C833C7A8EE60EBD02 /* PBXContainerItemProxy */;
-		};
-		999EB45C018227B611BF708B7B6539C3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = YapDatabase;
-			target = 93855F3A5D1C4AF19C4A49AA90D4AD14 /* YapDatabase */;
-			targetProxy = B46C791CC042B67317E7235908A12AB4 /* PBXContainerItemProxy */;
-		};
-		9BF11B2A1733CB9AE3A194F75C66974B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Reachability;
-			target = CAA047C0F5E4106F3904E8497FA17F97 /* Reachability */;
-			targetProxy = 11AD0671A745CE831CA654603B4305D2 /* PBXContainerItemProxy */;
-		};
-		A363A7F9750783580B4A34A03481867D /* PBXTargetDependency */ = {
+		96D3B80BD3F32C3D676A08E74453F272 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SignalCoreKit;
 			target = 565B5AF44894619B799AA0D7B08B8331 /* SignalCoreKit */;
-			targetProxy = D4B930D04CAB69DEDF68EEB9B92200F5 /* PBXContainerItemProxy */;
+			targetProxy = F8A9C74C26402A5B88F0076AFFB610E9 /* PBXContainerItemProxy */;
 		};
-		A72F2533B76E79A1514BA0A9BD483732 /* PBXTargetDependency */ = {
+		97561311C595391212E28F2B3B8215AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "OpenSSL-Universal";
-			target = B9ED5194E665042005069EF06C82A050 /* OpenSSL-Universal */;
-			targetProxy = 23F6DB0528E58383D0005CFB0BFA0FF5 /* PBXContainerItemProxy */;
+			name = SQLCipher;
+			target = D21962D0DE148A440FADB55935BD4264 /* SQLCipher */;
+			targetProxy = D14877397CE52D42CE3AE6F6973DBCA1 /* PBXContainerItemProxy */;
 		};
-		ABF286556C1D10E1A3C4F7F09D68772A /* PBXTargetDependency */ = {
+		980CA5959572FBA41D54E92A1E9CA37B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Sodium;
+			target = 9AC54079097E3E3B70EBE9D712693CE4 /* Sodium */;
+			targetProxy = 6FCD2D2406CFC3A08DDF7AE636A70F60 /* PBXContainerItemProxy */;
+		};
+		9B115E198ED88AA02E65ED726155D2B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DifferenceKit;
+			target = 8FC6E51285E4FD828A61BEFD2100CD64 /* DifferenceKit */;
+			targetProxy = 3749667ECC76EB69E83B38CFFB887867 /* PBXContainerItemProxy */;
+		};
+		A21926DF5AE76910AF05930EC93A9482 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SAMKeychain;
+			target = 5572D14DECB5A676C1B31B30A3BA7F10 /* SAMKeychain */;
+			targetProxy = 312AD5F1E6880F40ECA387CE91404D6F /* PBXContainerItemProxy */;
+		};
+		A432D30A9C6860796FF75F7DB114E56E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftProtobuf;
+			target = A5F702E0DA383BC1479572581615A916 /* SwiftProtobuf */;
+			targetProxy = 5D8E6EBF771B9FCF4BEF0C688D22E9AB /* PBXContainerItemProxy */;
+		};
+		AD8DF194E8D739A8F8570EB599C04E25 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = YapDatabase;
 			target = 93855F3A5D1C4AF19C4A49AA90D4AD14 /* YapDatabase */;
-			targetProxy = 00707E3512A062E6AC42907A58567584 /* PBXContainerItemProxy */;
+			targetProxy = 3EA18CA790D9464CBBE9EDE71D23566E /* PBXContainerItemProxy */;
 		};
 		B129DE49F8F9C6FF069357B930C4C03A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5509,17 +5495,29 @@
 			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
 			targetProxy = 60A96FFFC5E5D4D2D0EDA09C7046DB20 /* PBXContainerItemProxy */;
 		};
-		C4F9CDD6C53A88A81CA8736DEBB1B697 /* PBXTargetDependency */ = {
+		B2CE2960AB7B4A2419F15EB66E66476C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = DifferenceKit;
-			target = 8FC6E51285E4FD828A61BEFD2100CD64 /* DifferenceKit */;
-			targetProxy = EAA116A8D18161B908A77A7D35329E3E /* PBXContainerItemProxy */;
+			name = SignalCoreKit;
+			target = 565B5AF44894619B799AA0D7B08B8331 /* SignalCoreKit */;
+			targetProxy = 21AE9FF45D2719B1A551DF0DAD9A3EA6 /* PBXContainerItemProxy */;
 		};
-		CC2AF1ADE2CE20BA278156988307B22B /* PBXTargetDependency */ = {
+		B716ABE2DA3F25CDD3DD502CA7C8BFA6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Sodium;
-			target = 9AC54079097E3E3B70EBE9D712693CE4 /* Sodium */;
-			targetProxy = 59890E1077FF54E61F62D4F6CF453F0D /* PBXContainerItemProxy */;
+			name = GRDB.swift;
+			target = 0A86C228CFCBC35A1FD284274ED0930F /* GRDB.swift */;
+			targetProxy = C81D4248DC8E1C008D921BBFFCBD4FA6 /* PBXContainerItemProxy */;
+		};
+		B993BAE8C3BD3BC45DA9F1F57398C320 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Curve25519Kit;
+			target = 22A8674975BD28B12B4EE99358F3D68F /* Curve25519Kit */;
+			targetProxy = 4408F4B7D996D529D66E044755C78A21 /* PBXContainerItemProxy */;
+		};
+		BC09AA4B5142527FFF0EB589E2B538D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
+			targetProxy = 360119887BE34DC69B0B6CD8EF3A5550 /* PBXContainerItemProxy */;
 		};
 		D3ACE83DB3D4CC960422B066FCA9F209 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5527,35 +5525,29 @@
 			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
 			targetProxy = 14290242093BFA00DB6FA5D6CC1C1A45 /* PBXContainerItemProxy */;
 		};
-		D3F48B62F1B732529EA700BCADD8EF67 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GRDB.swift;
-			target = 0A86C228CFCBC35A1FD284274ED0930F /* GRDB.swift */;
-			targetProxy = 42BBA36FA4D17F9EC2EC83E2D16B5E1D /* PBXContainerItemProxy */;
-		};
 		D583B054E2993161C346368263325904 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "CocoaLumberjack-CocoaLumberjackPrivacy";
 			target = 276021C4482165D46E0CBBEFB822FE95 /* CocoaLumberjack-CocoaLumberjackPrivacy */;
 			targetProxy = F66853061015F7662F0671DD16AB418D /* PBXContainerItemProxy */;
 		};
-		D63BFA8E576935E94D44BDEC95A26AFE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SAMKeychain;
-			target = 5572D14DECB5A676C1B31B30A3BA7F10 /* SAMKeychain */;
-			targetProxy = 7E62E10D301330988851D54F87740970 /* PBXContainerItemProxy */;
-		};
-		DA3884DDC3C29AB93320FDC9F7DDCC58 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GRDB.swift;
-			target = 0A86C228CFCBC35A1FD284274ED0930F /* GRDB.swift */;
-			targetProxy = 3550E8AE3ECF9CF27C04E02909ADEE40 /* PBXContainerItemProxy */;
-		};
-		E30EE6E83231AEB30394239DB46006BA /* PBXTargetDependency */ = {
+		D9CC1044EBF8799D576F5F72935632E8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DifferenceKit;
 			target = 8FC6E51285E4FD828A61BEFD2100CD64 /* DifferenceKit */;
-			targetProxy = 9D60CBEDDAC421D5CED28A6E42B3291B /* PBXContainerItemProxy */;
+			targetProxy = 15FF43BE4CB9BC30A36BB18175204A10 /* PBXContainerItemProxy */;
+		};
+		E0B5FE2B2310EA9261D96B72C4DF32BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Reachability;
+			target = CAA047C0F5E4106F3904E8497FA17F97 /* Reachability */;
+			targetProxy = D2339D0DFC6E4CD120C84CF04D986B18 /* PBXContainerItemProxy */;
+		};
+		E3DD339D11708D6486EFC24AE4569FD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SAMKeychain;
+			target = 5572D14DECB5A676C1B31B30A3BA7F10 /* SAMKeychain */;
+			targetProxy = 219C31E2A0F6193F6BA9398670CE6385 /* PBXContainerItemProxy */;
 		};
 		E502D26C156AE5CFBA9D39E3FC8471D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5563,23 +5555,29 @@
 			target = 565B5AF44894619B799AA0D7B08B8331 /* SignalCoreKit */;
 			targetProxy = F34B1DCE78E443DBC9FC7AE16D4321DB /* PBXContainerItemProxy */;
 		};
-		E7BC15A103BB6085376C704B74EB6223 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SQLCipher;
-			target = D21962D0DE148A440FADB55935BD4264 /* SQLCipher */;
-			targetProxy = CA4420ED5EA764228556C59E05C0D9EE /* PBXContainerItemProxy */;
-		};
-		E9D885E432A01C2B0C706ADB78BB51CB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SQLCipher;
-			target = D21962D0DE148A440FADB55935BD4264 /* SQLCipher */;
-			targetProxy = AE2DC6AF5E88282E6A6790F5B47C40C5 /* PBXContainerItemProxy */;
-		};
-		ED616369DDA6CC033AFE1399F1C19B38 /* PBXTargetDependency */ = {
+		E8E1635AFB39849F197C2671CDF4D2ED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "OpenSSL-Universal";
 			target = B9ED5194E665042005069EF06C82A050 /* OpenSSL-Universal */;
-			targetProxy = 9A9976697DC77382E374A83E03236E08 /* PBXContainerItemProxy */;
+			targetProxy = D064804280730967CAD6B4C9D5B644CD /* PBXContainerItemProxy */;
+		};
+		EF0020FAD1D1CA63D8A53E7FC5E112CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "OpenSSL-Universal";
+			target = B9ED5194E665042005069EF06C82A050 /* OpenSSL-Universal */;
+			targetProxy = 1BBEA0EBA85C6DBFA119260B2CF31C50 /* PBXContainerItemProxy */;
+		};
+		F456D74BC9FC6A9A21FCDDBBCF51A4EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLCipher;
+			target = D21962D0DE148A440FADB55935BD4264 /* SQLCipher */;
+			targetProxy = F77CC27879ADA56734A863DD08877DFA /* PBXContainerItemProxy */;
+		};
+		F6EB170099729BFC276ADAC8E94F003D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Curve25519Kit;
+			target = 22A8674975BD28B12B4EE99358F3D68F /* Curve25519Kit */;
+			targetProxy = C45CF72FADCF68369A86091A91D415AB /* PBXContainerItemProxy */;
 		};
 		F7691ACBE63E94D25735A6417C559B26 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5587,15 +5585,59 @@
 			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
 			targetProxy = 217CD02347BB5D24D316427E0804DB9B /* PBXContainerItemProxy */;
 		};
-		FDDFAABEF02F46DCD0D5092A7B87DFE0 /* PBXTargetDependency */ = {
+		F8E76F667294C05BE69E336E6978D389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Sodium;
+			target = 9AC54079097E3E3B70EBE9D712693CE4 /* Sodium */;
+			targetProxy = 86F7FBC7D9D89A98200653D05B8F8282 /* PBXContainerItemProxy */;
+		};
+		FF61618C81607DAF84A3DEF54A1E4D51 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GRDB.swift;
 			target = 0A86C228CFCBC35A1FD284274ED0930F /* GRDB.swift */;
-			targetProxy = 23E2CFB428EB41EF01F09FA91617CE73 /* PBXContainerItemProxy */;
+			targetProxy = 3BB39C840CFE6FB319046C4FCBD76C82 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		017CDAB3E549ABD4823CC4D3F197D98D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F236BA5E0C99008B42938B73F2EA491 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
 		05184824DE8901B27ED1999D6F5C8BB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B291EA04E4BFA53FE2D5C2CE5B4B66B /* CocoaLumberjack.debug.xcconfig */;
@@ -5649,9 +5691,9 @@
 			};
 			name = Release;
 		};
-		07D674F00C2E077C2FAE3C40557DED28 /* Debug */ = {
+		0D2C76AFB4BC5C56C0679049A2E565AC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C63213F748C5B453F1984EC355CA1B38 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig */;
+			baseConfigurationReference = B2F67786D7B75A23974EB4C9DFBD9B28 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -5663,7 +5705,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5671,44 +5713,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
-			};
-			name = Debug;
-		};
-		0D3A285A9867F8EF4751DC2913B69E01 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99F85B22C2194407458E0859DB43952D /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -5997,6 +6002,81 @@
 			};
 			name = Debug;
 		};
+		3F100BFA00F486235B2DF876F83D1621 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAE27B75E78504E677DF2C7A37DDA478 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		413F75D7A7BF240096AA4964393B9631 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72B4003F5F6D6BF2E070AA35373F2C0D /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
 		425AEE9BE51AB546A0C127C865DCD2C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AF913708C9AE4E434BE2D2625BDE8908 /* YapDatabase.debug.xcconfig */;
@@ -6025,6 +6105,43 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		4410DBE5AFA5671C7249057195652458 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C63213F748C5B453F1984EC355CA1B38 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -6170,44 +6287,6 @@
 			};
 			name = Debug;
 		};
-		5BC3A4D822223E413337B10CB9371289 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAE27B75E78504E677DF2C7A37DDA478 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
-			};
-			name = Release;
-		};
 		669D2DD5A41C08F9F3F53BB0F633AB5D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7741DFFCD17DA8CEC184C99133F79A07 /* CocoaLumberjack.release.xcconfig */;
@@ -6254,82 +6333,6 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
-			};
-			name = Release;
-		};
-		6BA59ACF670582FD4B63F7B914C14049 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C0D456D42E9888CD564D64FB3E90BE8 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
-			};
-			name = Release;
-		};
-		6D677BAA83AF159AE47738D5833A0ABB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E3D0BE8F45BB41833B913BB61C3B13D /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
@@ -6512,9 +6515,9 @@
 			};
 			name = Debug;
 		};
-		9B1F35F3B6DBA9E9BD8FF05BC65E00C8 /* Release */ = {
+		9574F1E9045224204493015CC109853F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F236BA5E0C99008B42938B73F2EA491 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.release.xcconfig */;
+			baseConfigurationReference = 5E3D0BE8F45BB41833B913BB61C3B13D /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -6526,7 +6529,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6534,7 +6537,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -6704,6 +6707,43 @@
 			};
 			name = Release;
 		};
+		B54FBC048A0C73B3BAD0F458F6BAF2B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99F85B22C2194407458E0859DB43952D /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
 		B5C2DCADAA78D0240A13AB4D04317878 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 68B01B42644E856141AF7F47463C1043 /* DifferenceKit.release.xcconfig */;
@@ -6739,43 +6779,6 @@
 				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
-		};
-		D7F5E6EB8524AF1F821F42B467E55009 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2F67786D7B75A23974EB4C9DFBD9B28 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
-			};
-			name = Debug;
 		};
 		E20B1611ECD78865D4EDAFDAB6A0FA05 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -6829,9 +6832,9 @@
 			};
 			name = Debug;
 		};
-		FCC8B61A31F4D601419BB29568F3FC38 /* Debug */ = {
+		FD270982CF11D1537DF21716446E0419 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72B4003F5F6D6BF2E070AA35373F2C0D /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.debug.xcconfig */;
+			baseConfigurationReference = 1C0D456D42E9888CD564D64FB3E90BE8 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -6843,7 +6846,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6851,7 +6854,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -6860,15 +6863,25 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		01DEA33B471223BBA3996F9915C7C8D2 /* Build configuration list for PBXNativeTarget "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				413F75D7A7BF240096AA4964393B9631 /* Debug */,
+				017CDAB3E549ABD4823CC4D3F197D98D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		05C9365C67E88852BAC711A5279598A8 /* Build configuration list for PBXNativeTarget "SAMKeychain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -6878,11 +6891,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0BA3B9EDB1E4E89C50D75FE7D86473E0 /* Build configuration list for PBXNativeTarget "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit" */ = {
+		08A017658A5F1E12000E8DABEFF9B18A /* Build configuration list for PBXNativeTarget "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07D674F00C2E077C2FAE3C40557DED28 /* Debug */,
-				6D677BAA83AF159AE47738D5833A0ABB /* Release */,
+				4410DBE5AFA5671C7249057195652458 /* Debug */,
+				9574F1E9045224204493015CC109853F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -6910,24 +6923,6 @@
 			buildConfigurations = (
 				90A02691C214149D6C5D9C3925B5439A /* Debug */,
 				071EF191282A71A09325D266AFD387F0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		33A170E57FC1AD350BC0DBFD5F64135A /* Build configuration list for PBXNativeTarget "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0D3A285A9867F8EF4751DC2913B69E01 /* Debug */,
-				6BA59ACF670582FD4B63F7B914C14049 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		42D8C54F5EE32A190AC26372D6FAA304 /* Build configuration list for PBXNativeTarget "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionMessagingKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FCC8B61A31F4D601419BB29568F3FC38 /* Debug */,
-				9B1F35F3B6DBA9E9BD8FF05BC65E00C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -6968,20 +6963,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		7506680E94DF3D06CD7F71DBD26DF8AC /* Build configuration list for PBXNativeTarget "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D2C76AFB4BC5C56C0679049A2E565AC /* Debug */,
+				3F100BFA00F486235B2DF876F83D1621 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		860594611E12E40BF891A185E3C8D18B /* Build configuration list for PBXNativeTarget "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B54FBC048A0C73B3BAD0F458F6BAF2B2 /* Debug */,
+				FD270982CF11D1537DF21716446E0419 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		92D90423096D5322EB180BDC5E7146D5 /* Build configuration list for PBXNativeTarget "YapDatabase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				425AEE9BE51AB546A0C127C865DCD2C7 /* Debug */,
 				461E70B8825A0A0F94213D39E1BBA5D1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A861FA470BD1218909DC8B9D3409D720 /* Build configuration list for PBXNativeTarget "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D7F5E6EB8524AF1F821F42B467E55009 /* Debug */,
-				5BC3A4D822223E413337B10CB9371289 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
