@@ -5,6 +5,10 @@ inhibit_all_warnings!
 
 install! 'cocoapods', :warn_for_unused_master_specs_repo => false
 
+pod 'Curve25519Kit', :path => './session-ios-curve-25519-kit/'
+pod 'SignalCoreKit', :path => './session-ios-core-kit/'
+pod 'OpenSSL-Universal', :path => './OpenSSL/'
+
 # Dependencies to be included in the app and all extensions/frameworks
 abstract_target 'GlobalDependencies' do
   # FIXME: If https://github.com/jedisct1/swift-sodium/pull/249 gets resolved then revert this back to the standard pod
@@ -32,16 +36,14 @@ abstract_target 'GlobalDependencies' do
 ##      pod 'Nimble'
 ##    end
 #  end
-
-#pod 'OpenSSL-Universal', :path => './OpenSSL/'
   
   # Dependencies to be included only in all extensions/frameworks
   abstract_target 'FrameworkAndExtensionDependencies' do
 #    pod 'Curve25519Kit', git: 'https://github.com/oxen-io/session-ios-curve-25519-kit.git', branch: 'session-version'
-    pod 'Curve25519Kit', :path => './session-ios-curve-25519-kit/'
+#    pod 'Curve25519Kit', :path => './session-ios-curve-25519-kit/'
 #    pod 'SignalCoreKit', git: 'https://github.com/oxen-io/session-ios-core-kit', branch: 'session-version'
-    pod 'SignalCoreKit', :path => './session-ios-core-kit/'
-    pod 'OpenSSL-Universal', :path => './OpenSSL/'
+#    pod 'SignalCoreKit', :path => './session-ios-core-kit/'
+#    pod 'OpenSSL-Universal', :path => './OpenSSL/'
     
 #    target 'SessionNotificationServiceExtension'
     target 'SessionSnodeKit'

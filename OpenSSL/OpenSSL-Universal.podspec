@@ -30,4 +30,5 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.15'
   s.watchos.deployment_target = '10.0'
   s.vendored_frameworks = 'Frameworks/OpenSSL.xcframework'
+  s.preserve_paths = 'Frameworks/OpenSSL.xcframework/**/*'
 end
