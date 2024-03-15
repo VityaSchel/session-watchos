@@ -142,6 +142,8 @@
 		A7A9AB9A2BA36AED0067B9A3 /* DatabaseMigrator+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0B62BA1E61500BC763A /* DatabaseMigrator+Utilities.swift */; };
 		A7A9AB9B2BA36C760067B9A3 /* MIMETypeUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC11B2BA1E61600BC763A /* MIMETypeUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7A9AB9C2BA3714A0067B9A3 /* QueryInterfaceRequest+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0B82BA1E61500BC763A /* QueryInterfaceRequest+Utilities.swift */; };
+		A7A9ABA52BA45D030067B9A3 /* SessionMessagingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC03D2BA1C17B00BC763A /* SessionMessagingKit.framework */; };
+		A7A9ABA62BA45D030067B9A3 /* SessionMessagingKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC03D2BA1C17B00BC763A /* SessionMessagingKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EE12E1EFEF9682EAC791CF0B /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0DE6117C8DE20D926931BF /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework */; };
 		FDD5201D934DC26A93B6CA38 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_SessionSnodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F2A11EA951B40479838C192 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_SessionSnodeKit.framework */; };
 /* End PBXBuildFile section */
@@ -189,6 +191,13 @@
 			remoteGlobalIDString = A71DC04E2BA1C28B00BC763A;
 			remoteInfo = SessionUtilitiesKit;
 		};
+		A7A9ABA72BA45D030067B9A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A71202782BA0CDDC0059213C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A71DC03C2BA1C17B00BC763A;
+			remoteInfo = SessionMessagingKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -199,6 +208,17 @@
 			dstSubfolderSpec = 16;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A9ABA92BA45D030067B9A3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A7A9ABA62BA45D030067B9A3 /* SessionMessagingKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -735,6 +755,7 @@
 			files = (
 				A7A9AB8A2BA35E6F0067B9A3 /* SessionUtilitiesKit.framework in Frameworks */,
 				A712E8262BA0F4330037EFE2 /* EFQRCode in Frameworks */,
+				A7A9ABA52BA45D030067B9A3 /* SessionMessagingKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2106,12 +2127,14 @@
 				A71202802BA0CDDC0059213C /* Sources */,
 				A71202812BA0CDDC0059213C /* Frameworks */,
 				A71202822BA0CDDC0059213C /* Resources */,
+				A7A9ABA92BA45D030067B9A3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				A71DC08E2BA1E4AE00BC763A /* PBXTargetDependency */,
 				A7A9AB8D2BA35E6F0067B9A3 /* PBXTargetDependency */,
+				A7A9ABA82BA45D030067B9A3 /* PBXTargetDependency */,
 			);
 			name = "session-ui";
 			packageProductDependencies = (
@@ -2640,6 +2663,11 @@
 			isa = PBXTargetDependency;
 			target = A71DC04E2BA1C28B00BC763A /* SessionUtilitiesKit */;
 			targetProxy = A7A9AB8C2BA35E6F0067B9A3 /* PBXContainerItemProxy */;
+		};
+		A7A9ABA82BA45D030067B9A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A71DC03C2BA1C17B00BC763A /* SessionMessagingKit */;
+			targetProxy = A7A9ABA72BA45D030067B9A3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

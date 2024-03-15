@@ -32,6 +32,8 @@ abstract_target 'GlobalDependencies' do
 ##      pod 'Nimble'
 ##    end
 #  end
+
+#pod 'OpenSSL-Universal', :path => './OpenSSL/'
   
   # Dependencies to be included only in all extensions/frameworks
   abstract_target 'FrameworkAndExtensionDependencies' do

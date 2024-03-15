@@ -121,21 +121,42 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>128</integer>
+			<integer>111</integer>
 		</dict>
 		<key>Basic B&amp;W QR Code (Playground) 25.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>129</integer>
+			<integer>112</integer>
 		</dict>
 		<key>Basic B&amp;W QR Code (Playground) 26.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>130</integer>
+			<integer>113</integer>
+		</dict>
+		<key>Basic B&amp;W QR Code (Playground) 27.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>137</integer>
+		</dict>
+		<key>Basic B&amp;W QR Code (Playground) 28.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>138</integer>
+		</dict>
+		<key>Basic B&amp;W QR Code (Playground) 29.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>139</integer>
 		</dict>
 		<key>Basic B&amp;W QR Code (Playground) 3.xcscheme</key>
 		<dict>
@@ -310,21 +331,42 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>125</integer>
+			<integer>108</integer>
 		</dict>
 		<key>European SEPA Money Transfer + Watermark (Playground) 25.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>126</integer>
+			<integer>109</integer>
 		</dict>
 		<key>European SEPA Money Transfer + Watermark (Playground) 26.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>127</integer>
+			<integer>110</integer>
+		</dict>
+		<key>European SEPA Money Transfer + Watermark (Playground) 27.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>140</integer>
+		</dict>
+		<key>European SEPA Money Transfer + Watermark (Playground) 28.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>141</integer>
+		</dict>
+		<key>European SEPA Money Transfer + Watermark (Playground) 29.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>142</integer>
 		</dict>
 		<key>European SEPA Money Transfer + Watermark (Playground) 3.xcscheme</key>
 		<dict>
@@ -499,21 +541,42 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>119</integer>
+			<integer>102</integer>
 		</dict>
 		<key>README (Playground) 25.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>120</integer>
+			<integer>103</integer>
 		</dict>
 		<key>README (Playground) 26.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>121</integer>
+			<integer>104</integer>
+		</dict>
+		<key>README (Playground) 27.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>131</integer>
+		</dict>
+		<key>README (Playground) 28.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>132</integer>
+		</dict>
+		<key>README (Playground) 29.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>133</integer>
 		</dict>
 		<key>README (Playground) 3.xcscheme</key>
 		<dict>
@@ -688,21 +751,42 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>122</integer>
+			<integer>105</integer>
 		</dict>
 		<key>User Guide (Playground) 25.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>123</integer>
+			<integer>106</integer>
 		</dict>
 		<key>User Guide (Playground) 26.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>124</integer>
+			<integer>107</integer>
+		</dict>
+		<key>User Guide (Playground) 27.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>134</integer>
+		</dict>
+		<key>User Guide (Playground) 28.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>135</integer>
+		</dict>
+		<key>User Guide (Playground) 29.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>136</integer>
 		</dict>
 		<key>User Guide (Playground) 3.xcscheme</key>
 		<dict>
