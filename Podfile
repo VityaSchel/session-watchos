@@ -126,6 +126,7 @@ def set_minimum_deployment_target(installer)
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |build_configuration|
       build_configuration.build_settings['WATCHOS_DEPLOYMENT_TARGET'] = '10.0'
+      config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
     end
   end
 end

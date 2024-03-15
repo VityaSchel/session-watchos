@@ -17,8 +17,8 @@ struct SignupScreen: View {
         TextField("Your profile name", text: $displayName)
         
         Button(action: {
-          let seed = Randomness.generateRandomBytes(numberBytes: 16)
-          (ed25519KeyPair, x25519KeyPair) = try! Identity.generate(from: seed)
+          let seed = try! Randomness.generateRandomBytes(numberBytes: 16)
+          let (ed25519KeyPair, x25519KeyPair) = try! Identity.generate(from: seed)
           print(ed25519KeyPair)
           print(x25519KeyPair)
         }) {
