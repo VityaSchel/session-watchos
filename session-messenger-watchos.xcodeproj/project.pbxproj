@@ -29,7 +29,7 @@
 		A71DC0882BA1E28C00BC763A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DAE8C2BA1BEE100BC763A /* Color.swift */; };
 		A71DC0892BA1E28C00BC763A /* SessionLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DAE8E2BA1BEE100BC763A /* SessionLogo.swift */; };
 		A71DC08A2BA1E28C00BC763A /* SignupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DAE902BA1BEE100BC763A /* SignupScreen.swift */; };
-		A71DC08B2BA1E28C00BC763A /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DAE912BA1BEE100BC763A /* LoginScreen.swift */; };
+		A71DC08B2BA1E28C00BC763A /* SigninScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DAE912BA1BEE100BC763A /* SigninScreen.swift */; };
 		A71DC08C2BA1E28C00BC763A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DAE922BA1BEE100BC763A /* ContentView.swift */; };
 		A71DC1AA2BA1E78700BC763A /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0AE2BA1E61500BC763A /* Identity.swift */; };
 		A71DC1AB2BA1E99C00BC763A /* KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0E62BA1E61600BC763A /* KeyPair.swift */; };
@@ -140,6 +140,9 @@
 		A7A9AB9A2BA36AED0067B9A3 /* DatabaseMigrator+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0B62BA1E61500BC763A /* DatabaseMigrator+Utilities.swift */; };
 		A7A9AB9B2BA36C760067B9A3 /* MIMETypeUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC11B2BA1E61600BC763A /* MIMETypeUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7A9AB9C2BA3714A0067B9A3 /* QueryInterfaceRequest+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0B82BA1E61500BC763A /* QueryInterfaceRequest+Utilities.swift */; };
+		A7BA4B3A2BA6185100424230 /* SigninScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BA4B392BA6185100424230 /* SigninScreenModel.swift */; };
+		A7BA4B3C2BA618CA00424230 /* CheckLoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BA4B3B2BA618CA00424230 /* CheckLoginFlow.swift */; };
+		A7BA4B3F2BA61C5900424230 /* LoginMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BA4B3E2BA61C5900424230 /* LoginMenu.swift */; };
 		A7BCF3932BA4719300CB5766 /* SessionUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC04F2BA1C28B00BC763A /* SessionUtilitiesKit.framework */; };
 		A7BCF3942BA4719300CB5766 /* SessionUtilitiesKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC04F2BA1C28B00BC763A /* SessionUtilitiesKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A7BCF3982BA471AB00CB5766 /* SessionMessagingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC03D2BA1C17B00BC763A /* SessionMessagingKit.framework */; };
@@ -155,6 +158,8 @@
 		A7BCF3B12BA4727200CB5766 /* SignalUtilitiesKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC0312BA1C17200BC763A /* SignalUtilitiesKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A7BCF3BC2BA5A7AA00CB5766 /* OpenSSL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A9AB862BA35D300067B9A3 /* OpenSSL.xcframework */; };
 		A7BCF3BD2BA5A7AA00CB5766 /* OpenSSL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7A9AB862BA35D300067B9A3 /* OpenSSL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A7BCF3D32BA5DB7C00CB5766 /* StartLoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCF3D22BA5DB7C00CB5766 /* StartLoginFlow.swift */; };
+		A7BCF3D82BA5E03600CB5766 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCF3D72BA5E03600CB5766 /* Constants.swift */; };
 		B6F570230922394835693480 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD6C4AB6DEBBD98152234F4 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit.framework */; };
 		EF32C610663A75F0C24AE719 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7BA7FE40646112141686351 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework */; };
 /* End PBXBuildFile section */
@@ -302,7 +307,7 @@
 		A71DAE8C2BA1BEE100BC763A /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		A71DAE8E2BA1BEE100BC763A /* SessionLogo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionLogo.swift; sourceTree = "<group>"; };
 		A71DAE902BA1BEE100BC763A /* SignupScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupScreen.swift; sourceTree = "<group>"; };
-		A71DAE912BA1BEE100BC763A /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		A71DAE912BA1BEE100BC763A /* SigninScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninScreen.swift; sourceTree = "<group>"; };
 		A71DAE922BA1BEE100BC763A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A71DAEA02BA1BFC300BC763A /* SSKLegacy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSKLegacy.swift; sourceTree = "<group>"; };
 		A71DAEA22BA1BFC300BC763A /* _004_FlagMessageHashAsDeletedOrInvalid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _004_FlagMessageHashAsDeletedOrInvalid.swift; sourceTree = "<group>"; };
@@ -803,12 +808,17 @@
 		A7A9AB862BA35D300067B9A3 /* OpenSSL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OpenSSL.xcframework; path = OpenSSL/Frameworks/OpenSSL.xcframework; sourceTree = "<group>"; };
 		A7A9AB9D2BA388CB0067B9A3 /* SignalCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SignalCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A9ABA12BA388D30067B9A3 /* Curve25519Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Curve25519Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7BA4B392BA6185100424230 /* SigninScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninScreenModel.swift; sourceTree = "<group>"; };
+		A7BA4B3B2BA618CA00424230 /* CheckLoginFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckLoginFlow.swift; sourceTree = "<group>"; };
+		A7BA4B3E2BA61C5900424230 /* LoginMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMenu.swift; sourceTree = "<group>"; };
 		A7BA7FE40646112141686351 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BCF37F2BA46D9900CB5766 /* Curve25519Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Curve25519Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BCF3832BA46DC000CB5766 /* Curve25519Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Curve25519Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BCF3872BA46E9500CB5766 /* Curve25519Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Curve25519Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BCF3902BA46F6300CB5766 /* Clibsodium.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Clibsodium.xcframework; path = Pods/Sodium/Clibsodium.xcframework; sourceTree = "<group>"; };
 		A7BCF3BE2BA5AA5100CB5766 /* CoreAudioTypes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioTypes.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS10.0.sdk/System/Library/Frameworks/CoreAudioTypes.framework; sourceTree = DEVELOPER_DIR; };
+		A7BCF3D22BA5DB7C00CB5766 /* StartLoginFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartLoginFlow.swift; sourceTree = "<group>"; };
+		A7BCF3D72BA5E03600CB5766 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A8B6E238FDC706EAF2A931B0 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig"; sourceTree = "<group>"; };
 		AC1D8CEE3382379F32BD87E5 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.release.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.release.xcconfig"; sourceTree = "<group>"; };
 		ACA49E13BF1893450DCC46B0 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.release.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.release.xcconfig"; sourceTree = "<group>"; };
@@ -916,10 +926,10 @@
 		A71DAE842BA1BEE100BC763A /* session-ui */ = {
 			isa = PBXGroup;
 			children = (
+				A7BCF3D42BA5DD9100CB5766 /* Shared */,
 				A71DAE852BA1BEE100BC763A /* SessionMessengerApp.swift */,
 				A71DAE862BA1BEE100BC763A /* Assets.xcassets */,
 				A71DAE872BA1BEE100BC763A /* Preview Content */,
-				A71DAE892BA1BEE100BC763A /* SwiftExtensions */,
 				A71DAE8D2BA1BEE100BC763A /* Icons */,
 				A71DAE8F2BA1BEE100BC763A /* Views */,
 				A71DAE922BA1BEE100BC763A /* ContentView.swift */,
@@ -938,8 +948,6 @@
 		A71DAE892BA1BEE100BC763A /* SwiftExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				A71DAE8A2BA1BEE100BC763A /* AESSecurity.swift */,
-				A71DAE8B2BA1BEE100BC763A /* QRCodes.swift */,
 				A71DAE8C2BA1BEE100BC763A /* Color.swift */,
 			);
 			path = SwiftExtensions;
@@ -956,8 +964,7 @@
 		A71DAE8F2BA1BEE100BC763A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A71DAE902BA1BEE100BC763A /* SignupScreen.swift */,
-				A71DAE912BA1BEE100BC763A /* LoginScreen.swift */,
+				A7BA4B3D2BA61C4300424230 /* LoginMenu */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -2123,6 +2130,38 @@
 			path = Media;
 			sourceTree = "<group>";
 		};
+		A7BA4B3D2BA61C4300424230 /* LoginMenu */ = {
+			isa = PBXGroup;
+			children = (
+				A71DAE902BA1BEE100BC763A /* SignupScreen.swift */,
+				A71DAE912BA1BEE100BC763A /* SigninScreen.swift */,
+				A7BA4B392BA6185100424230 /* SigninScreenModel.swift */,
+				A7BA4B3E2BA61C5900424230 /* LoginMenu.swift */,
+			);
+			path = LoginMenu;
+			sourceTree = "<group>";
+		};
+		A7BCF3D12BA5DB6700CB5766 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A7BCF3D22BA5DB7C00CB5766 /* StartLoginFlow.swift */,
+				A7BA4B3B2BA618CA00424230 /* CheckLoginFlow.swift */,
+				A7BCF3D72BA5E03600CB5766 /* Constants.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A7BCF3D42BA5DD9100CB5766 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A71DAE8A2BA1BEE100BC763A /* AESSecurity.swift */,
+				A71DAE8B2BA1BEE100BC763A /* QRCodes.swift */,
+				A71DAE892BA1BEE100BC763A /* SwiftExtensions */,
+				A7BCF3D12BA5DB6700CB5766 /* API */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		D2F81947173E02B36E7BF099 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2611,12 +2650,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A71DC0852BA1E28C00BC763A /* SessionMessengerApp.swift in Sources */,
+				A7BA4B3A2BA6185100424230 /* SigninScreenModel.swift in Sources */,
 				A71DC0862BA1E28C00BC763A /* AESSecurity.swift in Sources */,
 				A71DC0872BA1E28C00BC763A /* QRCodes.swift in Sources */,
+				A7BA4B3F2BA61C5900424230 /* LoginMenu.swift in Sources */,
 				A71DC0882BA1E28C00BC763A /* Color.swift in Sources */,
+				A7BCF3D32BA5DB7C00CB5766 /* StartLoginFlow.swift in Sources */,
+				A7BA4B3C2BA618CA00424230 /* CheckLoginFlow.swift in Sources */,
+				A7BCF3D82BA5E03600CB5766 /* Constants.swift in Sources */,
 				A71DC0892BA1E28C00BC763A /* SessionLogo.swift in Sources */,
 				A71DC08A2BA1E28C00BC763A /* SignupScreen.swift in Sources */,
-				A71DC08B2BA1E28C00BC763A /* LoginScreen.swift in Sources */,
+				A71DC08B2BA1E28C00BC763A /* SigninScreen.swift in Sources */,
 				A71DC08C2BA1E28C00BC763A /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2858,8 +2902,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development: vityaschel@gmail.com (BBKDJC3569)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = CX3Y35C8FG;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -2919,8 +2965,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development: vityaschel@gmail.com (BBKDJC3569)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = CX3Y35C8FG;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;

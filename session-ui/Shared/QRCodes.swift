@@ -35,7 +35,16 @@ func generateQRCode(href: String) -> UIImage? {
 //    return nil
 //  }
 //  
-  let doc = QRCode.Document(utf8String: href, errorCorrection: .high)
+  let doc = QRCode.Document(
+    utf8String: href, 
+    errorCorrection: .low
+  )
+  doc.design.backgroundColor(UIColor(hex: "#121212")!.cgColor)
+  doc.design.shape.eye = QRCode.EyeShape.RoundedOuter()
+  doc.design.shape.onPixels = QRCode.PixelShape.Horizontal()
+  doc.design.foregroundStyle(QRCode.FillStyle.Solid(UIColor(hex: "#00F782")!.cgColor))
+  doc.design.additionalQuietZonePixels = 4
+  doc.design.style.backgroundFractionalCornerRadius = 3.0
   let generated = doc.cgImage(CGSize(width: 800, height: 800))
   return generated?.representation.uiImage()
 }
