@@ -6,6 +6,7 @@ inhibit_all_warnings!
 install! 'cocoapods', :warn_for_unused_master_specs_repo => false
 
 pod 'DSF_QRCode', '~> 18.0.0'
+pod 'CryptoSwift', '~> 1.8.1'
 
 # Dependencies to be included in the app and all extensions/frameworks
 abstract_target 'GlobalDependencies' do
