@@ -176,6 +176,7 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DSF_QRCode/QRCode.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftImageReadWrite/SwiftImageReadWrite.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftQRCodeGenerator/QRCodeGenerator.framework"
@@ -193,6 +194,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DSF_QRCode/QRCode.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftImageReadWrite/SwiftImageReadWrite.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftQRCodeGenerator/QRCodeGenerator.framework"

@@ -36,7 +36,7 @@ extension APICheckLoginFlowServerResponse: Decodable {
 }
 
 func APICheckLoginFlow(flowID: String, completion: @escaping (Result<String?, Error>) -> Void) {
-  let urlString =  ApiUrl + "/api/start-login-flow"
+  let urlString =  ApiUrl + "/api/login-flow-result/" + flowID
   guard let url = URL(string: urlString) else {
       completion(.failure(URLError(.badURL)))
       return

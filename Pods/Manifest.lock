@@ -2,6 +2,7 @@ PODS:
   - CocoaLumberjack (3.8.5):
     - CocoaLumberjack/Core (= 3.8.5)
   - CocoaLumberjack/Core (3.8.5)
+  - CryptoSwift (1.8.1)
   - Curve25519Kit (2.1.0):
     - CocoaLumberjack
     - SignalCoreKit
@@ -95,6 +96,7 @@ PODS:
     - YapDatabase/SQLCipher/Core
 
 DEPENDENCIES:
+  - CryptoSwift (~> 1.8.1)
   - Curve25519Kit (from `./session-ios-curve-25519-kit/`)
   - DifferenceKit
   - DSF_QRCode (~> 18.0.0)
@@ -111,6 +113,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - CocoaLumberjack
+    - CryptoSwift
     - DifferenceKit
     - DSF_QRCode
     - GRDB.swift
@@ -146,6 +149,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   CocoaLumberjack: 6a459bc897d6d80bd1b8c78482ec7ad05dffc3f0
+  CryptoSwift: b9c701d6f5011df23794dbf7f2e480a77835d83d
   Curve25519Kit: 754dc24459d98990630a30d199886cf833c547cb
   DifferenceKit: ab185c4d7f9cef8af3fcf593e5b387fb81e999ca
   DSF_QRCode: 3fe0acc968ce8588a9b1dabb9557a364472f5aaf
@@ -161,6 +165,6 @@ SPEC CHECKSUMS:
   SwiftQRCodeGenerator: cc02fed209335064d0b0dd61b2a0874b9bc6bd5a
   YapDatabase: b418a4baa6906e8028748938f9159807fd039af4
 
-PODFILE CHECKSUM: 3033927b441ac776d1555cd45a3521eb4a3df2f9
+PODFILE CHECKSUM: a4d6d23bd28d53ecdc6435eee470d1af81af91ba
 
 COCOAPODS: 1.15.2

@@ -27,7 +27,12 @@ class SigninViewModel: ObservableObject {
             self?.qrCodeImage = generatedQRCode
             self?.isLoading = false
             self?.startCheckingServer(flowID: flowID, completion: { encryptedPhrase in
-              decryptAesCbc(encryptedPhrase, secretKey)
+              do {
+                let decryptedPhrase = try decryptAesCbc(encryptedBase64: encryptedPhrase, AesKeyBase64: secretKey)
+              } catch {
+                self?.alertMessage = "Something went wrong"
+                self?.showAlert = true
+              }
             })
           } else {
             self?.alertMessage = "Error: Secret key data could not be generated."
@@ -49,6 +54,7 @@ class SigninViewModel: ObservableObject {
         switch result {
         case .success(let result):
           if let encryptedPhrase = result {
+            self.stopCheckingServer()
             completion(encryptedPhrase)
           }
         case .failure(let error):

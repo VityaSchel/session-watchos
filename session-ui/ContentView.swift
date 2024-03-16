@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-  @State private var loginMenuActive = false
+  @State private var loginMenuActive = true
   
   var body: some View {
     NavigationView {
