@@ -10,7 +10,6 @@
 		134351FF940512D0D5BBC7CB /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionMessagingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C19B588E64DAB0E92B28E63 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionMessagingKit.framework */; };
 		354DDF48A4DB4763435C0B10 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_SessionSnodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76487AA8630D33D2A907AFAE /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_SessionSnodeKit.framework */; };
 		8C2CEE9C912E879B289D5AF8 /* Pods_GlobalDependencies_session_ui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFE4C80E7AD7E3B54ED80B2 /* Pods_GlobalDependencies_session_ui.framework */; };
-		A712E8262BA0F4330037EFE2 /* EFQRCode in Frameworks */ = {isa = PBXBuildFile; productRef = A712E8252BA0F4330037EFE2 /* EFQRCode */; };
 		A71DAE942BA1BEE100BC763A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71DAE862BA1BEE100BC763A /* Assets.xcassets */; };
 		A71DAE952BA1BEE100BC763A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71DAE882BA1BEE100BC763A /* Preview Assets.xcassets */; };
 		A71DC0192BA1BFD400BC763A /* drone-upload-exists.sh in Resources */ = {isa = PBXBuildFile; fileRef = A71DB9182BA1BFD000BC763A /* drone-upload-exists.sh */; };
@@ -154,6 +153,8 @@
 		A7BCF3AF2BA4722500CB5766 /* SessionSnodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC0252BA1C15B00BC763A /* SessionSnodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A7BCF3B02BA4727200CB5766 /* SignalUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC0312BA1C17200BC763A /* SignalUtilitiesKit.framework */; };
 		A7BCF3B12BA4727200CB5766 /* SignalUtilitiesKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC0312BA1C17200BC763A /* SignalUtilitiesKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A7BCF3BC2BA5A7AA00CB5766 /* OpenSSL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A9AB862BA35D300067B9A3 /* OpenSSL.xcframework */; };
+		A7BCF3BD2BA5A7AA00CB5766 /* OpenSSL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7A9AB862BA35D300067B9A3 /* OpenSSL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B6F570230922394835693480 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD6C4AB6DEBBD98152234F4 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit.framework */; };
 		EF32C610663A75F0C24AE719 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7BA7FE40646112141686351 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework */; };
 /* End PBXBuildFile section */
@@ -272,6 +273,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A7BCF3BD2BA5A7AA00CB5766 /* OpenSSL.xcframework in Embed Frameworks */,
 				A7BCF3AA2BA4720700CB5766 /* SessionMessagingKit.framework in Embed Frameworks */,
 				A7BCF3AD2BA4720E00CB5766 /* SessionUtilitiesKit.framework in Embed Frameworks */,
 				A7BCF3B12BA4727200CB5766 /* SignalUtilitiesKit.framework in Embed Frameworks */,
@@ -819,11 +821,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7BCF3BC2BA5A7AA00CB5766 /* OpenSSL.xcframework in Frameworks */,
 				A7BCF3B02BA4727200CB5766 /* SignalUtilitiesKit.framework in Frameworks */,
 				A7BCF3AE2BA4722500CB5766 /* SessionSnodeKit.framework in Frameworks */,
 				A7BCF3AC2BA4720E00CB5766 /* SessionUtilitiesKit.framework in Frameworks */,
 				A7BCF3A92BA4720700CB5766 /* SessionMessagingKit.framework in Frameworks */,
-				A712E8262BA0F4330037EFE2 /* EFQRCode in Frameworks */,
 				8C2CEE9C912E879B289D5AF8 /* Pods_GlobalDependencies_session_ui.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2221,7 +2223,6 @@
 			);
 			name = "session-ui";
 			packageProductDependencies = (
-				A712E8252BA0F4330037EFE2 /* EFQRCode */,
 			);
 			productName = "session-messenger Watch App";
 			productReference = A71202842BA0CDDC0059213C /* Session.app */;
@@ -2412,7 +2413,6 @@
 			);
 			mainGroup = A71202772BA0CDDC0059213C;
 			packageReferences = (
-				A712E8242BA0F4330037EFE2 /* XCRemoteSwiftPackageReference "EFQRCode" */,
 			);
 			productRefGroup = A712027F2BA0CDDC0059213C /* Products */;
 			projectDirPath = "";
@@ -3417,25 +3417,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		A712E8242BA0F4330037EFE2 /* XCRemoteSwiftPackageReference "EFQRCode" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/EFPrefix/EFQRCode.git";
-			requirement = {
-				kind = exactVersion;
-				version = 6.2.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A712E8252BA0F4330037EFE2 /* EFQRCode */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A712E8242BA0F4330037EFE2 /* XCRemoteSwiftPackageReference "EFQRCode" */;
-			productName = EFQRCode;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A71202782BA0CDDC0059213C /* Project object */;
 }
