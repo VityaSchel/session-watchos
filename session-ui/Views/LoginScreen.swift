@@ -33,7 +33,7 @@ struct LoginScreen: View {
         let id = UUID().uuidString
         if let secretKeyData = generateAESKey() {
           let secretKey = secretKeyData.base64EncodedString()
-          let generatedQRCode = generateQRCode(href: "https://watchos-session-login.sessionbots.directory/" + id + "#" + secretKey)
+          let generatedQRCode = generateQRCode(href: "https://watchos.sessionbots.directory/login/" + id + "#" + secretKey)
           
           DispatchQueue.main.async {
             self.qrCodeImage = generatedQRCode
