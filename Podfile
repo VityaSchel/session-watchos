@@ -5,6 +5,8 @@ inhibit_all_warnings!
 
 install! 'cocoapods', :warn_for_unused_master_specs_repo => false
 
+pod 'DSF_QRCode', '~> 18.0.0'
+
 # Dependencies to be included in the app and all extensions/frameworks
 abstract_target 'GlobalDependencies' do
   # FIXME: If https://github.com/jedisct1/swift-sodium/pull/249 gets resolved then revert this back to the standard pod
@@ -126,7 +128,7 @@ def set_minimum_deployment_target(installer)
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |build_configuration|
       build_configuration.build_settings['WATCHOS_DEPLOYMENT_TARGET'] = '10.0'
-      config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
+      build_configuration.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
     end
   end
 end

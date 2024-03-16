@@ -20,7 +20,7 @@ variant_for_slice()
   "OpenSSL.xcframework/watchos-arm64_32_armv7k")
     echo ""
     ;;
-  "OpenSSL.xcframework/watchos-x86_64-simulator")
+  "OpenSSL.xcframework/watchos-arm64_i386_x86_64-simulator")
     echo "simulator"
     ;;
   esac
@@ -32,8 +32,8 @@ archs_for_slice()
   "OpenSSL.xcframework/watchos-arm64_32_armv7k")
     echo "arm64_32 armv7k"
     ;;
-  "OpenSSL.xcframework/watchos-x86_64-simulator")
-    echo "x86_64"
+  "OpenSSL.xcframework/watchos-arm64_i386_x86_64-simulator")
+    echo "arm64 i386 x86_64"
     ;;
   esac
 }
@@ -117,5 +117,5 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/../OpenSSL/Frameworks/OpenSSL.xcframework" "OpenSSL-Universal" "framework" "watchos-arm64_32_armv7k" "watchos-x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../OpenSSL/Frameworks/OpenSSL.xcframework" "OpenSSL-Universal" "framework" "watchos-arm64_32_armv7k" "watchos-arm64_i386_x86_64-simulator"
 

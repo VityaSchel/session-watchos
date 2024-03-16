@@ -7,7 +7,7 @@
 
 import Foundation
 //import EFQRCode
-//import QRCode
+import QRCode
 import SwiftUI
 import UIKit
 //import QRCode
@@ -24,7 +24,7 @@ func generateQRCode(href: String) -> UIImage? {
 //      return nil
 //  }
   
-  // QRCODE (does not work)
+//  // QRCODE (does not work)
 //  guard let url = URL(string: href) else { return nil }
 //  guard let qrData = QRCode(url: url) else { return nil }
 //  let qrImage: UIImage?
@@ -34,8 +34,8 @@ func generateQRCode(href: String) -> UIImage? {
 //  } catch {
 //    return nil
 //  }
-  
-//  let doc = QRCode.Document(utf8String: href, errorCorrection: .high)
-//  let generated = doc.cgImage(CGSize(width: 800, height: 800))
-//  return generated?.representation.uiImage()n
+//  
+  let doc = QRCode.Document(utf8String: href, errorCorrection: .high)
+  let generated = doc.cgImage(CGSize(width: 800, height: 800))
+  return generated?.representation.uiImage()
 }
