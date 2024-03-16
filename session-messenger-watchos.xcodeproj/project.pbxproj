@@ -155,6 +155,10 @@
 		A7BCF3B12BA4727200CB5766 /* SignalUtilitiesKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC0312BA1C17200BC763A /* SignalUtilitiesKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A7BCF3BC2BA5A7AA00CB5766 /* OpenSSL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A9AB862BA35D300067B9A3 /* OpenSSL.xcframework */; };
 		A7BCF3BD2BA5A7AA00CB5766 /* OpenSSL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7A9AB862BA35D300067B9A3 /* OpenSSL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A7BCF3CA2BA5AF7E00CB5766 /* QRCode in Frameworks */ = {isa = PBXBuildFile; productRef = A7BCF3C92BA5AF7E00CB5766 /* QRCode */; };
+		A7BCF3CC2BA5AF7E00CB5766 /* QRCodeDetector in Frameworks */ = {isa = PBXBuildFile; productRef = A7BCF3CB2BA5AF7E00CB5766 /* QRCodeDetector */; };
+		A7BCF3CE2BA5AF7E00CB5766 /* QRCodeDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = A7BCF3CD2BA5AF7E00CB5766 /* QRCodeDynamic */; };
+		A7BCF3D02BA5AF7E00CB5766 /* QRCodeStatic in Frameworks */ = {isa = PBXBuildFile; productRef = A7BCF3CF2BA5AF7E00CB5766 /* QRCodeStatic */; };
 		B6F570230922394835693480 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD6C4AB6DEBBD98152234F4 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit.framework */; };
 		EF32C610663A75F0C24AE719 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7BA7FE40646112141686351 /* Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SignalUtilitiesKit.framework */; };
 /* End PBXBuildFile section */
@@ -808,6 +812,7 @@
 		A7BCF3832BA46DC000CB5766 /* Curve25519Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Curve25519Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BCF3872BA46E9500CB5766 /* Curve25519Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Curve25519Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BCF3902BA46F6300CB5766 /* Clibsodium.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Clibsodium.xcframework; path = Pods/Sodium/Clibsodium.xcframework; sourceTree = "<group>"; };
+		A7BCF3BE2BA5AA5100CB5766 /* CoreAudioTypes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioTypes.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS10.0.sdk/System/Library/Frameworks/CoreAudioTypes.framework; sourceTree = DEVELOPER_DIR; };
 		A8B6E238FDC706EAF2A931B0 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.debug.xcconfig"; sourceTree = "<group>"; };
 		AC1D8CEE3382379F32BD87E5 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.release.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SignalUtilitiesKit.release.xcconfig"; sourceTree = "<group>"; };
 		ACA49E13BF1893450DCC46B0 /* Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.release.xcconfig"; path = "Target Support Files/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit/Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit.release.xcconfig"; sourceTree = "<group>"; };
@@ -821,11 +826,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7BCF3CA2BA5AF7E00CB5766 /* QRCode in Frameworks */,
 				A7BCF3BC2BA5A7AA00CB5766 /* OpenSSL.xcframework in Frameworks */,
 				A7BCF3B02BA4727200CB5766 /* SignalUtilitiesKit.framework in Frameworks */,
 				A7BCF3AE2BA4722500CB5766 /* SessionSnodeKit.framework in Frameworks */,
 				A7BCF3AC2BA4720E00CB5766 /* SessionUtilitiesKit.framework in Frameworks */,
+				A7BCF3CE2BA5AF7E00CB5766 /* QRCodeDynamic in Frameworks */,
 				A7BCF3A92BA4720700CB5766 /* SessionMessagingKit.framework in Frameworks */,
+				A7BCF3CC2BA5AF7E00CB5766 /* QRCodeDetector in Frameworks */,
+				A7BCF3D02BA5AF7E00CB5766 /* QRCodeStatic in Frameworks */,
 				8C2CEE9C912E879B289D5AF8 /* Pods_GlobalDependencies_session_ui.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2125,6 +2134,7 @@
 		D2F81947173E02B36E7BF099 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A7BCF3BE2BA5AA5100CB5766 /* CoreAudioTypes.framework */,
 				A7BCF3902BA46F6300CB5766 /* Clibsodium.xcframework */,
 				A7BCF3872BA46E9500CB5766 /* Curve25519Kit.framework */,
 				A7BCF3832BA46DC000CB5766 /* Curve25519Kit.framework */,
@@ -2223,6 +2233,10 @@
 			);
 			name = "session-ui";
 			packageProductDependencies = (
+				A7BCF3C92BA5AF7E00CB5766 /* QRCode */,
+				A7BCF3CB2BA5AF7E00CB5766 /* QRCodeDetector */,
+				A7BCF3CD2BA5AF7E00CB5766 /* QRCodeDynamic */,
+				A7BCF3CF2BA5AF7E00CB5766 /* QRCodeStatic */,
 			);
 			productName = "session-messenger Watch App";
 			productReference = A71202842BA0CDDC0059213C /* Session.app */;
@@ -2413,6 +2427,7 @@
 			);
 			mainGroup = A71202772BA0CDDC0059213C;
 			packageReferences = (
+				A7BCF3C82BA5AF7E00CB5766 /* XCRemoteSwiftPackageReference "qrcode" */,
 			);
 			productRefGroup = A712027F2BA0CDDC0059213C /* Products */;
 			projectDirPath = "";
@@ -3417,6 +3432,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A7BCF3C82BA5AF7E00CB5766 /* XCRemoteSwiftPackageReference "qrcode" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dagronf/qrcode.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 18.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A7BCF3C92BA5AF7E00CB5766 /* QRCode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7BCF3C82BA5AF7E00CB5766 /* XCRemoteSwiftPackageReference "qrcode" */;
+			productName = QRCode;
+		};
+		A7BCF3CB2BA5AF7E00CB5766 /* QRCodeDetector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7BCF3C82BA5AF7E00CB5766 /* XCRemoteSwiftPackageReference "qrcode" */;
+			productName = QRCodeDetector;
+		};
+		A7BCF3CD2BA5AF7E00CB5766 /* QRCodeDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7BCF3C82BA5AF7E00CB5766 /* XCRemoteSwiftPackageReference "qrcode" */;
+			productName = QRCodeDynamic;
+		};
+		A7BCF3CF2BA5AF7E00CB5766 /* QRCodeStatic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7BCF3C82BA5AF7E00CB5766 /* XCRemoteSwiftPackageReference "qrcode" */;
+			productName = QRCodeStatic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A71202782BA0CDDC0059213C /* Project object */;
 }
