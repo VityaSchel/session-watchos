@@ -29,6 +29,7 @@ class SigninViewModel: ObservableObject {
             self?.startCheckingServer(flowID: flowID, completion: { encryptedPhrase in
               do {
                 let decryptedPhrase = try decryptAesCbc(encryptedBase64: encryptedPhrase, AesKeyBase64: secretKey)
+                
               } catch {
                 self?.alertMessage = "Something went wrong"
                 self?.showAlert = true
