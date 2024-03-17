@@ -21,7 +21,6 @@
 		A71DC0402BA1C17B00BC763A /* SessionMessagingKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC03F2BA1C17B00BC763A /* SessionMessagingKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A71DC0562BA1C2B800BC763A /* SessionSnodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC0252BA1C15B00BC763A /* SessionSnodeKit.framework */; };
 		A71DC05B2BA1C2C000BC763A /* SessionUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC04F2BA1C28B00BC763A /* SessionUtilitiesKit.framework */; };
-		A71DC0662BA1C2F700BC763A /* SessionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0652BA1C2F700BC763A /* SessionUtil.swift */; };
 		A71DC06A2BA1C30800BC763A /* libSessionUtil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC0632BA1C2F700BC763A /* libSessionUtil.a */; };
 		A71DC0852BA1E28C00BC763A /* SessionMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DAE852BA1BEE100BC763A /* SessionMessengerApp.swift */; };
 		A71DC0862BA1E28C00BC763A /* AESSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DAE8A2BA1BEE100BC763A /* AESSecurity.swift */; };
@@ -172,16 +171,6 @@
 		A7BA4B632BA6EC9B00424230 /* ConfigurationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DB6B12BA1BFCD00BC763A /* ConfigurationMessage.swift */; };
 		A7BA4B642BA6EC9B00424230 /* ExpirationTimerUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DB6B22BA1BFCD00BC763A /* ExpirationTimerUpdate.swift */; };
 		A7BA4B652BA6EC9B00424230 /* DataExtractionNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DB6B32BA1BFCD00BC763A /* DataExtractionNotification.swift */; };
-		A7BA4B662BA6ECB400424230 /* Setting+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DB6B62BA1BFCD00BC763A /* Setting+Utilities.swift */; };
-		A7BA4B672BA6ECB400424230 /* QueryInterfaceRequest+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DB6B72BA1BFCD00BC763A /* QueryInterfaceRequest+Utilities.swift */; };
-		A7BA4B682BA6ECB400424230 /* SessionUtil+UserGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DB6B92BA1BFCD00BC763A /* SessionUtil+UserGroups.swift */; };
-		A7BA4B692BA6ECB400424230 /* SessionUtil+ConvoInfoVolatile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DB6BA2BA1BFCD00BC763A /* SessionUtil+ConvoInfoVolatile.swift */; };
-		A7BA4B6A2BA6ECB400424230 /* SessionUtil+Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DB6BB2BA1BFCD00BC763A /* SessionUtil+Contacts.swift */; };
-		A7BA4B6B2BA6ECB400424230 /* SessionUtil+UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DB6BC2BA1BFCD00BC763A /* SessionUtil+UserProfile.swift */; };
-		A7BA4B6C2BA6ECB400424230 /* SessionUtil+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DB6BD2BA1BFCD00BC763A /* SessionUtil+Shared.swift */; };
-		A7BA4B6D2BA6ECB400424230 /* SessionUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DB6BE2BA1BFCD00BC763A /* SessionUtil.swift */; };
-		A7BA4B6E2BA6ECB400424230 /* TypeConversion+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DB6C02BA1BFCD00BC763A /* TypeConversion+Utilities.swift */; };
-		A7BA4B6F2BA6ECB400424230 /* SessionUtilError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DB6C12BA1BFCD00BC763A /* SessionUtilError.swift */; };
 		A7BA4B702BA6EDAC00424230 /* WebRTCSession+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DB6642BA1BFCD00BC763A /* WebRTCSession+UI.swift */; };
 		A7BA4B712BA6EDAC00424230 /* WebRTCSession+MessageHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DB6652BA1BFCD00BC763A /* WebRTCSession+MessageHandling.swift */; };
 		A7BA4B722BA6EDAC00424230 /* CallManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DB6662BA1BFCD00BC763A /* CallManagerProtocol.swift */; };
@@ -513,7 +502,6 @@
 		A7BA4D0F2BA6F10200424230 /* OWSWindowManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DB6E62BA1BFCD00BC763A /* OWSWindowManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7BA4D102BA6F10C00424230 /* OWSAudioPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DB6E82BA1BFCD00BC763A /* OWSAudioPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7BCF3932BA4719300CB5766 /* SessionUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC04F2BA1C28B00BC763A /* SessionUtilitiesKit.framework */; };
-		A7BCF3942BA4719300CB5766 /* SessionUtilitiesKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC04F2BA1C28B00BC763A /* SessionUtilitiesKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A7BCF3982BA471AB00CB5766 /* SessionMessagingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC03D2BA1C17B00BC763A /* SessionMessagingKit.framework */; };
 		A7BCF39D2BA471B200CB5766 /* SessionSnodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC0252BA1C15B00BC763A /* SessionSnodeKit.framework */; };
 		A7BCF3A12BA471BB00CB5766 /* SessionUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC04F2BA1C28B00BC763A /* SessionUtilitiesKit.framework */; };
@@ -621,26 +609,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A71DC0612BA1C2F700BC763A /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7BCF3972BA4719300CB5766 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				A7BCF3942BA4719300CB5766 /* SessionUtilitiesKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A7BCF3AB2BA4720700CB5766 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2679,7 +2647,6 @@
 				A71DC0212BA1C15B00BC763A /* Sources */,
 				A71DC0222BA1C15B00BC763A /* Frameworks */,
 				A71DC0232BA1C15B00BC763A /* Resources */,
-				A7BCF3972BA4719300CB5766 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2758,9 +2725,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A71DC0672BA1C2F800BC763A /* Build configuration list for PBXNativeTarget "SessionUtil" */;
 			buildPhases = (
-				A71DC05F2BA1C2F700BC763A /* Sources */,
+				A7A2F0E32BA6F413006C4F6A /* Build libSessionUtil if Needed */,
 				A71DC0602BA1C2F700BC763A /* Frameworks */,
-				A71DC0612BA1C2F700BC763A /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -2997,6 +2963,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7A2F0E32BA6F413006C4F6A /* Build libSessionUtil if Needed */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build libSessionUtil if Needed";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TARGET_BUILD_DIR=\"/Users/hloth/Documents/session-messenger-watchos\" \"${SRCROOT}/Scripts/build_libSession_util.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C4F49793C959338EEFC1E55A /* [CP] Check Pods Manifest.lock */ = {
@@ -3551,24 +3537,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A71DC05F2BA1C2F700BC763A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A7BA4B662BA6ECB400424230 /* Setting+Utilities.swift in Sources */,
-				A7BA4B672BA6ECB400424230 /* QueryInterfaceRequest+Utilities.swift in Sources */,
-				A7BA4B682BA6ECB400424230 /* SessionUtil+UserGroups.swift in Sources */,
-				A7BA4B692BA6ECB400424230 /* SessionUtil+ConvoInfoVolatile.swift in Sources */,
-				A7BA4B6A2BA6ECB400424230 /* SessionUtil+Contacts.swift in Sources */,
-				A7BA4B6B2BA6ECB400424230 /* SessionUtil+UserProfile.swift in Sources */,
-				A7BA4B6C2BA6ECB400424230 /* SessionUtil+Shared.swift in Sources */,
-				A7BA4B6D2BA6ECB400424230 /* SessionUtil.swift in Sources */,
-				A7BA4B6E2BA6ECB400424230 /* TypeConversion+Utilities.swift in Sources */,
-				A7BA4B6F2BA6ECB400424230 /* SessionUtilError.swift in Sources */,
-				A71DC0662BA1C2F700BC763A /* SessionUtil.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -3991,6 +3959,13 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Sodium\"",
+					"\"${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
+					/usr/lib/swift,
+					"\"$(TARGET_BUILD_DIR)/libSessionUtil\"",
+				);
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -4000,6 +3975,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "$(inherited) \"${PODS_XCFRAMEWORKS_BUILD_DIR}/Clibsodium\" \"$(TARGET_BUILD_DIR)/libSessionUtil\"";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -4026,6 +4002,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Sodium\"",
+					"\"${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
+					/usr/lib/swift,
+					"\"$(TARGET_BUILD_DIR)/libSessionUtil\"",
 				);
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";

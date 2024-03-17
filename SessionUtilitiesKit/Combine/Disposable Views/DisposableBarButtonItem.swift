@@ -2,6 +2,6 @@
 
 import Combine
 
-public class DisposableBarButtonItem: UIBarButtonItem {
-    public var disposables: Set<AnyCancellable> = Set()
-}
+//public class DisposableBarButtonItem: UIBarButtonItem {
+//    public var disposables: Set<AnyCancellable> = Set()
+//}

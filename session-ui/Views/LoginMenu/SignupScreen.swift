@@ -30,6 +30,7 @@ struct SignupScreen: View {
             guard !ProfileManager.isToLong(profileName: displayName) else {
               showAlert = true
               alertMessage = "Profile name is too long"
+              return
             }
             ProfileManager.updateLocal(
                 queue: .global(qos: .default),

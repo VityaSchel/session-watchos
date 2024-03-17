@@ -63,9 +63,9 @@ import Combine
 
 // MARK: - CombineCompatible
 
-extension CombineCompatible where Self: UIControl {
-    public func publisher(for events: UIControl.Event) -> nil {
-//        return UIControl.Publisher(output: self, events: events)
-      return nil
-    }
-}
+//extension CombineCompatible where Self: UIControl {
+//    public func publisher(for events: UIControl.Event) -> nil {
+////        return UIControl.Publisher(output: self, events: events)
+//      return nil
+//    }
+//}

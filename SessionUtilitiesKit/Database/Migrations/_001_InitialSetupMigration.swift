@@ -14,13 +14,13 @@ enum _001_InitialSetupMigration: Migration {
     ]
     
     static func migrate(_ db: Database) throws {
-        try db.create(table: Identity.self) { t in
-            t.column(.variant, .text)
-                .notNull()
-                .unique()
-                .primaryKey()
-            t.column(.data, .blob).notNull()
-        }
+//        try db.create(table: Identity.self) { t in
+//            t.column(.variant, .text)
+//                .notNull()
+//                .unique()
+//                .primaryKey()
+//            t.column(.data, .blob).notNull()
+//        }
         
         try db.create(table: Job.self) { t in
             t.column(.id, .integer)
