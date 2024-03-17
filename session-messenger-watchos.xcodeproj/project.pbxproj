@@ -12,13 +12,6 @@
 		8C2CEE9C912E879B289D5AF8 /* Pods_GlobalDependencies_session_ui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFE4C80E7AD7E3B54ED80B2 /* Pods_GlobalDependencies_session_ui.framework */; };
 		A71DAE942BA1BEE100BC763A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71DAE862BA1BEE100BC763A /* Assets.xcassets */; };
 		A71DAE952BA1BEE100BC763A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71DAE882BA1BEE100BC763A /* Preview Assets.xcassets */; };
-		A71DC0192BA1BFD400BC763A /* drone-upload-exists.sh in Resources */ = {isa = PBXBuildFile; fileRef = A71DB9182BA1BFD000BC763A /* drone-upload-exists.sh */; };
-		A71DC01A2BA1BFD400BC763A /* ProtoWrappers.py in Resources */ = {isa = PBXBuildFile; fileRef = A71DB9192BA1BFD000BC763A /* ProtoWrappers.py */; };
-		A71DC01D2BA1BFD400BC763A /* drone-static-upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = A71DB91C2BA1BFD000BC763A /* drone-static-upload.sh */; };
-		A71DC01E2BA1BFD400BC763A /* build_libSession_util.sh in Resources */ = {isa = PBXBuildFile; fileRef = A71DB91D2BA1BFD000BC763A /* build_libSession_util.sh */; };
-		A71DC0282BA1C15B00BC763A /* SessionSnodeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC0272BA1C15B00BC763A /* SessionSnodeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A71DC0342BA1C17200BC763A /* SignalUtilitiesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC0332BA1C17200BC763A /* SignalUtilitiesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A71DC0402BA1C17B00BC763A /* SessionMessagingKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC03F2BA1C17B00BC763A /* SessionMessagingKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A71DC0562BA1C2B800BC763A /* SessionSnodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC0252BA1C15B00BC763A /* SessionSnodeKit.framework */; };
 		A71DC05B2BA1C2C000BC763A /* SessionUtilitiesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC04F2BA1C28B00BC763A /* SessionUtilitiesKit.framework */; };
 		A71DC06A2BA1C30800BC763A /* libSessionUtil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC0632BA1C2F700BC763A /* libSessionUtil.a */; };
@@ -123,7 +116,9 @@
 		A71DC2122BA2206900BC763A /* JobDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0AD2BA1E61500BC763A /* JobDependencies.swift */; };
 		A71DC2132BA220B300BC763A /* ColumnExpressible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0A52BA1E61500BC763A /* ColumnExpressible.swift */; };
 		A71DC2142BA221C200BC763A /* OWSBackgroundTask.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC0D62BA1E61600BC763A /* OWSBackgroundTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A74B2F212BA1BAF70048F0E2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A74B2F202BA1BAF70048F0E2 /* Podfile */; };
+		A7A2F2B62BA6FFC1006C4F6A /* SignalUtilitiesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DB8D22BA1BFD000BC763A /* SignalUtilitiesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7A2F2B72BA7001A006C4F6A /* SessionMessagingKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DB6D02BA1BFCD00BC763A /* SessionMessagingKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7A2F2B82BA7002D006C4F6A /* SessionSnodeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DAEBB2BA1BFC300BC763A /* SessionSnodeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7A9AB8F2BA35F650067B9A3 /* OWSBackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0E12BA1E61600BC763A /* OWSBackgroundTask.m */; };
 		A7A9AB902BA360350067B9A3 /* OWSMath.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC0EB2BA1E61600BC763A /* OWSMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7A9AB912BA360400067B9A3 /* NSUserDefaults+OWS.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC0F82BA1E61600BC763A /* NSUserDefaults+OWS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -138,6 +133,7 @@
 		A7A9AB9A2BA36AED0067B9A3 /* DatabaseMigrator+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0B62BA1E61500BC763A /* DatabaseMigrator+Utilities.swift */; };
 		A7A9AB9B2BA36C760067B9A3 /* MIMETypeUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A71DC11B2BA1E61600BC763A /* MIMETypeUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7A9AB9C2BA3714A0067B9A3 /* QueryInterfaceRequest+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71DC0B82BA1E61500BC763A /* QueryInterfaceRequest+Utilities.swift */; };
+		A7B5DE112BA7760500366448 /* libSessionUtil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A71DC0632BA1C2F700BC763A /* libSessionUtil.a */; };
 		A7BA4B3A2BA6185100424230 /* SigninScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BA4B392BA6185100424230 /* SigninScreenModel.swift */; };
 		A7BA4B3C2BA618CA00424230 /* CheckLoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BA4B3B2BA618CA00424230 /* CheckLoginFlow.swift */; };
 		A7BA4B3F2BA61C5900424230 /* LoginMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BA4B3E2BA61C5900424230 /* LoginMenu.swift */; };
@@ -522,27 +518,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A71DC0582BA1C2B800BC763A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A71202782BA0CDDC0059213C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A71DC0242BA1C15B00BC763A;
-			remoteInfo = SessionSnodeKit;
-		};
-		A71DC05D2BA1C2C000BC763A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A71202782BA0CDDC0059213C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A71DC04E2BA1C28B00BC763A;
-			remoteInfo = SessionUtilitiesKit;
-		};
-		A71DC06B2BA1C30800BC763A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A71202782BA0CDDC0059213C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A71DC0622BA1C2F700BC763A;
-			remoteInfo = SessionUtil;
-		};
 		A71DC08D2BA1E4AE00BC763A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A71202782BA0CDDC0059213C /* Project object */;
@@ -564,33 +539,12 @@
 			remoteGlobalIDString = A71DC03C2BA1C17B00BC763A;
 			remoteInfo = SessionMessagingKit;
 		};
-		A7BCF3952BA4719300CB5766 /* PBXContainerItemProxy */ = {
+		A7B5DE122BA7760500366448 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A71202782BA0CDDC0059213C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A71DC04E2BA1C28B00BC763A;
-			remoteInfo = SessionUtilitiesKit;
-		};
-		A7BCF39A2BA471AB00CB5766 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A71202782BA0CDDC0059213C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A71DC03C2BA1C17B00BC763A;
-			remoteInfo = SessionMessagingKit;
-		};
-		A7BCF39F2BA471B300CB5766 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A71202782BA0CDDC0059213C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A71DC0242BA1C15B00BC763A;
-			remoteInfo = SessionSnodeKit;
-		};
-		A7BCF3A32BA471BB00CB5766 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A71202782BA0CDDC0059213C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A71DC04E2BA1C28B00BC763A;
-			remoteInfo = SessionUtilitiesKit;
+			remoteGlobalIDString = A71DC0622BA1C2F700BC763A;
+			remoteInfo = SessionUtil;
 		};
 		A7BCF3A72BA471FC00CB5766 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -999,11 +953,8 @@
 		A71DB91D2BA1BFD000BC763A /* build_libSession_util.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build_libSession_util.sh; sourceTree = "<group>"; };
 		A71DB91E2BA1BFD000BC763A /* EmojiGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiGenerator.swift; sourceTree = "<group>"; };
 		A71DC0252BA1C15B00BC763A /* SessionSnodeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SessionSnodeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A71DC0272BA1C15B00BC763A /* SessionSnodeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionSnodeKit.h; sourceTree = "<group>"; };
 		A71DC0312BA1C17200BC763A /* SignalUtilitiesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SignalUtilitiesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A71DC0332BA1C17200BC763A /* SignalUtilitiesKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignalUtilitiesKit.h; sourceTree = "<group>"; };
 		A71DC03D2BA1C17B00BC763A /* SessionMessagingKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SessionMessagingKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A71DC03F2BA1C17B00BC763A /* SessionMessagingKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionMessagingKit.h; sourceTree = "<group>"; };
 		A71DC04F2BA1C28B00BC763A /* SessionUtilitiesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SessionUtilitiesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71DC0632BA1C2F700BC763A /* libSessionUtil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSessionUtil.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71DC0652BA1C2F700BC763A /* SessionUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionUtil.swift; sourceTree = "<group>"; };
@@ -1176,6 +1127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7BCF3BC2BA5A7AA00CB5766 /* OpenSSL.xcframework in Frameworks */,
+				A7B5DE112BA7760500366448 /* libSessionUtil.a in Frameworks */,
 				A7BCF3B02BA4727200CB5766 /* SignalUtilitiesKit.framework in Frameworks */,
 				A7BCF3AE2BA4722500CB5766 /* SessionSnodeKit.framework in Frameworks */,
 				A7BCF3AC2BA4720E00CB5766 /* SessionUtilitiesKit.framework in Frameworks */,
@@ -1239,13 +1191,10 @@
 				A71DB9172BA1BFD000BC763A /* Scripts */,
 				A71DB6622BA1BFCD00BC763A /* SessionMessagingKit */,
 				A71DAE9D2BA1BFC300BC763A /* SessionSnodeKit */,
+				A71DC0502BA1C28B00BC763A /* SessionUtilitiesKit */,
 				A71DB8CA2BA1BFD000BC763A /* SignalUtilitiesKit */,
 				A71DAE842BA1BEE100BC763A /* session-ui */,
 				A74B2F202BA1BAF70048F0E2 /* Podfile */,
-				A71DC0262BA1C15B00BC763A /* SessionSnodeKit */,
-				A71DC0322BA1C17200BC763A /* SignalUtilitiesKit */,
-				A71DC03E2BA1C17B00BC763A /* SessionMessagingKit */,
-				A71DC0502BA1C28B00BC763A /* SessionUtilitiesKit */,
 				A71DC0642BA1C2F700BC763A /* SessionUtil */,
 				A712027F2BA0CDDC0059213C /* Products */,
 				DC7A66542122082031727462 /* Pods */,
@@ -2184,30 +2133,6 @@
 			path = Scripts;
 			sourceTree = "<group>";
 		};
-		A71DC0262BA1C15B00BC763A /* SessionSnodeKit */ = {
-			isa = PBXGroup;
-			children = (
-				A71DC0272BA1C15B00BC763A /* SessionSnodeKit.h */,
-			);
-			path = SessionSnodeKit;
-			sourceTree = "<group>";
-		};
-		A71DC0322BA1C17200BC763A /* SignalUtilitiesKit */ = {
-			isa = PBXGroup;
-			children = (
-				A71DC0332BA1C17200BC763A /* SignalUtilitiesKit.h */,
-			);
-			path = SignalUtilitiesKit;
-			sourceTree = "<group>";
-		};
-		A71DC03E2BA1C17B00BC763A /* SessionMessagingKit */ = {
-			isa = PBXGroup;
-			children = (
-				A71DC03F2BA1C17B00BC763A /* SessionMessagingKit.h */,
-			);
-			path = SessionMessagingKit;
-			sourceTree = "<group>";
-		};
 		A71DC0502BA1C28B00BC763A /* SessionUtilitiesKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -2571,7 +2496,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A71DC0282BA1C15B00BC763A /* SessionSnodeKit.h in Headers */,
+				A7A2F2B82BA7002D006C4F6A /* SessionSnodeKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2580,7 +2505,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7BA4D0D2BA6F0EE00424230 /* OWSViewController.h in Headers */,
-				A71DC0342BA1C17200BC763A /* SignalUtilitiesKit.h in Headers */,
+				A7A2F2B62BA6FFC1006C4F6A /* SignalUtilitiesKit.h in Headers */,
 				A7BA4D0E2BA6F0F500424230 /* AppVersion.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2589,7 +2514,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A71DC0402BA1C17B00BC763A /* SessionMessagingKit.h in Headers */,
+				A7A2F2B72BA7001A006C4F6A /* SessionMessagingKit.h in Headers */,
 				A7BA4D0F2BA6F10200424230 /* OWSWindowManager.h in Headers */,
 				A7BA4D102BA6F10C00424230 /* OWSAudioPlayer.h in Headers */,
 			);
@@ -2601,9 +2526,9 @@
 			files = (
 				A71DC20D2BA2125500BC763A /* OWSFileSystem.h in Headers */,
 				A7A9AB9B2BA36C760067B9A3 /* MIMETypeUtil.h in Headers */,
+				A7A9AB902BA360350067B9A3 /* OWSMath.h in Headers */,
 				A71DC20A2BA2013100BC763A /* SessionUtilitiesKit.h in Headers */,
 				A7A9AB912BA360400067B9A3 /* NSUserDefaults+OWS.h in Headers */,
-				A7A9AB902BA360350067B9A3 /* OWSMath.h in Headers */,
 				A71DC2142BA221C200BC763A /* OWSBackgroundTask.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2630,6 +2555,7 @@
 				A7A9ABA82BA45D030067B9A3 /* PBXTargetDependency */,
 				A7BCF3A82BA471FC00CB5766 /* PBXTargetDependency */,
 				A7BCF3B32BA4727200CB5766 /* PBXTargetDependency */,
+				A7B5DE132BA7760500366448 /* PBXTargetDependency */,
 			);
 			name = "session-ui";
 			packageProductDependencies = (
@@ -2651,7 +2577,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				A7BCF3962BA4719300CB5766 /* PBXTargetDependency */,
 			);
 			name = SessionSnodeKit;
 			productName = SessionSnodeKit;
@@ -2671,9 +2596,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				A7BCF39B2BA471AB00CB5766 /* PBXTargetDependency */,
-				A7BCF3A02BA471B300CB5766 /* PBXTargetDependency */,
-				A7BCF3A42BA471BB00CB5766 /* PBXTargetDependency */,
 			);
 			name = SignalUtilitiesKit;
 			productName = SignalUtilitiesKit;
@@ -2693,9 +2615,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				A71DC0592BA1C2B800BC763A /* PBXTargetDependency */,
-				A71DC05E2BA1C2C000BC763A /* PBXTargetDependency */,
-				A71DC06C2BA1C30800BC763A /* PBXTargetDependency */,
 			);
 			name = SessionMessagingKit;
 			productName = SessionMessagingKit;
@@ -2841,13 +2760,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A71DC01A2BA1BFD400BC763A /* ProtoWrappers.py in Resources */,
-				A74B2F212BA1BAF70048F0E2 /* Podfile in Resources */,
-				A71DC01D2BA1BFD400BC763A /* drone-static-upload.sh in Resources */,
-				A71DC01E2BA1BFD400BC763A /* build_libSession_util.sh in Resources */,
 				A71DAE952BA1BEE100BC763A /* Preview Assets.xcassets in Resources */,
 				A71DAE942BA1BEE100BC763A /* Assets.xcassets in Resources */,
-				A71DC0192BA1BFD400BC763A /* drone-upload-exists.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2982,7 +2896,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "TARGET_BUILD_DIR=\"/Users/hloth/Documents/session-messenger-watchos\" \"${SRCROOT}/Scripts/build_libSession_util.sh\"\n";
+			shellScript = "#TARGET_BUILD_DIR=\"/Users/hloth/Documents/session-messenger-watchos\" \"${SRCROOT}/Scripts/build_libSession_util.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C4F49793C959338EEFC1E55A /* [CP] Check Pods Manifest.lock */ = {
@@ -3540,21 +3454,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A71DC0592BA1C2B800BC763A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A71DC0242BA1C15B00BC763A /* SessionSnodeKit */;
-			targetProxy = A71DC0582BA1C2B800BC763A /* PBXContainerItemProxy */;
-		};
-		A71DC05E2BA1C2C000BC763A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A71DC04E2BA1C28B00BC763A /* SessionUtilitiesKit */;
-			targetProxy = A71DC05D2BA1C2C000BC763A /* PBXContainerItemProxy */;
-		};
-		A71DC06C2BA1C30800BC763A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A71DC0622BA1C2F700BC763A /* SessionUtil */;
-			targetProxy = A71DC06B2BA1C30800BC763A /* PBXContainerItemProxy */;
-		};
 		A71DC08E2BA1E4AE00BC763A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A71DC04E2BA1C28B00BC763A /* SessionUtilitiesKit */;
@@ -3570,25 +3469,10 @@
 			target = A71DC03C2BA1C17B00BC763A /* SessionMessagingKit */;
 			targetProxy = A7A9ABA72BA45D030067B9A3 /* PBXContainerItemProxy */;
 		};
-		A7BCF3962BA4719300CB5766 /* PBXTargetDependency */ = {
+		A7B5DE132BA7760500366448 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A71DC04E2BA1C28B00BC763A /* SessionUtilitiesKit */;
-			targetProxy = A7BCF3952BA4719300CB5766 /* PBXContainerItemProxy */;
-		};
-		A7BCF39B2BA471AB00CB5766 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A71DC03C2BA1C17B00BC763A /* SessionMessagingKit */;
-			targetProxy = A7BCF39A2BA471AB00CB5766 /* PBXContainerItemProxy */;
-		};
-		A7BCF3A02BA471B300CB5766 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A71DC0242BA1C15B00BC763A /* SessionSnodeKit */;
-			targetProxy = A7BCF39F2BA471B300CB5766 /* PBXContainerItemProxy */;
-		};
-		A7BCF3A42BA471BB00CB5766 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A71DC04E2BA1C28B00BC763A /* SessionUtilitiesKit */;
-			targetProxy = A7BCF3A32BA471BB00CB5766 /* PBXContainerItemProxy */;
+			target = A71DC0622BA1C2F700BC763A /* SessionUtil */;
+			targetProxy = A7B5DE122BA7760500366448 /* PBXContainerItemProxy */;
 		};
 		A7BCF3A82BA471FC00CB5766 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3952,6 +3836,27 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack/CocoaLumberjack.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift/CryptoSwift.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Curve25519Kit/Curve25519Kit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DSF_QRCode/QRCode.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DifferenceKit/DifferenceKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GRDB.swift/GRDB.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reachability/Reachability.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SAMKeychain/SAMKeychain.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SQLCipher/SQLCipher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SignalCoreKit/SignalCoreKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sodium/Sodium.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftImageReadWrite/SwiftImageReadWrite.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftProtobuf/SwiftProtobuf.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftQRCodeGenerator/QRCodeGenerator.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YapDatabase/YapDatabase.framework/Headers\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Sodium/Headers\"",
+					"$(PODS_ROOT)/SQLCipher",
+					"${SRCROOT}/LibSession-Util/include/**",
+				);
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3996,6 +3901,27 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack/CocoaLumberjack.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift/CryptoSwift.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Curve25519Kit/Curve25519Kit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DSF_QRCode/QRCode.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DifferenceKit/DifferenceKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GRDB.swift/GRDB.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reachability/Reachability.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SAMKeychain/SAMKeychain.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SQLCipher/SQLCipher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SignalCoreKit/SignalCoreKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sodium/Sodium.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftImageReadWrite/SwiftImageReadWrite.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftProtobuf/SwiftProtobuf.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftQRCodeGenerator/QRCodeGenerator.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YapDatabase/YapDatabase.framework/Headers\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Sodium/Headers\"",
+					"$(PODS_ROOT)/SQLCipher",
+					"${SRCROOT}/LibSession-Util/include/**",
+				);
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -4019,6 +3945,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "$(inherited) \"${PODS_XCFRAMEWORKS_BUILD_DIR}/Clibsodium\" \"$(TARGET_BUILD_DIR)/libSessionUtil\"";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
@@ -4124,6 +4051,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5QP6XSDPFK;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MODULEMAP_FILE = "$(SRCROOT)/libSessionUtil/Headers/module.modulemap";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -4139,6 +4069,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5QP6XSDPFK;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MODULEMAP_FILE = "$(SRCROOT)/libSessionUtil/Headers/module.modulemap";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -60,8 +60,8 @@ fi
 
 # Check if we have the `LibSession-Util` submodule checked out and if not (depending on the 'SHOULD_AUTO_INIT_SUBMODULES' argument) perform the checkout
 if [ ! -d "${SRCROOT}/LibSession-Util" ] || [ ! -d "${SRCROOT}/LibSession-Util/src" ] || [ ! "$(ls -A "${SRCROOT}/LibSession-Util")" ]; then
-  echo_message "error: Need to fetch LibSession-Util submodule (git submodule update --init --recursive)."
-  exit 0
+  echo_message "warn: Need to fetch LibSession-Util submodule (git submodule update --init --recursive)."
+#  exit 0
 else
   are_submodules_valid() {
     local PARENT_PATH=$1

@@ -2,12 +2,12 @@
 
 import Foundation
 import GRDB
-import WebRTC
+//import WebRTC
 
 public protocol CurrentCallProtocol {
     var uuid: String { get }
     var callId: UUID { get }
-    var webRTCSession: WebRTCSession { get }
+    var webRTCSession: /*WebRTCSession*/Any { get }
     var hasStartedConnecting: Bool { get set }
     var hasEnded: Bool { get set }
     

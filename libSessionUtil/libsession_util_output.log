@@ -1,0 +1,87 @@
++ mkdir -p /Users/hloth/Documents/session-messenger-watchos
++ which cmake
++ '[' '!' -d /LibSession-Util ']'
++ echo_message 'warn: Need to fetch LibSession-Util submodule (git submodule update --init --recursive).'
++ exec
++ echo 'warn: Need to fetch LibSession-Util submodule (git submodule update --init --recursive).'
++ exec
++ echo 'info: Checking for changes to source'
+++ find /LibSession-Util/src -type f -exec md5 '{}' +
+++ awk '{print $NF}'
+++ sort
+++ md5
+++ awk '{print $NF}'
+find: /LibSession-Util/src: No such file or directory
++ NEW_SOURCE_HASH=d41d8cd98f00b204e9800998ecf8427e
+++ find /LibSession-Util/include -type f -exec md5 '{}' +
+++ awk '{print $NF}'
+++ sort
+++ awk '{print $NF}'
+++ md5
+find: /LibSession-Util/include: No such file or directory
++ NEW_HEADER_HASH=d41d8cd98f00b204e9800998ecf8427e
++ '[' -f /Users/hloth/Documents/session-messenger-watchos/libSessionUtil/libsession_util_source_hash.log ']'
++ '[' -f /Users/hloth/Documents/session-messenger-watchos/libSessionUtil/libsession_util_header_hash.log ']'
++ '[' -f /Users/hloth/Documents/session-messenger-watchos/libSessionUtil/libsession_util_archs.log ']'
++ '[' d41d8cd98f00b204e9800998ecf8427e == '' ']'
++ echo_message 'info: Build is not up-to-date - creating new build'
++ exec
++ echo 'info: Build is not up-to-date - creating new build'
++ exec
++ VALID_SIM_ARCHS=(arm64 x86_64)
++ VALID_DEVICE_ARCHS=(arm64)
++ VALID_SIM_ARCH_PLATFORMS=(SIMULATORARM64 SIMULATOR64)
++ VALID_DEVICE_ARCH_PLATFORMS=(OS64)
++ OUTPUT_DIR=/Users/hloth/Documents/session-messenger-watchos
++ IPHONEOS_DEPLOYMENT_TARGET=
++ ENABLE_BITCODE=
++ TARGET_ARCHS=()
++ TARGET_PLATFORMS=()
++ TARGET_SIM_ARCHS=()
++ TARGET_DEVICE_ARCHS=()
++ '[' -z ']'
++ for i in '"${!VALID_SIM_ARCHS[@]}"'
++ ARCH=arm64
++ ARCH_PLATFORM=SIMULATORARM64
++ [[    =~  arm64  ]]
++ for i in '"${!VALID_SIM_ARCHS[@]}"'
++ ARCH=x86_64
++ ARCH_PLATFORM=SIMULATOR64
++ [[    =~  x86_64  ]]
++ '[' -z ']'
++ for i in '"${!VALID_DEVICE_ARCHS[@]}"'
++ ARCH=arm64
++ ARCH_PLATFORM=OS64
++ [[    =~  arm64  ]]
++ rm -rf /Users/hloth/Documents/session-messenger-watchos/libSessionUtil/libSessionUtil.a
++ rm -rf /Users/hloth/Documents/session-messenger-watchos/libSessionUtil/Headers
++ '[' 0 -eq 1 ']'
++ '[' 0 -gt 1 ']'
++ '[' 0 -eq 1 ']'
++ '[' 0 -gt 1 ']'
++ echo d41d8cd98f00b204e9800998ecf8427e
++ echo d41d8cd98f00b204e9800998ecf8427e
++ echo ''
++ echo_message 'info: Build complete'
++ exec
++ echo 'info: Build complete'
++ exec
++ echo_message 'info: Copy headers and prepare modulemap'
++ exec
++ echo 'info: Copy headers and prepare modulemap'
++ exec
++ mkdir -p /Users/hloth/Documents/session-messenger-watchos/libSessionUtil/Headers
++ cp -r /LibSession-Util/include/session /Users/hloth/Documents/session-messenger-watchos/libSessionUtil/Headers
+cp: /LibSession-Util/include/session: No such file or directory
++ modmap=/Users/hloth/Documents/session-messenger-watchos/libSessionUtil/Headers/module.modulemap
++ echo 'module SessionUtil {'
++ echo '  module capi {'
+++ cd include
+Scripts/build_libSession_util.sh: line 245: cd: include: No such file or directory
++ echo -e '    export *\n  }'
++ false
++ echo '}'
++ echo_message 'info: libSessionUtil Ready'
++ exec
++ echo 'info: libSessionUtil Ready'
++ exec

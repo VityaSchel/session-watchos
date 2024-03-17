@@ -2,7 +2,7 @@
 
 import Foundation
 import GRDB
-import WebRTC
+//import WebRTC
 import SessionUtilitiesKit
 import SessionSnodeKit
 
@@ -23,19 +23,20 @@ extension MessageReceiver {
             case .provisionalAnswer: break // TODO: Implement
                 
             case let .iceCandidates(sdpMLineIndexes, sdpMids):
-                guard let currentWebRTCSession = WebRTCSession.current, currentWebRTCSession.uuid == message.uuid else {
-                    return
-                }
-                var candidates: [RTCIceCandidate] = []
-                let sdps = message.sdps
-                for i in 0..<sdps.count {
-                    let sdp = sdps[i]
-                    let sdpMLineIndex = sdpMLineIndexes[i]
-                    let sdpMid = sdpMids[i]
-                    let candidate = RTCIceCandidate(sdp: sdp, sdpMLineIndex: Int32(sdpMLineIndex), sdpMid: sdpMid)
-                    candidates.append(candidate)
-                }
-                currentWebRTCSession.handleICECandidates(candidates)
+//                guard let currentWebRTCSession = WebRTCSession.current, currentWebRTCSession.uuid == message.uuid else {
+//                    return
+//                }
+//                var candidates: [RTCIceCandidate] = []
+//                let sdps = message.sdps
+//                for i in 0..<sdps.count {
+//                    let sdp = sdps[i]
+//                    let sdpMLineIndex = sdpMLineIndexes[i]
+//                    let sdpMid = sdpMids[i]
+//                    let candidate = RTCIceCandidate(sdp: sdp, sdpMLineIndex: Int32(sdpMLineIndex), sdpMid: sdpMid)
+//                    candidates.append(candidate)
+//                }
+//                currentWebRTCSession.handleICECandidates(candidates)
+                  print("WebRTC calls not supported")
                 
             case .endCall: MessageReceiver.handleEndCallMessage(db, message: message)
         }
@@ -149,48 +150,50 @@ extension MessageReceiver {
     private static func handleAnswerCallMessage(_ db: Database, message: CallMessage) {
         SNLog("[Calls] Received answer message.")
         
-        guard
-            let currentWebRTCSession: WebRTCSession = WebRTCSession.current,
-            currentWebRTCSession.uuid == message.uuid,
-            let callManager: CallManagerProtocol = Environment.shared?.callManager.wrappedValue,
-            var currentCall: CurrentCallProtocol = callManager.currentCall,
-            currentCall.uuid == message.uuid,
-            let sender: String = message.sender
-        else { return }
-        
-        guard sender != getUserHexEncodedPublicKey(db) else {
-            guard !currentCall.hasStartedConnecting else { return }
-            
-            callManager.dismissAllCallUI()
-            callManager.reportCurrentCallEnded(reason: .answeredElsewhere)
-            return
-        }
-        guard let sdp: String = message.sdps.first else { return }
-        
-        let sdpDescription: RTCSessionDescription = RTCSessionDescription(type: .answer, sdp: sdp)
-        currentCall.hasStartedConnecting = true
-        currentCall.didReceiveRemoteSDP(sdp: sdpDescription)
-        callManager.handleAnswerMessage(message)
+//        guard
+//            let currentWebRTCSession: WebRTCSession = WebRTCSession.current,
+//            currentWebRTCSession.uuid == message.uuid,
+//            let callManager: CallManagerProtocol = Environment.shared?.callManager.wrappedValue,
+//            var currentCall: CurrentCallProtocol = callManager.currentCall,
+//            currentCall.uuid == message.uuid,
+//            let sender: String = message.sender
+//        else { return }
+//        
+//        guard sender != getUserHexEncodedPublicKey(db) else {
+//            guard !currentCall.hasStartedConnecting else { return }
+//            
+//            callManager.dismissAllCallUI()
+//            callManager.reportCurrentCallEnded(reason: .answeredElsewhere)
+//            return
+//        }
+//        guard let sdp: String = message.sdps.first else { return }
+//        
+//        let sdpDescription: RTCSessionDescription = RTCSessionDescription(type: .answer, sdp: sdp)
+//        currentCall.hasStartedConnecting = true
+//        currentCall.didReceiveRemoteSDP(sdp: sdpDescription)
+//        callManager.handleAnswerMessage(message)
+      print("WebRTC calls not supported")
     }
     
     private static func handleEndCallMessage(_ db: Database, message: CallMessage) {
         SNLog("[Calls] Received end call message.")
         
-        guard
-            WebRTCSession.current?.uuid == message.uuid,
-            let callManager: CallManagerProtocol = Environment.shared?.callManager.wrappedValue,
-            let currentCall: CurrentCallProtocol = callManager.currentCall,
-            currentCall.uuid == message.uuid,
-            let sender: String = message.sender
-        else { return }
-        
-        callManager.dismissAllCallUI()
-        callManager.reportCurrentCallEnded(
-            reason: (sender == getUserHexEncodedPublicKey(db) ?
-                .declinedElsewhere :
-                .remoteEnded
-            )
-        )
+//        guard
+//            WebRTCSession.current?.uuid == message.uuid,
+//            let callManager: CallManagerProtocol = Environment.shared?.callManager.wrappedValue,
+//            let currentCall: CurrentCallProtocol = callManager.currentCall,
+//            currentCall.uuid == message.uuid,
+//            let sender: String = message.sender
+//        else { return }
+//        
+//        callManager.dismissAllCallUI()
+//        callManager.reportCurrentCallEnded(
+//            reason: (sender == getUserHexEncodedPublicKey(db) ?
+//                .declinedElsewhere :
+//                .remoteEnded
+//            )
+//        )
+      print("WebRTC calls not supported")
     }
     
     // MARK: - Convenience

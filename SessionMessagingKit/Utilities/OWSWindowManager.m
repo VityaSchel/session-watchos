@@ -3,12 +3,12 @@
 //
 
 #import "OWSWindowManager.h"
-//#import <SessionMessagingKit/SessionMessagingKit-Swift.h>
-#import <SessionUtilitiesKit/SessionUtilitiesKit.h>
+#import <SessionMessagingKit/SessionMessagingKit-Swift.h>
+//#import <SessionUtilitiesKit/SessionUtilitiesKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
+//NS_ASSUME_NONNULL_BEGIN
 
-NSString *const IsScreenBlockActiveDidChangeNotification = @"IsScreenBlockActiveDidChangeNotification";
+//NSString *const IsScreenBlockActiveDidChangeNotification = @"IsScreenBlockActiveDidChangeNotification";
 
 // Behind everything, especially the root window.
 //const UIWindowLevel UIWindowLevel_Background = -1.f;
@@ -20,7 +20,7 @@ NSString *const IsScreenBlockActiveDidChangeNotification = @"IsScreenBlockActive
 //    return UIWindowLevelStatusBar + 2.f;
 //}
 
-#pragma mark -
+//#pragma mark -
 
 //@implementation OWSWindowRootViewController
 
@@ -292,4 +292,4 @@ NSString *const IsScreenBlockActiveDidChangeNotification = @"IsScreenBlockActive
 //
 //@end
 //
-NS_ASSUME_NONNULL_END
+//NS_ASSUME_NONNULL_END
