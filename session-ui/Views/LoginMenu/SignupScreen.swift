@@ -1,16 +1,5 @@
-//
-//  SignupScreen.swift
-//  session-messenger Watch App
-//
-//  Created by Виктор Щелочков on 12.03.2024.
-//
-
 import Foundation
 import SwiftUI
-import SessionUtilitiesKit
-import SessionMessagingKit
-import SignalUtilitiesKit
-import SessionSnodeKit
 
 struct SignupScreen: View {
   @State private var displayName = ""
@@ -23,32 +12,32 @@ struct SignupScreen: View {
         
         Button(action: {
           do {
-            let seed = try Randomness.generateRandomBytes(numberBytes: 16)
-            let (ed25519KeyPair, x25519KeyPair) = try Identity.generate(from: seed)
-            print("Session ID \(x25519KeyPair.hexEncodedPublicKey)")
-            let profileName = displayName.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-            guard !ProfileManager.isToLong(profileName: displayName) else {
-              showAlert = true
-              alertMessage = "Profile name is too long"
-              return
-            }
-            ProfileManager.updateLocal(
-                queue: .global(qos: .default),
-                profileName: displayName
-            )
+//            let seed = try Randomness.generateRandomBytes(numberBytes: 16)
+//            let (ed25519KeyPair, x25519KeyPair) = try Identity.generate(from: seed)
+//            print("Session ID \(x25519KeyPair.hexEncodedPublicKey)")
+//            let profileName = displayName.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+//            guard !ProfileManager.isToLong(profileName: displayName) else {
+//              showAlert = true
+//              alertMessage = "Profile name is too long"
+//              return
+//            }
+//            ProfileManager.updateLocal(
+//                queue: .global(qos: .default),
+//                profileName: displayName
+//            )
             
             print("complete registration")
             
-            Storage.shared.write { db in
-                try Profile
-                    .filter(id: getUserHexEncodedPublicKey(db))
-                    .updateAllAndConfig(
-                        db,
-                        Profile.Columns.lastNameUpdate.set(to: Date().timeIntervalSince1970)
-                    )
-            }
-            Identity.didRegister()
-            GetSnodePoolJob.run()
+//            Storage.shared.write { db in
+//                try Profile
+//                    .filter(id: getUserHexEncodedPublicKey(db))
+//                    .updateAllAndConfig(
+//                        db,
+//                        Profile.Columns.lastNameUpdate.set(to: Date().timeIntervalSince1970)
+//                    )
+//            }
+//            Identity.didRegister()
+//            GetSnodePoolJob.run()
           } catch {
             showAlert = true
             alertMessage = "Couldn't generate key pair"

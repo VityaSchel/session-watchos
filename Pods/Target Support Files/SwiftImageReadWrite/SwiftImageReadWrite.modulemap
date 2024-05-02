@@ -1,0 +1,6 @@
+framework module SwiftImageReadWrite {
+  umbrella header "SwiftImageReadWrite-umbrella.h"
+
+  export *
+  module * { export * }
+}

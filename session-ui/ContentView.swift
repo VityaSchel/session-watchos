@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  session-messenger Watch App
-//
-//  Created by Виктор Щелочков on 12.03.2024.
-//
-
 import SwiftUI
 
 struct ContentView: View {

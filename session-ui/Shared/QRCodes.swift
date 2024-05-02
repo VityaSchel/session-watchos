@@ -1,10 +1,3 @@
-//
-//  QRCodes.swift
-//  session-messenger Watch App
-//
-//  Created by Виктор Щелочков on 13.03.2024.
-//
-
 import Foundation
 //import EFQRCode
 import QRCode

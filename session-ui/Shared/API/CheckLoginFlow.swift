@@ -1,10 +1,3 @@
-//
-//  CheckLoginFlow.swift
-//  session-ui
-//
-//  Created by Виктор Щелочков on 16.03.2024.
-//
-
 import Foundation
 
 struct APICheckLoginFlowSuccessResponse: Decodable {
