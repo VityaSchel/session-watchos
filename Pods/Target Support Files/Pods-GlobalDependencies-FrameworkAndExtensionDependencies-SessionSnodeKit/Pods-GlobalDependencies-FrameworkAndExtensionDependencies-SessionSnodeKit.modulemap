@@ -1,6 +1,0 @@
-framework module Pods_GlobalDependencies_FrameworkAndExtensionDependencies_SessionSnodeKit {
-  umbrella header "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-SessionSnodeKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

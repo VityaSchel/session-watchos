@@ -1,6 +1,0 @@
-framework module Pods_GlobalDependencies_FrameworkAndExtensionDependencies_ExtendedDependencies_SessionUtilitiesKit {
-  umbrella header "Pods-GlobalDependencies-FrameworkAndExtensionDependencies-ExtendedDependencies-SessionUtilitiesKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

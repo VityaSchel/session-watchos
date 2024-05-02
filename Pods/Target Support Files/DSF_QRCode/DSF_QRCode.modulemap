@@ -1,6 +1,0 @@
-framework module QRCode {
-  umbrella header "DSF_QRCode-umbrella.h"
-
-  export *
-  module * { export * }
-}
