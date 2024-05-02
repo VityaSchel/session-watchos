@@ -2,10 +2,6 @@ import Foundation
 import SwiftUI
 
 extension Color {
-  static let background = Color("Background")
-  static let brand = Color("Brand")
-  static let receivedBubble = Color("receivedBubble")
-
   init(hex: String) {
     let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
     var int: UInt64 = 0

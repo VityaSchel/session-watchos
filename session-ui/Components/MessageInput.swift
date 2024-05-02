@@ -6,7 +6,6 @@ struct MessageInput: View {
   
   var body: some View {
     TextField("Type message...", text: $message, onCommit: {
-      print("Hooray \(message)")
       message = ""
     })
     .frame(maxWidth: .infinity)

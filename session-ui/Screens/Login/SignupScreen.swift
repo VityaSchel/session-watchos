@@ -8,7 +8,7 @@ struct SignupScreen: View {
   
     var body: some View {
       VStack(spacing: 10) {
-        TextField("Your profile name", text: $displayName)
+        TextField(NSLocalizedString("signUpDisplayName", comment: "Sign up profile name"), text: $displayName)
         
         Button(action: {
           do {
@@ -44,7 +44,7 @@ struct SignupScreen: View {
           }
         }) {
             HStack {
-              Text("Sign up")
+              Text(NSLocalizedString("signUp", comment: "Sign up button text"))
                 .fontWeight(.bold)
                 .foregroundColor(Color.background)
               Image(systemName: "arrow.right")
@@ -59,4 +59,13 @@ struct SignupScreen: View {
       }
       .padding(.horizontal, 5)
     }
+}
+
+struct SignupScreen_Previews: PreviewProvider {
+  static var previews: some View {
+    NavigationView {
+      SignupScreen()
+        .background(Color.grayBackground)
+    }
+  }
 }

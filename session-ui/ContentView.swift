@@ -6,16 +6,16 @@ struct ContentView: View {
   var body: some View {
     NavigationView {
       if loginMenuActive {
-        LoginMenu()
+        LoginScreen()
       } else {
-        HomePage()
+        HomeScreen()
       }
     }
-    .background(Color.background)
+    .background(Color.grayBackground)
     .ignoresSafeArea()
   }
 }
 
 #Preview {
-    ContentView()
+  ContentView()
 }

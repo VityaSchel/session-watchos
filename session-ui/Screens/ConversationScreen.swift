@@ -30,3 +30,12 @@ struct ConversationScreen: View {
   }
 }
 
+struct ConversationScreen_Previews: PreviewProvider {
+  static var previews: some View {
+    NavigationView {
+      ConversationScreen()
+    }
+    .frame(maxWidth: .infinity)
+    .background(Color.black)
+  }
+}

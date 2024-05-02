@@ -1,7 +1,7 @@
 import Foundation
 import SwiftUI
 
-struct LoginMenu: View {
+struct LoginScreen: View {
   var body: some View {
     VStack(alignment: .leading) {
       SessionLogo()
@@ -9,7 +9,7 @@ struct LoginMenu: View {
         .frame(width: 20, height: 20)
         .padding(.leading, 10)
       
-      Text("Welcome to Session")
+      Text(NSLocalizedString("welcome", comment: "Login screen"))
         .font(.subheadline)
         .fontWeight(.bold)
         .padding(.leading, 10)
@@ -19,15 +19,26 @@ struct LoginMenu: View {
       
       List {
         NavigationLink(destination: SigninScreen()) {
-          Text("Login with mnemonic")
-            .font(.system(size: 16))
+          Text(NSLocalizedString("signInButton", comment: "Login screen"))
+            .font(.system(size: 15))
         }
         NavigationLink(destination: SignupScreen()) {
-          Text("Create Session ID")
-            .font(.system(size: 16))
+          Text(NSLocalizedString("signUpButton", comment: "Login screen"))
+            .font(.system(size: 15))
         }
       }
       .padding(.horizontal, 5)
+    }
+    .padding(.top, 30)
+    .ignoresSafeArea()
+  }
+}
+
+struct LoginScreen_Previews: PreviewProvider {
+  static var previews: some View {
+    NavigationView {
+      LoginScreen()
+        .background(Color.grayBackground)
     }
   }
 }
