@@ -1,11 +1,25 @@
 import Foundation
 import SwiftUI
 
+enum NewConversationType: Identifiable {
+  case directMessages
+  case closedGroup
+  case joinCommunity
+  
+  var id: Int {
+    hashValue
+  }
+}
+
 struct NewConversationScreen: View {
+  @State private var newConversationType: NewConversationType?
+  
   var body: some View {
     VStack {
       List {
-        NavigationLink(destination: NewDirectMessagesConversationScreen()) {
+        Button(action: {
+          newConversationType = .directMessages
+        }) {
           HStack(spacing: 10) {
             Image(systemName: "message")
               .frame(width: 20)
@@ -38,6 +52,13 @@ struct NewConversationScreen: View {
       }
     }
     .navigationTitle(NSLocalizedString("newConversationTitle", comment: "Title of NewConversation screen"))
+    .sheet(item: $newConversationType) { type in
+      switch type {
+//      case .directMessages:
+      default:
+        NewDirectMessagesConversationScreen()
+      }
+    }
   }
 }
 

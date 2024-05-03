@@ -1,7 +1,17 @@
 import Foundation
 import SwiftUI
 
+enum ModalType: Identifiable {
+  case displayNameChange
+  
+  var id: Int {
+    hashValue
+  }
+}
+
 struct SettingsScreen: View {
+  @State private var modalType: ModalType?
+  
   var body: some View {
     VStack {
       List {
@@ -15,7 +25,7 @@ struct SettingsScreen: View {
           }
         }
         Button(action: {
-          
+          modalType = .displayNameChange
         }) {
           HStack {
             Text(NSLocalizedString("displayName", comment: "Settings button"))
@@ -30,7 +40,13 @@ struct SettingsScreen: View {
         }
       }
     }
-      .navigationTitle(NSLocalizedString("settingsTitle", comment: "Title of Settings screen"))
+    .navigationTitle(NSLocalizedString("settingsTitle", comment: "Title of Settings screen"))
+    .sheet(item: $modalType) { type in
+      switch type {
+      case .displayNameChange:
+        SettingsDisplayNameScreen()
+      }
+    }
   }
 }
 

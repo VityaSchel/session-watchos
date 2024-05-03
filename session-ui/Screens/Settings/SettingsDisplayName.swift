@@ -24,6 +24,7 @@ struct SettingsDisplayNameScreen: View {
       .tint(Color.brand)
       .buttonStyle(.borderedProminent)
     }
+    .navigationTitle(NSLocalizedString("displayName", comment: "Settings button"))
   }
 }
 
