@@ -11,6 +11,7 @@ target 'session-ui' do
   pod 'CryptoSwift', '~> 1.8.1'
   # FIXME: If https://github.com/jedisct1/swift-sodium/pull/249 gets resolved then revert this back
   pod 'Sodium', :git => 'https://github.com/oxen-io/session-ios-swift-sodium.git', branch: 'session-build'
+  pod 'SwiftUIIntrospect', '~> 1.0'
 end
 
 def set_minimum_deployment_target(installer)

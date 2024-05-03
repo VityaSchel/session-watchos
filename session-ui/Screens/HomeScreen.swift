@@ -1,10 +1,25 @@
 import Foundation
 import SwiftUI
+import WatchKit
 
 struct HomeScreen: View {
   var body: some View {
     VStack {
-      HStack() {
+      Spacer()
+        .frame(height: 60)
+      List {
+        NavigationLink(destination: ConversationScreen()) {
+          Text("Conversation 1")
+        }
+        .background(Color.interactable)
+        NavigationLink(destination: ConversationScreen()) {
+          Text("Conversation 2")
+        }
+        .background(Color.interactable)
+      }
+    }
+    .toolbar {
+      ToolbarItem(placement: .topBarLeading) {
         NavigationLink(destination: NewConversationScreen()) {
           Image(systemName: "plus")
             .frame(width: 30, height: 30)
@@ -13,8 +28,8 @@ struct HomeScreen: View {
         .background(Color.interactable)
         .foregroundColor(Color.brand)
         .cornerRadius(.infinity)
-        
-        Spacer()
+      }
+      ToolbarItem(placement: .topBarTrailing) {
         NavigationLink(destination: SettingsScreen()) {
           Image(systemName: "gear")
             .frame(width: 30, height: 30)
@@ -23,21 +38,6 @@ struct HomeScreen: View {
         .background(Color.interactable)
         .foregroundColor(Color.brand)
         .cornerRadius(.infinity)
-        
-      }
-      .frame(height: 30)
-      .padding(.top, 15)
-      .padding(.horizontal, 15)
-      .padding(.bottom, 10)
-      List {
-        NavigationLink(destination: ConversationScreen()) {
-          Text("Conversation 1")
-        }
-          .background(Color.interactable)
-        NavigationLink(destination: ConversationScreen()) {
-          Text("Conversation 2")
-        }
-          .background(Color.interactable)
       }
     }
     .ignoresSafeArea()
