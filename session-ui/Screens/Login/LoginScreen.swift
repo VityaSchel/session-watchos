@@ -3,26 +3,27 @@ import SwiftUI
 
 struct LoginScreen: View {
   var body: some View {
-    VStack(alignment: .leading) {
-      SessionLogo()
-        .fill(Color.brand)
-        .frame(width: 20, height: 20)
-        .padding(.leading, 10)
-      
-      Text(NSLocalizedString("welcome", comment: "Login screen"))
-        .font(.subheadline)
-        .fontWeight(.bold)
-        .padding(.leading, 10)
-        .padding(.top, 5)
-        .padding(.bottom, 10)
-        .foregroundColor(Color.brand)
-      
-      List {
-        NavigationLink(destination: SigninScreen()) {
+    ScrollView {
+      VStack(alignment: .leading) {
+        SessionLogo()
+          .fill(Color.brand)
+          .frame(width: 20, height: 20)
+          .padding(.leading, 10)
+        
+        Text(NSLocalizedString("welcome", comment: "Login screen"))
+          .font(.subheadline)
+          .fontWeight(.bold)
+          .padding(.leading, 10)
+          .padding(.top, 5)
+          .padding(.bottom, 10)
+          .foregroundColor(Color.brand)
+        
+        
+        NavigationLink(value: AuthRoutes.SignIn) {
           Text(NSLocalizedString("signInButton", comment: "Login screen"))
             .font(.system(size: 15))
         }
-        NavigationLink(destination: SignupScreen()) {
+        NavigationLink(value: AuthRoutes.SignUp) {
           Text(NSLocalizedString("signUpButton", comment: "Login screen"))
             .font(.system(size: 15))
         }
@@ -36,9 +37,7 @@ struct LoginScreen: View {
 
 struct LoginScreen_Previews: PreviewProvider {
   static var previews: some View {
-    NavigationView {
-      LoginScreen()
-        .background(Color.grayBackground)
-    }
+    LoginScreen()
+      .background(Color.grayBackground)
   }
 }

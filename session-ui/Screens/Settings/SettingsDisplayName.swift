@@ -2,16 +2,15 @@ import Foundation
 import SwiftUI
 
 struct SettingsDisplayNameScreen: View {
-  @State private var recipient = ""
+  var onClose: () -> Void
+  @State private var displayName = ""
   
   var body: some View {
     VStack(spacing: 10) {
-      TextField(NSLocalizedString("displayName", comment: "Placeholder for recipient input"), text: $recipient, onCommit: {
-        recipient = ""
-      })
+      TextField(NSLocalizedString("displayName", comment: "Placeholder for recipient input"), text: $displayName)
       .frame(maxWidth: .infinity)
       Button(action: {
-        
+        onClose()
       }) {
         HStack(spacing: 10) {
           HStack {
@@ -31,7 +30,7 @@ struct SettingsDisplayNameScreen: View {
 struct SettingsDisplayName_Previews: PreviewProvider {
   static var previews: some View {
     NavigationView {
-      SettingsDisplayNameScreen()
+      SettingsDisplayNameScreen(onClose: {})
         .background(Color.grayBackground)
     }
   }

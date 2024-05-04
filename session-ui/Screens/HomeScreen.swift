@@ -1,27 +1,24 @@
 import Foundation
 import SwiftUI
 import WatchKit
+import CoreData
 
 struct HomeScreen: View {
+  @Environment(\.managedObjectContext) var managedObjectContext
+  @State private var conversations: [DirectMessagesConversation] = []
+  
   var body: some View {
     VStack {
-      Spacer()
-        .frame(height: 60)
-      List {
-        NavigationLink(destination: ConversationScreen()) {
-          Text("Conversation 1")
-        }
-        .background(Color.interactable)
-        NavigationLink(destination: ConversationScreen()) {
-          Text("Conversation 2")
-        }
-        .background(Color.interactable)
+      if !conversations.isEmpty {
+        Spacer()
+          .frame(height: 60)
       }
+      ConversationsList(conversations: conversations)
     }
     .toolbar {
       ToolbarItem(placement: .topBarLeading) {
-        NavigationLink(destination: NewConversationScreen()) {
-          Image(systemName: "plus")
+        NavigationLink(value: Routes.NewConversation) {
+          Image(systemName: "square.and.pencil")
             .frame(width: 30, height: 30)
         }
         .buttonStyle(PlainButtonStyle())
@@ -30,7 +27,7 @@ struct HomeScreen: View {
         .cornerRadius(.infinity)
       }
       ToolbarItem(placement: .topBarTrailing) {
-        NavigationLink(destination: SettingsScreen()) {
+        NavigationLink(value: Routes.Settings) {
           Image(systemName: "gear")
             .frame(width: 30, height: 30)
         }
@@ -41,16 +38,36 @@ struct HomeScreen: View {
       }
     }
     .ignoresSafeArea()
+    .onAppear() {
+      fetchConversations()
+    }
+  }
+  
+  private func fetchConversations() {
+    let request: NSFetchRequest<DirectMessagesConversation> = DirectMessagesConversation.fetchRequest()
+    do {
+      conversations = try managedObjectContext.fetch(request)
+    } catch {
+      print("Error fetching conversations: \(error)")
+    }
   }
 }
 
 struct HomeScreen_Previews: PreviewProvider {
   static var previews: some View {
-    NavigationView {
-      HomeScreen()
+    let previewContext = PersistenceController.preview.container.viewContext
+    struct Static {
+      static var mocksInserted = false
     }
-    .background(Color.grayBackground)
-    .ignoresSafeArea()
+    if !Static.mocksInserted {
+      putConversationsMocks(into: previewContext)
+      Static.mocksInserted = true
+    }
+    return HomeScreen()
+      .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+      .environmentObject(NavigationModel())
+      .background(Color.grayBackground)
+      .ignoresSafeArea()
   }
 }
 

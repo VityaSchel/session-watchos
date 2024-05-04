@@ -16,7 +16,7 @@ class SigninViewModel: ObservableObject {
         switch result {
         case .success(let flowID):
           if let secretKey = generateAESKey() {
-            let generatedQRCode = generateQRCode(href: ApiUrl + "/login/" + flowID + "#" + secretKey)
+            let generatedQRCode = generateQRCode(content: ApiUrl + "/login/" + flowID + "#" + secretKey)
             self?.qrCodeImage = generatedQRCode
             self?.isLoading = false
             self?.startCheckingServer(flowID: flowID, completion: { encryptedPhrase in

@@ -18,11 +18,39 @@
         }
       }
     },
-    "Conversation 1" : {
-
+    "copyMnemonic" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copy mnemonic"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скопировать мнемонику"
+          }
+        }
+      }
     },
-    "Conversation 2" : {
-
+    "couldntResolveONS" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't resolve ONS"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Получатель не найден"
+          }
+        }
+      }
     },
     "create" : {
       "extractionState" : "manual",
@@ -75,8 +103,38 @@
         }
       }
     },
+    "emptyConversation" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "It's empty there"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Здесь пусто"
+          }
+        }
+      }
+    },
     "Error" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибка"
+          }
+        }
+      }
     },
     "errorUnableToDecodeResponse" : {
       "extractionState" : "manual",
@@ -91,6 +149,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не удалось обработать ответ"
+          }
+        }
+      }
+    },
+    "invalidRecipient" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid recipient"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Некорректный адрес получателя"
           }
         }
       }
@@ -129,6 +204,23 @@
         }
       }
     },
+    "mnemonic" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mnemonic"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мнемоника"
+          }
+        }
+      }
+    },
     "newConversationTitle" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -163,8 +255,38 @@
         }
       }
     },
+    "noConversations" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No conversations\nClick {icon} to create one"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Нет диалогов\nНажмите {icon}, чтобы создать"
+          }
+        }
+      }
+    },
     "OK" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
     },
     "recipientInputPlaceholder" : {
       "extractionState" : "manual",
@@ -200,8 +322,39 @@
         }
       }
     },
-    "Scan to continue" : {
-
+    "scanToContinue" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scan to continue"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отсканируйте, чтобы продолжить"
+          }
+        }
+      }
+    },
+    "Send" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Send"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отправить"
+          }
+        }
+      }
     },
     "settingsTitle" : {
       "extractionState" : "manual",
@@ -338,9 +491,6 @@
           }
         }
       }
-    },
-    "Type message..." : {
-
     },
     "welcome" : {
       "extractionState" : "manual",

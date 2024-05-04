@@ -18,7 +18,7 @@ struct SigninScreen: View {
         }
       }
       
-      Text("Scan to continue")
+      Text(NSLocalizedString("scanToContinue", comment: "Sign in screen"))
         .font(.system(size: 14))
     }
     .onAppear {

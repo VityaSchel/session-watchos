@@ -12,6 +12,7 @@ enum NewConversationType: Identifiable {
 }
 
 struct NewConversationScreen: View {
+  @EnvironmentObject var navigationModel: NavigationModel
   @State private var newConversationType: NewConversationType?
   
   var body: some View {
@@ -27,9 +28,7 @@ struct NewConversationScreen: View {
               .font(.system(size: 14))
           }
         }
-        Button(action: {
-          
-        }) {
+        Button(action: {}) {
           HStack(spacing: 10) {
             Image(systemName: "person.2")
               .frame(width: 20)
@@ -38,9 +37,7 @@ struct NewConversationScreen: View {
           }
         }
         .disabled(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-        Button(action: {
-          
-        }) {
+        Button(action: {}) {
           HStack(spacing: 10) {
             Image(systemName: "globe")
               .frame(width: 20)
@@ -56,7 +53,11 @@ struct NewConversationScreen: View {
       switch type {
 //      case .directMessages:
       default:
-        NewDirectMessagesConversationScreen()
+        NewDirectMessagesConversationScreen(onCreated: { conversation in
+          navigationModel.path = NavigationPath([
+            Routes.Conversation(ConversationScreenDetails(title: conversation.displayName ?? conversation.sessionID, uuid: conversation.id))
+          ])
+        })
       }
     }
   }
