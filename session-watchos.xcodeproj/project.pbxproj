@@ -34,6 +34,8 @@
 		A77F11A22BE68BE800D23BAC /* Mnemonic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11A12BE68BE800D23BAC /* Mnemonic.swift */; };
 		A77F11A42BE68C5E00D23BAC /* LoginSuccessScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11A32BE68C5E00D23BAC /* LoginSuccessScreen.swift */; };
 		A77F11A72BE7FF2E00D23BAC /* english.txt in Resources */ = {isa = PBXBuildFile; fileRef = A77F11A62BE7FF2E00D23BAC /* english.txt */; };
+		A77F11A92BE807E300D23BAC /* ONS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11A82BE807E300D23BAC /* ONS.swift */; };
+		A77F11AB2BE8082100D23BAC /* Blake2b.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11AA2BE8082100D23BAC /* Blake2b.swift */; };
 		A78409C92BE40BB0009FA73A /* NewDirectMessagesConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78409C82BE40BB0009FA73A /* NewDirectMessagesConversation.swift */; };
 		A78409CC2BE40D86009FA73A /* SettingsDisplayName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78409CB2BE40D86009FA73A /* SettingsDisplayName.swift */; };
 		A7B226012BE3ED1700A1CF45 /* SessionMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B225E22BE3ECE800A1CF45 /* SessionMessengerApp.swift */; };
@@ -90,6 +92,9 @@
 		A77F11A12BE68BE800D23BAC /* Mnemonic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mnemonic.swift; sourceTree = "<group>"; };
 		A77F11A32BE68C5E00D23BAC /* LoginSuccessScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSuccessScreen.swift; sourceTree = "<group>"; };
 		A77F11A62BE7FF2E00D23BAC /* english.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = english.txt; sourceTree = "<group>"; };
+		A77F11A82BE807E300D23BAC /* ONS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ONS.swift; sourceTree = "<group>"; };
+		A77F11AA2BE8082100D23BAC /* Blake2b.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blake2b.swift; sourceTree = "<group>"; };
+		A77F11AC2BE81A1B00D23BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A78409C82BE40BB0009FA73A /* NewDirectMessagesConversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDirectMessagesConversation.swift; sourceTree = "<group>"; };
 		A78409CB2BE40D86009FA73A /* SettingsDisplayName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDisplayName.swift; sourceTree = "<group>"; };
 		A7B225C82BE3ECB500A1CF45 /* session-ui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "session-ui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,6 +232,7 @@
 		A7B225E12BE3ECE800A1CF45 /* session-ui */ = {
 			isa = PBXGroup;
 			children = (
+				A77F11AC2BE81A1B00D23BAC /* Info.plist */,
 				A7213BBC2BE61D94007E0C4C /* Previews */,
 				A7B225E22BE3ECE800A1CF45 /* SessionMessengerApp.swift */,
 				A7B225E32BE3ECE800A1CF45 /* Assets.xcassets */,
@@ -251,6 +257,8 @@
 				A7213BB82BE5A6D5007E0C4C /* Context.swift */,
 				A7213BC02BE6669A007E0C4C /* KeychainHelper.swift */,
 				A7213BC22BE66812007E0C4C /* AccountContext.swift */,
+				A77F11A82BE807E300D23BAC /* ONS.swift */,
+				A77F11AA2BE8082100D23BAC /* Blake2b.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -480,12 +488,14 @@
 				A7213B982BE582EA007E0C4C /* Storage.xcdatamodeld in Sources */,
 				A77F11A22BE68BE800D23BAC /* Mnemonic.swift in Sources */,
 				A7B2260C2BE3EDD300A1CF45 /* SessionLogo.swift in Sources */,
+				A77F11A92BE807E300D23BAC /* ONS.swift in Sources */,
 				A78409CC2BE40D86009FA73A /* SettingsDisplayName.swift in Sources */,
 				A7B2260D2BE3EDD300A1CF45 /* HomeScreen.swift in Sources */,
 				A77F11A02BE6891600D23BAC /* SessionConstants.swift in Sources */,
 				A7B2260E2BE3EDD300A1CF45 /* ConversationScreen.swift in Sources */,
 				A77F119E2BE683F600D23BAC /* Sodium+Utilities.swift in Sources */,
 				A7B2260F2BE3EDD300A1CF45 /* SignupScreen.swift in Sources */,
+				A77F11AB2BE8082100D23BAC /* Blake2b.swift in Sources */,
 				A77F11982BE681F900D23BAC /* SessionId.swift in Sources */,
 				A7B226102BE3EDD300A1CF45 /* SigninScreenModel.swift in Sources */,
 				A7B226112BE3EDD300A1CF45 /* SigninScreen.swift in Sources */,
@@ -633,6 +643,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "session-ui/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "session-watchos";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -665,6 +676,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "session-ui/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "session-watchos";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
