@@ -12,7 +12,7 @@ DEPENDENCIES:
   - CryptoSwift (~> 1.8.1)
   - DSF_QRCode (~> 18.0.0)
   - Reachability (from `./Reachability`)
-  - Sodium (from `https://github.com/oxen-io/session-ios-swift-sodium.git`, branch `session-build`)
+  - Sodium (from `https://github.com/oxen-io/session-ios-swift-sodium.git`, commit `310c343`)
 
 SPEC REPOS:
   trunk:
@@ -25,12 +25,12 @@ EXTERNAL SOURCES:
   Reachability:
     :path: "./Reachability"
   Sodium:
-    :branch: session-build
+    :commit: 310c343
     :git: https://github.com/oxen-io/session-ios-swift-sodium.git
 
 CHECKOUT OPTIONS:
   Sodium:
-    :commit: 310c3436e637809b0554519546dde34b6a3c8619
+    :commit: 310c343
     :git: https://github.com/oxen-io/session-ios-swift-sodium.git
 
 SPEC CHECKSUMS:
@@ -41,6 +41,6 @@ SPEC CHECKSUMS:
   SwiftImageReadWrite: 69f6521a74fdddbb61b2cc844150ec64de2cb4c7
   SwiftQRCodeGenerator: cc02fed209335064d0b0dd61b2a0874b9bc6bd5a
 
-PODFILE CHECKSUM: beb6c46f3d5f4e7af2f4be188597d3785a2251ea
+PODFILE CHECKSUM: 6fea1ecb4e42b100d8367f2e91d38806e815e5f7
 
 COCOAPODS: 1.15.2

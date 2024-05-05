@@ -13,6 +13,8 @@ enum ModalType: Identifiable {
 struct SettingsScreen: View {
   @State private var modalType: ModalType?
   @State private var signOutConfirmationDialog = false
+  @EnvironmentObject var account: AccountContext
+  @EnvironmentObject var navigation: NavigationModel
   
   var body: some View {
     VStack {
@@ -48,6 +50,8 @@ struct SettingsScreen: View {
         .confirmationDialog(NSLocalizedString("signOutWarning", comment: "Sign out confirmation dialog text"), isPresented: $signOutConfirmationDialog) {
           Button("OK", role: .destructive) {
             signOutConfirmationDialog = false
+            account.logout()
+            navigation.path = NavigationPath()
           }
         }
         Button(action: {

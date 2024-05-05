@@ -3,6 +3,7 @@ import SwiftUI
 enum AuthRoutes: Hashable {
   case SignIn
   case SignUp
+  case LoginSuccess(LoginSuccessScreenDetails)
 }
 enum Routes: Hashable {
   case Settings
@@ -15,27 +16,23 @@ struct ConversationScreenDetails: Hashable {
   var uuid: UUID
 }
 
+struct LoginSuccessScreenDetails: Hashable {
+  var sessionID: String
+  var seed: Data
+}
+
 class NavigationModel: ObservableObject {
   @Published var path = NavigationPath()
 }
 
 struct ContentView: View {
   @EnvironmentObject var navigationModel: NavigationModel
-  @State private var loginMenuActive = false
+  @EnvironmentObject var account: AccountContext
+  @State private var authorizationLoaded = false
   
   var body: some View {
     NavigationStack(path: $navigationModel.path) {
-      if loginMenuActive {
-        LoginScreen()
-          .navigationDestination(for: AuthRoutes.self) { route in
-            switch route {
-            case AuthRoutes.SignIn:
-              SigninScreen()
-            case AuthRoutes.SignUp:
-              SignupScreen()
-            }
-          }
-      } else {
+      if account.authorized {
         HomeScreen()
           .navigationDestination(for: Routes.self) { route in
             switch route {
@@ -45,6 +42,18 @@ struct ContentView: View {
               NewConversationScreen()
             case Routes.Conversation(let details):
               ConversationScreen(conversation: details)
+            }
+          }
+      } else {
+        LoginScreen()
+          .navigationDestination(for: AuthRoutes.self) { route in
+            switch route {
+            case AuthRoutes.SignIn:
+              SigninScreen()
+            case AuthRoutes.SignUp:
+              SignupScreen()
+            case AuthRoutes.LoginSuccess(let details):
+              LoginSuccessScreen(sessionID: details.sessionID, seed: details.seed)
             }
           }
       }
@@ -57,5 +66,6 @@ struct ContentView: View {
 #Preview {
   ContentView()
     .environmentObject(NavigationModel())
+    .environmentObject(AccountContext())
     .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }

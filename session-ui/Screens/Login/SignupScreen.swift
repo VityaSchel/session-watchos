@@ -5,6 +5,7 @@ struct SignupScreen: View {
   @State private var displayName = ""
   @State private var showAlert = false
   @State private var alertMessage = ""
+  @EnvironmentObject var navigationModel: NavigationModel
   
     var body: some View {
       VStack(spacing: 10) {
@@ -12,32 +13,20 @@ struct SignupScreen: View {
         
         Button(action: {
           do {
-//            let seed = try Randomness.generateRandomBytes(numberBytes: 16)
-//            let (ed25519KeyPair, x25519KeyPair) = try Identity.generate(from: seed)
-//            print("Session ID \(x25519KeyPair.hexEncodedPublicKey)")
-//            let profileName = displayName.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-//            guard !ProfileManager.isToLong(profileName: displayName) else {
-//              showAlert = true
-//              alertMessage = "Profile name is too long"
-//              return
-//            }
-//            ProfileManager.updateLocal(
-//                queue: .global(qos: .default),
-//                profileName: displayName
-//            )
+            let seed = try Randomness.generateRandomBytes(numberBytes: 16)
+            let (ed25519KeyPair, x25519KeyPair) = try Identity.generate(from: seed)
+            let sessionID = x25519KeyPair.hexEncodedPublicKey
+            let profileName = displayName.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+            if profileName.isEmpty {
+              return
+            }
+            if profileName.utf8.count > MAX_USERNAME_BYTES {
+              showAlert = true
+              alertMessage = NSLocalizedString("displayNameTooLong", comment: "When user inputs too long display name")
+              return
+            }
             
-            print("complete registration")
-            
-//            Storage.shared.write { db in
-//                try Profile
-//                    .filter(id: getUserHexEncodedPublicKey(db))
-//                    .updateAllAndConfig(
-//                        db,
-//                        Profile.Columns.lastNameUpdate.set(to: Date().timeIntervalSince1970)
-//                    )
-//            }
-//            Identity.didRegister()
-//            GetSnodePoolJob.run()
+            navigationModel.path.append(AuthRoutes.LoginSuccess(LoginSuccessScreenDetails(sessionID: sessionID, seed: seed)))
           } catch {
             showAlert = true
             alertMessage = "Couldn't generate key pair"
@@ -65,6 +54,7 @@ struct SignupScreen_Previews: PreviewProvider {
   static var previews: some View {
     NavigationView {
       SignupScreen()
+        .environmentObject(NavigationModel())
         .background(Color.grayBackground)
     }
   }

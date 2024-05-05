@@ -2,7 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22225" systemVersion="23E224" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
     <entity name="Account" representedClassName=".Account" syncable="YES">
         <attribute name="displayName" optional="YES" attributeType="String"/>
-        <attribute name="sessionID" optional="YES" attributeType="String"/>
+        <attribute name="sessionID" attributeType="String"/>
         <relationship name="conversations" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DirectMessagesConversation"/>
     </entity>
     <entity name="DirectMessagesConversation" representedClassName=".DirectMessagesConversation" syncable="YES">

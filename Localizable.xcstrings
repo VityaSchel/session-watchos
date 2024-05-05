@@ -18,6 +18,40 @@
         }
       }
     },
+    "confirm" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirm"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подтвердить"
+          }
+        }
+      }
+    },
+    "continue" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continue"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Продолжить"
+          }
+        }
+      }
+    },
     "copyMnemonic" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -103,6 +137,23 @@
         }
       }
     },
+    "displayNameTooLong" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This profile name is too long"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это имя профиля слишком длинное"
+          }
+        }
+      }
+    },
     "emptyConversation" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -183,6 +234,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Войти в сообщество"
+          }
+        }
+      }
+    },
+    "loginSuccessIntro" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome\nYour Session ID is"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добро пожаловать\nВаш Session ID:"
           }
         }
       }

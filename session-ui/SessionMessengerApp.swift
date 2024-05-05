@@ -49,6 +49,7 @@ struct SessionMessengerApp: App {
     WindowGroup {
       ContentView()
         .environment(\.managedObjectContext, persistenceController.container.viewContext)
+        .environmentObject(AccountContext())
         .environmentObject(NavigationModel())
     }
     .onChange(of: scenePhase, {
@@ -61,6 +62,7 @@ struct SessionMessengerApp_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
       .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+      .environmentObject(AccountContext())
       .environmentObject(NavigationModel())
   }
 }

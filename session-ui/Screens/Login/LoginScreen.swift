@@ -29,8 +29,9 @@ struct LoginScreen: View {
         }
       }
       .padding(.horizontal, 5)
+      .padding(.bottom, 20)
     }
-    .padding(.top, 30)
+    .padding(.top, 40)
     .ignoresSafeArea()
   }
 }

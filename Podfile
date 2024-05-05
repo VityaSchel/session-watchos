@@ -10,8 +10,8 @@ target 'session-ui' do
   pod 'DSF_QRCode', '~> 18.0.0'
   pod 'CryptoSwift', '~> 1.8.1'
   # FIXME: If https://github.com/jedisct1/swift-sodium/pull/249 gets resolved then revert this back
-  pod 'Sodium', :git => 'https://github.com/oxen-io/session-ios-swift-sodium.git', branch: 'session-build'
-  pod 'SwiftUIIntrospect', '~> 1.0'
+#  pod 'Sodium', :git => 'https://github.com/oxen-io/session-ios-swift-sodium.git', branch: 'session-build'
+  pod 'Sodium', :git => 'https://github.com/oxen-io/session-ios-swift-sodium.git', commit: '310c343'
 end
 
 def set_minimum_deployment_target(installer)

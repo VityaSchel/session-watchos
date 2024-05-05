@@ -2,7 +2,8 @@ import Foundation
 import SwiftUI
 
 struct SettingsMnemonicQrCodeScreen: View {
-  @State private var mnemonic = "enjoy feel pager befit among ponies excess agnostic oilfield novelty keep guide pager"
+  @EnvironmentObject var account: AccountContext
+  var mnemonic: String { return account.mnemonic! }
   @State private var qrCode: UIImage?
   
   var body: some View {

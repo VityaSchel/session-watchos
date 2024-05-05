@@ -441,7 +441,7 @@
 		020275BC871DD6254142C3627ADD06C2 /* crypto_box.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_box.h; path = Sodium/libsodium/crypto_box.h; sourceTree = "<group>"; };
 		02ACB3692D05FE6D89BD08FD9CC7A182 /* SwiftQRCodeGenerator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftQRCodeGenerator.modulemap; sourceTree = "<group>"; };
 		02E9C9048B916A14E39F5C75C822B08A /* crypto_hash_sha256.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_hash_sha256.h; path = Sodium/libsodium/crypto_hash_sha256.h; sourceTree = "<group>"; };
-		05062B10CE3E3E1F33F72FF442BEE5B7 /* Clibsodium.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = Clibsodium.xcframework; sourceTree = "<group>"; };
+		05062B10CE3E3E1F33F72FF442BEE5B7 /* Clibsodium.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = Clibsodium.xcframework; sourceTree = "<group>"; };
 		05F944A700AA136C1D6EC769D8CED7AD /* QRCodePupilShapeSquircle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodePupilShapeSquircle.swift; path = Sources/QRCode/styles/pupil/QRCodePupilShapeSquircle.swift; sourceTree = "<group>"; };
 		0646205DC79C12699B4237A7943E38D9 /* QRCodeDocumentView+macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "QRCodeDocumentView+macOS.swift"; path = "Sources/QRCode/views/QRCodeDocumentView+macOS.swift"; sourceTree = "<group>"; };
 		068BA3089B9F3D30BB7AE5950A99B428 /* CryptoSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-prefix.pch"; sourceTree = "<group>"; };
@@ -475,7 +475,7 @@
 		1899C24A43AE40A9576414694D14B31D /* SwiftQRCodeGenerator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftQRCodeGenerator-dummy.m"; sourceTree = "<group>"; };
 		18E0DDC50488CB031A56736A75EB1651 /* Sodium-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Sodium-xcframeworks.sh"; sourceTree = "<group>"; };
 		198FF826CE0EF99E62FFBE9D4B8839F6 /* ECB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ECB.swift; path = Sources/CryptoSwift/BlockMode/ECB.swift; sourceTree = "<group>"; };
-		19CD71F2863287029C5BC051C19D7CD0 /* Reachability.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Reachability.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		19CD71F2863287029C5BC051C19D7CD0 /* Reachability.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Reachability.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1A14D7EF4503BADAA3254B4998F74AD2 /* QRCodePupilShapeCorneredPixels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodePupilShapeCorneredPixels.swift; path = Sources/QRCode/styles/pupil/QRCodePupilShapeCorneredPixels.swift; sourceTree = "<group>"; };
 		1B123C1A9AD57C32DB74FC13AF9D1FE9 /* QRCodeMask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeMask.swift; path = Sources/QRCodeGenerator/QRCodeMask.swift; sourceTree = "<group>"; };
 		1B3397166C1F315C896F9ABF9E01137F /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/CryptoSwift/Utils.swift; sourceTree = "<group>"; };
@@ -599,7 +599,7 @@
 		6063DC0874CA7FE9210E8F2E87AE7189 /* Blowfish.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blowfish.swift; path = Sources/CryptoSwift/Blowfish.swift; sourceTree = "<group>"; };
 		60A74EB778352A581DBE99E42A60BD1B /* QRSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRSegment.swift; path = Sources/QRCodeGenerator/QRSegment.swift; sourceTree = "<group>"; };
 		60F5EFE058EC3FC876489D5330E590A3 /* crypto_kdf_blake2b.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_kdf_blake2b.h; path = Sodium/libsodium/crypto_kdf_blake2b.h; sourceTree = "<group>"; };
-		61718C9B1E3D3F651DC32CEEE6822EF7 /* LICENCE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENCE.txt; sourceTree = "<group>"; };
+		61718C9B1E3D3F651DC32CEEE6822EF7 /* LICENCE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
 		61FC63EEA3B5E7F7560C5A10EBD77F63 /* SwiftQRCodeGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftQRCodeGenerator.debug.xcconfig; sourceTree = "<group>"; };
 		62A0C1D3EC8222C7D76D0D491F1D36CF /* crypto_verify_16.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_verify_16.h; path = Sodium/libsodium/crypto_verify_16.h; sourceTree = "<group>"; };
 		62CB90CC457F446D3117609588C14FE6 /* QRCode+Keys.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "QRCode+Keys.swift"; path = "Sources/QRCode/QRCode+Keys.swift"; sourceTree = "<group>"; };
@@ -695,7 +695,7 @@
 		9BDA49AF473424A8C6F57E937C0331D4 /* Pods-session-ui-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-session-ui-umbrella.h"; sourceTree = "<group>"; };
 		9CDE557E99E8A012BF80A89EA4268501 /* QRCodeEyeShapeUsePixelShape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCodeEyeShapeUsePixelShape.swift; path = Sources/QRCode/styles/eye/QRCodeEyeShapeUsePixelShape.swift; sourceTree = "<group>"; };
 		9D09387810A69157F5F91CFF3083EC19 /* RSA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSA.swift; path = Sources/CryptoSwift/RSA/RSA.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DE28190FFDA82280AB3D20601C97B51 /* NonceGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NonceGenerator.swift; path = Sodium/Generators/NonceGenerator.swift; sourceTree = "<group>"; };
 		9E7CE28E14BCAC860697C71CF0AC9A17 /* AES+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AES+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/AES+Foundation.swift"; sourceTree = "<group>"; };
 		9E8D18B29362BF0C6CE0F5FDCEB9825A /* QRCode+Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "QRCode+Image.swift"; path = "Sources/QRCode/QRCode+Image.swift"; sourceTree = "<group>"; };
@@ -751,7 +751,7 @@
 		BD9C6FE10BBBC47152A01C4786CC41C6 /* crypto_kx.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto_kx.h; path = Sodium/libsodium/crypto_kx.h; sourceTree = "<group>"; };
 		BDA45B64BE59D503C61A0AD0C2901F40 /* randombytes_sysrandom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = randombytes_sysrandom.h; path = Sodium/libsodium/randombytes_sysrandom.h; sourceTree = "<group>"; };
 		BDE65FD2418575D0571F55796ADC0385 /* PBKDF1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBKDF1.swift; path = Sources/CryptoSwift/PKCS/PBKDF1.swift; sourceTree = "<group>"; };
-		BE824DFABA6915CF8F12621ECC381265 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BE824DFABA6915CF8F12621ECC381265 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BF65D015F8F1D837454A7C5739FB34C9 /* PKCS1v15.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS1v15.swift; path = Sources/CryptoSwift/PKCS/PKCS1v15.swift; sourceTree = "<group>"; };
 		C0C14CE6A5208EE3FE2E3FC24BCC82BD /* Pods-session-ui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-session-ui.release.xcconfig"; sourceTree = "<group>"; };
 		C17169B4CC39218988219F9524B927A2 /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "Sources/CryptoSwift/String+Extension.swift"; sourceTree = "<group>"; };
@@ -971,7 +971,6 @@
 				D393C0BF0DDE21D175CDE28C553C5E24 /* Utils.swift */,
 				A7C45B240B3E6448348D72A35F2A7F1A /* Support Files */,
 			);
-			name = SwiftImageReadWrite;
 			path = SwiftImageReadWrite;
 			sourceTree = "<group>";
 		};
@@ -1115,7 +1114,6 @@
 				C20C356C85E490B1058F866A50F5287F /* Utils.swift */,
 				93D7D79982A36A385A77EE995099DB3F /* Support Files */,
 			);
-			name = DSF_QRCode;
 			path = DSF_QRCode;
 			sourceTree = "<group>";
 		};
@@ -1237,7 +1235,6 @@
 				3BE500299D0E8B6846BD9F4BFC88C98E /* ZeroPadding.swift */,
 				31F657231B18344D02E8B29EF3BA1802 /* Support Files */,
 			);
-			name = CryptoSwift;
 			path = CryptoSwift;
 			sourceTree = "<group>";
 		};
@@ -1269,7 +1266,6 @@
 				60A74EB778352A581DBE99E42A60BD1B /* QRSegment.swift */,
 				EE75E281C8E6352E148563CF089778FD /* Support Files */,
 			);
-			name = SwiftQRCodeGenerator;
 			path = SwiftQRCodeGenerator;
 			sourceTree = "<group>";
 		};
@@ -1366,7 +1362,6 @@
 				FE38029197287A4EB432A26D0AC8BBFC /* Frameworks */,
 				72F45FDC6AF83CB8750B3BD21A8D3C29 /* Support Files */,
 			);
-			name = Sodium;
 			path = Sodium;
 			sourceTree = "<group>";
 		};
