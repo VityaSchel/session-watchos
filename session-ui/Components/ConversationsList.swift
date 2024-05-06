@@ -33,7 +33,7 @@ struct ConversationLink: View {
   }
   
   var body: some View {
-    NavigationLink(value: Routes.Conversation(ConversationScreenDetails(title: title, uuid: conversation.id))) {
+    NavigationLink(value: Routes.Conversation(ConversationScreenDetails(title: title, uuid: conversation.id, cdObjectId: conversation.objectID))) {
       VStack {
         HStack(spacing: 10) {
           Avatar(avatar: conversation.avatar, title: title)

@@ -32,9 +32,18 @@ struct ConversationScreen: View {
           newMessage.textContent = text
           newMessage.conversation = conversation.uuid
           newMessage.isIncoming = false
+          newMessage.status = .Sending
           newMessage.timestamp = Int64(Date().timeIntervalSince1970*1000)
           saveContext(context: context)
           messages.append(newMessage)
+          MessagesSender.storeMessage(newMessage)
+          
+          if let conversation = try! context.existingObject(with: conversation.cdObjectId) as? Conversation {
+            conversation.lastMessage = ConversationLastMessage(
+              isIncoming: false, 
+              textContent: text
+            )
+          }
         })
       }
       .frame(maxWidth: .infinity)
@@ -60,7 +69,7 @@ struct ConversationScreen: View {
 struct ConversationScreen_Previews: PreviewProvider {
   let previewContext = PersistenceController.preview.container.viewContext
   static var previews: some View {
-    ConversationScreen(conversation: ConversationScreenDetails(title: "hloth", uuid: UUID()))
+    ConversationScreen(conversation: ConversationScreenDetails(title: "hloth", uuid: UUID(), cdObjectId: NSManagedObjectID()))
     .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     .frame(maxWidth: .infinity)
     .background(Color.black)

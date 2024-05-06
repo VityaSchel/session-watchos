@@ -33,7 +33,7 @@ struct NewDirectMessagesConversationScreen: View {
                 createConversation(sessionID: try await ONS.resolveOns(ons: recipient))
               } catch {
                 showAlert = true
-                if error is ONSResolveError {
+                if error is ONSResolveError && error as! ONSResolveError == ONSResolveError.notFound {
                   alertMessage = NSLocalizedString("couldntResolveONS", comment: "Could not resolve ONS name")
                 } else {
                   alertMessage = error.localizedDescription

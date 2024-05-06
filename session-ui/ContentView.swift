@@ -1,4 +1,5 @@
 import SwiftUI
+import CoreData
 
 enum AuthRoutes: Hashable {
   case SignIn
@@ -14,6 +15,7 @@ enum Routes: Hashable {
 struct ConversationScreenDetails: Hashable {
   var title: String
   var uuid: UUID
+  var cdObjectId: NSManagedObjectID
 }
 
 struct LoginSuccessScreenDetails: Hashable {

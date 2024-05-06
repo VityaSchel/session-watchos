@@ -12,7 +12,9 @@ target 'session-ui' do
   # FIXME: If https://github.com/jedisct1/swift-sodium/pull/249 gets resolved then revert this back
 #  pod 'Sodium', :git => 'https://github.com/oxen-io/session-ios-swift-sodium.git', branch: 'session-build'
   pod 'Sodium', :git => 'https://github.com/oxen-io/session-ios-swift-sodium.git', commit: '310c343'
-  pod 'swift-blake2', :git => 'https://github.com/lovetodream/swift-blake2.git'
+  pod 'SignalCoreKit', :path => './session-ios-core-kit-session-version'
+  pod 'SwiftProtobuf', '~> 1.5.0'
+  pod 'OpenSSL-Universal', :path => './OpenSSL-Universal'
 end
 
 def set_minimum_deployment_target(installer)

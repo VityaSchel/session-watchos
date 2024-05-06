@@ -36,6 +36,73 @@
 		A77F11A72BE7FF2E00D23BAC /* english.txt in Resources */ = {isa = PBXBuildFile; fileRef = A77F11A62BE7FF2E00D23BAC /* english.txt */; };
 		A77F11A92BE807E300D23BAC /* ONS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11A82BE807E300D23BAC /* ONS.swift */; };
 		A77F11AB2BE8082100D23BAC /* Blake2b.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11AA2BE8082100D23BAC /* Blake2b.swift */; };
+		A77F11AE2BE8299500D23BAC /* MessagesSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11AD2BE8299500D23BAC /* MessagesSender.swift */; };
+		A77F11B42BE834D100D23BAC /* OpenSSL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A77F11B32BE834D100D23BAC /* OpenSSL.xcframework */; };
+		A77F11B52BE834D100D23BAC /* OpenSSL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A77F11B32BE834D100D23BAC /* OpenSSL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A77F12042BE8384A00D23BAC /* SSKLegacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11BA2BE8384A00D23BAC /* SSKLegacy.swift */; };
+		A77F12052BE8384A00D23BAC /* _004_FlagMessageHashAsDeletedOrInvalid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11BC2BE8384A00D23BAC /* _004_FlagMessageHashAsDeletedOrInvalid.swift */; };
+		A77F12062BE8384A00D23BAC /* _001_InitialSetupMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11BD2BE8384A00D23BAC /* _001_InitialSetupMigration.swift */; };
+		A77F12072BE8384A00D23BAC /* _005_AddSnodeReveivedMessageInfoPrimaryKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11BE2BE8384A00D23BAC /* _005_AddSnodeReveivedMessageInfoPrimaryKey.swift */; };
+		A77F12082BE8384A00D23BAC /* _003_YDBToGRDBMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11BF2BE8384A00D23BAC /* _003_YDBToGRDBMigration.swift */; };
+		A77F12092BE8384A00D23BAC /* _002_SetupStandardJobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11C02BE8384A00D23BAC /* _002_SetupStandardJobs.swift */; };
+		A77F120A2BE8384A00D23BAC /* SSKSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11C22BE8384A00D23BAC /* SSKSetting.swift */; };
+		A77F120B2BE8384A00D23BAC /* Snode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11C42BE8384A00D23BAC /* Snode.swift */; };
+		A77F120C2BE8384A00D23BAC /* SnodeSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11C52BE8384A00D23BAC /* SnodeSet.swift */; };
+		A77F120D2BE8384A00D23BAC /* SnodeReceivedMessageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11C62BE8384A00D23BAC /* SnodeReceivedMessageInfo.swift */; };
+		A77F120E2BE8384A00D23BAC /* OnionRequestAPIDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11C82BE8384A00D23BAC /* OnionRequestAPIDestination.swift */; };
+		A77F120F2BE8384A00D23BAC /* OnionRequestAPIVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11C92BE8384A00D23BAC /* OnionRequestAPIVersion.swift */; };
+		A77F12102BE8384A00D23BAC /* SnodeAPIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11CA2BE8384A00D23BAC /* SnodeAPIEndpoint.swift */; };
+		A77F12112BE8384B00D23BAC /* OnionRequestAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11CB2BE8384A00D23BAC /* OnionRequestAPIError.swift */; };
+		A77F12122BE8384B00D23BAC /* SnodeAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11CC2BE8384A00D23BAC /* SnodeAPIError.swift */; };
+		A77F12132BE8384B00D23BAC /* SnodeAPINamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11CD2BE8384A00D23BAC /* SnodeAPINamespace.swift */; };
+		A77F12142BE8384B00D23BAC /* ValidatableResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11CE2BE8384A00D23BAC /* ValidatableResponse.swift */; };
+		A77F12152BE8384B00D23BAC /* Notification+OnionRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11D02BE8384A00D23BAC /* Notification+OnionRequestAPI.swift */; };
+		A77F12162BE8384B00D23BAC /* SnodeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11D12BE8384A00D23BAC /* SnodeAPI.swift */; };
+		A77F12172BE8384B00D23BAC /* OnionRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11D22BE8384A00D23BAC /* OnionRequestAPI.swift */; };
+		A77F12182BE8384B00D23BAC /* OnionRequestAPI+Encryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11D32BE8384A00D23BAC /* OnionRequestAPI+Encryption.swift */; };
+		A77F12192BE8384B00D23BAC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A77F11D62BE8384A00D23BAC /* Info.plist */; };
+		A77F121A2BE8384B00D23BAC /* SnodeRecursiveResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11D82BE8384A00D23BAC /* SnodeRecursiveResponse.swift */; };
+		A77F121B2BE8384B00D23BAC /* GetMessagesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11D92BE8384A00D23BAC /* GetMessagesRequest.swift */; };
+		A77F121C2BE8384B00D23BAC /* GetServiceNodesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11DA2BE8384A00D23BAC /* GetServiceNodesRequest.swift */; };
+		A77F121D2BE8384B00D23BAC /* SnodeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11DB2BE8384A00D23BAC /* SnodeResponse.swift */; };
+		A77F121E2BE8384B00D23BAC /* ONSResolveResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11DC2BE8384A00D23BAC /* ONSResolveResponse.swift */; };
+		A77F121F2BE8384B00D23BAC /* UpdateExpiryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11DD2BE8384A00D23BAC /* UpdateExpiryRequest.swift */; };
+		A77F12202BE8384B00D23BAC /* OxenDaemonRPCRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11DE2BE8384A00D23BAC /* OxenDaemonRPCRequest.swift */; };
+		A77F12212BE8384B00D23BAC /* DeleteMessagesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11DF2BE8384A00D23BAC /* DeleteMessagesRequest.swift */; };
+		A77F12222BE8384B00D23BAC /* RevokeSubkeyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11E02BE8384A00D23BAC /* RevokeSubkeyResponse.swift */; };
+		A77F12232BE8384B00D23BAC /* GetSwarmRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11E12BE8384A00D23BAC /* GetSwarmRequest.swift */; };
+		A77F12242BE8384B00D23BAC /* GetStatsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11E22BE8384A00D23BAC /* GetStatsResponse.swift */; };
+		A77F12252BE8384B00D23BAC /* DeleteAllMessagesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11E32BE8384A00D23BAC /* DeleteAllMessagesRequest.swift */; };
+		A77F12262BE8384B00D23BAC /* SendMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11E42BE8384A00D23BAC /* SendMessageResponse.swift */; };
+		A77F12272BE8384B00D23BAC /* ONSResolveRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11E52BE8384A00D23BAC /* ONSResolveRequest.swift */; };
+		A77F12282BE8384B00D23BAC /* SnodeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11E62BE8384A00D23BAC /* SnodeRequest.swift */; };
+		A77F12292BE8384B00D23BAC /* DeleteAllBeforeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11E72BE8384A00D23BAC /* DeleteAllBeforeRequest.swift */; };
+		A77F122A2BE8384B00D23BAC /* SnodePoolResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11E82BE8384A00D23BAC /* SnodePoolResponse.swift */; };
+		A77F122B2BE8384B00D23BAC /* SnodeReceivedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11E92BE8384A00D23BAC /* SnodeReceivedMessage.swift */; };
+		A77F122C2BE8384B00D23BAC /* GetNetworkTimestampResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11EA2BE8384A00D23BAC /* GetNetworkTimestampResponse.swift */; };
+		A77F122D2BE8384B00D23BAC /* UpdateExpiryAllRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11EB2BE8384A00D23BAC /* UpdateExpiryAllRequest.swift */; };
+		A77F122E2BE8384B00D23BAC /* SendMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11EC2BE8384A00D23BAC /* SendMessageRequest.swift */; };
+		A77F122F2BE8384B00D23BAC /* UpdateExpiryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11ED2BE8384A00D23BAC /* UpdateExpiryResponse.swift */; };
+		A77F12302BE8384B00D23BAC /* SnodeSwarmItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11EE2BE8384A00D23BAC /* SnodeSwarmItem.swift */; };
+		A77F12312BE8384B00D23BAC /* LegacyGetMessagesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11EF2BE8384A00D23BAC /* LegacyGetMessagesRequest.swift */; };
+		A77F12322BE8384B00D23BAC /* UpdateExpiryAllResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11F02BE8384A00D23BAC /* UpdateExpiryAllResponse.swift */; };
+		A77F12332BE8384B00D23BAC /* DeleteAllBeforeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11F12BE8384A00D23BAC /* DeleteAllBeforeResponse.swift */; };
+		A77F12342BE8384B00D23BAC /* DeleteAllMessagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11F22BE8384A00D23BAC /* DeleteAllMessagesResponse.swift */; };
+		A77F12352BE8384B00D23BAC /* GetExpiriesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11F32BE8384A00D23BAC /* GetExpiriesRequest.swift */; };
+		A77F12362BE8384B00D23BAC /* SnodeMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11F42BE8384A00D23BAC /* SnodeMessage.swift */; };
+		A77F12372BE8384B00D23BAC /* GetExpiriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11F52BE8384A00D23BAC /* GetExpiriesResponse.swift */; };
+		A77F12382BE8384B00D23BAC /* SnodeBatchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11F62BE8384A00D23BAC /* SnodeBatchRequest.swift */; };
+		A77F12392BE8384B00D23BAC /* SwarmSnode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11F72BE8384A00D23BAC /* SwarmSnode.swift */; };
+		A77F123A2BE8384B00D23BAC /* SnodeAuthenticatedRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11F82BE8384A00D23BAC /* SnodeAuthenticatedRequestBody.swift */; };
+		A77F123B2BE8384B00D23BAC /* GetMessagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11F92BE8384A00D23BAC /* GetMessagesResponse.swift */; };
+		A77F123C2BE8384B00D23BAC /* DeleteMessagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11FA2BE8384A00D23BAC /* DeleteMessagesResponse.swift */; };
+		A77F123D2BE8384B00D23BAC /* RevokeSubkeyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11FB2BE8384A00D23BAC /* RevokeSubkeyRequest.swift */; };
+		A77F123E2BE8384B00D23BAC /* LegacySendMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11FC2BE8384A00D23BAC /* LegacySendMessageRequest.swift */; };
+		A77F123F2BE8384B00D23BAC /* Data+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11FE2BE8384A00D23BAC /* Data+Utilities.swift */; };
+		A77F12402BE8384B00D23BAC /* Threading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11FF2BE8384A00D23BAC /* Threading.swift */; };
+		A77F12412BE8384B00D23BAC /* String+Trimming.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F12002BE8384A00D23BAC /* String+Trimming.swift */; };
+		A77F12422BE8384B00D23BAC /* GetSnodePoolJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F12022BE8384A00D23BAC /* GetSnodePoolJob.swift */; };
+		A77F12432BE8384B00D23BAC /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F12032BE8384A00D23BAC /* Configuration.swift */; };
 		A78409C92BE40BB0009FA73A /* NewDirectMessagesConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78409C82BE40BB0009FA73A /* NewDirectMessagesConversation.swift */; };
 		A78409CC2BE40D86009FA73A /* SettingsDisplayName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78409CB2BE40D86009FA73A /* SettingsDisplayName.swift */; };
 		A7B226012BE3ED1700A1CF45 /* SessionMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B225E22BE3ECE800A1CF45 /* SessionMessengerApp.swift */; };
@@ -62,6 +129,20 @@
 		A7B2261B2BE401BD00A1CF45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7B225E32BE3ECE800A1CF45 /* Assets.xcassets */; };
 		A7C64A122BE577E60077EEE5 /* SettingsMnemonicQrCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C64A112BE577E60077EEE5 /* SettingsMnemonicQrCode.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A77F11B62BE834D100D23BAC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A77F11B52BE834D100D23BAC /* OpenSSL.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		526BAF0B6695DD09CAE8DF8F /* Pods-session-ui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-session-ui.release.xcconfig"; path = "Target Support Files/Pods-session-ui/Pods-session-ui.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +176,74 @@
 		A77F11A82BE807E300D23BAC /* ONS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ONS.swift; sourceTree = "<group>"; };
 		A77F11AA2BE8082100D23BAC /* Blake2b.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blake2b.swift; sourceTree = "<group>"; };
 		A77F11AC2BE81A1B00D23BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A77F11AD2BE8299500D23BAC /* MessagesSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesSender.swift; sourceTree = "<group>"; };
+		A77F11AF2BE834BB00D23BAC /* OpenSSL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OpenSSL.xcframework; path = "../../Downloads/openssl-for-watchos/OpenSSL.xcframework"; sourceTree = "<group>"; };
+		A77F11B32BE834D100D23BAC /* OpenSSL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = OpenSSL.xcframework; sourceTree = "<group>"; };
+		A77F11BA2BE8384A00D23BAC /* SSKLegacy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSKLegacy.swift; sourceTree = "<group>"; };
+		A77F11BC2BE8384A00D23BAC /* _004_FlagMessageHashAsDeletedOrInvalid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _004_FlagMessageHashAsDeletedOrInvalid.swift; sourceTree = "<group>"; };
+		A77F11BD2BE8384A00D23BAC /* _001_InitialSetupMigration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _001_InitialSetupMigration.swift; sourceTree = "<group>"; };
+		A77F11BE2BE8384A00D23BAC /* _005_AddSnodeReveivedMessageInfoPrimaryKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _005_AddSnodeReveivedMessageInfoPrimaryKey.swift; sourceTree = "<group>"; };
+		A77F11BF2BE8384A00D23BAC /* _003_YDBToGRDBMigration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _003_YDBToGRDBMigration.swift; sourceTree = "<group>"; };
+		A77F11C02BE8384A00D23BAC /* _002_SetupStandardJobs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _002_SetupStandardJobs.swift; sourceTree = "<group>"; };
+		A77F11C22BE8384A00D23BAC /* SSKSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSKSetting.swift; sourceTree = "<group>"; };
+		A77F11C42BE8384A00D23BAC /* Snode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snode.swift; sourceTree = "<group>"; };
+		A77F11C52BE8384A00D23BAC /* SnodeSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnodeSet.swift; sourceTree = "<group>"; };
+		A77F11C62BE8384A00D23BAC /* SnodeReceivedMessageInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnodeReceivedMessageInfo.swift; sourceTree = "<group>"; };
+		A77F11C82BE8384A00D23BAC /* OnionRequestAPIDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnionRequestAPIDestination.swift; sourceTree = "<group>"; };
+		A77F11C92BE8384A00D23BAC /* OnionRequestAPIVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnionRequestAPIVersion.swift; sourceTree = "<group>"; };
+		A77F11CA2BE8384A00D23BAC /* SnodeAPIEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnodeAPIEndpoint.swift; sourceTree = "<group>"; };
+		A77F11CB2BE8384A00D23BAC /* OnionRequestAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnionRequestAPIError.swift; sourceTree = "<group>"; };
+		A77F11CC2BE8384A00D23BAC /* SnodeAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnodeAPIError.swift; sourceTree = "<group>"; };
+		A77F11CD2BE8384A00D23BAC /* SnodeAPINamespace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnodeAPINamespace.swift; sourceTree = "<group>"; };
+		A77F11CE2BE8384A00D23BAC /* ValidatableResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatableResponse.swift; sourceTree = "<group>"; };
+		A77F11D02BE8384A00D23BAC /* Notification+OnionRequestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification+OnionRequestAPI.swift"; sourceTree = "<group>"; };
+		A77F11D12BE8384A00D23BAC /* SnodeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnodeAPI.swift; sourceTree = "<group>"; };
+		A77F11D22BE8384A00D23BAC /* OnionRequestAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnionRequestAPI.swift; sourceTree = "<group>"; };
+		A77F11D32BE8384A00D23BAC /* OnionRequestAPI+Encryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OnionRequestAPI+Encryption.swift"; sourceTree = "<group>"; };
+		A77F11D52BE8384A00D23BAC /* SessionSnodeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionSnodeKit.h; sourceTree = "<group>"; };
+		A77F11D62BE8384A00D23BAC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A77F11D82BE8384A00D23BAC /* SnodeRecursiveResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnodeRecursiveResponse.swift; sourceTree = "<group>"; };
+		A77F11D92BE8384A00D23BAC /* GetMessagesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMessagesRequest.swift; sourceTree = "<group>"; };
+		A77F11DA2BE8384A00D23BAC /* GetServiceNodesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetServiceNodesRequest.swift; sourceTree = "<group>"; };
+		A77F11DB2BE8384A00D23BAC /* SnodeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnodeResponse.swift; sourceTree = "<group>"; };
+		A77F11DC2BE8384A00D23BAC /* ONSResolveResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ONSResolveResponse.swift; sourceTree = "<group>"; };
+		A77F11DD2BE8384A00D23BAC /* UpdateExpiryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateExpiryRequest.swift; sourceTree = "<group>"; };
+		A77F11DE2BE8384A00D23BAC /* OxenDaemonRPCRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OxenDaemonRPCRequest.swift; sourceTree = "<group>"; };
+		A77F11DF2BE8384A00D23BAC /* DeleteMessagesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteMessagesRequest.swift; sourceTree = "<group>"; };
+		A77F11E02BE8384A00D23BAC /* RevokeSubkeyResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevokeSubkeyResponse.swift; sourceTree = "<group>"; };
+		A77F11E12BE8384A00D23BAC /* GetSwarmRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSwarmRequest.swift; sourceTree = "<group>"; };
+		A77F11E22BE8384A00D23BAC /* GetStatsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStatsResponse.swift; sourceTree = "<group>"; };
+		A77F11E32BE8384A00D23BAC /* DeleteAllMessagesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteAllMessagesRequest.swift; sourceTree = "<group>"; };
+		A77F11E42BE8384A00D23BAC /* SendMessageResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessageResponse.swift; sourceTree = "<group>"; };
+		A77F11E52BE8384A00D23BAC /* ONSResolveRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ONSResolveRequest.swift; sourceTree = "<group>"; };
+		A77F11E62BE8384A00D23BAC /* SnodeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnodeRequest.swift; sourceTree = "<group>"; };
+		A77F11E72BE8384A00D23BAC /* DeleteAllBeforeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteAllBeforeRequest.swift; sourceTree = "<group>"; };
+		A77F11E82BE8384A00D23BAC /* SnodePoolResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnodePoolResponse.swift; sourceTree = "<group>"; };
+		A77F11E92BE8384A00D23BAC /* SnodeReceivedMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnodeReceivedMessage.swift; sourceTree = "<group>"; };
+		A77F11EA2BE8384A00D23BAC /* GetNetworkTimestampResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetNetworkTimestampResponse.swift; sourceTree = "<group>"; };
+		A77F11EB2BE8384A00D23BAC /* UpdateExpiryAllRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateExpiryAllRequest.swift; sourceTree = "<group>"; };
+		A77F11EC2BE8384A00D23BAC /* SendMessageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessageRequest.swift; sourceTree = "<group>"; };
+		A77F11ED2BE8384A00D23BAC /* UpdateExpiryResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateExpiryResponse.swift; sourceTree = "<group>"; };
+		A77F11EE2BE8384A00D23BAC /* SnodeSwarmItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnodeSwarmItem.swift; sourceTree = "<group>"; };
+		A77F11EF2BE8384A00D23BAC /* LegacyGetMessagesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegacyGetMessagesRequest.swift; sourceTree = "<group>"; };
+		A77F11F02BE8384A00D23BAC /* UpdateExpiryAllResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateExpiryAllResponse.swift; sourceTree = "<group>"; };
+		A77F11F12BE8384A00D23BAC /* DeleteAllBeforeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteAllBeforeResponse.swift; sourceTree = "<group>"; };
+		A77F11F22BE8384A00D23BAC /* DeleteAllMessagesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteAllMessagesResponse.swift; sourceTree = "<group>"; };
+		A77F11F32BE8384A00D23BAC /* GetExpiriesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetExpiriesRequest.swift; sourceTree = "<group>"; };
+		A77F11F42BE8384A00D23BAC /* SnodeMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnodeMessage.swift; sourceTree = "<group>"; };
+		A77F11F52BE8384A00D23BAC /* GetExpiriesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetExpiriesResponse.swift; sourceTree = "<group>"; };
+		A77F11F62BE8384A00D23BAC /* SnodeBatchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnodeBatchRequest.swift; sourceTree = "<group>"; };
+		A77F11F72BE8384A00D23BAC /* SwarmSnode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwarmSnode.swift; sourceTree = "<group>"; };
+		A77F11F82BE8384A00D23BAC /* SnodeAuthenticatedRequestBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnodeAuthenticatedRequestBody.swift; sourceTree = "<group>"; };
+		A77F11F92BE8384A00D23BAC /* GetMessagesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMessagesResponse.swift; sourceTree = "<group>"; };
+		A77F11FA2BE8384A00D23BAC /* DeleteMessagesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteMessagesResponse.swift; sourceTree = "<group>"; };
+		A77F11FB2BE8384A00D23BAC /* RevokeSubkeyRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevokeSubkeyRequest.swift; sourceTree = "<group>"; };
+		A77F11FC2BE8384A00D23BAC /* LegacySendMessageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegacySendMessageRequest.swift; sourceTree = "<group>"; };
+		A77F11FE2BE8384A00D23BAC /* Data+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Utilities.swift"; sourceTree = "<group>"; };
+		A77F11FF2BE8384A00D23BAC /* Threading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Threading.swift; sourceTree = "<group>"; };
+		A77F12002BE8384A00D23BAC /* String+Trimming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Trimming.swift"; sourceTree = "<group>"; };
+		A77F12022BE8384A00D23BAC /* GetSnodePoolJob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSnodePoolJob.swift; sourceTree = "<group>"; };
+		A77F12032BE8384A00D23BAC /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		A78409C82BE40BB0009FA73A /* NewDirectMessagesConversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDirectMessagesConversation.swift; sourceTree = "<group>"; };
 		A78409CB2BE40D86009FA73A /* SettingsDisplayName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDisplayName.swift; sourceTree = "<group>"; };
 		A7B225C82BE3ECB500A1CF45 /* session-ui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "session-ui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +278,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A77F11B42BE834D100D23BAC /* OpenSSL.xcframework in Frameworks */,
 				837C4B35BF28072B099A5CD9 /* Pods_session_ui.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +338,166 @@
 			path = Mnemonics;
 			sourceTree = "<group>";
 		};
+		A77F11B72BE8384A00D23BAC /* SessionSnodeKit */ = {
+			isa = PBXGroup;
+			children = (
+				A77F11B82BE8384A00D23BAC /* Database */,
+				A77F11C72BE8384A00D23BAC /* Types */,
+				A77F11CF2BE8384A00D23BAC /* Networking */,
+				A77F11D42BE8384A00D23BAC /* Meta */,
+				A77F11D72BE8384A00D23BAC /* Models */,
+				A77F11FD2BE8384A00D23BAC /* Utilities */,
+				A77F12012BE8384A00D23BAC /* Jobs */,
+				A77F12032BE8384A00D23BAC /* Configuration.swift */,
+			);
+			path = SessionSnodeKit;
+			sourceTree = "<group>";
+		};
+		A77F11B82BE8384A00D23BAC /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				A77F11B92BE8384A00D23BAC /* LegacyDatabase */,
+				A77F11BB2BE8384A00D23BAC /* Migrations */,
+				A77F11C12BE8384A00D23BAC /* Types */,
+				A77F11C32BE8384A00D23BAC /* Models */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		A77F11B92BE8384A00D23BAC /* LegacyDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				A77F11BA2BE8384A00D23BAC /* SSKLegacy.swift */,
+			);
+			path = LegacyDatabase;
+			sourceTree = "<group>";
+		};
+		A77F11BB2BE8384A00D23BAC /* Migrations */ = {
+			isa = PBXGroup;
+			children = (
+				A77F11BC2BE8384A00D23BAC /* _004_FlagMessageHashAsDeletedOrInvalid.swift */,
+				A77F11BD2BE8384A00D23BAC /* _001_InitialSetupMigration.swift */,
+				A77F11BE2BE8384A00D23BAC /* _005_AddSnodeReveivedMessageInfoPrimaryKey.swift */,
+				A77F11BF2BE8384A00D23BAC /* _003_YDBToGRDBMigration.swift */,
+				A77F11C02BE8384A00D23BAC /* _002_SetupStandardJobs.swift */,
+			);
+			path = Migrations;
+			sourceTree = "<group>";
+		};
+		A77F11C12BE8384A00D23BAC /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				A77F11C22BE8384A00D23BAC /* SSKSetting.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		A77F11C32BE8384A00D23BAC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A77F11C42BE8384A00D23BAC /* Snode.swift */,
+				A77F11C52BE8384A00D23BAC /* SnodeSet.swift */,
+				A77F11C62BE8384A00D23BAC /* SnodeReceivedMessageInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A77F11C72BE8384A00D23BAC /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				A77F11C82BE8384A00D23BAC /* OnionRequestAPIDestination.swift */,
+				A77F11C92BE8384A00D23BAC /* OnionRequestAPIVersion.swift */,
+				A77F11CA2BE8384A00D23BAC /* SnodeAPIEndpoint.swift */,
+				A77F11CB2BE8384A00D23BAC /* OnionRequestAPIError.swift */,
+				A77F11CC2BE8384A00D23BAC /* SnodeAPIError.swift */,
+				A77F11CD2BE8384A00D23BAC /* SnodeAPINamespace.swift */,
+				A77F11CE2BE8384A00D23BAC /* ValidatableResponse.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		A77F11CF2BE8384A00D23BAC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A77F11D02BE8384A00D23BAC /* Notification+OnionRequestAPI.swift */,
+				A77F11D12BE8384A00D23BAC /* SnodeAPI.swift */,
+				A77F11D22BE8384A00D23BAC /* OnionRequestAPI.swift */,
+				A77F11D32BE8384A00D23BAC /* OnionRequestAPI+Encryption.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A77F11D42BE8384A00D23BAC /* Meta */ = {
+			isa = PBXGroup;
+			children = (
+				A77F11D52BE8384A00D23BAC /* SessionSnodeKit.h */,
+				A77F11D62BE8384A00D23BAC /* Info.plist */,
+			);
+			path = Meta;
+			sourceTree = "<group>";
+		};
+		A77F11D72BE8384A00D23BAC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A77F11D82BE8384A00D23BAC /* SnodeRecursiveResponse.swift */,
+				A77F11D92BE8384A00D23BAC /* GetMessagesRequest.swift */,
+				A77F11DA2BE8384A00D23BAC /* GetServiceNodesRequest.swift */,
+				A77F11DB2BE8384A00D23BAC /* SnodeResponse.swift */,
+				A77F11DC2BE8384A00D23BAC /* ONSResolveResponse.swift */,
+				A77F11DD2BE8384A00D23BAC /* UpdateExpiryRequest.swift */,
+				A77F11DE2BE8384A00D23BAC /* OxenDaemonRPCRequest.swift */,
+				A77F11DF2BE8384A00D23BAC /* DeleteMessagesRequest.swift */,
+				A77F11E02BE8384A00D23BAC /* RevokeSubkeyResponse.swift */,
+				A77F11E12BE8384A00D23BAC /* GetSwarmRequest.swift */,
+				A77F11E22BE8384A00D23BAC /* GetStatsResponse.swift */,
+				A77F11E32BE8384A00D23BAC /* DeleteAllMessagesRequest.swift */,
+				A77F11E42BE8384A00D23BAC /* SendMessageResponse.swift */,
+				A77F11E52BE8384A00D23BAC /* ONSResolveRequest.swift */,
+				A77F11E62BE8384A00D23BAC /* SnodeRequest.swift */,
+				A77F11E72BE8384A00D23BAC /* DeleteAllBeforeRequest.swift */,
+				A77F11E82BE8384A00D23BAC /* SnodePoolResponse.swift */,
+				A77F11E92BE8384A00D23BAC /* SnodeReceivedMessage.swift */,
+				A77F11EA2BE8384A00D23BAC /* GetNetworkTimestampResponse.swift */,
+				A77F11EB2BE8384A00D23BAC /* UpdateExpiryAllRequest.swift */,
+				A77F11EC2BE8384A00D23BAC /* SendMessageRequest.swift */,
+				A77F11ED2BE8384A00D23BAC /* UpdateExpiryResponse.swift */,
+				A77F11EE2BE8384A00D23BAC /* SnodeSwarmItem.swift */,
+				A77F11EF2BE8384A00D23BAC /* LegacyGetMessagesRequest.swift */,
+				A77F11F02BE8384A00D23BAC /* UpdateExpiryAllResponse.swift */,
+				A77F11F12BE8384A00D23BAC /* DeleteAllBeforeResponse.swift */,
+				A77F11F22BE8384A00D23BAC /* DeleteAllMessagesResponse.swift */,
+				A77F11F32BE8384A00D23BAC /* GetExpiriesRequest.swift */,
+				A77F11F42BE8384A00D23BAC /* SnodeMessage.swift */,
+				A77F11F52BE8384A00D23BAC /* GetExpiriesResponse.swift */,
+				A77F11F62BE8384A00D23BAC /* SnodeBatchRequest.swift */,
+				A77F11F72BE8384A00D23BAC /* SwarmSnode.swift */,
+				A77F11F82BE8384A00D23BAC /* SnodeAuthenticatedRequestBody.swift */,
+				A77F11F92BE8384A00D23BAC /* GetMessagesResponse.swift */,
+				A77F11FA2BE8384A00D23BAC /* DeleteMessagesResponse.swift */,
+				A77F11FB2BE8384A00D23BAC /* RevokeSubkeyRequest.swift */,
+				A77F11FC2BE8384A00D23BAC /* LegacySendMessageRequest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A77F11FD2BE8384A00D23BAC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A77F11FE2BE8384A00D23BAC /* Data+Utilities.swift */,
+				A77F11FF2BE8384A00D23BAC /* Threading.swift */,
+				A77F12002BE8384A00D23BAC /* String+Trimming.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A77F12012BE8384A00D23BAC /* Jobs */ = {
+			isa = PBXGroup;
+			children = (
+				A77F12022BE8384A00D23BAC /* GetSnodePoolJob.swift */,
+			);
+			path = Jobs;
+			sourceTree = "<group>";
+		};
 		A78409C52BE40B88009FA73A /* NewConversation */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +520,7 @@
 		A7B225BB2BE3ECB500A1CF45 = {
 			isa = PBXGroup;
 			children = (
+				A77F11B72BE8384A00D23BAC /* SessionSnodeKit */,
 				A77F11A52BE7FE9C00D23BAC /* Mnemonics */,
 				A7213BAA2BE59196007E0C4C /* Localizable.xcstrings */,
 				A7213BBF2BE6640B007E0C4C /* Storage */,
@@ -280,6 +591,7 @@
 			isa = PBXGroup;
 			children = (
 				A7B225EC2BE3ECE800A1CF45 /* Constants.swift */,
+				A77F11AD2BE8299500D23BAC /* MessagesSender.swift */,
 				A7B225ED2BE3ECE800A1CF45 /* StartLoginFlow.swift */,
 				A7B225EE2BE3ECE800A1CF45 /* CheckLoginFlow.swift */,
 			);
@@ -339,6 +651,8 @@
 		DD6A400118DB6B555C329D9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A77F11AF2BE834BB00D23BAC /* OpenSSL.xcframework */,
+				A77F11B32BE834D100D23BAC /* OpenSSL.xcframework */,
 				739240EF3B6EFE3503780BC0 /* Pods_session_ui.framework */,
 			);
 			name = Frameworks;
@@ -356,6 +670,7 @@
 				A7B225C52BE3ECB500A1CF45 /* Frameworks */,
 				A7B225C62BE3ECB500A1CF45 /* Resources */,
 				24988F4B76A0401840A96311 /* [CP] Embed Pods Frameworks */,
+				A77F11B62BE834D100D23BAC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -405,6 +720,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A77F12192BE8384B00D23BAC /* Info.plist in Resources */,
 				A77F11A72BE7FF2E00D23BAC /* english.txt in Resources */,
 				A7213BAB2BE59196007E0C4C /* Localizable.xcstrings in Resources */,
 				A7B2261B2BE401BD00A1CF45 /* Assets.xcassets in Resources */,
@@ -461,55 +777,119 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7B226022BE3EDD300A1CF45 /* AESSecurity.swift in Sources */,
+				A77F12262BE8384B00D23BAC /* SendMessageResponse.swift in Sources */,
+				A77F12422BE8384B00D23BAC /* GetSnodePoolJob.swift in Sources */,
 				A7B226032BE3EDD300A1CF45 /* Data.swift in Sources */,
 				A7B226042BE3EDD300A1CF45 /* Errors.swift in Sources */,
 				A77F11922BE67E4700D23BAC /* Keypairs.swift in Sources */,
+				A77F12112BE8384B00D23BAC /* OnionRequestAPIError.swift in Sources */,
+				A77F12232BE8384B00D23BAC /* GetSwarmRequest.swift in Sources */,
+				A77F12082BE8384A00D23BAC /* _003_YDBToGRDBMigration.swift in Sources */,
+				A77F122B2BE8384B00D23BAC /* SnodeReceivedMessage.swift in Sources */,
+				A77F12412BE8384B00D23BAC /* String+Trimming.swift in Sources */,
+				A77F122C2BE8384B00D23BAC /* GetNetworkTimestampResponse.swift in Sources */,
+				A77F123E2BE8384B00D23BAC /* LegacySendMessageRequest.swift in Sources */,
+				A77F12102BE8384A00D23BAC /* SnodeAPIEndpoint.swift in Sources */,
 				A7213BC32BE66812007E0C4C /* AccountContext.swift in Sources */,
+				A77F120C2BE8384A00D23BAC /* SnodeSet.swift in Sources */,
+				A77F12322BE8384B00D23BAC /* UpdateExpiryAllResponse.swift in Sources */,
 				A7213BA62BE58967007E0C4C /* DirectMessagesConversation+CoreDataClass.swift in Sources */,
+				A77F12092BE8384A00D23BAC /* _002_SetupStandardJobs.swift in Sources */,
 				A7B226052BE3EDD300A1CF45 /* Color.swift in Sources */,
 				A7B2261A2BE3FBFC00A1CF45 /* NewConversationScreen.swift in Sources */,
+				A77F12292BE8384B00D23BAC /* DeleteAllBeforeRequest.swift in Sources */,
+				A77F121F2BE8384B00D23BAC /* UpdateExpiryRequest.swift in Sources */,
+				A77F12042BE8384A00D23BAC /* SSKLegacy.swift in Sources */,
 				A7B226062BE3EDD300A1CF45 /* QRCodes.swift in Sources */,
+				A77F121E2BE8384B00D23BAC /* ONSResolveResponse.swift in Sources */,
+				A77F120A2BE8384A00D23BAC /* SSKSetting.swift in Sources */,
 				A7213BA92BE58E38007E0C4C /* TempStorage.swift in Sources */,
 				A7213BA72BE58967007E0C4C /* DirectMessagesConversation+CoreDataProperties.swift in Sources */,
+				A77F12332BE8384B00D23BAC /* DeleteAllBeforeResponse.swift in Sources */,
+				A77F122D2BE8384B00D23BAC /* UpdateExpiryAllRequest.swift in Sources */,
+				A77F120E2BE8384A00D23BAC /* OnionRequestAPIDestination.swift in Sources */,
+				A77F12362BE8384B00D23BAC /* SnodeMessage.swift in Sources */,
 				A7B226152BE3F7BC00A1CF45 /* SettingsView.swift in Sources */,
 				A7B226072BE3EDD300A1CF45 /* Constants.swift in Sources */,
+				A77F12132BE8384B00D23BAC /* SnodeAPINamespace.swift in Sources */,
 				A77F119C2BE6827A00D23BAC /* GeneralError.swift in Sources */,
 				A7213BB72BE5A413007E0C4C /* Message+CoreDataProperties.swift in Sources */,
+				A77F120B2BE8384A00D23BAC /* Snode.swift in Sources */,
 				A7213BBE2BE61D9C007E0C4C /* PreviewMocks.swift in Sources */,
 				A7B226082BE3EDD300A1CF45 /* StartLoginFlow.swift in Sources */,
 				A7B226092BE3EDD300A1CF45 /* CheckLoginFlow.swift in Sources */,
 				A7B2260A2BE3EDD300A1CF45 /* ConversationMessage.swift in Sources */,
 				A7213BAF2BE59B15007E0C4C /* ChatBubble.swift in Sources */,
 				A7B2260B2BE3EDD300A1CF45 /* MessageInput.swift in Sources */,
+				A77F12062BE8384A00D23BAC /* _001_InitialSetupMigration.swift in Sources */,
+				A77F12222BE8384B00D23BAC /* RevokeSubkeyResponse.swift in Sources */,
 				A7213BB92BE5A6D5007E0C4C /* Context.swift in Sources */,
 				A77F11942BE680F900D23BAC /* Randomness.swift in Sources */,
+				A77F12242BE8384B00D23BAC /* GetStatsResponse.swift in Sources */,
+				A77F122F2BE8384B00D23BAC /* UpdateExpiryResponse.swift in Sources */,
+				A77F12402BE8384B00D23BAC /* Threading.swift in Sources */,
 				A77F119A2BE6825E00D23BAC /* Hex.swift in Sources */,
 				A7C64A122BE577E60077EEE5 /* SettingsMnemonicQrCode.swift in Sources */,
+				A77F12072BE8384A00D23BAC /* _005_AddSnodeReveivedMessageInfoPrimaryKey.swift in Sources */,
 				A7213B982BE582EA007E0C4C /* Storage.xcdatamodeld in Sources */,
+				A77F12182BE8384B00D23BAC /* OnionRequestAPI+Encryption.swift in Sources */,
+				A77F121C2BE8384B00D23BAC /* GetServiceNodesRequest.swift in Sources */,
+				A77F12302BE8384B00D23BAC /* SnodeSwarmItem.swift in Sources */,
+				A77F12212BE8384B00D23BAC /* DeleteMessagesRequest.swift in Sources */,
+				A77F12432BE8384B00D23BAC /* Configuration.swift in Sources */,
 				A77F11A22BE68BE800D23BAC /* Mnemonic.swift in Sources */,
+				A77F12152BE8384B00D23BAC /* Notification+OnionRequestAPI.swift in Sources */,
 				A7B2260C2BE3EDD300A1CF45 /* SessionLogo.swift in Sources */,
+				A77F12342BE8384B00D23BAC /* DeleteAllMessagesResponse.swift in Sources */,
 				A77F11A92BE807E300D23BAC /* ONS.swift in Sources */,
+				A77F120F2BE8384A00D23BAC /* OnionRequestAPIVersion.swift in Sources */,
 				A78409CC2BE40D86009FA73A /* SettingsDisplayName.swift in Sources */,
+				A77F11AE2BE8299500D23BAC /* MessagesSender.swift in Sources */,
 				A7B2260D2BE3EDD300A1CF45 /* HomeScreen.swift in Sources */,
 				A77F11A02BE6891600D23BAC /* SessionConstants.swift in Sources */,
 				A7B2260E2BE3EDD300A1CF45 /* ConversationScreen.swift in Sources */,
 				A77F119E2BE683F600D23BAC /* Sodium+Utilities.swift in Sources */,
+				A77F12172BE8384B00D23BAC /* OnionRequestAPI.swift in Sources */,
+				A77F12142BE8384B00D23BAC /* ValidatableResponse.swift in Sources */,
+				A77F122A2BE8384B00D23BAC /* SnodePoolResponse.swift in Sources */,
 				A7B2260F2BE3EDD300A1CF45 /* SignupScreen.swift in Sources */,
+				A77F121D2BE8384B00D23BAC /* SnodeResponse.swift in Sources */,
 				A77F11AB2BE8082100D23BAC /* Blake2b.swift in Sources */,
+				A77F12282BE8384B00D23BAC /* SnodeRequest.swift in Sources */,
 				A77F11982BE681F900D23BAC /* SessionId.swift in Sources */,
+				A77F122E2BE8384B00D23BAC /* SendMessageRequest.swift in Sources */,
 				A7B226102BE3EDD300A1CF45 /* SigninScreenModel.swift in Sources */,
+				A77F12392BE8384B00D23BAC /* SwarmSnode.swift in Sources */,
 				A7B226112BE3EDD300A1CF45 /* SigninScreen.swift in Sources */,
 				A77F11A42BE68C5E00D23BAC /* LoginSuccessScreen.swift in Sources */,
+				A77F121A2BE8384B00D23BAC /* SnodeRecursiveResponse.swift in Sources */,
+				A77F12162BE8384B00D23BAC /* SnodeAPI.swift in Sources */,
+				A77F12372BE8384B00D23BAC /* GetExpiriesResponse.swift in Sources */,
+				A77F123D2BE8384B00D23BAC /* RevokeSubkeyRequest.swift in Sources */,
 				A7213BC12BE6669A007E0C4C /* KeychainHelper.swift in Sources */,
+				A77F12312BE8384B00D23BAC /* LegacyGetMessagesRequest.swift in Sources */,
 				A7213BAD2BE59352007E0C4C /* InlineIconText.swift in Sources */,
+				A77F12122BE8384B00D23BAC /* SnodeAPIError.swift in Sources */,
 				A77F11962BE681CB00D23BAC /* Identity.swift in Sources */,
+				A77F121B2BE8384B00D23BAC /* GetMessagesRequest.swift in Sources */,
 				A78409C92BE40BB0009FA73A /* NewDirectMessagesConversation.swift in Sources */,
+				A77F123B2BE8384B00D23BAC /* GetMessagesResponse.swift in Sources */,
+				A77F12272BE8384B00D23BAC /* ONSResolveRequest.swift in Sources */,
+				A77F12202BE8384B00D23BAC /* OxenDaemonRPCRequest.swift in Sources */,
+				A77F123F2BE8384B00D23BAC /* Data+Utilities.swift in Sources */,
+				A77F12052BE8384A00D23BAC /* _004_FlagMessageHashAsDeletedOrInvalid.swift in Sources */,
 				A7B226122BE3EDD300A1CF45 /* LoginScreen.swift in Sources */,
 				A7213B952BE57C2B007E0C4C /* ConversationsList.swift in Sources */,
+				A77F12382BE8384B00D23BAC /* SnodeBatchRequest.swift in Sources */,
+				A77F123A2BE8384B00D23BAC /* SnodeAuthenticatedRequestBody.swift in Sources */,
+				A77F12352BE8384B00D23BAC /* GetExpiriesRequest.swift in Sources */,
+				A77F12252BE8384B00D23BAC /* DeleteAllMessagesRequest.swift in Sources */,
 				A7B226132BE3EDD300A1CF45 /* ContentView.swift in Sources */,
 				A7213BBB2BE6172D007E0C4C /* String.swift in Sources */,
 				A7B226012BE3ED1700A1CF45 /* SessionMessengerApp.swift in Sources */,
+				A77F123C2BE8384B00D23BAC /* DeleteMessagesResponse.swift in Sources */,
 				A7213BB62BE5A413007E0C4C /* Message+CoreDataClass.swift in Sources */,
+				A77F120D2BE8384A00D23BAC /* SnodeReceivedMessageInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +1023,20 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack/CocoaLumberjack.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift/CryptoSwift.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DSF_QRCode/QRCode.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reachability/Reachability.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SignalCoreKit/SignalCoreKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sodium/Sodium.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftImageReadWrite/SwiftImageReadWrite.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftProtobuf/SwiftProtobuf.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftQRCodeGenerator/QRCodeGenerator.framework/Headers\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Sodium/Headers\"",
+					"$(PROJECT_DIR)/OpenSSL.xcframework",
+				);
 				INFOPLIST_FILE = "session-ui/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "session-watchos";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -676,6 +1070,20 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack/CocoaLumberjack.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift/CryptoSwift.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DSF_QRCode/QRCode.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reachability/Reachability.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SignalCoreKit/SignalCoreKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Sodium/Sodium.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftImageReadWrite/SwiftImageReadWrite.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftProtobuf/SwiftProtobuf.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftQRCodeGenerator/QRCodeGenerator.framework/Headers\"",
+					"\"${PODS_XCFRAMEWORKS_BUILD_DIR}/Sodium/Headers\"",
+					"$(PROJECT_DIR)/OpenSSL.xcframework/**",
+				);
 				INFOPLIST_FILE = "session-ui/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "session-watchos";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";

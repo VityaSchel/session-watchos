@@ -2,6 +2,7 @@ import Foundation
 import SwiftUI
 
 class SigninViewModel: ObservableObject {
+  @EnvironmentObject var account: AccountContext
   @Published var qrCodeImage: UIImage?
   @Published var isLoading = true
   @Published var showAlert = false
@@ -22,7 +23,9 @@ class SigninViewModel: ObservableObject {
             self?.startCheckingServer(flowID: flowID, completion: { encryptedPhrase in
               do {
                 let decryptedPhrase = try decryptAesCbc(encryptedBase64: encryptedPhrase, AesKeyBase64: secretKey)
-                
+                let seed = decryptedPhrase.data(using: .utf8)!
+                let identity = try Identity.generate(from: seed)
+                self?.account.login(seed: seed)
               } catch {
                 self?.alertMessage = "Something went wrong"
                 self?.showAlert = true
@@ -34,7 +37,7 @@ class SigninViewModel: ObservableObject {
             self?.isLoading = false
           }
         case .failure(let error):
-          self?.alertMessage = "An error occurred: \(error.localizedDescription)"
+          self?.alertMessage = error.localizedDescription
           self?.showAlert = true
           self?.isLoading = false
         }

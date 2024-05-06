@@ -5,7 +5,7 @@ func putConversationsMocks(into context: NSManagedObjectContext) {
   convo1.id = UUID()
   convo1.sessionID = "057aeb66e45660c3bdfb7c62706f6440226af43ec13f3b6f899c1dd4db1b8fce5b"
   convo1.displayName = "hloth"
-  convo1.lastMessage = ConversationLastMessage(textContent: "Hi hloth!")
+  convo1.lastMessage = ConversationLastMessage(isIncoming: true, textContent: "Hi hloth!")
   
   let convo2 = DirectMessagesConversation(context: context)
   convo2.id = UUID()

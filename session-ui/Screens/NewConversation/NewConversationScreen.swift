@@ -55,7 +55,7 @@ struct NewConversationScreen: View {
       default:
         NewDirectMessagesConversationScreen(onCreated: { conversation in
           navigationModel.path = NavigationPath([
-            Routes.Conversation(ConversationScreenDetails(title: conversation.displayName ?? conversation.sessionID, uuid: conversation.id))
+            Routes.Conversation(ConversationScreenDetails(title: conversation.displayName ?? conversation.sessionID, uuid: conversation.id, cdObjectId: conversation.objectID))
           ])
         })
       }

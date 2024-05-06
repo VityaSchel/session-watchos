@@ -1,29 +1,41 @@
 PODS:
+  - CocoaLumberjack (3.8.5):
+    - CocoaLumberjack/Core (= 3.8.5)
+  - CocoaLumberjack/Core (3.8.5)
   - CryptoSwift (1.8.1)
   - DSF_QRCode (18.0.0):
     - SwiftImageReadWrite (~> 1.6.1)
     - SwiftQRCodeGenerator (~> 2.0.2)
   - Reachability (3.3)
+  - SignalCoreKit (1.0.0):
+    - CocoaLumberjack
   - Sodium (0.9.1)
   - SwiftImageReadWrite (1.6.1)
+  - SwiftProtobuf (1.5.0)
   - SwiftQRCodeGenerator (2.0.2)
 
 DEPENDENCIES:
   - CryptoSwift (~> 1.8.1)
   - DSF_QRCode (~> 18.0.0)
   - Reachability (from `./Reachability`)
+  - SignalCoreKit (from `./session-ios-core-kit-session-version`)
   - Sodium (from `https://github.com/oxen-io/session-ios-swift-sodium.git`, commit `310c343`)
+  - SwiftProtobuf (~> 1.5.0)
 
 SPEC REPOS:
   trunk:
+    - CocoaLumberjack
     - CryptoSwift
     - DSF_QRCode
     - SwiftImageReadWrite
+    - SwiftProtobuf
     - SwiftQRCodeGenerator
 
 EXTERNAL SOURCES:
   Reachability:
     :path: "./Reachability"
+  SignalCoreKit:
+    :path: "./session-ios-core-kit-session-version"
   Sodium:
     :commit: 310c343
     :git: https://github.com/oxen-io/session-ios-swift-sodium.git
@@ -34,13 +46,16 @@ CHECKOUT OPTIONS:
     :git: https://github.com/oxen-io/session-ios-swift-sodium.git
 
 SPEC CHECKSUMS:
+  CocoaLumberjack: 6a459bc897d6d80bd1b8c78482ec7ad05dffc3f0
   CryptoSwift: b9c701d6f5011df23794dbf7f2e480a77835d83d
   DSF_QRCode: 3fe0acc968ce8588a9b1dabb9557a364472f5aaf
   Reachability: 84cfbc7118ce937b37c03ba3b6bc1a1904ba3c33
+  SignalCoreKit: f1c3b8d61aee23568f4bfd6da8c44547e08489ce
   Sodium: a7d42cb46e789d2630fa552d35870b416ed055ae
   SwiftImageReadWrite: 69f6521a74fdddbb61b2cc844150ec64de2cb4c7
+  SwiftProtobuf: 241400280f912735c1e1b9fe675fdd2c6c4d42e2
   SwiftQRCodeGenerator: cc02fed209335064d0b0dd61b2a0874b9bc6bd5a
 
-PODFILE CHECKSUM: 6fea1ecb4e42b100d8367f2e91d38806e815e5f7
+PODFILE CHECKSUM: 86336c510e501d833a7eb335406cee8285c7baa1
 
 COCOAPODS: 1.15.2
