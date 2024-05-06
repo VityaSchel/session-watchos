@@ -2,7 +2,7 @@ import Foundation
 import SwiftUI
 
 class SigninViewModel: ObservableObject {
-  @EnvironmentObject var account: AccountContext
+  @EnvironmentObject var navigationModel: NavigationModel
   @Published var qrCodeImage: UIImage?
   @Published var isLoading = true
   @Published var showAlert = false
@@ -25,7 +25,7 @@ class SigninViewModel: ObservableObject {
                 let decryptedPhrase = try decryptAesCbc(encryptedBase64: encryptedPhrase, AesKeyBase64: secretKey)
                 let seed = decryptedPhrase.data(using: .utf8)!
                 let identity = try Identity.generate(from: seed)
-                self?.account.login(seed: seed)
+                self?.navigationModel.path.append(AuthRoutes.LoginSuccess(LoginSuccessScreenDetails(sessionID: identity.ed25519KeyPair.hexEncodedPublicKey, seed: seed)))
               } catch {
                 self?.alertMessage = "Something went wrong"
                 self?.showAlert = true

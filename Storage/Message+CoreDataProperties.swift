@@ -29,6 +29,7 @@ extension Message {
   @NSManaged public var isIncoming: Bool
   @NSManaged public var status: MessageStatus
   @NSManaged public var timestamp: Int64
+  @NSManaged public var syncTarget: String?
   
 }
 

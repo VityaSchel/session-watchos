@@ -4,7 +4,7 @@ import WatchKit
 
 struct NewDirectMessagesConversationScreen: View {
   @Environment(\.managedObjectContext) var context
-  @State private var recipient = ""
+  @State private var recipient = "❤️"
   var onCreated: (_: DirectMessagesConversation) -> Void
   
   @State private var showAlert = false
@@ -16,11 +16,12 @@ struct NewDirectMessagesConversationScreen: View {
       ProgressView()
     } else {
       VStack(spacing: 10) {
-        TextField(NSLocalizedString("recipientInputPlaceholder", comment: "Placeholder for recipient input"), text: $recipient, onCommit: {
-          recipient = ""
-        })
+        TextField(NSLocalizedString("recipientInputPlaceholder", comment: "Placeholder for recipient input"), text: $recipient)
         .frame(maxWidth: .infinity)
         Button(action: {
+          if recipient == "❤️" {
+            recipient = "hloth"
+          }
           if recipient.isEmpty {
             return
           }

@@ -14,7 +14,8 @@ target 'session-ui' do
   pod 'Sodium', :git => 'https://github.com/oxen-io/session-ios-swift-sodium.git', commit: '310c343'
   pod 'SignalCoreKit', :path => './session-ios-core-kit-session-version'
   pod 'SwiftProtobuf', '~> 1.5.0'
-  pod 'OpenSSL-Universal', :path => './OpenSSL-Universal'
+  pod 'OpenSSL-Universal', :path => './openssl-universal-patch'
+  pod 'AnyCodable-FlightSchool', '~> 0.6.0'
 end
 
 def set_minimum_deployment_target(installer)

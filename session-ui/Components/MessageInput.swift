@@ -3,7 +3,7 @@ import SwiftUI
 
 struct MessageInput: View {
   @Environment(\.managedObjectContext) var context
-  @State private var message = ""
+  @State private var message = "❤️"
   var onSubmit: (_: String) -> Void
   
   var body: some View {

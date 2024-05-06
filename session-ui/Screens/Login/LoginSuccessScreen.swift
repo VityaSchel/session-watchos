@@ -1,9 +1,11 @@
 import Foundation
 import SwiftUI
+import CoreData
 
 struct LoginSuccessScreen: View {
   @EnvironmentObject var account: AccountContext
   @EnvironmentObject var navigation: NavigationModel
+  @Environment(\.managedObjectContext) var context
   var sessionID: String
   var seed: Data
   
@@ -28,6 +30,17 @@ struct LoginSuccessScreen: View {
         
         Button(action: {
           account.login(seed: seed)
+          if let ourProfile: Account = {
+            let request: NSFetchRequest<Account> = Account.fetchBySessionID(sessionID: sessionID)
+            return try! context.fetch(request).first
+          }() {
+            LoggedUserProfile.shared.loadCurrentUser(ourProfile)
+          } else {
+            let newAccount = Account(context: context)
+            newAccount.sessionID = sessionID
+            saveContext(context: context)
+            LoggedUserProfile.shared.loadCurrentUser(newAccount)
+          }
           navigation.path = NavigationPath()
         }) {
           Text(NSLocalizedString("confirm", comment: "Confirm"))

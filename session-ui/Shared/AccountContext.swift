@@ -10,9 +10,9 @@ class AccountContext: ObservableObject {
   }
   
   init() {
-    let seedData = KeychainHelper.load(key: "mnemonic")
-    if seedData != nil {
-      mnemonic = seedToMnemonic(seed: seedData!)
+    if let seedData = KeychainHelper.load(key: "mnemonic") {
+      mnemonic = seedToMnemonic(seed: seedData)
+      authorized = true
     } else {
       mnemonic = nil
     }
@@ -26,6 +26,7 @@ class AccountContext: ObservableObject {
   
   func logout() {
     KeychainHelper.delete(key: "mnemonic")
+    LoggedUserProfile.shared.unsetCurrentUser()
     mnemonic = nil
     authorized = false
   }

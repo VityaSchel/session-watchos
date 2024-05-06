@@ -31,9 +31,11 @@
   "dependencies": {
     "CocoaLumberjack": [
 
+    ],
+    "OpenSSL-Universal": [
+
     ]
   },
-  "vendored_frameworks": "../OpenSSL.xcframework",
   "testspecs": [
     {
       "name": "Tests",

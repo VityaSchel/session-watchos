@@ -17,6 +17,8 @@
         <attribute name="conversation" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="isIncoming" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="status" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="syncTarget" optional="YES" attributeType="String"/>
         <attribute name="textContent" attributeType="String"/>
         <attribute name="timestamp" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>

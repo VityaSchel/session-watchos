@@ -27,6 +27,10 @@ struct ConversationScreen: View {
         .defaultScrollAnchor(.bottom)
         
         MessageInput(onSubmit: { text in
+          guard let conversationObject = try! context.existingObject(with: conversation.cdObjectId) as? Conversation else {
+            return
+          }
+          
           let newMessage = Message(context: context)
           newMessage.id = UUID()
           newMessage.textContent = text
@@ -34,15 +38,15 @@ struct ConversationScreen: View {
           newMessage.isIncoming = false
           newMessage.status = .Sending
           newMessage.timestamp = Int64(Date().timeIntervalSince1970*1000)
+          conversationObject.lastMessage = ConversationLastMessage(
+            isIncoming: false,
+            textContent: text
+          )
           saveContext(context: context)
-          messages.append(newMessage)
-          MessagesSender.storeMessage(newMessage)
           
-          if let conversation = try! context.existingObject(with: conversation.cdObjectId) as? Conversation {
-            conversation.lastMessage = ConversationLastMessage(
-              isIncoming: false, 
-              textContent: text
-            )
+          messages.append(newMessage)
+          Task {
+            await MessagesSender.storeMessage(newMessage, recipientPubKey: conversationObject.sessionID)
           }
         })
       }

@@ -1,4 +1,5 @@
 PODS:
+  - AnyCodable-FlightSchool (0.6.7)
   - CocoaLumberjack (3.8.5):
     - CocoaLumberjack/Core (= 3.8.5)
   - CocoaLumberjack/Core (3.8.5)
@@ -6,17 +7,21 @@ PODS:
   - DSF_QRCode (18.0.0):
     - SwiftImageReadWrite (~> 1.6.1)
     - SwiftQRCodeGenerator (~> 2.0.2)
+  - OpenSSL-Universal (3.1.5004)
   - Reachability (3.3)
   - SignalCoreKit (1.0.0):
     - CocoaLumberjack
+    - OpenSSL-Universal
   - Sodium (0.9.1)
   - SwiftImageReadWrite (1.6.1)
   - SwiftProtobuf (1.5.0)
   - SwiftQRCodeGenerator (2.0.2)
 
 DEPENDENCIES:
+  - AnyCodable-FlightSchool (~> 0.6.0)
   - CryptoSwift (~> 1.8.1)
   - DSF_QRCode (~> 18.0.0)
+  - OpenSSL-Universal (from `./openssl-universal-patch`)
   - Reachability (from `./Reachability`)
   - SignalCoreKit (from `./session-ios-core-kit-session-version`)
   - Sodium (from `https://github.com/oxen-io/session-ios-swift-sodium.git`, commit `310c343`)
@@ -24,6 +29,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - AnyCodable-FlightSchool
     - CocoaLumberjack
     - CryptoSwift
     - DSF_QRCode
@@ -32,6 +38,8 @@ SPEC REPOS:
     - SwiftQRCodeGenerator
 
 EXTERNAL SOURCES:
+  OpenSSL-Universal:
+    :path: "./openssl-universal-patch"
   Reachability:
     :path: "./Reachability"
   SignalCoreKit:
@@ -46,16 +54,18 @@ CHECKOUT OPTIONS:
     :git: https://github.com/oxen-io/session-ios-swift-sodium.git
 
 SPEC CHECKSUMS:
+  AnyCodable-FlightSchool: 261cbe76757802b17d471b9059b21e6fa5edf57b
   CocoaLumberjack: 6a459bc897d6d80bd1b8c78482ec7ad05dffc3f0
   CryptoSwift: b9c701d6f5011df23794dbf7f2e480a77835d83d
   DSF_QRCode: 3fe0acc968ce8588a9b1dabb9557a364472f5aaf
+  OpenSSL-Universal: 45f1c1456639eb33589d825b2f2caf4e570cdf55
   Reachability: 84cfbc7118ce937b37c03ba3b6bc1a1904ba3c33
-  SignalCoreKit: f1c3b8d61aee23568f4bfd6da8c44547e08489ce
+  SignalCoreKit: ca98aeee9829dcafcd5beb37889b121a1e6a70a8
   Sodium: a7d42cb46e789d2630fa552d35870b416ed055ae
   SwiftImageReadWrite: 69f6521a74fdddbb61b2cc844150ec64de2cb4c7
   SwiftProtobuf: 241400280f912735c1e1b9fe675fdd2c6c4d42e2
   SwiftQRCodeGenerator: cc02fed209335064d0b0dd61b2a0874b9bc6bd5a
 
-PODFILE CHECKSUM: 86336c510e501d833a7eb335406cee8285c7baa1
+PODFILE CHECKSUM: b69b19a002b6699d2a8370e94cd5d4815a59960e
 
 COCOAPODS: 1.15.2
