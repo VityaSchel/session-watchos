@@ -60,8 +60,12 @@ struct ConversationScreen: View {
               newMessage.status = .Sent
               let seenMsg = SeenMessage(context: context)
               seenMsg.messageHash = storedMessageHash
+              seenMsg.timestamp = Int64(Date().timeIntervalSince1970 * 1000)
+              seenMsg.polled = false
               let seenSyncMsg = SeenMessage(context: context)
               seenSyncMsg.messageHash = syncMessageHash
+              seenSyncMsg.timestamp = Int64(Date().timeIntervalSince1970 * 1000)
+              seenSyncMsg.polled = false
             } catch let error {
               print("Error while sending message", error)
               newMessage.status = .Errored

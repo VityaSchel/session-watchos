@@ -205,4 +205,49 @@ public class Swarm {
     ])
     return response
   }
+  
+  private func maxSizeMap(for namespaces: [Namespace]) -> [Namespace: Int64] {
+    var lastSplit: Int64 = 1
+    let namespacePriorityGroups: [Int64: [Namespace]] = namespaces
+      .grouped { $0.batchRequestSizePriority }
+    let lowestPriority: Int64 = (namespacePriorityGroups.keys.min() ?? 1)
+    
+    return namespacePriorityGroups
+      .map { $0 }
+      .sorted(by: { lhs, rhs -> Bool in lhs.key > rhs.key })
+      .flatMap { priority, namespaces -> [(namespace: Namespace, maxSize: Int64)] in
+        lastSplit *= Int64(namespaces.count + (priority == lowestPriority ? 0 : 1))
+        
+        return namespaces.map { ($0, lastSplit) }
+      }
+      .reduce(into: [:]) { result, next in
+        result[next.namespace] = -next.maxSize
+      }
+  }
+  
+  public func retrieveMessages(namespace: Namespace, pubkey: String, pubkeyEd25519: String, signature: String, signatureTimestamp: UInt64, lastHash: String?) async throws -> [PolledMessage] {
+    let namespaceMaxSizeMap: [Namespace: Int64] = maxSizeMap(for: [namespace])
+    let fallbackSize: Int64 = (namespaceMaxSizeMap.values.min() ?? 1)
+    let response = try await sendRequest(method: "retrieve", params: [
+      "pubkey": pubkey,
+      "last_hash": lastHash,
+      "namespace": namespace,
+      "timestamp": signatureTimestamp,
+      "max_size": namespaceMaxSizeMap[namespace]
+        .defaulting(to: fallbackSize),
+      "signature": signature,
+      "pubkey_ed25519": pubkeyEd25519
+    ])
+    guard let messages = response["messages"] as? [PolledMessage] else {
+      throw NodesError.invalidResponse
+    }
+    return messages
+  }
+}
+
+public struct PolledMessage {
+  var data: String
+  var expiration: UInt64
+  var hash: String
+  var timestamp: UInt64
 }

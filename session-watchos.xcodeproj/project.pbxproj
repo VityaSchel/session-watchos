@@ -25,6 +25,10 @@
 		A7213BC32BE66812007E0C4C /* AccountContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7213BC22BE66812007E0C4C /* AccountContext.swift */; };
 		A74F03DE2BEA912B008CD7DA /* SeenMessage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74F03DC2BEA912B008CD7DA /* SeenMessage+CoreDataClass.swift */; };
 		A74F03DF2BEA912B008CD7DA /* SeenMessage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74F03DD2BEA912B008CD7DA /* SeenMessage+CoreDataProperties.swift */; };
+		A74F03E12BEA9A6E008CD7DA /* MessagesReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74F03E02BEA9A6D008CD7DA /* MessagesReceiver.swift */; };
+		A74F03E32BEAA206008CD7DA /* Namespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74F03E22BEAA206008CD7DA /* Namespace.swift */; };
+		A74F03E52BEAA239008CD7DA /* PollingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74F03E42BEAA239008CD7DA /* PollingManager.swift */; };
+		A74F03E72BEAA836008CD7DA /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74F03E62BEAA836008CD7DA /* Array.swift */; };
 		A77F11922BE67E4700D23BAC /* Keypairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11912BE67E4700D23BAC /* Keypairs.swift */; };
 		A77F11942BE680F900D23BAC /* Randomness.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11932BE680F900D23BAC /* Randomness.swift */; };
 		A77F11962BE681CB00D23BAC /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11952BE681CB00D23BAC /* Identity.swift */; };
@@ -78,6 +82,7 @@
 		A7B2261A2BE3FBFC00A1CF45 /* NewConversationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B226192BE3FBFC00A1CF45 /* NewConversationScreen.swift */; };
 		A7B2261B2BE401BD00A1CF45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7B225E32BE3ECE800A1CF45 /* Assets.xcassets */; };
 		A7C64A122BE577E60077EEE5 /* SettingsMnemonicQrCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C64A112BE577E60077EEE5 /* SettingsMnemonicQrCode.swift */; };
+		A7E3EE222BEAAEC300BE6B23 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3EE212BEAAEC300BE6B23 /* Optional.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +105,10 @@
 		A7213BC22BE66812007E0C4C /* AccountContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountContext.swift; sourceTree = "<group>"; };
 		A74F03DC2BEA912B008CD7DA /* SeenMessage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SeenMessage+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A74F03DD2BEA912B008CD7DA /* SeenMessage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SeenMessage+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A74F03E02BEA9A6D008CD7DA /* MessagesReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesReceiver.swift; sourceTree = "<group>"; };
+		A74F03E22BEAA206008CD7DA /* Namespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Namespace.swift; sourceTree = "<group>"; };
+		A74F03E42BEAA239008CD7DA /* PollingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollingManager.swift; sourceTree = "<group>"; };
+		A74F03E62BEAA836008CD7DA /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		A77F11912BE67E4700D23BAC /* Keypairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keypairs.swift; sourceTree = "<group>"; };
 		A77F11932BE680F900D23BAC /* Randomness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Randomness.swift; sourceTree = "<group>"; };
 		A77F11952BE681CB00D23BAC /* Identity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
@@ -157,6 +166,7 @@
 		A7B226142BE3F7BC00A1CF45 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		A7B226192BE3FBFC00A1CF45 /* NewConversationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationScreen.swift; sourceTree = "<group>"; };
 		A7C64A112BE577E60077EEE5 /* SettingsMnemonicQrCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMnemonicQrCode.swift; sourceTree = "<group>"; };
+		A7E3EE212BEAAEC300BE6B23 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 		BAC41050F8478E903CABDBE2 /* Pods-session-ui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-session-ui.debug.xcconfig"; path = "Target Support Files/Pods-session-ui/Pods-session-ui.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -215,6 +225,7 @@
 				A77F11972BE681F900D23BAC /* SessionId.swift */,
 				A77F11952BE681CB00D23BAC /* Identity.swift */,
 				A77F17452BE8F07100D23BAC /* MessageWrapper.swift */,
+				A74F03E22BEAA206008CD7DA /* Namespace.swift */,
 				A77F119D2BE683F600D23BAC /* Sodium+Utilities.swift */,
 				A77F17592BE95F3600D23BAC /* ProtoBuilder.swift */,
 				A77F175B2BE9616B00D23BAC /* LokiProfile.swift */,
@@ -336,7 +347,9 @@
 				A7B225E72BE3ECE800A1CF45 /* Data.swift */,
 				A7213BA82BE58E38007E0C4C /* TempStorage.swift */,
 				A7213BAC2BE59352007E0C4C /* InlineIconText.swift */,
+				A74F03E62BEAA836008CD7DA /* Array.swift */,
 				A7213BBA2BE6172D007E0C4C /* String.swift */,
+				A7E3EE212BEAAEC300BE6B23 /* Optional.swift */,
 				A7B225E82BE3ECE800A1CF45 /* Errors.swift */,
 				A7B225E92BE3ECE800A1CF45 /* Color.swift */,
 			);
@@ -348,6 +361,8 @@
 			children = (
 				A7B225EC2BE3ECE800A1CF45 /* Constants.swift */,
 				A77F11AD2BE8299500D23BAC /* MessagesSender.swift */,
+				A74F03E02BEA9A6D008CD7DA /* MessagesReceiver.swift */,
+				A74F03E42BEAA239008CD7DA /* PollingManager.swift */,
 				A77F17572BE8F7EF00D23BAC /* Nodes.swift */,
 				A7B225ED2BE3ECE800A1CF45 /* StartLoginFlow.swift */,
 				A7B225EE2BE3ECE800A1CF45 /* CheckLoginFlow.swift */,
@@ -557,6 +572,7 @@
 				A7B226082BE3EDD300A1CF45 /* StartLoginFlow.swift in Sources */,
 				A7B226092BE3EDD300A1CF45 /* CheckLoginFlow.swift in Sources */,
 				A7B2260A2BE3EDD300A1CF45 /* ConversationMessage.swift in Sources */,
+				A74F03E12BEA9A6E008CD7DA /* MessagesReceiver.swift in Sources */,
 				A7213BAF2BE59B15007E0C4C /* ChatBubble.swift in Sources */,
 				A7B2260B2BE3EDD300A1CF45 /* MessageInput.swift in Sources */,
 				A7213BB92BE5A6D5007E0C4C /* Context.swift in Sources */,
@@ -570,16 +586,20 @@
 				A7B2260C2BE3EDD300A1CF45 /* SessionLogo.swift in Sources */,
 				A77F11A92BE807E300D23BAC /* ONS.swift in Sources */,
 				A77F17512BE8F0F800D23BAC /* SNProto.swift in Sources */,
+				A74F03E32BEAA206008CD7DA /* Namespace.swift in Sources */,
+				A74F03E72BEAA836008CD7DA /* Array.swift in Sources */,
 				A78409CC2BE40D86009FA73A /* SettingsDisplayName.swift in Sources */,
 				A77F11AE2BE8299500D23BAC /* MessagesSender.swift in Sources */,
 				A7B2260D2BE3EDD300A1CF45 /* HomeScreen.swift in Sources */,
 				A77F11A02BE6891600D23BAC /* SessionConstants.swift in Sources */,
 				A7B2260E2BE3EDD300A1CF45 /* ConversationScreen.swift in Sources */,
+				A7E3EE222BEAAEC300BE6B23 /* Optional.swift in Sources */,
 				A77F17462BE8F07100D23BAC /* MessageWrapper.swift in Sources */,
 				A77F119E2BE683F600D23BAC /* Sodium+Utilities.swift in Sources */,
 				A7B2260F2BE3EDD300A1CF45 /* SignupScreen.swift in Sources */,
 				A77F11AB2BE8082100D23BAC /* Blake2b.swift in Sources */,
 				A77F11982BE681F900D23BAC /* SessionId.swift in Sources */,
+				A74F03E52BEAA239008CD7DA /* PollingManager.swift in Sources */,
 				A7B226102BE3EDD300A1CF45 /* SigninScreenModel.swift in Sources */,
 				A7B226112BE3EDD300A1CF45 /* SigninScreen.swift in Sources */,
 				A77F11A42BE68C5E00D23BAC /* LoginSuccessScreen.swift in Sources */,

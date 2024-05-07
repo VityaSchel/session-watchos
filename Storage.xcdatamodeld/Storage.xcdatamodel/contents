@@ -24,5 +24,7 @@
     </entity>
     <entity name="SeenMessage" representedClassName=".SeenMessage" syncable="YES">
         <attribute name="messageHash" attributeType="String"/>
+        <attribute name="polled" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
 </model>

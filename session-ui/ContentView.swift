@@ -29,8 +29,10 @@ class NavigationModel: ObservableObject {
 }
 
 struct ContentView: View {
+  @Environment(\.managedObjectContext) var context
   @EnvironmentObject var navigationModel: NavigationModel
   @EnvironmentObject var account: AccountContext
+  @State private var pollingManager: PollingManager?
   @State private var authorizationLoaded = false
   
   var body: some View {
@@ -63,6 +65,20 @@ struct ContentView: View {
     }
     .background(Color.grayBackground)
     .ignoresSafeArea()
+    .onAppear {
+      if pollingManager == nil {
+        Task {
+          do {
+            pollingManager = try await PollingManager(accountContext: account, context: context)
+          } catch let error {
+            print("Could not initialize polling", error)
+          }
+        }
+      }
+    }
+    .onDisappear {
+      pollingManager?.stopPolling()
+    }
   }
 }
 
