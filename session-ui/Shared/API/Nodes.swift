@@ -238,14 +238,17 @@ public class Swarm {
       "signature": signature,
       "pubkey_ed25519": pubkeyEd25519
     ])
-    guard let messages = response["messages"] as? [PolledMessage] else {
+    if let messages = response["messages"], let resultData = try? JSONSerialization.data(withJSONObject: messages) {
+      let decoder = JSONDecoder()
+      let messages = try decoder.decode([PolledMessage].self, from: resultData)
+      return messages
+    } else {
       throw NodesError.invalidResponse
     }
-    return messages
   }
 }
 
-public struct PolledMessage {
+public struct PolledMessage: Codable {
   var data: String
   var expiration: UInt64
   var hash: String

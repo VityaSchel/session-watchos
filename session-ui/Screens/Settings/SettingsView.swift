@@ -51,17 +51,25 @@ struct SettingsScreen: View {
         }
         .confirmationDialog(NSLocalizedString("signOutWarning", comment: "Sign out confirmation dialog text"), isPresented: $signOutConfirmationDialog) {
           Button("OK", role: .destructive) {
-            signOutConfirmationDialog = false
-            account.logout()
-            
-//            deleteAllObjects(fetchRequest: Account.fetchRequest(), context: context)
-//            deleteAllObjects(fetchRequest: DirectMessagesConversation.fetchRequest(), context: context)
-//            deleteAllObjects(fetchRequest: Message.fetchRequest(), context: context)
-            deleteAllObjects(entity: "Account", context: context)
-            deleteAllObjects(entity: "DirectMessagesConversation", context: context)
-            deleteAllObjects(entity: "Message", context: context)
-            
-            navigation.path = NavigationPath()
+            do {
+              signOutConfirmationDialog = false
+              account.logout()
+              
+              let storeContainer =
+              PersistenceController.shared.container.persistentStoreCoordinator
+              
+              for store in storeContainer.persistentStores {
+                try storeContainer.destroyPersistentStore(
+                  at: store.url!,
+                  ofType: store.type,
+                  options: nil
+                )
+              }
+              
+              navigation.path = NavigationPath()
+            } catch {
+              print("Could not erase database", error)
+            }
           }
         }
         Button(action: {
@@ -92,7 +100,6 @@ struct SettingsScreen: View {
     
     do {
       try context.execute(deleteRequest)
-      try context.save()
     } catch let error as NSError {
       print("Could not delete all objects: \(error), \(error.userInfo)")
     }

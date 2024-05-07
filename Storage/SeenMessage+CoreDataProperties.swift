@@ -6,6 +6,14 @@ extension SeenMessage {
     return NSFetchRequest<SeenMessage>(entityName: "SeenMessage")
   }
   
+  @nonobjc public class func fetchSeenByHash(hash: String) -> NSFetchRequest<SeenMessage> {
+    let fetchRequest: NSFetchRequest<SeenMessage> = SeenMessage.fetchRequest()
+    fetchRequest.predicate = NSPredicate(
+      format: "messageHash == %@", hash
+    )
+    return fetchRequest
+  }
+  
   @nonobjc public class func fetchSeenPolled() -> NSFetchRequest<SeenMessage> {
     let fetchRequest: NSFetchRequest<SeenMessage> = SeenMessage.fetchRequest()
     fetchRequest.predicate = NSPredicate(

@@ -4,16 +4,14 @@ import CoreData
 
 class PollingManager: ObservableObject {
   var accountContext: AccountContext
-  var messagesReceiver: MessagesReceiver
+  var context: NSManagedObjectContext
+  var messagesReceiver: MessagesReceiver?
   private var cancellables: Set<AnyCancellable> = []
   private var pollCancellable: AnyCancellable?
   
   init(accountContext: AccountContext, context: NSManagedObjectContext) async throws {
     self.accountContext = accountContext
-    guard let seedData = KeychainHelper.load(key: "mnemonic") else {
-      throw MessagesReceiverError.noMnemonic
-    }
-    self.messagesReceiver = try await MessagesReceiver(seed: seedData, context: context)
+    self.context = context
     setupSubscribers()
   }
   
@@ -22,10 +20,8 @@ class PollingManager: ObservableObject {
       .receive(on: RunLoop.main)
       .sink { [weak self] authorized in
         if authorized {
-          print("User is authorized, start polling")
           self?.startPolling()
         } else {
-          print("User is not authorized, pause polling")
           self?.stopPolling()
         }
       }
@@ -33,6 +29,7 @@ class PollingManager: ObservableObject {
   }
   
   public func startPolling() {
+    print("Start polling")
     pollOnceAndScheduleNext()
   }
   
@@ -45,7 +42,18 @@ class PollingManager: ObservableObject {
     Task {
       let startTime = Date()
       
-      let _ = try await self.messagesReceiver.poll()
+      if self.messagesReceiver != nil {} else {
+        guard let seedData = KeychainHelper.load(key: "mnemonic") else {
+          throw MessagesReceiverError.noMnemonic
+        }
+        self.messagesReceiver = try await MessagesReceiver(seed: seedData, context: self.context)
+      }
+      
+      do {
+        let _ = try await self.messagesReceiver!.poll()
+      } catch let error {
+        print("Error while polling", error)
+      }
       
       let executionTime = Date().timeIntervalSince(startTime)
       let delay = max(0, 5 - executionTime)

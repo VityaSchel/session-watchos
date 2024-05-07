@@ -60,17 +60,19 @@ class MessagesReceiver {
     let timestampMs: UInt64 = UInt64(Date().timeIntervalSince1970 * 1000)
     let signature = try self.generateSignature(timestamp: timestampMs, namespace: namespace)
     
+    let lastSeenMessage = try! context.fetch(SeenMessage.fetchSeenPolled()).first
+    
     let messages = try await swarm.retrieveMessages(
       namespace: namespace,
       pubkey: self.identity.x25519KeyPair.hexEncodedPublicKey,
       pubkeyEd25519: self.identity.ed25519KeyPair.hexEncodedPublicKey.removingIdPrefixIfNeeded(),
       signature: signature.toBase64(),
       signatureTimestamp: timestampMs,
-      lastHash: nil
+      lastHash: lastSeenMessage?.messageHash
     )
     messages.forEach({ message in
-      let request: NSFetchRequest<SeenMessage> = SeenMessage.fetchSeenPolled()
-      if let seenMessage = try! context.fetch(request).first {} else {
+      let request: NSFetchRequest<SeenMessage> = SeenMessage.fetchSeenByHash(hash: message.hash)
+      if let _ = try! context.fetch(request).first {} else {
         do {
           try handleNewMessage(message)
         } catch let error {
@@ -87,6 +89,7 @@ class MessagesReceiver {
     let seenMessage = SeenMessage(context: context)
     seenMessage.messageHash = receivedMessage.hash
     seenMessage.timestamp = Int64(Date().timeIntervalSince1970 * 1000)
+    seenMessage.polled = true
     saveContext(context: context)
     
     guard let dataBytes = Data(base64Encoded: receivedMessage.data) else {
@@ -150,25 +153,36 @@ class MessagesReceiver {
     
     if let dataMessage = proto.dataMessage {
       let message = Message(context: context)
-      message.isIncoming = true
+      
+      let conversationSessionID: String
+      if let syncTarget = dataMessage.syncTarget {
+        conversationSessionID = syncTarget
+        message.isIncoming = false
+      } else {
+        conversationSessionID = sender
+        message.isIncoming = true
+      }
+      
       message.status = .Sent
       message.id = UUID()
       message.textContent = dataMessage.body
       message.timestamp = Int64(envelope.timestamp)
       
       let conversation: Conversation
-      let request: NSFetchRequest<Conversation> = Conversation.fetchBySessionID(sessionID: sender)
+      let request: NSFetchRequest<Conversation> = Conversation.fetchBySessionID(sessionID: conversationSessionID)
       if let existingConvo = try context.fetch(request).first {
         conversation = existingConvo
       } else {
         conversation = Conversation(context: context)
-        conversation.sessionID = sender
+        conversation.sessionID = conversationSessionID
         conversation.id = UUID()
       }
       if let newDisplayName = dataMessage.profile?.displayName {
         conversation.displayName = newDisplayName
       }
       conversation.lastMessage = ConversationLastMessage(isIncoming: true, textContent: dataMessage.body ?? "")
+      
+      message.conversation = conversation.id
     }
     
     saveContext(context: context)

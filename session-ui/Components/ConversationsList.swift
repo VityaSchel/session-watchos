@@ -9,17 +9,14 @@ enum ConversationType {
 typealias Conversation = DirectMessagesConversation
 
 struct ConversationsList: View {
-  @FetchRequest
-  var conversations: FetchedResults<Conversation>
-  
-  init() {
+  static var getConversationsFetchRequest: NSFetchRequest<Conversation> {
     let request: NSFetchRequest<Conversation> = Conversation.fetchRequest()
-    _conversations = FetchRequest(
-      fetchRequest: request,
-      animation: .easeOut
-    )
+    request.sortDescriptors = []
+    return request
   }
-  
+  @FetchRequest(fetchRequest: getConversationsFetchRequest)
+  var conversations: FetchedResults<Conversation>
+
   
   var body: some View {
     if conversations.isEmpty {
@@ -38,6 +35,8 @@ struct ConversationsList: View {
 }
 
 struct ConversationLink: View {
+  @Environment(\.managedObjectContext) var context
+  
   var conversation: Conversation
   var title: String {
     conversation.displayName != nil
@@ -61,7 +60,7 @@ struct ConversationLink: View {
     }
     .swipeActions(allowsFullSwipe: false) {
       Button(role: .destructive) {
-        print("Awesome!")
+        context.delete(conversation)
       } label: {
         Label("Delete", systemImage: "trash")
       }
@@ -127,10 +126,6 @@ struct ConversationsList_Previews: PreviewProvider {
     if !Static.mocksInserted {
       putConversationsMocks(into: previewContext)
       Static.mocksInserted = true
-    }
-    var conversations: [DirectMessagesConversation] {
-      let request: NSFetchRequest<DirectMessagesConversation> = DirectMessagesConversation.fetchRequest()
-      return try! previewContext.fetch(request)
     }
     return VStack {
       ConversationsList()
