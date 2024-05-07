@@ -49,7 +49,7 @@ struct SessionMessengerApp: App {
     WindowGroup {
       ContentView()
         .environment(\.managedObjectContext, persistenceController.container.viewContext)
-        .environmentObject(AccountContext())
+        .environmentObject(AccountContext(context: persistenceController.container.viewContext))
         .environmentObject(NavigationModel())
     }
     .onChange(of: scenePhase, {
@@ -62,7 +62,7 @@ struct SessionMessengerApp_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
       .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-      .environmentObject(AccountContext())
+      .environmentObject(AccountContext(context: PersistenceController.preview.container.viewContext))
       .environmentObject(NavigationModel())
   }
 }

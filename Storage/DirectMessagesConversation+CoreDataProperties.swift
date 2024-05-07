@@ -24,6 +24,14 @@ extension DirectMessagesConversation {
     return fetchRequest
   }
   
+  @nonobjc public class func fetchBySessionID(sessionID: String) -> NSFetchRequest<DirectMessagesConversation> {
+    let fetchRequest: NSFetchRequest<DirectMessagesConversation> = DirectMessagesConversation.fetchRequest()
+    fetchRequest.predicate = NSPredicate(
+      format: "sessionID = %@", sessionID as CVarArg
+    )
+    return fetchRequest
+  }
+  
   @NSManaged public var displayName: String?
   @NSManaged public var id: UUID
   @NSManaged public var avatar: Data?

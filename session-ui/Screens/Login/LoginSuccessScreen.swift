@@ -7,6 +7,7 @@ struct LoginSuccessScreen: View {
   @EnvironmentObject var navigation: NavigationModel
   @Environment(\.managedObjectContext) var context
   var sessionID: String
+  var displayName: String?
   var seed: Data
   
   var body: some View {
@@ -34,10 +35,12 @@ struct LoginSuccessScreen: View {
             let request: NSFetchRequest<Account> = Account.fetchBySessionID(sessionID: sessionID)
             return try! context.fetch(request).first
           }() {
+            ourProfile.displayName = displayName
             LoggedUserProfile.shared.loadCurrentUser(ourProfile)
           } else {
             let newAccount = Account(context: context)
             newAccount.sessionID = sessionID
+            newAccount.displayName = displayName
             saveContext(context: context)
             LoggedUserProfile.shared.loadCurrentUser(newAccount)
           }
@@ -55,7 +58,7 @@ struct LoginSuccessScreen: View {
 
 struct LoginSuccessScreen_Previews: PreviewProvider {
   static var previews: some View {
-    LoginSuccessScreen(sessionID: "057aeb66e45660c3bdfb7c62706f6440226af43ec13f3b6f899c1dd4db1b8fce5b", seed: Data())
+    LoginSuccessScreen(sessionID: "057aeb66e45660c3bdfb7c62706f6440226af43ec13f3b6f899c1dd4db1b8fce5b", displayName: "hloth", seed: Data())
       .background(Color.grayBackground)
   }
 }

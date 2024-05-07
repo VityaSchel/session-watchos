@@ -585,6 +585,23 @@
           }
         }
       }
+    },
+    "youPrefix" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You: "
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы: "
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

@@ -1,9 +1,7 @@
 import Foundation
 import CoreData
 
-
 extension Account {
-
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Account> {
         return NSFetchRequest<Account>(entityName: "Account")
     }
@@ -19,5 +17,4 @@ extension Account {
     @NSManaged public var displayName: String?
     @NSManaged public var sessionID: String
     @NSManaged public var conversations: DirectMessagesConversation?
-
 }

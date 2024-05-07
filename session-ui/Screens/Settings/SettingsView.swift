@@ -1,5 +1,6 @@
 import Foundation
 import SwiftUI
+import CoreData
 
 enum ModalType: Identifiable {
   case displayNameChange
@@ -15,6 +16,7 @@ struct SettingsScreen: View {
   @State private var signOutConfirmationDialog = false
   @EnvironmentObject var account: AccountContext
   @EnvironmentObject var navigation: NavigationModel
+  @Environment(\.managedObjectContext) var context
   
   var body: some View {
     VStack {
@@ -51,6 +53,14 @@ struct SettingsScreen: View {
           Button("OK", role: .destructive) {
             signOutConfirmationDialog = false
             account.logout()
+            
+//            deleteAllObjects(fetchRequest: Account.fetchRequest(), context: context)
+//            deleteAllObjects(fetchRequest: DirectMessagesConversation.fetchRequest(), context: context)
+//            deleteAllObjects(fetchRequest: Message.fetchRequest(), context: context)
+            deleteAllObjects(entity: "Account", context: context)
+            deleteAllObjects(entity: "DirectMessagesConversation", context: context)
+            deleteAllObjects(entity: "Message", context: context)
+            
             navigation.path = NavigationPath()
           }
         }
@@ -73,6 +83,18 @@ struct SettingsScreen: View {
       case .mnemonicQrCode:
         SettingsMnemonicQrCodeScreen()
       }
+    }
+  }
+  
+  func deleteAllObjects(entity: String, context: NSManagedObjectContext) {
+    let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: entity)
+    let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+    
+    do {
+      try context.execute(deleteRequest)
+      try context.save()
+    } catch let error as NSError {
+      print("Could not delete all objects: \(error), \(error.userInfo)")
     }
   }
 }

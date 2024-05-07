@@ -20,6 +20,7 @@ struct ConversationScreenDetails: Hashable {
 
 struct LoginSuccessScreenDetails: Hashable {
   var sessionID: String
+  var displayName: String?
   var seed: Data
 }
 
@@ -43,7 +44,7 @@ struct ContentView: View {
             case Routes.NewConversation:
               NewConversationScreen()
             case Routes.Conversation(let details):
-              ConversationScreen(conversation: details)
+              ConversationScreen(details)
             }
           }
       } else {
@@ -55,7 +56,7 @@ struct ContentView: View {
             case AuthRoutes.SignUp:
               SignupScreen()
             case AuthRoutes.LoginSuccess(let details):
-              LoginSuccessScreen(sessionID: details.sessionID, seed: details.seed)
+              LoginSuccessScreen(sessionID: details.sessionID, displayName: details.displayName, seed: details.seed)
             }
           }
       }
@@ -68,6 +69,6 @@ struct ContentView: View {
 #Preview {
   ContentView()
     .environmentObject(NavigationModel())
-    .environmentObject(AccountContext())
+    .environmentObject(AccountContext(context: PersistenceController.preview.container.viewContext))
     .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }

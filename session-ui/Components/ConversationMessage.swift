@@ -3,7 +3,7 @@ import SwiftUI
 import CoreData
 
 struct ConversationMessage: View {
-  let message: Message
+  @ObservedObject var message: Message
   let maxWidth: CGFloat
   
   var body: some View {
@@ -12,9 +12,22 @@ struct ConversationMessage: View {
         Spacer()
       }
       
-      HStack {
+      HStack(alignment: .bottom, spacing: 0) {
         if(!message.isIncoming) {
           Spacer()
+        }
+        if(message.status == .Sending) {
+          ProgressView()
+            .controlSize(.small)
+            .frame(width: 12, height: 12)
+            .padding(.bottom, 3)
+            .padding(.trailing, 5)
+        }
+        if(message.status == .Errored) {
+          Image(systemName: "exclamationmark.triangle.fill")
+            .resizable().scaledToFit()
+            .frame(width: 10, height: 10)
+            .foregroundColor(Color.yellow)
         }
         Text(message.textContent ?? "")
           .padding(.leading, message.isIncoming ? 13 : 10)
@@ -33,7 +46,7 @@ struct ConversationMessage: View {
         Spacer()
       }
     }
-    .frame(maxWidth: .infinity)
+    .frame(maxWidth: .infinity, alignment: message.isIncoming == false ? .trailing : .leading)
     .edgesIgnoringSafeArea(.horizontal)
   }
 }
@@ -43,25 +56,36 @@ struct ConversationMessage_Previews: PreviewProvider {
     let previewContext = PersistenceController.preview.container.viewContext
     struct Static {
       static var mocksInserted = false
+      static var conversationId: UUID = UUID()
     }
     if !Static.mocksInserted {
-      putMessagesMocks(into: previewContext)
+      putMessagesMocks(into: previewContext, conversationId: Static.conversationId)
       Static.mocksInserted = true
     }
     var messages: [Message] {
-      let request: NSFetchRequest<Message> = Message.fetchRequest()
+      let request: NSFetchRequest<Message> = Message.fetchMessagesForConvoRequest(conversation: Static.conversationId)
       return try! previewContext.fetch(request)
     }
-    return GeometryReader { geometry in
-      ScrollView {
-        ForEach(messages) { msg in
-          ConversationMessage(message: msg, maxWidth: geometry.size.width * 0.8)
+    return VStack {
+      GeometryReader { geometry in
+        ScrollView {
+          Spacer(minLength: 20)
+          ForEach(messages) { msg in
+            ConversationMessage(message: msg, maxWidth: geometry.size.width * 0.8)
+          }
+          Spacer(minLength: 20)
         }
+        .frame(maxWidth: .infinity)
+        .edgesIgnoringSafeArea(.horizontal)
+        .padding(.horizontal, 5)
+        .defaultScrollAnchor(.bottom)
       }
-      .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-      .environmentObject(NavigationModel())
-      .background(Color.grayBackground)
-      .ignoresSafeArea()
     }
+    .frame(maxWidth: .infinity)
+    .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    .environmentObject(AccountContext(context: PersistenceController.preview.container.viewContext))
+    .environmentObject(NavigationModel())
+    .background(Color.grayBackground)
+    .ignoresSafeArea()
   }
 }

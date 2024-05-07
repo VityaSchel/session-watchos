@@ -4,14 +4,25 @@ import CoreData
 
 struct ConversationScreen: View {
   @Environment(\.managedObjectContext) var context
-  @State private var messages: [Message] = []
   var conversation: ConversationScreenDetails
+  
+  @FetchRequest
+  var messages: FetchedResults<Message>
+  
+  init(_ convo: ConversationScreenDetails) {
+    conversation = convo
+    _messages = FetchRequest(
+      fetchRequest: Message.fetchMessagesForConvoRequest(conversation: convo.uuid),
+      animation: .default
+    )
+  }
   
   var body: some View {
     GeometryReader { geometry in
       VStack(spacing: 5) {
         ScrollView {
           if messages.isEmpty {
+            Spacer(minLength: 20)
             Text(NSLocalizedString("emptyConversation", comment: "Conversation screen with no messages"))
               .foregroundColor(.gray)
               .multilineTextAlignment(.center)
@@ -43,10 +54,19 @@ struct ConversationScreen: View {
             textContent: text
           )
           saveContext(context: context)
-          
-          messages.append(newMessage)
           Task {
-            await MessagesSender.storeMessage(newMessage, recipientPubKey: conversationObject.sessionID)
+            do {
+              let (storedMessageHash, syncMessageHash) = try await MessagesSender.storeMessage(newMessage, recipientPubKey: conversationObject.sessionID)
+              newMessage.status = .Sent
+              let seenMsg = SeenMessage(context: context)
+              seenMsg.messageHash = storedMessageHash
+              let seenSyncMsg = SeenMessage(context: context)
+              seenSyncMsg.messageHash = syncMessageHash
+            } catch let error {
+              print("Error while sending message", error)
+              newMessage.status = .Errored
+            }
+            saveContext(context: context)
           }
         })
       }
@@ -55,25 +75,13 @@ struct ConversationScreen: View {
       .navigationTitle(conversation.title)
       .navigationBarTitleDisplayMode(.inline)
     }
-    .onAppear {
-      fetchMessages()
-    }
-  }
-  
-  private func fetchMessages() {
-    let request: NSFetchRequest<Message> = Message.fetchMessagesForConvoRequest(conversation: conversation.uuid)
-    do {
-      messages = try context.fetch(request)
-    } catch {
-      print("Error fetching conversations: \(error)")
-    }
   }
 }
 
 struct ConversationScreen_Previews: PreviewProvider {
   let previewContext = PersistenceController.preview.container.viewContext
   static var previews: some View {
-    ConversationScreen(conversation: ConversationScreenDetails(title: "hloth", uuid: UUID(), cdObjectId: NSManagedObjectID()))
+    ConversationScreen(ConversationScreenDetails(title: "hloth", uuid: UUID(), cdObjectId: NSManagedObjectID()))
     .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     .frame(maxWidth: .infinity)
     .background(Color.black)

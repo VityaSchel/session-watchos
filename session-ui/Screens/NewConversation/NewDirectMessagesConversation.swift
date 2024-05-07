@@ -1,6 +1,7 @@
 import Foundation
 import SwiftUI
 import WatchKit
+import CoreData
 
 struct NewDirectMessagesConversationScreen: View {
   @Environment(\.managedObjectContext) var context
@@ -67,11 +68,18 @@ struct NewDirectMessagesConversationScreen: View {
   }
   
   private func createConversation(sessionID: String) {
-    let newConvo = DirectMessagesConversation(context: context)
-    newConvo.id = UUID()
-    newConvo.sessionID = sessionID
-    saveContext(context: context)
-    onCreated(newConvo)
+    if let existingConvo: Conversation = {
+      let request: NSFetchRequest<Conversation> = Conversation.fetchBySessionID(sessionID: sessionID)
+      return try! context.fetch(request).first
+    }() {
+      onCreated(existingConvo)
+    } else {
+      let newConvo = DirectMessagesConversation(context: context)
+      newConvo.id = UUID()
+      newConvo.sessionID = sessionID
+      saveContext(context: context)
+      onCreated(newConvo)
+    }
   }
 }
 

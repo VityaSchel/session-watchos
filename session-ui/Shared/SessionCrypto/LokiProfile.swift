@@ -82,13 +82,13 @@ class LokiProfile {
     }
   }
   
-  public static func fromProto(_ proto: SNProtoMessageRequestResponse) -> VMProfile? {
+  public static func fromProto(_ proto: SNProtoMessageRequestResponse) -> LokiProfile? {
     guard
       let profileProto = proto.profile,
       let displayName = profileProto.displayName
     else { return nil }
     
-    return VMProfile(
+    return LokiProfile(
       displayName: displayName,
       profileKey: proto.profileKey,
       profilePictureUrl: profileProto.profilePicture

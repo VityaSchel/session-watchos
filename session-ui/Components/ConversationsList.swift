@@ -20,6 +20,7 @@ struct ConversationsList: View {
       List(conversations, id: \.id) { conversation in
         ConversationLink(conversation: conversation)
       }
+      Spacer(minLength: 20)
     }
   }
 }
@@ -34,7 +35,7 @@ struct ConversationLink: View {
   
   var body: some View {
     NavigationLink(value: Routes.Conversation(ConversationScreenDetails(title: title, uuid: conversation.id, cdObjectId: conversation.objectID))) {
-      VStack {
+      VStack(alignment: .leading) {
         HStack(spacing: 10) {
           Avatar(avatar: conversation.avatar, title: title)
           Text(title)
@@ -92,9 +93,16 @@ struct LastMessage: View {
   var lastMessage: ConversationLastMessage
   
   var body: some View {
-    Text(lastMessage.textContent)
-      .lineLimit(2)
-      .padding(.bottom, 10)
+    HStack(alignment: .center, spacing: 0) {
+      if !lastMessage.isIncoming {
+        Text(NSLocalizedString("youPrefix", comment: "Conversations list last message preview"))
+          .foregroundColor(Color.gray)
+      }
+      Text(lastMessage.textContent)
+        .lineLimit(1)
+        .multilineTextAlignment(.leading)
+    }
+    .padding(.bottom, 10)
   }
 }
 

@@ -25,7 +25,10 @@ class SigninViewModel: ObservableObject {
                 let decryptedPhrase = try decryptAesCbc(encryptedBase64: encryptedPhrase, AesKeyBase64: secretKey)
                 let seed = decryptedPhrase.data(using: .utf8)!
                 let identity = try Identity.generate(from: seed)
-                self?.navigationModel.path.append(AuthRoutes.LoginSuccess(LoginSuccessScreenDetails(sessionID: identity.ed25519KeyPair.hexEncodedPublicKey, seed: seed)))
+                self?.navigationModel.path.append(AuthRoutes.LoginSuccess(LoginSuccessScreenDetails(
+                  sessionID: identity.ed25519KeyPair.hexEncodedPublicKey,
+                  seed: seed
+                )))
               } catch {
                 self?.alertMessage = "Something went wrong"
                 self?.showAlert = true

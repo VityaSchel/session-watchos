@@ -2,6 +2,7 @@ import Foundation
 import SwiftUI
 
 struct SettingsDisplayNameScreen: View {
+  @Environment(\.managedObjectContext) var context
   var onClose: () -> Void
   @State private var displayName = ""
   
@@ -10,6 +11,10 @@ struct SettingsDisplayNameScreen: View {
       TextField(NSLocalizedString("displayName", comment: "Placeholder for recipient input"), text: $displayName)
       .frame(maxWidth: .infinity)
       Button(action: {
+        if let profile = LoggedUserProfile.shared.currentProfile {
+          profile.displayName = displayName
+        }
+        saveContext(context: context)
         onClose()
       }) {
         HStack(spacing: 10) {

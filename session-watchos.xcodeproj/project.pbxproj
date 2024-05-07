@@ -23,6 +23,8 @@
 		A7213BBE2BE61D9C007E0C4C /* PreviewMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7213BBD2BE61D9C007E0C4C /* PreviewMocks.swift */; };
 		A7213BC12BE6669A007E0C4C /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7213BC02BE6669A007E0C4C /* KeychainHelper.swift */; };
 		A7213BC32BE66812007E0C4C /* AccountContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7213BC22BE66812007E0C4C /* AccountContext.swift */; };
+		A74F03DE2BEA912B008CD7DA /* SeenMessage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74F03DC2BEA912B008CD7DA /* SeenMessage+CoreDataClass.swift */; };
+		A74F03DF2BEA912B008CD7DA /* SeenMessage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74F03DD2BEA912B008CD7DA /* SeenMessage+CoreDataProperties.swift */; };
 		A77F11922BE67E4700D23BAC /* Keypairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11912BE67E4700D23BAC /* Keypairs.swift */; };
 		A77F11942BE680F900D23BAC /* Randomness.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11932BE680F900D23BAC /* Randomness.swift */; };
 		A77F11962BE681CB00D23BAC /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77F11952BE681CB00D23BAC /* Identity.swift */; };
@@ -96,6 +98,8 @@
 		A7213BBD2BE61D9C007E0C4C /* PreviewMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewMocks.swift; sourceTree = "<group>"; };
 		A7213BC02BE6669A007E0C4C /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		A7213BC22BE66812007E0C4C /* AccountContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountContext.swift; sourceTree = "<group>"; };
+		A74F03DC2BEA912B008CD7DA /* SeenMessage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SeenMessage+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A74F03DD2BEA912B008CD7DA /* SeenMessage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SeenMessage+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A77F11912BE67E4700D23BAC /* Keypairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keypairs.swift; sourceTree = "<group>"; };
 		A77F11932BE680F900D23BAC /* Randomness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Randomness.swift; sourceTree = "<group>"; };
 		A77F11952BE681CB00D23BAC /* Identity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
@@ -188,6 +192,8 @@
 		A7213BBF2BE6640B007E0C4C /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				A74F03DC2BEA912B008CD7DA /* SeenMessage+CoreDataClass.swift */,
+				A74F03DD2BEA912B008CD7DA /* SeenMessage+CoreDataProperties.swift */,
 				A77F175D2BE9629300D23BAC /* Account+CoreDataClass.swift */,
 				A77F175E2BE9629300D23BAC /* Account+CoreDataProperties.swift */,
 				A7213BB42BE5A413007E0C4C /* Message+CoreDataClass.swift */,
@@ -545,6 +551,7 @@
 				A7B226072BE3EDD300A1CF45 /* Constants.swift in Sources */,
 				A77F119C2BE6827A00D23BAC /* GeneralError.swift in Sources */,
 				A77F175A2BE95F3600D23BAC /* ProtoBuilder.swift in Sources */,
+				A74F03DE2BEA912B008CD7DA /* SeenMessage+CoreDataClass.swift in Sources */,
 				A7213BB72BE5A413007E0C4C /* Message+CoreDataProperties.swift in Sources */,
 				A7213BBE2BE61D9C007E0C4C /* PreviewMocks.swift in Sources */,
 				A7B226082BE3EDD300A1CF45 /* StartLoginFlow.swift in Sources */,
@@ -582,6 +589,7 @@
 				A7213BAD2BE59352007E0C4C /* InlineIconText.swift in Sources */,
 				A77F11962BE681CB00D23BAC /* Identity.swift in Sources */,
 				A77F17502BE8F0F800D23BAC /* SessionProtos.pb.swift in Sources */,
+				A74F03DF2BEA912B008CD7DA /* SeenMessage+CoreDataProperties.swift in Sources */,
 				A78409C92BE40BB0009FA73A /* NewDirectMessagesConversation.swift in Sources */,
 				A7B226122BE3EDD300A1CF45 /* LoginScreen.swift in Sources */,
 				A7213B952BE57C2B007E0C4C /* ConversationsList.swift in Sources */,

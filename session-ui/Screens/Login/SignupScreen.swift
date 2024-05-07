@@ -26,7 +26,11 @@ struct SignupScreen: View {
               return
             }
             
-            navigationModel.path.append(AuthRoutes.LoginSuccess(LoginSuccessScreenDetails(sessionID: sessionID, seed: seed)))
+            navigationModel.path.append(AuthRoutes.LoginSuccess(LoginSuccessScreenDetails(
+              sessionID: sessionID,
+              displayName: displayName,
+              seed: seed
+            )))
           } catch {
             showAlert = true
             alertMessage = "Couldn't generate key pair"
