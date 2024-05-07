@@ -9,7 +9,17 @@ enum ConversationType {
 typealias Conversation = DirectMessagesConversation
 
 struct ConversationsList: View {
-  var conversations: [DirectMessagesConversation]
+  @FetchRequest
+  var conversations: FetchedResults<Conversation>
+  
+  init() {
+    let request: NSFetchRequest<Conversation> = Conversation.fetchRequest()
+    _conversations = FetchRequest(
+      fetchRequest: request,
+      animation: .easeOut
+    )
+  }
+  
   
   var body: some View {
     if conversations.isEmpty {
@@ -17,6 +27,8 @@ struct ConversationsList: View {
         .foregroundColor(.gray)
         .multilineTextAlignment(.center)
     } else {
+      Spacer()
+        .frame(height: 60)
       List(conversations, id: \.id) { conversation in
         ConversationLink(conversation: conversation)
       }
@@ -121,9 +133,7 @@ struct ConversationsList_Previews: PreviewProvider {
       return try! previewContext.fetch(request)
     }
     return VStack {
-      Spacer()
-        .frame(height: 60)
-      ConversationsList(conversations: conversations)
+      ConversationsList()
     }
       .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
       .environmentObject(NavigationModel())

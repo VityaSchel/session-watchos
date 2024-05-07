@@ -13,6 +13,9 @@ public enum SNProtoError: Error {
 // MARK: - SNProtoEnvelope
 
 @objc public class SNProtoEnvelope: NSObject {
+    static func from(_ data: Data) throws -> SNProtoEnvelope? {
+      return try MessageWrapper.unwrap(data: data)
+    }
 
     // MARK: - SNProtoEnvelopeType
 

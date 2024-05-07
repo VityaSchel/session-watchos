@@ -5,15 +5,10 @@ import CoreData
 
 struct HomeScreen: View {
   @Environment(\.managedObjectContext) var managedObjectContext
-  @State private var conversations: [DirectMessagesConversation] = []
   
   var body: some View {
     VStack {
-      if !conversations.isEmpty {
-        Spacer()
-          .frame(height: 60)
-      }
-      ConversationsList(conversations: conversations)
+      ConversationsList()
     }
     .toolbar {
       ToolbarItem(placement: .topBarLeading) {
@@ -38,18 +33,6 @@ struct HomeScreen: View {
       }
     }
     .ignoresSafeArea()
-    .onAppear() {
-      fetchConversations()
-    }
-  }
-  
-  private func fetchConversations() {
-    let request: NSFetchRequest<DirectMessagesConversation> = DirectMessagesConversation.fetchRequest()
-    do {
-      conversations = try managedObjectContext.fetch(request)
-    } catch {
-      print("Error fetching conversations: \(error)")
-    }
   }
 }
 
