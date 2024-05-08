@@ -9,6 +9,8 @@ enum ConversationType {
 typealias Conversation = DirectMessagesConversation
 
 struct ConversationsList: View {
+  @EnvironmentObject var dataController: DataController
+  @Environment(\.managedObjectContext) var context
   static var getConversationsFetchRequest: NSFetchRequest<Conversation> {
     let request: NSFetchRequest<Conversation> = Conversation.fetchRequest()
     request.sortDescriptors = []
@@ -132,6 +134,7 @@ struct ConversationsList_Previews: PreviewProvider {
     }
       .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
       .environmentObject(NavigationModel())
+      .environmentObject(DataController())
       .background(Color.grayBackground)
       .ignoresSafeArea()
   }

@@ -5,7 +5,7 @@ import CoreData
 
 struct NewDirectMessagesConversationScreen: View {
   @Environment(\.managedObjectContext) var context
-  @State private var recipient = "❤️"
+  @State private var recipient = ""//"❤️"
   var onCreated: (_: DirectMessagesConversation) -> Void
   
   @State private var showAlert = false

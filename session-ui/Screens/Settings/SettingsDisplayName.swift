@@ -11,11 +11,13 @@ struct SettingsDisplayNameScreen: View {
       TextField(NSLocalizedString("displayName", comment: "Placeholder for recipient input"), text: $displayName)
       .frame(maxWidth: .infinity)
       Button(action: {
-        if let profile = LoggedUserProfile.shared.currentProfile {
-          profile.displayName = displayName
+        if !displayName.isEmpty {
+          if let profile = LoggedUserProfile.shared.currentProfile {
+            profile.displayName = displayName
+          }
+          saveContext(context: context)
+          onClose()
         }
-        saveContext(context: context)
-        onClose()
       }) {
         HStack(spacing: 10) {
           HStack {
@@ -29,6 +31,11 @@ struct SettingsDisplayNameScreen: View {
       .buttonStyle(.borderedProminent)
     }
     .navigationTitle(NSLocalizedString("displayName", comment: "Settings button"))
+    .onAppear {
+      if let profile = LoggedUserProfile.shared.currentProfile {
+        displayName = profile.displayName ?? ""
+      }
+    }
   }
 }
 

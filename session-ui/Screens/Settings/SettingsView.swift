@@ -16,6 +16,7 @@ struct SettingsScreen: View {
   @State private var signOutConfirmationDialog = false
   @EnvironmentObject var account: AccountContext
   @EnvironmentObject var navigation: NavigationModel
+  @EnvironmentObject var dataController: DataController
   @Environment(\.managedObjectContext) var context
   
   var body: some View {
@@ -51,25 +52,48 @@ struct SettingsScreen: View {
         }
         .confirmationDialog(NSLocalizedString("signOutWarning", comment: "Sign out confirmation dialog text"), isPresented: $signOutConfirmationDialog) {
           Button("OK", role: .destructive) {
-            do {
-              signOutConfirmationDialog = false
-              account.logout()
-              
-              let storeContainer =
-              PersistenceController.shared.container.persistentStoreCoordinator
-              
-              for store in storeContainer.persistentStores {
-                try storeContainer.destroyPersistentStore(
-                  at: store.url!,
-                  ofType: store.type,
-                  options: nil
-                )
+            signOutConfirmationDialog = false
+            account.logout()
+            
+            context.perform {
+              do {
+                let entities = ["DirectMessagesConversation","Message","SeenMessage","Account"]
+                for entity in entities {
+                  print(entity)
+                  
+                  let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: entity)
+                  let batchDeleteRequest = NSBatchDeleteRequest.init(fetchRequest: fetchRequest)
+                  
+                  batchDeleteRequest.resultType = .resultTypeObjectIDs
+                  
+                  do {
+                    let batchDelete = try context.persistentStoreCoordinator?.execute(batchDeleteRequest, with: context) as? NSBatchDeleteResult
+  
+                    guard let deleteResult = batchDelete?.result
+                            as? [NSManagedObjectID]
+                    else { return }
+  
+                    let deletedObjects: [AnyHashable: Any] = [
+                      NSDeletedObjectsKey: deleteResult
+                    ]
+  
+                    NSManagedObjectContext.mergeChanges(
+                      fromRemoteContextSave: deletedObjects,
+                      into: [context]
+                    )
+                  } catch let error as NSError {
+                    print("Error while deleting", entity, error)
+                  }
+                }
+                
+                try context.save()
+                context.reset()
+              } catch let error {
+                print("Error while deleting objects", error)
               }
-              
-              navigation.path = NavigationPath()
-            } catch {
-              print("Could not erase database", error)
             }
+            
+            navigation.path = NavigationPath()
           }
         }
         Button(action: {
@@ -91,17 +115,6 @@ struct SettingsScreen: View {
       case .mnemonicQrCode:
         SettingsMnemonicQrCodeScreen()
       }
-    }
-  }
-  
-  func deleteAllObjects(entity: String, context: NSManagedObjectContext) {
-    let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: entity)
-    let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
-    
-    do {
-      try context.execute(deleteRequest)
-    } catch let error as NSError {
-      print("Could not delete all objects: \(error), \(error.userInfo)")
     }
   }
 }
