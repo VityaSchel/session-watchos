@@ -1,5 +1,8 @@
 # Session client for WatchOS
 
+> [!NOTE]
+> This project is archived because I no longer contribute to Session. You might want to check out the official [Session iOS app](https://github.com/session-foundation/session-ios).
+
 Unofficial [Session](https://getsession.org) messenger client for Apple Watch, targeting watch OS 10.
 
 <img src="docs/screenshot-1.png" width="200" />
